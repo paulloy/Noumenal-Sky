@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+#what-is div {
+  background-image: url("../images/052517_AY_jupiter_main_FREE.jpg");
+  width: 100vw;
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+h2 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  justify-self: center;
+  align-self: center;
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
+  font-size: 40px;
+  color: rgba(233, 247, 255, 0.95);
+}
