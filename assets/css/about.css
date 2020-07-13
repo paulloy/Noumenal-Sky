@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-#what-is div {
+/* not for about.css */
+#background {
+  background-image: url("../images/heic1307a.jpg");
+}
+/* ------ */
+
+#what-is div:first-child {
   background-image: url("../images/052517_AY_jupiter_main_FREE.jpg");
   width: 100vw;
   height: 35vh;
@@ -15,6 +21,26 @@ h2 {
   align-self: center;
   font-family: "Roboto Mono", monospace;
   margin: auto;
-  font-size: 40px;
+  font-size: 35px;
   color: rgba(233, 247, 255, 0.95);
+  background-color: #13192573;
+  padding: 5px 20px 5px 20px;
+}
+
+#what-is div:last-child {
+  color: rgba(233, 247, 255, 0.95);
+  display: flex;
+  height: 45vh;
+  width: 100vw;
+  justify-content: center;
+}
+#what-is div:last-child p {
+  align-self: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  letter-spacing: 1px;
 }
