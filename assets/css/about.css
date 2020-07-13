@@ -3,7 +3,6 @@
 /* not for about.css */
 #background {
   background-image: url("../images/heic1307a.jpg");
-
 }
 /* ------ */
 
@@ -52,4 +51,59 @@ h2 {
 }
 #now-what div:first-child {
   background-image: url("../images/heic0515a.jpg");
+}
+#form div:first-child {
+  background-image: url("../images/Comet_67P_on_19_September_2014_NavCam_mosaic.jpg");
+}
+
+#form-div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  justify-content: center;
+  align-content: center;
+}
+label {
+  font-family: "Roboto Mono", monospace;
+  color: rgba(233, 247, 255, 0.95);
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 20px;
+}
+input {
+  width: 50%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #13192573;
+  border: 1px solid #c2d5db;
+  align-self: center;
+  color: rgba(233, 247, 255, 0.95);
+}
+textarea {
+  resize: none;
+  width: 50%;
+  height: 30vh;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #13192573;
+  border: 1px solid #c2d5db;
+  align-self: center;
+  color: rgba(233, 247, 255, 0.95);
+}
+button {
+  width: 50%;
+  margin: 10px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #13192573;
+  border: 1px solid #c2d5db;
+  font-family: "Roboto Mono", monospace;
+  color: rgba(233, 247, 255, 0.95);
+  text-transform: uppercase;
+  align-self: center;
+  font-size: 20px;
 }
