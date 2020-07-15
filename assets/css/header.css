@@ -44,7 +44,63 @@ h1 {
   justify-self: center;
   align-self: center;
 }
-
+#navbar-mobile {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+  background-image: url("../images/eaglenebula.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: none;
+  margin: 0;
+  z-index: 1;
+  padding: 0;
+  padding-top: 10vh;
+}
+#navbar-mobile li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 50px;
+  width: 100vw;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+#navbar-mobile li a {
+  text-decoration: none;
+  color: rgba(233, 247, 255, 0.95);
+  font-family: "Roboto Mono", monospace;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+#navbar-mobile .font-awesome-icon {
+  font-size: 40px;
+}
+#navbar-mobile li:nth-child(4),
+#navbar-mobile li:nth-child(5),
+#navbar-mobile li:nth-child(6) {
+  width: 33vw;
+  margin: 0;
+  justify-self: flex-start;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10vh;
+}
+#follow-us {
+  display: none;
+  color: rgba(233, 247, 255, 0.95);
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  margin-top: 15vh;
+  font-weight: 300;
+}
 #navbar {
   display: flex;
   flex-direction: row;
@@ -74,8 +130,12 @@ h1 {
 }
 
 @keyframes fade-in {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .fade-in {
   animation-name: fade-in;
@@ -85,79 +145,72 @@ h1 {
 }
 
 #navbarToggle {
-    width: auto;
-    margin-right: 50px;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: auto;
+  margin-right: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #navbarToggle span {
-    display: inline-block;
-    background-color: white;
-    height: 2px;
-    width: 25px;
-    margin: 4px;
-    border-radius: 10px;
+  display: inline-block;
+  background-color: white;
+  height: 2px;
+  width: 25px;
+  margin: 4px;
+  border-radius: 10px;
 }
 #navbarToggle .top-bar {
-    position: relative;
-    animation-name: top-bar-toggle;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
+  position: relative;
+  animation-name: top-bar-toggle;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
 }
 #navbarToggle .bottom-bar {
-    position: relative;
-    animation-name: bottom-bar-toggle;
-    animation-duration: 0.2s;
-    animation-fill-mode: forwards;
+  position: relative;
+  animation-name: bottom-bar-toggle;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
 }
 #navbarToggle .middle-bar {
-    display: none !important;
+  display: none !important;
 }
 
 @keyframes top-bar-toggle {
-    from {
-        transform: rotate(0deg);
-        top: 0px;
-    }
-    to {
-        transform: rotate(45deg);
-        top: 5px;
-    }
+  from {
+    transform: rotate(0deg);
+    top: 0px;
+    z-index: 0;
+  }
+  to {
+    transform: rotate(45deg);
+    top: 5px;
+    z-index: 2;
+  }
 }
 @keyframes bottom-bar-toggle {
-    from {
-        transform: rotate(0deg);
-        top: 0px;
-    }
-    to {
-        transform: rotate(-45deg);
-        bottom: 5px;
-    }
+  from {
+    transform: rotate(0deg);
+    top: 0px;
+    z-index: 0;
+  }
+  to {
+    transform: rotate(-45deg);
+    bottom: 5px;
+    z-index: 2;
+  }
 }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 750px) {
   #navbarToggle {
     display: flex;
   }
   nav {
-      display: none;
+    display: none;
   }
 }
-@media only screen and (min-width: 730px) {
+@media only screen and (min-width: 751px) {
   nav {
-      display: block;
+    display: block !important;
   }
 }
-
-nav #navbar .mobile-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vh;
-    background-color: red;
-  }
-
-
