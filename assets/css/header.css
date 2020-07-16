@@ -3,6 +3,7 @@
 /* not for header.css*/
 body {
   margin: 0;
+  font-family: "Roboto Mono", monospace;
 }
 #background {
   width: 100%;
@@ -32,10 +33,9 @@ h1 {
   margin: 0;
   height: 50px;
   display: flex;
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 #logo {
-  font-family: "Roboto Mono", monospace;
   color: rgba(233, 247, 255, 0.95);
   font-weight: 300;
   text-decoration: none;
@@ -44,23 +44,23 @@ h1 {
   justify-self: center;
   align-self: center;
 }
-#navbar-mobile {
+.navbar-mobile {
   position: fixed;
   top: 70px;
   left: 0;
   height: 100vh;
-  width: 100vh;
+  width: auto;
   background-image: url("../images/eaglenebula.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: none;
+  display: block !important;
   margin: 0;
   z-index: 1;
   padding: 0;
   padding-top: 10vh;
 }
-#navbar-mobile li {
+.navbar-mobile li {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -70,23 +70,22 @@ h1 {
   justify-content: center;
   margin-bottom: 5vh;
 }
-#navbar-mobile li a {
+.navbar-mobile li a {
   text-decoration: none;
   color: rgba(233, 247, 255, 0.95);
-  font-family: "Roboto Mono", monospace;
   justify-self: center;
   align-self: center;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 2px;
 }
-#navbar-mobile .font-awesome-icon {
+.navbar-mobile .font-awesome-icon {
   font-size: 40px;
 }
-#navbar-mobile li:nth-child(4),
-#navbar-mobile li:nth-child(5),
-#navbar-mobile li:nth-child(6) {
-  width: 33vw;
+.navbar-mobile li:nth-child(4),
+.navbar-mobile li:nth-child(5),
+.navbar-mobile li:nth-child(6) {
+  width: 30vw;
   margin: 0;
   justify-self: flex-start;
   display: inline-block;
@@ -101,7 +100,7 @@ h1 {
   margin-top: 15vh;
   font-weight: 300;
 }
-#navbar {
+.navbar-browser {
   display: flex;
   flex-direction: row;
   width: auto;
@@ -109,13 +108,13 @@ h1 {
   position: absolute;
   right: 30px;
 }
-#navbar li {
+.navbar-browser li {
   list-style-type: none;
   display: flex;
   margin-left: 40px;
   height: 50px;
 }
-#navbar li a {
+.navbar-browser li a {
   text-decoration: none;
   color: rgba(233, 247, 255, 0.95);
   font-family: "Roboto Mono", monospace;
@@ -125,7 +124,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
 }
-#navbar .font-awesome-icon {
+.navbar-browser .font-awesome-icon {
   font-size: 30px;
 }
 
@@ -207,7 +206,7 @@ h1 {
   }
   nav {
     display: none;
-  }
+  } 
 }
 @media only screen and (min-width: 751px) {
   nav {
