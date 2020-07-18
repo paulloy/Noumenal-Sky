@@ -10,29 +10,41 @@
     opacity: 0;
 }*/
 
+#about-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+section {
+    height: 100vh;
+}
+
 .title {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   display: flex;
 }
 .paragraph-container {
   display: flex;
-  height: 45vh;
+  height: 60vh;
   width: 100%;
   justify-content: center;
 }
 .paragraph {
   align-self: center;
+  justify-self: center;
+  justify-items: center;
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 3vh;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
   letter-spacing: 1px;
   color: rgba(233, 247, 255, 0.95);
+  margin: 0;
 }
 #what-is div:first-child {
   background-image: url("../images/052517_AY_jupiter_main_FREE.jpg");
@@ -142,22 +154,18 @@ button {
 
 @media only screen and (max-width: 750px) {
   h2 {
-    font-size: 1.1rem;
-  }
-  .title {
-    height: 30%;
+    font-size: 5.9vw;
+    text-align: center;
   }
   section {
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-content: space-evenly;
+      align-content: space-between;
   }
   .paragraph {
-    font-size: 1rem;
+    font-size: 3vh;
     padding-left: 5vw;
     padding-right: 5vw;
-    height: 70%;
     justify-self: center;
     align-self: center;
   }
