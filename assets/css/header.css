@@ -30,8 +30,8 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 2vw;
+  padding-right: 2vw;
   position: relative;
 }
 h1 {
@@ -39,6 +39,7 @@ h1 {
   height: 50px;
   display: flex;
   font-size: 1.6rem;
+  margin-left: 3vw;
 }
 #logo {
   color: rgba(233, 247, 255, 0.95);
@@ -51,7 +52,7 @@ h1 {
 }
 .navbar-mobile {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
   height: 100vh;
   width: auto;
@@ -111,12 +112,15 @@ h1 {
   width: auto;
   margin: 0;
   position: absolute;
-  right: 30px;
+  right: 3vw;
+  padding: 0;
+  justify-content: flex-start;
 }
 .navbar-browser li {
   list-style-type: none;
   display: flex;
-  margin-left: 40px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   height: 50px;
 }
 .navbar-browser li a {
