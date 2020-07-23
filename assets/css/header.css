@@ -52,7 +52,7 @@ h1 {
 }
 .navbar-mobile {
   position: fixed;
-  top: 0;
+  top: 50px;
   left: 0;
   height: 100vh;
   width: auto;
@@ -133,8 +133,26 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
 }
+.navbar-browser li a:hover {
+  border-bottom: 1px solid #c2d5db;
+  animation-name: hover-navitem;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  margin-top: 1px;
+  animation-fill-mode: forwards;
+}
 .navbar-browser .font-awesome-icon {
   font-size: 30px;
+}
+@keyframes hover-navitem {
+  from {
+    width: 0%;
+    color: rgba(233, 247, 255, 0.95);
+  }
+  to {
+    width: 100%;
+    color: #c2d5db;
+  }
 }
 
 @keyframes fade-in {
