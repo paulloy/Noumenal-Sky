@@ -50,6 +50,13 @@ h1 {
   justify-self: center;
   align-self: center;
 }
+#logo:hover {
+  color: #beefff;
+  animation-name: hover-navitem-no-underline;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
 .navbar-mobile {
   position: fixed;
   top: 50px;
@@ -133,8 +140,9 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
 }
-.navbar-browser li a:hover {
-  border-bottom: 1px solid #c2d5db;
+.navbar-browser li:nth-child(1) a:hover,
+.navbar-browser li:nth-child(2) a:hover {
+  border-bottom: 1px solid #beefff;
   animation-name: hover-navitem;
   animation-duration: 0.2s;
   animation-timing-function: linear;
@@ -144,14 +152,30 @@ h1 {
 .navbar-browser .font-awesome-icon {
   font-size: 30px;
 }
+.navbar-browser .font-awesome-icon:hover {
+  color: #beefff;
+  animation-name: hover-navitem-no-underline;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  margin-top: 1px;
+  animation-fill-mode: forwards;
+}
 @keyframes hover-navitem {
   from {
     width: 0%;
     color: rgba(233, 247, 255, 0.95);
   }
   to {
-    width: 100%;
-    color: #c2d5db;
+    width: 96%;
+    color: #beefff;
+  }
+}
+@keyframes hover-navitem-no-underline {
+  from {
+    color: rgba(233, 247, 255, 0.95);
+  }
+  to {
+    color: #beefff;
   }
 }
 
