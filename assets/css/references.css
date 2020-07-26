@@ -1,0 +1,27 @@
+#background {
+  width: 100%;
+  background-image: url("../images/xlarge_web.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section {
+  font-family: "Mulish", sans-serif;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+p {
+    font-size: 0.9rem;
+}
+a {
+    color: rgb(0, 163, 238);
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+span {
+    padding-right: 0.25rem;
+}
