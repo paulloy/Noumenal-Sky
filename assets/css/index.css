@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#background {
+  width: 100%;
+  background-image: url("../images/1280px-Pleiades_large.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+section {
+  height: 80vh;
+  display: inline-block;
+  width: 46vw;
+  background-color: #2f3f5c9a;
+  border-radius: 10px;
+  padding: 1vw;
+}
+#app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#image-information {
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  background-color: rgba(208, 192, 163, 0.15);
+  border-radius: 10px;
+  width: 100%;
+  margin: auto auto;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+#carousel-container {
+  overflow: hidden;
+}
+#carousel-container img {
+  width: 200px;
+  object-fit: scale-down;
+  justify-self: center;
+}
+
+#information-container {    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#information-container div {
+    margin: auto auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+    #app {
+        flex-direction: column;
+    }
+    section {
+        width: 100vw;
+        height: 50vh;
+    }
+}
