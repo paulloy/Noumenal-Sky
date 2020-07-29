@@ -32,10 +32,10 @@ section {
   padding-top: 1vw;
   padding-bottom: 1vw;
 }
-#carousel-container {
+#image-container {
   overflow: hidden;
 }
-#carousel-container img {
+#image-container img {
   width: 200px;
   object-fit: scale-down;
   justify-self: center;
