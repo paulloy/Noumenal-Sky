@@ -22,9 +22,11 @@ section {
   height: 80vh;
   display: inline-block;
   width: 42vw;
+  padding: 1vw;
+}
+section:first-of-type {
   background-color: #2f3f5c9a;
   border-radius: 10px;
-  padding: 1vw;
 }
 #app {
   display: flex;
@@ -53,12 +55,13 @@ section {
   display: block;
 }
 #image-information p {
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin: 0;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin: 0;
 }
 #image-information h2 {
-    margin: 0;
+  margin: 0;
+  margin-bottom: 1vh;
 }
 #image-container {
   overflow: hidden;
@@ -83,41 +86,108 @@ section {
 #information-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  background-color: #2f3f5c9a;
+  margin-bottom: 2vh;
+  border-radius: 10px;
 }
 #information-container div {
-  margin: auto auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
+#information-container div ul {
+  padding: 0;
+  background-color: #1e698d;
+  width: 7rem;
+  z-index: 1;
+  display: none;
+}
+#information-container div ul li {
+  list-style-type: none;
+}
+#property-values {
+  background-color: #2f3f5c9a;
+  border-radius: 10px;
+}
+#property-values table {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#property-values table tbody {
+  width: 100%;
+}
+#property-values table tbody tr {
+  width: 100%;
+}
+#property-values table tbody tr td {
+  width: 25%;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+#property-values table tr td:first-of-type {
+  text-align: left;
+  padding-left: 2vw;
+}
+#property-values table tr td:last-of-type {
+  text-align: right;
+  padding-right: 2vw;
+}
+#explanation-container {
+  background-color: #2f3f5c9a;
+  border-radius: 10px;
+  padding: 1vw;
+  margin-top: 2vh;
+}
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
   #app {
     flex-direction: column;
   }
   section {
-      height: 40vh;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0.5vh;
-      margin-bottom: 0.5vh;
+    height: 40vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   section:first-of-type {
-      width: 60%;
-      height: 30vh;
+    height: 30vh;
+    margin-bottom: 2vh;
   }
   section:last-of-type {
-      height: 50vh;
+    height: 50vh;
   }
   #image-information {
-      display: none;
+    display: none;
   }
   #image-container {
-      height: 100%;
-      margin: 2vw;
+    height: 100%;
+    margin: 2vw;
   }
   #image-container img {
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  #information-container div p {
+    font-size: 0.9rem;
+  }
+  #information-container div {
+    margin: 0;
+    width: 33%;
+  }
+  #information-container div ul {
+    display: none;
+  }
+  #explanation-container {
+    display: none;
+  }
+  #property-values table tbody tr td {
+    font-size: 0.9rem;
+  }
+  #property-values table tr td:nth-of-type(2) {
+    text-align: right;
   }
 }
