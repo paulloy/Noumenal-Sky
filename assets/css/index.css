@@ -100,7 +100,6 @@ section:first-of-type {
 #information-container div ul {
   padding: 0;
   background-color: #1e698d;
-  width: 7rem;
   z-index: 1;
   display: none;
 }
@@ -141,6 +140,43 @@ section:first-of-type {
   border-radius: 10px;
   padding: 1vw;
   margin-top: 2vh;
+}
+#category-list:hover,
+#object-list:hover,
+#property-list:hover {
+  cursor: pointer;
+  position: relative;
+}
+#category-list:hover ul,
+#object-list:hover ul,
+#property-list:hover ul {
+  display: block;
+  position: absolute;
+  top: 2rem;
+}
+#category-list ul,
+#object-list ul,
+#property-list ul{
+  padding: 0.5rem;
+  width: 10rem;
+  right: -2.5rem;
+}
+#category-list ul:hover,
+#object-list ul:hover,
+#property-list ul:hover {
+  display: block;
+  position: absolute;
+  top: 2rem;
+}
+#category-list ul li,
+#object-list ul li,
+#property-list ul li {
+  padding: 0.5rem;
+}
+#category-list ul li:hover,
+#object-list ul li:hover,
+#property-list ul li:hover {
+  color: red;
 }
 
 @media only screen and (max-width: 770px) {
