@@ -18,10 +18,16 @@ footer {
   background-position: center;
   background-attachment: fixed;
 }
-section {
+section:first-of-type {
   height: 80vh;
   display: inline-block;
-  width: 42vw;
+  width: 32vw;
+  padding: 1vw;
+}
+section:last-of-type {
+  height: 80vh;
+  display: inline-block;
+  width: 52vw;
   padding: 1vw;
 }
 section:first-of-type {
@@ -86,21 +92,25 @@ section:first-of-type {
 #information-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   background-color: #2f3f5c9a;
   margin-bottom: 2vh;
   border-radius: 10px;
+  align-content: center;
 }
 #information-container div {
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
+}
+#information-container div:first-of-type {
+  margin-left: 5vw;
+}
+#information-container div:last-of-type {
+  margin-right: 5vw;
 }
 #information-container div ul {
   padding: 0;
-  background-color: #1e698d;
-  z-index: 1;
+  z-index: 0;
   display: none;
 }
 #information-container div ul li {
@@ -127,14 +137,6 @@ section:first-of-type {
   padding-top: 1vh;
   padding-bottom: 1vh;
 }
-#property-values table tr td:first-of-type {
-  text-align: left;
-  padding-left: 2vw;
-}
-#property-values table tr td:last-of-type {
-  text-align: right;
-  padding-right: 2vw;
-}
 #explanation-container {
   background-color: #2f3f5c9a;
   border-radius: 10px;
@@ -144,40 +146,63 @@ section:first-of-type {
 #category-list:hover,
 #object-list:hover,
 #property-list:hover {
-  cursor: pointer;
   position: relative;
 }
-#category-list:hover ul,
+/*#category-list:hover ul,
 #object-list:hover ul,
 #property-list:hover ul {
   display: block;
   position: absolute;
   top: 2rem;
+}*/
+#category-list,
+#object-list,
+#property-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+#category-list p,
+#object-list p,
+#property-list p {
+  position: relative;
+}
+#category-list p:hover,
+#object-list p:hover,
+#property-list p:hover {
+  color: #9bcfff;
+  cursor: pointer;
 }
 #category-list ul,
 #object-list ul,
-#property-list ul{
+#property-list ul {
   padding: 0.5rem;
-  width: 10rem;
-  right: -2.5rem;
+  width: 14vw;
+  border-radius: 10px;
+  background-color: #406384;
+  position: absolute;
+  left: 50%;
+  margin-left: -7vw;
+  top: 2rem;
 }
-#category-list ul:hover,
+/*#category-list ul:hover,
 #object-list ul:hover,
 #property-list ul:hover {
   display: block;
   position: absolute;
   top: 2rem;
-}
+}*/
 #category-list ul li,
 #object-list ul li,
 #property-list ul li {
   padding: 0.5rem;
 }
-#category-list ul li:hover,
+/*#category-list ul li:hover,
 #object-list ul li:hover,
 #property-list ul li:hover {
   color: red;
-}
+}*/
 
 @media only screen and (max-width: 770px) {
   #app {
@@ -185,7 +210,7 @@ section:first-of-type {
   }
   section {
     height: 40vh;
-    width: 90%;
+    width: 90% !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -216,6 +241,9 @@ section:first-of-type {
   }
   #information-container div ul {
     display: none;
+    width: 6rem;
+    left: 50%;
+    margin-left: -3rem;
   }
   #explanation-container {
     display: none;
@@ -227,12 +255,12 @@ section:first-of-type {
     text-align: right;
   }
   #object-container:hover #image-information {
-      display: flex;
-      z-index: 1;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      padding: 1vw;
-      background-color: #2f3f5cb2;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1vw;
+    background-color: #2f3f5cb2;
   }
 }
