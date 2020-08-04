@@ -237,6 +237,7 @@ section:first-of-type {
   }
   section:last-of-type {
     height: 50vh;
+    position: relative;
   }
   #image-information {
     display: none;
@@ -264,6 +265,21 @@ section:first-of-type {
   }
   #explanation-container {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2f3f5c;
+    margin: 0;
+    padding: 0;
+  }
+  #explanation-container article {
+    padding: 6vw;
+    overflow: hidden;
+  }
+  #explanation-container article h3 {
+    margin: 0;
   }
   #property-values table tbody tr td {
     font-size: 0.9rem;
