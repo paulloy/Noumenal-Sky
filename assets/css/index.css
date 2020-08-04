@@ -179,8 +179,11 @@ section:first-of-type {
 #property-list ul {
   padding: 0.5rem;
   width: 14vw;
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #406384;
+  border-top: #9bcfff solid 1px;
+  box-shadow: 3px 3px 3px #00345f2c;
   position: absolute;
   left: 50%;
   margin-left: -7vw;
@@ -196,13 +199,27 @@ section:first-of-type {
 #category-list ul li,
 #object-list ul li,
 #property-list ul li {
-  padding: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
 }
-/*#category-list ul li:hover,
+#category-list ul li:hover,
 #object-list ul li:hover,
 #property-list ul li:hover {
-  color: red;
-}*/
+  color: #9bcfff;
+  cursor: pointer;
+  border-bottom: 1px solid #9bcfff;
+  width: 76%;
+  margin-left: 6%;
+  margin-bottom: -1px;
+}
+#category-list ul li:last-of-type:hover,
+#object-list ul li:last-of-type:hover,
+#property-list ul li:last-of-type:hover {
+  margin-bottom: 7px;
+}
 
 @media only screen and (max-width: 770px) {
   #app {
