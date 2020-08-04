@@ -14,6 +14,14 @@ $("#property-list p").click(function(){
     $("#category-list ul").hide();
 });
 
+$("#property-values table tbody tr td").click(function(){
+    $("#explanation-container").show();
+});
+$("#explanation-container").click(function(){
+    $(this).hide();
+});
+
+
 /*var xhr = new XMLHttpRequest();
 
 xhr.onload = function() {
