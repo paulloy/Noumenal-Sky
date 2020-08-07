@@ -22,17 +22,14 @@ $("#explanation-container").click(function(){
 });
 
 
-/*var xhr = new XMLHttpRequest();
+var xhr = new XMLHttpRequest(); //Make a new XML Http Request
 
-xhr.onload = function() {
-    if(xhr.status === 200) {
-        responseObject = JSON.parse(xhr.responseText);
-        console.log(this.responseText);
+xhr.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) { //if status is 200 then get json data
+        document.getElementById("category-list").childNodes[3] = this.responseText;
+        console.log(JSON.parse(this.responseText));
     }
-    else {
-        console.log("what is wrong");
-    }
-}
+};
 
-xhr.open("GET", "/json/space-catalog.json", true);
-xhr.send(null);*/
+xhr.open("GET", "assets/js/json/space-catalog.json");
+xhr.send();
