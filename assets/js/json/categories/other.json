@@ -1,0 +1,29 @@
+{
+  "other": [
+    {
+      "name": "67P",
+      "67P": "../objects/other/67P.json",
+      "image": "../../../images/space-images/other/67p.jpg"
+    },
+    {
+      "name": "tesla roadster",
+      "teslaRoadster": "../objects/other/teslaRoadster.json",
+      "image": "../../../images/space-images/other/tesla-roadster.jpg"
+    },
+    {
+      "name": "vesta",
+      "vesta": "../objects/other/vesta.json",
+      "image": "../../../images/space-images/other/vesta.jpg"
+    },
+    {
+      "name": "sedna",
+      "sedna": "../objects/other/sedna.json",
+      "image": "../../../images/space-images/other/sedna.jpg"
+    },
+    {
+      "name": "quaoar",
+      "quaoar": "../objects/other/quaoar.json",
+      "image": "../../../images/space-images/other/quaoar.jpg"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "planets": [
+    {
+      "name": "Mercury",
+      "mercury": "../objects/planets/mercury.json",
+      "image": "../../../images/space-images/planets/mercury.jpg"
+    },
+    {
+      "name": "Venus",
+      "venus": "../objects/planets/venus.json",
+      "image": "../../../images/space-images/planets/venus.jpg"
+    },
+    {
+      "name": "Earth",
+      "earth": "../objects/planets/earth.json",
+      "image": "../../../images/space-images/planets/earth.jpg"
+    },
+    {
+      "name": "Mars",
+      "mars": "../objects/planets/mars.json",
+      "image": "../../../images/space-images/planets/mars.jpg"
+    },
+    {
+      "name": "Jupiter",
+      "jupiter": "../objects/planets/jupiter.json",
+      "image": "../../../images/space-images/planets/jupiter.jpg"
+    },
+    {
+      "name": "Saturn",
+      "saturn": "../objects/planets/saturn.json",
+      "image": "../../../images/space-images/planets/saturn.jpg"
+    },
+    {
+      "name": "Uranus",
+      "uranus": "../objects/planets/uranus.json",
+      "image": "../../../images/space-images/planets/uranus.jpg"
+    },
+    {
+      "name": "Neptune",
+      "neptune": "../objects/planets/neptune.json",
+      "image": "../../../images/space-images/planets/neptune.jpg"
+    }
+  ]
+}
