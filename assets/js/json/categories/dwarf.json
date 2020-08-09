@@ -1,0 +1,29 @@
+{
+  "dwarf": [
+    {
+      "name": "ceres",
+      "ceres": "../objects/dwarfPlanets/ceres.json",
+      "image": "../../../images/space-images/dwarf-planets/ceres.jpg"
+    },
+    {
+      "name": "pluto",
+      "pluto": "../objects/dwarfPlanets/pluto.json",
+      "image": "../../../images/space-images/dwarf-planets/pluto.jpg"
+    },
+    {
+      "name": "eris",
+      "eris": "../objects/dwarfPlanets/eris.json",
+      "image": "../../../images/space-images/dwarf-planets/eris.jpg"
+    },
+    {
+      "name": "makemake",
+      "makemake": "../objects/dwarfPlanets/makemake.json",
+      "image": "../../../images/space-images/dwarf-planets/makemake.jpg"
+    },
+    {
+      "name": "haumea",
+      "haumea": "../objects/dwarfPlanets/haumea.json",
+      "image": "../../../images/space-images/dwarf-planets/haumea.jpg"
+    }
+  ]
+}
