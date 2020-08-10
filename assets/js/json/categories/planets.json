@@ -3,42 +3,50 @@
     {
       "name": "Mercury",
       "mercury": "../objects/planets/mercury.json",
-      "image": "../../../images/space-images/planets/mercury.jpg"
+      "image": "assets/images/space-images/planets/mercury.jpg",
+      "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER"
     },
     {
       "name": "Venus",
       "venus": "../objects/planets/venus.json",
-      "image": "../../../images/space-images/planets/venus.jpg"
+      "image": "assets/images/space-images/planets/venus.jpg",
+      "alt": "This image was processed from archived Mariner 10 data by JPL engineer Kevin M. Gill."
     },
     {
       "name": "Earth",
       "earth": "../objects/planets/earth.json",
-      "image": "../../../images/space-images/planets/earth.jpg"
+      "image": "assets/images/space-images/planets/earth.jpg",
+      "alt": "The Blue Marble is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of about 29,000 kilometres (18,000 mi). It shows Africa, Antarctica, and the Arabian Peninsula."
     },
     {
       "name": "Mars",
       "mars": "../objects/planets/mars.json",
-      "image": "../../../images/space-images/planets/mars.jpg"
+      "image": "assets/images/space-images/planets/mars.jpg",
+      "alt": "True color image of Mars taken by the OSIRIS instrument on the ESA Rosetta spacecraft during its February 2007 flyby of the planet."
     },
     {
       "name": "Jupiter",
       "jupiter": "../objects/planets/jupiter.json",
-      "image": "../../../images/space-images/planets/jupiter.jpg"
+      "image": "assets/images/space-images/planets/jupiter.jpg",
+      "alt": "This full-disc image of Jupiter was taken on 21 April 2014 with Hubble's Wide Field Camera 3 (WFC3)."
     },
     {
       "name": "Saturn",
       "saturn": "../objects/planets/saturn.json",
-      "image": "../../../images/space-images/planets/saturn.jpg"
+      "image": "assets/images/space-images/planets/saturn.jpg",
+      "alt": "This captivating natural color view of the planet Saturn was created from images collected shortly after Cassini began its extended Equinox Mission in July 2008."
     },
     {
       "name": "Uranus",
       "uranus": "../objects/planets/uranus.json",
-      "image": "../../../images/space-images/planets/uranus.jpg"
+      "image": "assets/images/space-images/planets/uranus.jpg",
+      "alt": "This is an image of the planet Uranus taken by the spacecraft Voyager 2 in 1986."
     },
     {
       "name": "Neptune",
       "neptune": "../objects/planets/neptune.json",
-      "image": "../../../images/space-images/planets/neptune.jpg"
+      "image": "assets/images/space-images/planets/neptune.jpg",
+      "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25. The Great Dark Spot, flanked by cirrus clouds, is at center. A smaller dark storm, Dark Spot Jr., is rotating into view at bottom left. Additionally, a patch of white cirrus clouds to its north, named 'Scooter' for its rapid motion relative to other features, is visible."
     }
   ]
 }
