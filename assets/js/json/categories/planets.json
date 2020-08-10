@@ -4,7 +4,7 @@
       "name": "Mercury",
       "mercury": "../objects/planets/mercury.json",
       "image": "assets/images/space-images/planets/mercury.jpg",
-      "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER"
+      "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER."
     },
     {
       "name": "Venus",
@@ -46,7 +46,7 @@
       "name": "Neptune",
       "neptune": "../objects/planets/neptune.json",
       "image": "assets/images/space-images/planets/neptune.jpg",
-      "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25. The Great Dark Spot, flanked by cirrus clouds, is at center. A smaller dark storm, Dark Spot Jr., is rotating into view at bottom left. Additionally, a patch of white cirrus clouds to its north, named 'Scooter' for its rapid motion relative to other features, is visible."
+      "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25."
     }
   ]
 }
