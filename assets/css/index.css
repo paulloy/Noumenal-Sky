@@ -68,6 +68,8 @@ section:first-of-type {
 #image-information h2 {
   margin: 0;
   margin-bottom: 1vh;
+  text-transform: capitalize;
+  font-size: 1.2rem;
 }
 #image-container {
   overflow: hidden;
@@ -188,6 +190,8 @@ section:first-of-type {
   left: 50%;
   margin-left: -7vw;
   top: 2rem;
+  max-height: 12rem;
+  overflow-y: scroll;
 }
 /*#category-list ul:hover,
 #object-list ul:hover,
