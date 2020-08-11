@@ -3,117 +3,140 @@
     {
       "name": "moon",
       "moon": "../objects/moons/moon.json",
-      "image": "../../../images/space-images/moons/moon.jpg"
+      "image": "assets/images/space-images/moons/moon.jpg",
+      "alt": "Full Moon photograph taken 10-22-2010 from Madison, Alabama, USA."
     },
     {
       "name": "phobos",
       "phobos": "../objects/moons/phobos.json",
-      "image": "../../../images/space-images/moons/phobos.jpg"
+      "image": "assets/images/space-images/moons/phobos.jpg",
+      "alt": "Color image of Phobos, imaged by the Mars Reconnaissance Orbiter on 23 March 2008."
     },
     {
-      "name": "ceres",
+      "name": "deimos",
       "deimos": "../objects/moons/deimos.json",
-      "image": "../../../images/space-images/moons/deimos.jpg"
+      "image": "assets/images/space-images/moons/deimos.jpg",
+      "alt": "Color-enhanced image of Deimos, a moon of Mars, captured by the HiRISE instrument on the Mars Reconnaissance Orbiter on 21 Feb 2009."
     },
     {
       "name": "io",
       "io": "../objects/moons/io.json",
-      "image": "../../../images/space-images/moons/io.jpg"
+      "image": "assets/images/space-images/moons/io.jpg",
+      "alt": "NASA's Galileo spacecraft acquired its highest resolution images of Jupiter's moon Io on 3 July 1999."
     },
     {
       "name": "europa",
       "europa": "../objects/moons/europa.json",
-      "image": "../../../images/space-images/moons/europa.jpg"
+      "image": "assets/images/space-images/moons/europa.jpg",
+      "alt": "This image was taken on September 7, 1996, at a range of 677,000 kilometers (417,900 miles) by the solid state imaging television camera onboard the Galileo spacecraft during its second orbit around Jupiter."
     },
     {
       "name": "ganymede",
       "ganymede": "../objects/moons/ganymede.json",
-      "image": "../../../images/space-images/moons/ganymede.jpg"
+      "image": "assets/images/space-images/moons/ganymede.jpg",
+      "alt": "True color image of Ganymede, obtained by the Galileo spacecraft, with enhanced contrast."
     },
     {
       "name": "callisto",
       "callisto": "../objects/moons/callisto.json",
-      "image": "../../../images/space-images/moons/callisto.jpg"
+      "image": "assets/images/space-images/moons/callisto.jpg",
+      "alt": "Image of Callisto from NASA's Galileo spacecraft. The picture, taken in May 2001, is the only complete global color image of Callisto obtained by Galileo, which has been orbiting Jupiter since December 1995."
     },
     {
       "name": "mimas",
       "mimas": "../objects/moons/mimas.json",
-      "image": "../../../images/space-images/moons/mimas.jpg"
+      "image": "assets/images/space-images/moons/mimas.jpg",
+      "alt": "In this view captured by NASA's Cassini spacecraft on its closest-ever flyby of Saturn's moon Mimas, large Herschel Crater dominates Mimas, making the moon look like the Death Star in the movie Star Wars."
     },
     {
       "name": "enceladus",
       "enceladus": "../objects/moons/enceladus.json",
-      "image": "../../../images/space-images/moons/enceladus.jpg"
+      "image": "assets/images/space-images/moons/enceladus.jpg",
+      "alt": "NASA's Cassini spacecraft captured this view as it neared icy Enceladus for its closest-ever dive past the moon's active south polar region."
     },
     {
       "name": "tethys",
       "tethys": "../objects/moons/tethys.json",
-      "image": "../../../images/space-images/moons/tethys.jpg"
+      "image": "assets/images/space-images/moons/tethys.jpg",
+      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on April 11, 2015."
     },
     {
       "name": "dione",
       "dione": "../objects/moons/dione.json",
-      "image": "../../../images/space-images/moons/dione.jpg"
+      "image": "assets/images/space-images/moons/dione.jpg",
+      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on Feb. 8, 2008."
     },
     {
       "name": "rhea",
       "rhea": "../objects/moons/rhea.json",
-      "image": "../../../images/space-images/moons/rhea.jpg"
+      "image": "assets/images/space-images/moons/rhea.jpg",
+      "alt": "The images in this mosaic were taken with the Cassini spacecraft narrow-angle camera during a close flyby on Nov. 26, 2005."
     },
     {
       "name": "titan",
       "titan": "../objects/moons/titan.json",
-      "image": "../../../images/space-images/moons/titan.jpg"
+      "image": "assets/images/space-images/moons/titan.jpg",
+      "alt": "The images were obtained with the Cassini spacecraft wide-angle camera on Jan. 30, 2012."
     },
     {
       "name": "hyperion",
       "hyperion": "../objects/moons/hyperion.json",
-      "image": "../../../images/space-images/moons/hyperion.jpg"
+      "image": "assets/images/space-images/moons/hyperion.jpg",
+      "alt": "Approximately true-color mosaic of Saturn's moon Hyperion. Taken during Cassini's flyby of this lumpy moon on 26th September 2005."
     },
     {
       "name": "iapetus",
       "iapetus": "../objects/moons/iapetus.json",
-      "image": "../../../images/space-images/moons/iapetus.jpg"
+      "image": "assets/images/space-images/moons/iapetus.jpg",
+      "alt": "Iapetus as seen by the Cassini probe."
     },
     {
       "name": "phoebe",
       "phoebe": "../objects/moons/phoebe.json",
-      "image": "../../../images/space-images/moons/phoebe.jpg"
+      "image": "assets/images/space-images/moons/phoebe.jpg",
+      "alt": "Phoebe, as imaged by the Cassini probe."
     },
     {
       "name": "puck",
       "puck": "../objects/moons/puck.json",
-      "image": "../../../images/space-images/moons/puck.jpg"
+      "image": "assets/images/space-images/moons/puck.jpg",
+      "alt": "Image taken from Voyager 2 on 24 January 1986."
     },
     {
       "name": "miranda",
       "miranda": "../objects/moons/miranda.json",
-      "image": "../../../images/space-images/moons/miranda.jpg"
+      "image": "assets/images/space-images/moons/miranda.jpg",
+      "alt": "Uranus' icy moon Miranda is seen in this image from Voyager 2 on January 24, 1986."
     },
     {
       "name": "ariel",
       "ariel": "../objects/moons/ariel.json",
-      "image": "../../../images/space-images/moons/ariel.jpg"
+      "image": "assets/images/space-images/moons/ariel.jpg",
+      "alt": "This mosaic of the four highest-resolution images of Ariel represents the most detailed Voyager 2 picture of this satellite of Uranus."
     },
     {
       "name": "umbriel",
       "umbriel": "../objects/moons/umbriel.json",
-      "image": "../../../images/space-images/moons/umbriel.jpg"
+      "image": "assets/images/space-images/moons/umbriel.jpg",
+      "alt": "The southern hemisphere of Umbriel displays heavy cratering in this Voyager 2 image, taken Jan. 24, 1986."
     },
     {
       "name": "oberon",
       "oberon": "../objects/moons/oberon.json",
-      "image": "../../../images/space-images/moons/oberon.jpg"
+      "image": "assets/images/space-images/moons/oberon.jpg",
+      "alt": "This Voyager 2 picture of Oberon is the best the spacecraft acquired of Uranus' outermost moon. The picture was taken shortly after 3:30 a.m. PST on Jan. 24, 1986."
     },
     {
       "name": "triton",
       "triton": "../objects/moons/triton.json",
-      "image": "../../../images/space-images/moons/triton.jpg"
+      "image": "assets/images/space-images/moons/triton.jpg",
+      "alt": "Global Color Mosaic of Triton, taken by Voyager 2 in 1989."
     },
     {
       "name": "charon",
       "charon": "../objects/moons/charon.json",
-      "image": "../../../images/space-images/moons/charon.jpg"
+      "image": "assets/images/space-images/moons/charon.jpg",
+      "alt": "This image was taken on July 14, 2015, from a range of 46,091 miles (74,176 kilometers). This single color MVIC scan includes no data from other New Horizons imagers or instruments added."
     }
   ]
 }
