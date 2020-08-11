@@ -56,36 +56,95 @@ function getData(categoryId) {
           var node = document.createElement("LI"); //create list node
           var textnode = document.createTextNode(obj.planets[i].name); //create text node
           node.appendChild(textnode); //append text node to list
+          node.setAttribute("id", i); //set id
           getListById("object-list").appendChild(node); //append the list to the listById
+
+          $("#" + i).click(function () {   //when list item is selected the following click function will get id attribute and call function
+            var getId = $(this).attr("id");
+            setPlanet(getId);
+            });
         }
       } else if (categoryId === "#dwarf") {
         for (var i = 0; i < obj.dwarf.length; i++) {
           var node = document.createElement("LI"); //create list node
           var textnode = document.createTextNode(obj.dwarf[i].name); //create text node
           node.appendChild(textnode); //append text node to list
+          node.setAttribute("id", i); //set id
           getListById("object-list").appendChild(node); //append the list to the listById
+          
+          $("#" + i).click(function () {   
+            var getId = $(this).attr("id");
+            setDwarf(getId);
+            });
         }
       } else if (categoryId === "#moons") {
         for (var i = 0; i < obj.moons.length; i++) {
           var node = document.createElement("LI"); //create list node
           var textnode = document.createTextNode(obj.moons[i].name); //create text node
           node.appendChild(textnode); //append text node to list
+          node.setAttribute("id", i); //set id
           getListById("object-list").appendChild(node); //append the list to the listById
+
+          $("#" + i).click(function () {   
+            var getId = $(this).attr("id");
+            setMoons(getId);
+            });
         }
+        
       } else if (categoryId === "#other") {
         for (var i = 0; i < obj.other.length; i++) {
           var node = document.createElement("LI"); //create list node
           var textnode = document.createTextNode(obj.other[i].name); //create text node
           node.appendChild(textnode); //append text node to list
+          node.setAttribute("id", i); //set id
           getListById("object-list").appendChild(node); //append the list to the listById
+
+          $("#" + i).click(function () {   
+            var getId = $(this).attr("id");
+            setOther(getId);
+            });
         }
       }
+
+       
+      
+      
+
+      var list = document.getElementById("object-list").childNodes[3].childNodes;    
+        var el = document.getElementById("image");
+
+      function setPlanet(i) {  //use constructor functions?
+        el.removeAttribute("src");
+        el.setAttribute("src", obj.planets[i].image);
+        el.setAttribute("alt", obj.planets[i].alt)
+        $("#image-information article h2").text(obj.planets[i].name);
+        $("#image-information article p").text(obj.planets[i].alt);
+      }
+      function setDwarf(i) { 
+        el.removeAttribute("src");
+        el.setAttribute("src", obj.dwarf[i].image);
+        el.setAttribute("alt", obj.dwarf[i].alt)
+        $("#image-information article h2").text(obj.dwarf[i].name);
+        $("#image-information article p").text(obj.dwarf[i].alt);
+      }
+      function setMoons(i) { 
+        el.removeAttribute("src");
+        el.setAttribute("src", obj.moons[i].image);
+        el.setAttribute("alt", obj.moons[i].alt)
+        $("#image-information article h2").text(obj.moons[i].name);
+        $("#image-information article p").text(obj.moons[i].alt);
+      }
+      function setOther(i) { 
+        el.removeAttribute("src");
+        el.setAttribute("src", obj.other[i].image);
+        el.setAttribute("alt", obj.other[i].alt)
+        $("#image-information article h2").text(obj.other[i].name);
+        $("#image-information article p").text(obj.other[i].alt);
+      }
+      
+    
     }
   };
-}
-
-function createList(i) {
-  document.createElement("LI").setAttribute("id", i);
 }
 
 function onCategoryClick(categoryId) {
@@ -93,6 +152,7 @@ function onCategoryClick(categoryId) {
   $("#object-list ul").empty();
   getData(categoryId);
   $("#object-list ul").show();
-}
+  $("#category-list ul").hide();
+} 
 
-//console.log(document.getElementById("object-list").childNodes[3]);
+// Organise this code
