@@ -4,31 +4,36 @@
       "name": "67P",
       "67P": "../objects/other/67P.json",
       "image": "assets/images/space-images/other/67p.jpg",
-      "alt": "Mosaic of four images taken by Rosetta's navigation camera (NAVCAM) on 19 September 2014."
+      "alt": "Mosaic of four images taken by Rosetta's navigation camera (NAVCAM) on 19 September 2014.",
+      "about": "67P/Churyumov–Gerasimenko (abbreviated as 67P or 67P/C-G) is a comet originally from the Kuiper belt. It was first observed on photographic plates in 1969 by Soviet astronomers Klim Ivanovych Churyumov and Svetlana Ivanovna Gerasimenko, after whom it is named. The European Space Agency's lander, Philae, landed on the comet's surface on 12 November 2014, becoming the first spacecraft to land on a comet."
     },
     {
       "name": "tesla roadster",
       "teslaRoadster": "../objects/other/teslaRoadster.json",
       "image": "assets/images/space-images/other/tesla-roadster.jpg",
-      "alt": "Elon Musk's Tesla Roadster, with Earth in background. 'Starman' mannequin wearing SpaceX Spacesuit in driving seat. Camera mounted on external boom."
+      "alt": "Elon Musk's Tesla Roadster, with Earth in background. 'Starman' mannequin wearing SpaceX Spacesuit in driving seat. Camera mounted on external boom.",
+      "about": "Elon Musk's Tesla Roadster is an electric sports car that served as the dummy payload for the February 2018 Falcon Heavy test flight and became an artificial satellite of the Sun. 'Starman', a mannequin dressed in a spacesuit, occupies the driver's seat. The car and rocket are products of Tesla and SpaceX, respectively, both companies founded by Elon Musk."
     },
     {
       "name": "vesta",
       "vesta": "../objects/other/vesta.json",
       "image": "assets/images/space-images/other/vesta.jpg",
-      "alt": "This photo was processed from data acquired on July 24, 2011, from a distance of about 5200 kilometers, during the third 'rotation characterization' observation by Dawn."
+      "alt": "This photo was processed from data acquired on July 24, 2011, from a distance of about 5200 kilometers, during the third 'rotation characterization' observation by Dawn.",
+      "about": "Vesta is an asteroid and is one of the largest objects in the asteroid belt. It was discovered by the German astronomer Heinrich Wilhelm Matthias Olbers on 29 March 1807."
     },
     {
       "name": "sedna",
       "sedna": "../objects/other/sedna.json",
       "image": "assets/images/space-images/other/sedna.jpg",
-      "alt": "Image of Sedna, taken by Hubble Space Telescope."
+      "alt": "Image of Sedna, taken by Hubble Space Telescope.",
+      "about": "90377 Sedna, or simply Sedna, is a large planetoid in the outer reaches of the Solar System. Sedna was discovered by Michael Brown (Caltech), Chad Trujillo (Gemini Observatory), and David Rabinowitz (Yale University) on 14 November 2003. It is a possible dwarf planet."
     },
     {
       "name": "quaoar",
       "quaoar": "../objects/other/quaoar.json",
       "image": "assets/images/space-images/other/quaoar.jpg",
-      "alt": "Image of 50000 Quaoar, taken by Hubble Space Telescope."
+      "alt": "Image of 50000 Quaoar, taken by Hubble Space Telescope.",
+      "about": "50000 Quaoar is a possible dwarf planet in the Kuiper belt. The object was discovered by American astronomers Chad Trujillo and Michael Brown at the Palomar Observatory on 4 June 2002."
     }
   ]
 }
