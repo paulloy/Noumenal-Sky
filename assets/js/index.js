@@ -61,7 +61,7 @@ function getData(categoryId) {
 
           $("#" + i).click(function () {   //when list item is selected the following click function will get id attribute and call function
             var getId = $(this).attr("id");
-            setPlanet(getId);
+            setObjectInfo(getId, "planets");
             });
         }
       } else if (categoryId === "#dwarf") {
@@ -74,7 +74,7 @@ function getData(categoryId) {
           
           $("#" + i).click(function () {   
             var getId = $(this).attr("id");
-            setDwarf(getId);
+            setObjectInfo(getId, "dwarf");
             });
         }
       } else if (categoryId === "#moons") {
@@ -87,7 +87,7 @@ function getData(categoryId) {
 
           $("#" + i).click(function () {   
             var getId = $(this).attr("id");
-            setMoons(getId);
+            setObjectInfo(getId, "moons");
             });
         }
         
@@ -101,7 +101,7 @@ function getData(categoryId) {
 
           $("#" + i).click(function () {   
             var getId = $(this).attr("id");
-            setOther(getId);
+            setObjectInfo(getId, "other");
             });
         }
       }
@@ -113,75 +113,18 @@ function getData(categoryId) {
       var list = document.getElementById("object-list").childNodes[3].childNodes;    
         var el = document.getElementById("image");
 
-      function setPlanet(i) {  //use constructor functions?
+      function setObjectInfo(i, cat) {  //i = array index; cat = category, e.g. planets, moons, etc.
         el.removeAttribute("src");
-        el.setAttribute("src", obj.planets[i].image);
-        el.setAttribute("alt", obj.planets[i].alt)
-        $("#image-information article h2").text(obj.planets[i].name);
-        $("#image-information article p").text(obj.planets[i].alt);
+        el.setAttribute("src", obj[cat][i].image);
+        el.setAttribute("alt", obj[cat][i].alt)
+        $("#image-information article h2").text(obj[cat][i].name);
+        $("#image-information article p").text(obj[cat][i].alt);
         $("#property-values").empty();
         var createArticle = document.createElement("ARTICLE");
         var createH2 = document.createElement("H2");
         var createParagraph = document.createElement("P");
-        var h2TextNode = document.createTextNode(obj.planets[i].name);
-        var paragraphTextNode = document.createTextNode(obj.planets[i].about);
-        createH2.appendChild(h2TextNode);
-        createParagraph.appendChild(paragraphTextNode);
-        createArticle.appendChild(createH2);
-        createArticle.appendChild(createParagraph);
-        document.getElementById("property-values").appendChild(createArticle);      
-        $("#object-list ul").hide();
-      }
-      function setDwarf(i) { 
-        el.removeAttribute("src");
-        el.setAttribute("src", obj.dwarf[i].image);
-        el.setAttribute("alt", obj.dwarf[i].alt)
-        $("#image-information article h2").text(obj.dwarf[i].name);
-        $("#image-information article p").text(obj.dwarf[i].alt);
-        $("#property-values").empty();
-        var createArticle = document.createElement("ARTICLE");
-        var createH2 = document.createElement("H2");
-        var createParagraph = document.createElement("P");
-        var h2TextNode = document.createTextNode(obj.dwarf[i].name);
-        var paragraphTextNode = document.createTextNode(obj.dwarf[i].about);
-        createH2.appendChild(h2TextNode);
-        createParagraph.appendChild(paragraphTextNode);
-        createArticle.appendChild(createH2);
-        createArticle.appendChild(createParagraph);
-        document.getElementById("property-values").appendChild(createArticle);      
-        $("#object-list ul").hide();
-      }
-      function setMoons(i) { 
-        el.removeAttribute("src");
-        el.setAttribute("src", obj.moons[i].image);
-        el.setAttribute("alt", obj.moons[i].alt)
-        $("#image-information article h2").text(obj.moons[i].name);
-        $("#image-information article p").text(obj.moons[i].alt);
-        $("#property-values").empty();
-        var createArticle = document.createElement("ARTICLE");
-        var createH2 = document.createElement("H2");
-        var createParagraph = document.createElement("P");
-        var h2TextNode = document.createTextNode(obj.moons[i].name);
-        var paragraphTextNode = document.createTextNode(obj.moons[i].about);
-        createH2.appendChild(h2TextNode);
-        createParagraph.appendChild(paragraphTextNode);
-        createArticle.appendChild(createH2);
-        createArticle.appendChild(createParagraph);
-        document.getElementById("property-values").appendChild(createArticle);      
-        $("#object-list ul").hide();
-      }
-      function setOther(i) { 
-        el.removeAttribute("src");
-        el.setAttribute("src", obj.other[i].image);
-        el.setAttribute("alt", obj.other[i].alt)
-        $("#image-information article h2").text(obj.other[i].name);
-        $("#image-information article p").text(obj.other[i].alt);
-        $("#property-values").empty();
-        var createArticle = document.createElement("ARTICLE");
-        var createH2 = document.createElement("H2");
-        var createParagraph = document.createElement("P");
-        var h2TextNode = document.createTextNode(obj.other[i].name);
-        var paragraphTextNode = document.createTextNode(obj.other[i].about);
+        var h2TextNode = document.createTextNode(obj[cat][i].name);
+        var paragraphTextNode = document.createTextNode(obj[cat][i].about);
         createH2.appendChild(h2TextNode);
         createParagraph.appendChild(paragraphTextNode);
         createArticle.appendChild(createH2);
