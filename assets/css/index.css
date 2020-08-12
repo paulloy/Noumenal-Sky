@@ -114,6 +114,7 @@ section:first-of-type {
   padding: 0;
   z-index: 0;
   display: none;
+  text-transform: capitalize;
 }
 #information-container div ul li {
   list-style-type: none;
@@ -121,6 +122,19 @@ section:first-of-type {
 #property-values {
   background-color: #2f3f5c9a;
   border-radius: 10px;
+  overflow-y: scroll;
+  max-height: 30vh;
+  padding: 1rem;
+  font-family: "Mulish", sans-serif;;
+}
+#property-values h2 {
+    text-align: center;
+    margin: 0;
+    text-transform: capitalize;
+}
+#property-values p {
+    text-align: justify;
+    font-size: 1rem;
 }
 #property-values table {
   width: 100%;
