@@ -119,6 +119,18 @@ function getData(categoryId) {
         el.setAttribute("alt", obj.planets[i].alt)
         $("#image-information article h2").text(obj.planets[i].name);
         $("#image-information article p").text(obj.planets[i].alt);
+        $("#property-values").empty();
+        var createArticle = document.createElement("ARTICLE");
+        var createH2 = document.createElement("H2");
+        var createParagraph = document.createElement("P");
+        var h2TextNode = document.createTextNode(obj.planets[i].name);
+        var paragraphTextNode = document.createTextNode(obj.planets[i].about);
+        createH2.appendChild(h2TextNode);
+        createParagraph.appendChild(paragraphTextNode);
+        createArticle.appendChild(createH2);
+        createArticle.appendChild(createParagraph);
+        document.getElementById("property-values").appendChild(createArticle);      
+        $("#object-list ul").hide();
       }
       function setDwarf(i) { 
         el.removeAttribute("src");
@@ -126,6 +138,18 @@ function getData(categoryId) {
         el.setAttribute("alt", obj.dwarf[i].alt)
         $("#image-information article h2").text(obj.dwarf[i].name);
         $("#image-information article p").text(obj.dwarf[i].alt);
+        $("#property-values").empty();
+        var createArticle = document.createElement("ARTICLE");
+        var createH2 = document.createElement("H2");
+        var createParagraph = document.createElement("P");
+        var h2TextNode = document.createTextNode(obj.dwarf[i].name);
+        var paragraphTextNode = document.createTextNode(obj.dwarf[i].about);
+        createH2.appendChild(h2TextNode);
+        createParagraph.appendChild(paragraphTextNode);
+        createArticle.appendChild(createH2);
+        createArticle.appendChild(createParagraph);
+        document.getElementById("property-values").appendChild(createArticle);      
+        $("#object-list ul").hide();
       }
       function setMoons(i) { 
         el.removeAttribute("src");
@@ -133,6 +157,18 @@ function getData(categoryId) {
         el.setAttribute("alt", obj.moons[i].alt)
         $("#image-information article h2").text(obj.moons[i].name);
         $("#image-information article p").text(obj.moons[i].alt);
+        $("#property-values").empty();
+        var createArticle = document.createElement("ARTICLE");
+        var createH2 = document.createElement("H2");
+        var createParagraph = document.createElement("P");
+        var h2TextNode = document.createTextNode(obj.moons[i].name);
+        var paragraphTextNode = document.createTextNode(obj.moons[i].about);
+        createH2.appendChild(h2TextNode);
+        createParagraph.appendChild(paragraphTextNode);
+        createArticle.appendChild(createH2);
+        createArticle.appendChild(createParagraph);
+        document.getElementById("property-values").appendChild(createArticle);      
+        $("#object-list ul").hide();
       }
       function setOther(i) { 
         el.removeAttribute("src");
@@ -140,6 +176,18 @@ function getData(categoryId) {
         el.setAttribute("alt", obj.other[i].alt)
         $("#image-information article h2").text(obj.other[i].name);
         $("#image-information article p").text(obj.other[i].alt);
+        $("#property-values").empty();
+        var createArticle = document.createElement("ARTICLE");
+        var createH2 = document.createElement("H2");
+        var createParagraph = document.createElement("P");
+        var h2TextNode = document.createTextNode(obj.other[i].name);
+        var paragraphTextNode = document.createTextNode(obj.other[i].about);
+        createH2.appendChild(h2TextNode);
+        createParagraph.appendChild(paragraphTextNode);
+        createArticle.appendChild(createH2);
+        createArticle.appendChild(createParagraph);
+        document.getElementById("property-values").appendChild(createArticle);      
+        $("#object-list ul").hide();
       }
       
     
