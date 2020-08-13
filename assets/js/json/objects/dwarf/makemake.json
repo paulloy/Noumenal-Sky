@@ -1,0 +1,48 @@
+{
+  "Makemake": [
+    {
+      "size": [
+        {
+          "mass": ["3.1", "10$e$24$kg", "[6]"],
+          "diameter": ["1,420", "km", "[7]"],
+          "density": ["2.1", "g/m^3", "[6]"],
+          "gravity": ["0.57", "m/s^2", "[a]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod": ["22.5", "hours", "[9]"],
+          "orbitalPeriod ": ["305", "year", "[9]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "distanceFromSun": ["6783", "10$e$6$km", "[8]"],
+          "perihelion": ["38.1043", "AU", "[10]"],
+          "aphelion": ["52.7563", "AU", "[10]"],
+          "orbitalVelocity": ["15,816", "km/h", "[8]"],
+          "orbitalEccentricity": ["0.163844964", "[8]"]
+        }
+      ]
+    },
+    {
+      "moons": [
+        {
+          "numberOfMoons": ["1", "[9]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "meanTemperature": ["40", "K", "[7]"],
+          "bondAlbedo": ["0.62", "[50]"]
+        }
+      ]
+    }
+  ]
+}

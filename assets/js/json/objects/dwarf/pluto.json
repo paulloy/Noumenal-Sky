@@ -1,0 +1,39 @@
+{
+  "Pluto": [
+    {
+      "size": [{
+          "mass": ["0.0146", "10$e$24$kg", "[1]"],
+          "diameter": ["2370", "km", "[1]"],
+          "density": ["2095", "kg/m^3", "[1]"],
+          "gravity": ["0.7", "m/s^2", "[1]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["-153.3", "hours", "[1]"],
+          "orbitalPeriod ": ["90,560", "days", "[1]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["5906.4", "10$e$6$km", "[1]"],
+          "perihelion": ["4436.8", "10$e$6$km", "[1]"],
+          "aphelion": ["7375.9", "10$e$6$km", "[1]"],
+          "orbitalVelocity": ["4.7", "km/s", "[1]"],
+          "orbitalEccentricity": ["0.244", "[1]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["5", "[1]"],
+          "ringSystem": ["false", "[1]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["-225", "C", "[1]"],
+          "bondAlbedo": ["0.72", "[49]"]
+        }]
+    }
+  ]
+}

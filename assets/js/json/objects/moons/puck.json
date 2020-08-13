@@ -1,0 +1,32 @@
+{
+  "puck": [
+    {
+      "size": [
+        {
+          "mass": ["2.8939", "10$e$18$kg", "[26]"],
+          "radius": ["81.0", "km", "[26]"],
+          "density ": ["1.3", "g/m^3", "[26]"],
+          "gravity ": ["0.029", "m/s^2", "[26]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "orbitalPeriod ": ["0.762", "days", "[26]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["86000", "km", "[a]"],
+          "periapsis": ["85,991", "km", "[26]"],
+          "apoapsis": ["86,009", "km", "[26]"],
+          "orbitalVelocity ": ["29,546.9", "km/h", "[26]"],
+          "orbitalEccentricity": ["0.0001", "[26]"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Jupiter": [
+    {
+      "size": [{
+          "mass": ["1898", "10$e$24$kg", "[1]"],
+          "diameter": ["142,984", "km", "[1]"],
+          "density": ["1326", "kg/m^3", "[1]"],
+          "gravity": ["23.1", "m/s^2", "[1]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["9.9", "hours", "[1]"],
+          "lengthOfDay": ["9.9", "hours", "[1]"],
+          "orbitalPeriod ": ["4331", "days", "[1]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["778.6", "10$e$6$km", "[1]"],
+          "perihelion": ["740.5", "10$e$6$km", "[1]"],
+          "aphelion": ["816.6", "10$e$6$km", "[1]"],
+          "orbitalVelocity": ["13.1", "km/s", "[1]"],
+          "orbitalEccentricity": ["0.049", "[1]"],
+          "axialTilt": ["3.1", "deg", "[1]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["79", "[1]"],
+          "ringSystem": ["True", "[1]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["-110", "C", "[1]"],
+          "bondAlbedo": ["0.503", "[44]"]
+        }]
+    }
+  ]
+}

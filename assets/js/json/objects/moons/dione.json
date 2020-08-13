@@ -1,0 +1,40 @@
+{
+  "dione": [
+    {
+      "size": [
+        {
+          "mass": ["1.095", "10$e$21$kg", "[21]"],
+          "radius": ["561.7", "km", "[21]"],
+          "density ": ["1.476", "g/m^3", "[21]"],
+          "gravity ": ["0.232", "m/s^2", "[21]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["2.737", "days", "[21]"],
+          "orbitalPeriod ": ["2.737", "days", "[21]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["377415", "km", "[a]"],
+          "periapsis": ["376,585", "km", "[21]"],
+          "apoapsis": ["378,245", "km", "[21]"],
+          "orbitalVelocity ": ["36,100.4", "km/h", "[21]"],
+          "orbitalEccentricity": ["0.0022", "[21]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "bondAlbedo": ["0.52", "[53]"]
+        }
+      ]
+    }
+  ]
+}

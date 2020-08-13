@@ -1,0 +1,33 @@
+{
+  "oberon": [
+    {
+      "size": [
+        {
+          "mass": ["2.8834", "10$e$21$kg", "[30]"],
+          "radius": ["761.4", "km", "[30]"],
+          "density ": ["1.559", "g/m^3", "[30]"],
+          "gravity ": ["0.332", "m/s^2", "[30]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["13.46", "days", "[30]"],
+          "orbitalPeriod ": ["13.46", "days", "[30]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["583500", "km", "[a]"],
+          "periapsis": ["582,683", "km", "[30]"],
+          "apoapsis": ["584,317", "km", "[30]"],
+          "orbitalVelocity ": ["11,349.2", "km/h", "[30]"],
+          "orbitalEccentricity": ["0.0014", "[30]"]
+        }
+      ]
+    }
+  ]
+}

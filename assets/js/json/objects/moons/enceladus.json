@@ -1,0 +1,40 @@
+{
+  "enceladus": [
+    {
+      "size": [
+        {
+          "mass": ["1.079", "10$e$20$kg", "[19]"],
+          "radius": ["252.1", "km", "[19]"],
+          "density ": ["1.608", "g/m^3", "[19]"],
+          "gravity ": ["0.113", "m/s^2", "[19]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["1.370218", "days", "[a]"],
+          "orbitalPeriod ": ["1.370218", "days", "[19]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["238037", "km", "[a]"],
+          "periapsis": ["236,918", "km", "[19]"],
+          "apoapsis": ["239,156", "km", "[19]"],
+          "orbitalVelocity ": ["45,487.3", "km/h", "[19]"],
+          "orbitalEccentricity": ["0.0047", "[19]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "bondAlbedo": ["0.85", "[53]"]
+        }
+      ]
+    }
+  ]
+}

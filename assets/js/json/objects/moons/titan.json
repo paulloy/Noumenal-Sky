@@ -1,0 +1,42 @@
+{
+  "titan": [
+    {
+      "size": [
+        {
+          "mass": ["134.6", "10$e$21$kg", "[2]"],
+          "diameter": ["0.404", "Earth=1", "[2]"],
+          "density ": ["1881", "kg/m^3", "[2]"],
+          "gravity ": ["1.35", "m/s^2", "[2]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["382.7", "hours", "[2]"],
+          "orbitalPeriod ": ["15.9", "days", "[2]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["1222", "10$e$3$km", "[2]"],
+          "periapse": ["1186", "10$e$3$km", "[2]"],
+          "apoapse": ["1258", "10$e$3$km", "[2]"],
+          "orbitalVelocity ": ["5.6", "km/s", "[2]"],
+          "orbitalEccentricity": ["0.029", "[2]"],
+          "orbitalInclination": ["0.33", "deg", "[2]"]
+        }
+      ]
+    },
+    {
+      "Temperature": [
+        {
+          "meanTemperature": ["-180", "C", "[2]"],
+          "bondAlbedo": ["0.27", "[57]"]
+        }
+      ]
+    }
+  ]
+}

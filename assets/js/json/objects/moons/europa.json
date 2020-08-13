@@ -1,0 +1,42 @@
+{
+  "europa": [
+    {
+      "size": [
+        {
+          "mass": ["48.0", "10$e$21$kg", "[2]"],
+          "diameter": ["0.245", "Earth=1", "[2]"],
+          "density ": ["3010", "kg/m^3", "[2]"],
+          "gravity ": ["1.31", "m/s^2", "[2]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["85.2", "hours", "[2]"],
+          "orbitalPeriod ": ["3.6", "days", "[2]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["671", "10$e$3$km", "[2]"],
+          "periapse": ["664", "10$e$3$km", "[2]"],
+          "apoapse": ["678", "10$e$3$km", "[2]"],
+          "orbitalVelocity ": ["13.7", "km/s", "[2]"],
+          "orbitalEccentricity": ["0.009", "[2]"],
+          "orbitalInclination": ["0.47", "deg", "[2]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "meanTemperature": ["-170", "C", "[2]"],
+          "bondAlbedo": ["0.68", "[55]"]
+        }
+      ]
+    }
+  ]
+}

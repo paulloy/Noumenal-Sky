@@ -1,0 +1,33 @@
+{
+  "ariel": [
+    {
+      "size": [
+        {
+          "mass": ["1.2948", "10$e$21$kg", "[28]"],
+          "radius": ["578.9", "km", "[28]"],
+          "density ": ["1.592", "g/m^3", "[28]"],
+          "gravity ": ["0.258", "m/s^2", "[28]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["2.52", "days", "[28]"],
+          "orbitalPeriod ": ["2.52", "days", "[28]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["190900", "km", "[a]"],
+          "periapsis": ["190,671", "km", "[28]"],
+          "apoapsis": ["191,129", "km", "[28]"],
+          "orbitalVelocity ": ["19,832.3", "km/h", "[28]"],
+          "orbitalEccentricity": ["0.0012", "[28]"]
+        }
+      ]
+    }
+  ]
+}

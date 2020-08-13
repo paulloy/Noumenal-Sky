@@ -1,0 +1,41 @@
+{
+  "Mars": [
+    {
+      "size": [{
+          "mass": ["0.642", "10$e$24$kg", "[1]"],
+          "diameter": ["6792", "km", "[1]"],
+          "density": ["3933", "kg/m^3", "[1]"],
+          "gravity": ["3.7", "m/s^2", "[1]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["24.6", "hours", "[1]"],
+          "lengthOfDay": ["24.7", "hours", "[1]"],
+          "orbitalPeriod ": ["687.0", "days", "[1]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["227.9", "10$e$6$km", "[1]"],
+          "perihelion": ["206.6", "10$e$6$km", "[1]"],
+          "aphelion": ["249.2", "10$e$6$km", "[1]"],
+          "orbitalVelocity": ["24.1", "km/s", "[1]"],
+          "orbitalEccentricity": ["0.094", "[1]"],
+          "axialTilt": ["25.2", "deg", "[1]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["2", "[1]"],
+          "ringSystem": ["false", "[1]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["-65", "C", "[1]"],
+          "bondAlbedo": ["0.250", "[43]"]
+        }]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "Neptune": [
+    {
+      "size": [{
+          "mass": ["102", "10$e$24$kg", "[1]"],
+          "diameter": ["49,528", "km", "[1]"],
+          "density": ["1638", "kg/m^3", "[1]"],
+          "gravity": ["11.0", "m/s^2", "[1]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["16.1", "hours", "[1]"],
+          "lengthOfDay": ["16.1", "hours", "[1]"],
+          "orbitalPeriod ": ["59,800", "days", "[1]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["4495.1", "10$e$6$km", "[1]"],
+          "perihelion": ["4444.5", "10$e$6$km", "[1]"],
+          "aphelion": ["4545.7", "10$e$6$km", "[1]"],
+          "orbitalVelocity": ["5.4", "km/s", "[1]"],
+          "orbitalEccentricity": ["0.011", "[1]"],
+          "axialTilt": ["28.3", "deg", "[1]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["14", "[1]"],
+          "ringSystem": ["True", "[1]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["-200", "C", "[1]"],
+          "bondAlbedo": ["0.290", "[47]"]
+        }]
+    }
+  ]
+}

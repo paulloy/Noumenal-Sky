@@ -1,0 +1,27 @@
+{
+  "phobos": [
+    {
+      "size": [{
+          "mass": ["1.0659", "10$e$16$kg", "[15]"],
+          "radius": ["11.1", "km", "[15]"],
+          "density": ["1.872", "g/m^3", "[15]"],
+          "gravity": ["0.0057", "m/s^2", "[15]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod":  ["7.65", "hours", "[15]", "synchronous"],
+          "orbitalPeriod ": ["7.65", "hours", "[15]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "orbitalDistance": ["9376", "km", "[a]"],
+          "periapsis": [" 9,234", "km", "[15]"],
+          "apoapsis": ["9,518", "km", "[15]"],
+          "orbitalVelocity": ["7696.7", "km/h", "[15]"],
+          "orbitalEccentricity": ["0.0151", "[15]"]
+        }]
+    }
+  ]
+}

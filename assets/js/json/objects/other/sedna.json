@@ -1,0 +1,37 @@
+{
+  "sedna": [
+    {
+      "size": [
+        {
+          "radius": ["498", "km", "[50]"],
+          "density ": ["1.6–2.1", "g/m^3", "[50]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["10.273", "hours", "[51]"],
+          "orbitalPeriod ": ["10662.67", "Year", "[51]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["484.438", "AU", "[51]"],
+          "perihelion": ["76.256", "AU", "[51]"],
+          "aphelion": ["892.62", "AU", "[51]"],
+          "orbitalEccentricity": ["0.842", "[51]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "bondAlbedo": ["0.19", "[50]"]
+        }
+      ]
+    }
+  ]
+}

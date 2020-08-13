@@ -1,0 +1,47 @@
+{
+  "Haumea": [
+    {
+      "size": [
+        {
+          "mass": ["4.006", "10$e$21$kg", "[11]"],
+          "diameter": ["780", "km", "[38]"],
+          "density": ["2.018", "k/m^3", "[12]"],
+          "gravity": ["0.401", "m/s^2", "[a]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod": ["3.9154", "hours", "[13]"],
+          "orbitalPeriod ": ["283.77", "year", "[13]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "distanceFromSun": ["43.181", "AU", "[a]"],
+          "perihelion": ["34.7659", "AU", "[13]"],
+          "aphelion": ["51.5977", "AU", "[13]"],
+          "orbitalVelocity": ["4.531", "km/s", "[13]"],
+          "orbitalEccentricity": ["0.19489", "[13]"]
+        }
+      ]
+    },
+    {
+      "moons": [
+        {
+          "numberOfMoons": ["2", "[13]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "meanTemperature": ["50", "K", "[14]"]
+        }
+      ]
+    }
+  ]
+}

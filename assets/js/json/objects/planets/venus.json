@@ -1,0 +1,41 @@
+{
+  "Venus": [
+    {
+      "size": [{
+          "mass": ["4.87", "10$e$24$kg", "[1]"],
+          "diameter": ["12,104", "km", "[1]"],
+          "density": ["5243", "kg/m^3", "[1]"],
+          "gravity": ["8.9", "m/s^2", "[1]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["-5832.5", "hours", "[1]"],
+          "lengthOfDay": ["2802.0", "hours", "[1]"],
+          "orbitalPeriod ": ["224.7", "days", "[1]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["108.2", "10$e$6$km", "[1]"],
+          "perihelion": ["107.5", "10$e$6$km", "[1]"],
+          "aphelion": ["108.9", "10$e$6$km", "[1]"],
+          "orbitalVelocity": ["35.0", "km/s", "[1]"],
+          "orbitalEccentricity": ["0.007", "[1]"],
+          "axialTilt": ["177.4", "deg", "[1]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["0", "[1]"],
+          "ringSystem": ["false", "[1]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["464", "C", "[1]"],
+          "bondAlbedo": ["0.76", "[40]"]
+        }]
+    }
+  ]
+}

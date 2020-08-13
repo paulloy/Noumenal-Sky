@@ -1,0 +1,39 @@
+{
+  "Ceres": [
+    {
+      "size": [{
+          "mass": ["0.94", "10$e$21$kg", "[2]"],
+          "diameter": ["0.074", "Earth=1", "[2]"],
+          "density": ["2600", "kg/m^3", "[2]"],
+          "gravity": ["0.26", "m/s^2", "[2]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["9.1", "hours", "[2]"],
+          "orbitalPeriod ": ["1680", "days", "[2]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["414,000", "10$e$3$km", "[2]"],
+          "perihelion": ["381,000", "10$e$3$km", "[2]"],
+          "aphelion": ["447,000", "10$e$3$km", "[2]"],
+          "orbitalVelocity": ["17.9", "km/s", "[2]"],
+          "orbitalEccentricity": ["0.079", "[2]"]
+        }]
+    },
+    {
+      "moons": [{
+          "numberOfMoons": ["0", "[]"],
+          "ringSystem": ["false", "[]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "meanTemperature": ["-105", "C", "[2]"],
+          "bondAlbedo": ["0.037", "[48]"]
+        }]
+    }
+  ]
+}

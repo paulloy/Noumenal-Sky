@@ -1,0 +1,42 @@
+{
+  "callisto": [
+    {
+      "size": [
+        {
+          "mass": ["107.6", "10$e$21$kg", "[2]"],
+          "diameter": ["0.378", "Earth=1", "[2]"],
+          "density ": ["1830", "kg/m^3", "[2]"],
+          "gravity ": ["1.24", "m/s^2", "[2]"]
+        }
+      ]
+    },
+    {
+      "time": [
+        {
+          "rotationPeriod ": ["400.5", "hours", "[2]"],
+          "orbitalPeriod ": ["16.7", "days", "[2]"]
+        }
+      ]
+    },
+    {
+      "orbit": [
+        {
+          "orbitalDistance": ["1883", "10$e$3$km", "[2]"],
+          "periapse": ["1870", "10$e$3$km", "[2]"],
+          "apoapse": ["1896", "10$e$3$km", "[2]"],
+          "orbitalVelocity ": ["8.2", "km/s", "[2]"],
+          "orbitalEccentricity": ["0.007", "[2]"],
+          "orbitalInclination": ["0.19", "deg", "[2]"]
+        }
+      ]
+    },
+    {
+      "temperature": [
+        {
+          "meanTemperature": ["-155", "C", "[2]"],
+          "bondAlbedo": ["0.11", "[56]"]
+        }
+      ]
+    }
+  ]
+}

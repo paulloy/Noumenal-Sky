@@ -1,0 +1,29 @@
+{
+  "67P": [
+    {
+      "size": [{
+          "mass": ["9.982", "10$e$12$kg", "[33]"],
+          "density": ["0.533", "g/m^3", "[33]"]
+        }]
+    },
+    {
+      "time": [{
+          "rotationPeriod": ["12.76137", "hours", "[32]"],
+          "orbitalPeriod ": ["6.44", "year", "[32]"]
+        }]
+    },
+    {
+      "orbit": [{
+          "distanceFromSun": ["3.4689", "AU", "[a]"],
+          "perihelion": ["1.245279", "AU", "[32]"],
+          "aphelion": ["5.68419", "AU", "[32]"],
+          "orbitalEccentricity": ["0.64102", "[32]"]
+        }]
+    },
+    {
+      "temperature": [{
+          "minMaxTemperature": ["-93", "-43", "C", "[34]"]
+        }]
+    }
+  ]
+}
