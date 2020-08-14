@@ -213,44 +213,103 @@ h1 {
   margin: 4px;
   border-radius: 10px;
 }
-#navbarToggle .top-bar {
+#navbarToggle .top-bar-open {
   position: relative;
-  animation-name: top-bar-toggle;
-  animation-duration: 0.2s;
+  animation-name: top-bar-open;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
-#navbarToggle .bottom-bar {
+#navbarToggle .top-bar-close {
   position: relative;
-  animation-name: bottom-bar-toggle;
-  animation-duration: 0.2s;
+  animation-name: top-bar-close;
+  animation-duration: 0.4s;
   animation-fill-mode: forwards;
 }
-#navbarToggle .middle-bar {
+#navbarToggle .bottom-bar-open {
+  position: relative;
+  animation-name: bottom-bar-open;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+#navbarToggle .bottom-bar-close {
+  position: relative;
+  animation-name: bottom-bar-close;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+#navbarToggle .middle-bar-open {
   display: none !important;
 }
+#navbarToggle .middle-bar-close {
+  animation-name: middle-bar-close;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
 
-@keyframes top-bar-toggle {
+@keyframes top-bar-open {
   from {
     transform: rotate(0deg);
     top: 0px;
     z-index: 0;
+    opacity: 0;
   }
   to {
     transform: rotate(45deg);
     top: 4px;
     z-index: 2;
+    opacity: 1;
   }
 }
-@keyframes bottom-bar-toggle {
+@keyframes top-bar-close {
+  from {
+    transform: rotate(45deg);
+    top: 4px;
+    z-index: 2;
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    top: 0px;
+    z-index: 0;
+    opacity: 1;
+  }
+}
+@keyframes bottom-bar-open {
   from {
     transform: rotate(0deg);
     top: 0px;
     z-index: 0;
+    opacity: 0;
   }
   to {
     transform: rotate(-45deg);
     bottom: 4px;
     z-index: 2;
+    opacity: 1;
+  }
+}
+@keyframes bottom-bar-close {
+  from {
+    transform: rotate(-45deg);
+    top: 4px;
+    z-index: 2;
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg);
+    top: 0px;
+    z-index: 0;
+    opacity: 1;
+  }
+}
+@keyframes middle-bar-close {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
   }
 }
 
