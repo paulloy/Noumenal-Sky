@@ -16,46 +16,46 @@
 </head>
 
 <body>
-<noscript>You need to have Javascript enabled to use this website</noscript>
-	<div id="background">
-		<div id="background-cover">
-			<header class="fade-in">
-                <div id="navbarToggle">
-                    <span id="top-bar"></span>
-                    <span id="middle-bar"></span>
-                    <span id="bottom-bar"></span>
-                </div>
-				<h1><a id="logo" href="index.html">Noumenal Sky</a></h1>
-				<nav>
-					<ul id="navbar" class="navbar-browser">
-                        <li><a href="index.html">HOME</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="#" class="font-awesome-icon"><i class="fab fa-facebook-square"></i></a></li>
-						<li><a href="#" class="font-awesome-icon"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="#" class="font-awesome-icon"><i class="fab fa-twitter-square"></i></a></li>
-					</ul>
-				</nav>
-			</header>
+    <noscript>You need to have Javascript enabled to use this website</noscript>
+
+	<header class="fade-in">
+        <div id="navbarToggle">
+            <span id="top-bar"></span>
+            <span id="middle-bar"></span>
+            <span id="bottom-bar"></span>
+        </div>
+		<h1><a id="logo" href="index.html">Noumenal Sky</a></h1>
+		<nav>
+			<ul id="navbar" class="navbar-browser">
+                <li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="#" class="font-awesome-icon"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="#" class="font-awesome-icon"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#" class="font-awesome-icon"><i class="fab fa-twitter-square"></i></a></li>
+			</ul>
+		</nav>
+	</header>
 
 <div id="app">
-            <section>
-                <div id="object-container">
-                    <div id="image-information">
+    <div id="top-container"> <!--This is the top container when <810px, otherwise it is on the left-->
+        <div>
+            <div id="image-information">
                 <article>
-                <h2></h2>
-                <p></p>
-                
+                    <h2>Welcome to Noumenal Sky</h2>
+                    <p></p>               
                 </article>
-                    </div>
-                    <div id="image-container">
-                    <img id="image" src="#" alt="">
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div id="information-container">
+            </div>
+
+            <div id="image-container">
+                <img id="image" src="#" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom-container"> <!--This is the bottom container when <810px, otherwise it is on the right-->
+        <div id="information-container">
                     <div id="category-list">
-                    <p>CATEGORIES</p>
+                        <p>CATEGORIES</p>
                         <ul>
                             <li id="planets" onclick="onCategoryClick('#planets')">Planets</li>
                             <li id="dwarf" onclick="onCategoryClick('#dwarf')">Dwarf Planets</li>
@@ -63,18 +63,19 @@
                             <li id="other" onclick="onCategoryClick('#other')">Other</li>
                         </ul>
                     </div>
+
                     <div id="object-list">
-                    <p>OBJECTS</p>
+                        <p>OBJECTS</p>
                         <ul></ul>
                     </div>
+
                     <div id="property-list">
-                    <p>PROPERTIES</p>
+                        <p>PROPERTIES</p>
                         <ul></ul>
-                    </div>
-                
-                   
-                </div>
-                 <div id="property-values">
+                    </div>             
+        </div>
+
+        <div id="property-values">
                     <table>
                     <tbody>
                         <tr>
@@ -99,27 +100,26 @@
                         </tr>
                     </tbody>
                     </table>
-                </div>
-                <div id="explanation-container">
-                <article>
-                <h3>Perihelion</h3>
-                <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
-                </article>
-                </div>
-            </section>
+        </div>
+
+        <div id="explanation-container">
+                    <article>
+                        <h3>Perihelion</h3>
+                        <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                    </article>
+        </div>
+    </div>
 </div>
             <footer>
                 <p>Copyright&copy; 2020</p>
                 <a href="references.html">references</a>
             </footer>
 
-		</div>
-	</div>
-<!--JQuery--><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
+<!--JQuery--><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="assets/js/navbarToggle.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
