@@ -29,37 +29,32 @@ $("#top-container").click(function () {
 // ----------------------------------------------------
 
 $("#category-list ul li").click(function () { //run this function when a category list item is clicked
-  var categoryId = "#" + $(this).attr("id"); //get id of current list item and add "#" to start of it
+  var categoryId = $(this).attr("id"); //get id of current list item
   $("#object-list ul").empty(); //empty any values currently displayed in object list
-  getData(categoryId); 
+  getData(categoryId);
   $("#object-list ul").show(); //display object list
   $("#category-list ul").hide(); //hide category list after being clicked
 });
-
-function getListById(id) {
-  var listById = document.getElementById(id).childNodes[3];
-  return listById;
-}
 
 var jsonUrlStart = "assets/js/json/categories/";
 
 function getData(categoryId) {
   var xhr = new XMLHttpRequest(); //Make a new XML Http Request
-  var category = categoryId.substring(1); //remove "#" from string
 
-  xhr.open("GET", jsonUrlStart + category + ".json");
+  xhr.open("GET", jsonUrlStart + categoryId + ".json");
   xhr.send();
 
   xhr.onreadystatechange = function () {
     if (this.readyState === 4 && this.status === 200) {
       var obj = JSON.parse(this.responseText);
 
-      for (var i = 0; i < obj[category].length; i++) {
-        displayCategoryList(category);
+      for (var i = 0; i < obj[categoryId].length; i++) {
+        displayCategoryList(categoryId);
 
-        $("#" + i).click(function () { //when list item is selected the following click function will get id attribute and call function
+        $("#" + i).click(function () {
+          //when list item is selected the following click function will get id attribute and call function
           var getId = $(this).attr("id");
-          setObjectInfo(getId, category);
+          setObjectInfo(getId, categoryId);
         });
       }
     }
@@ -68,14 +63,13 @@ function getData(categoryId) {
       var node = document.createElement("LI"); //create list node
       var textnode = document.createTextNode(obj[cat][i].name); //create text node
       node.appendChild(textnode); //append text node to list
-      node.setAttribute("id", i); //set id
-      getListById("object-list").appendChild(node); //append the list to the listById
+      node.setAttribute("id", i); //set id       
+      $("#object-list ul").append(node); //append the list to the listById
     }
 
     var el = document.getElementById("image"); //sets img element with id of image as a variable
 
-    function setObjectInfo(i, cat) {
-      //i = array index; cat = category key (planets, moons, dwarf, other)
+    function setObjectInfo(i, cat) { //i = array index; cat = category key (planets, moons, dwarf, other)
       el.removeAttribute("src");
       el.removeAttribute("alt");
       el.setAttribute("src", obj[cat][i].image); // set src attribute to contain the image values from json
@@ -98,4 +92,3 @@ function getData(categoryId) {
   };
 }
 
-// Organise this code
