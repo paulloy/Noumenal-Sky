@@ -1,6 +1,7 @@
 // Functional but needs fine tuning so it can be really good
 
 function navbarIsOpen() {
+  $("html, body").css("position", "fixed");
   $("#navbar-cover").fadeIn();
   $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
   $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
@@ -24,7 +25,7 @@ function navbarIsClosed() {
     $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
   }, 510);
 
-  $("html").children().animate({ left: "0" }, 500);
+  $("html, body").children().animate({ left: "0" }, 500);
   $("#navbar").animate({ left: "-250px" }, 500, function () {
     $("header").append($("nav"));
   });
@@ -35,6 +36,9 @@ function navbarIsClosed() {
   $("#top-bar").addClass("top-bar-close"); //This class will rotate the top bar
   $("#middle-bar").addClass("middle-bar-close"); //This class will display the middle bar as none
   $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
+  setTimeout(function () {
+    $("html, body").css("position", "static");
+  }, 510);
 }
 function toggleButtonAnimation(clickCount) {
   oddEven = clickCount % 2;
@@ -53,7 +57,7 @@ function toggleButtonAnimation(clickCount) {
 // Figure out a method better than nested if else statements
 
 document.getElementsByTagName("body")[0].onresize = function () {
-  $("html").children().css("left", "0px");
+  $("html, body").children().css("left", "0px");
   $("header").append($("nav"));
   $("#navbar-cover").fadeOut();
   $("#top-bar").removeClass("top-bar-open");
@@ -66,22 +70,20 @@ document.getElementsByTagName("body")[0].onresize = function () {
   //This event listener will run when the screen size changes. Such as when a user rotates their mobile or tablet
   var windowWidth = window.innerWidth; //Gets value of window width in px
   if (windowWidth > 750) {
-    //If window width is larger than 750px, the nested if statement will run     
-      $("#navbar").attr("class", "navbar-browser");
-      $("#navbar").removeAttr("style"); //stops displaying wrong css
-     //The switch from navbar-mobile to navbar-browser is incase a user switches from a screen larger than 750px to less than.
+    //If window width is larger than 750px, the nested if statement will run
+    $("#navbar").attr("class", "navbar-browser");
+    $("#navbar").removeAttr("style"); //stops displaying wrong css
+    //The switch from navbar-mobile to navbar-browser is incase a user switches from a screen larger than 750px to less than.
 
     //$(".navbar-browser").css("display", "flex"); (probably not needed now)
   } else if (windowWidth <= 750) {
-    
-      $("#navbar").attr("class", "navbar-browser"); //change class
-      $("nav").css("display", "none"); //display nav to none
-      $("#top-bar").removeClass("top-bar");
-      $("#middle-bar").removeClass("middle-bar"); //remove classes so a cross doesn't appear when the navbar is closed.
-      $("#bottom-bar").removeClass("bottom-bar");
-      $("#navbar").removeAttr("style"); //stops displaying wrong css
-    }
-  
+    $("#navbar").attr("class", "navbar-browser"); //change class
+    $("nav").css("display", "none"); //display nav to none
+    $("#top-bar").removeClass("top-bar");
+    $("#middle-bar").removeClass("middle-bar"); //remove classes so a cross doesn't appear when the navbar is closed.
+    $("#bottom-bar").removeClass("bottom-bar");
+    $("#navbar").removeAttr("style"); //stops displaying wrong css
+  }
 };
 
 var clickCount = 0;
