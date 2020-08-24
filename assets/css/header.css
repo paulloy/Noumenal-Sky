@@ -7,10 +7,6 @@ body {
 }
 #background {
   width: 100%;
-  background-image: url("../images/1280px-Pleiades_large.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 #background-cover {
   background-color: #131925bb;
@@ -57,19 +53,30 @@ h1 {
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+#navbar-cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #00000095;
+    z-index: 2;
+}
 .navbar-mobile {
   position: fixed;
-  top: 50px;
-  left: 0;
+  left: -250px;
   height: 100vh;
-  width: auto;
-  background-image: url("../images/eaglenebula.png");
+  width: 250px;
+  box-shadow: inset 0 0 0 50vh #344058bb;
+  border-right: 1px solid rgba(173, 216, 230, 0.377);
+  background-color: #131925;
+  background-image: url("../images/helix-nebula.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: block !important;
   margin: 0;
-  z-index: 1;
+  z-index: 3;
   padding: 0;
   padding-top: 10vh;
 }
@@ -79,7 +86,6 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   height: 50px;
-  width: 100vw;
   justify-content: center;
   margin-bottom: 5vh;
 }
@@ -98,9 +104,9 @@ h1 {
 .navbar-mobile li:nth-child(3),
 .navbar-mobile li:nth-child(4),
 .navbar-mobile li:nth-child(5) {
-  width: 30vw;
+  width: 30%;
   margin: 0;
-  justify-self: flex-start;
+  justify-self: center;
   display: inline-block;
   text-align: center;
   margin-top: 10vh;
