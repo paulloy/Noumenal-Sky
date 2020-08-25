@@ -3,10 +3,6 @@
 body {
   height: 100vh;
 }
-footer {
-  display: flex;
-  flex-direction: row;
-}
 /* footer not for this 
 */
 
@@ -330,9 +326,6 @@ body {
     background-color: #2f3f5cad !important;
     justify-items: center;
     align-items: center;
-  }
-  footer {
-    display: none;
   }
 }
 /*phone in landscape*/ /*

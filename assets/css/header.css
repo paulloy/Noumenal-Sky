@@ -54,14 +54,14 @@ h1 {
   animation-fill-mode: forwards;
 }
 #navbar-cover {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: none;
-    background-color: #00000095;
-    z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #00000095;
+  z-index: 2;
 }
 .navbar-mobile {
   position: fixed;
@@ -100,6 +100,20 @@ h1 {
 }
 .navbar-mobile .font-awesome-icon {
   font-size: 2.4rem;
+}
+.navbar-mobile li:nth-child(1) a,
+.navbar-mobile li:nth-child(2) a {
+  background-color: rgba(108, 172, 255, 0.268);
+  padding: 5px 25px 5px 25px;
+  border-radius: 10px;
+}
+.navbar-mobile li:nth-child(1) a:hover,
+.navbar-mobile li:nth-child(2) a:hover {
+  background-color: rgba(108, 172, 255, 0.151);
+}
+.navbar-mobile li:nth-child(1) a:active,
+.navbar-mobile li:nth-child(2) a:active {
+  background-color: rgba(243, 108, 255, 0.151);
 }
 .navbar-mobile li:nth-child(3),
 .navbar-mobile li:nth-child(4),
@@ -319,6 +333,10 @@ h1 {
   }
 }
 
+footer {
+    display: none;
+}
+
 @media only screen and (max-width: 750px) {
   #navbarToggle {
     display: flex;
@@ -335,6 +353,21 @@ h1 {
   #navbarToggle span {
     width: 20px;
     margin: 3px;
+  }
+  footer {
+      position: absolute;
+      bottom: 10vh;
+      flex-direction: column;
+      width: 100%;
+      padding: 0 20px 0 20px;
+  }
+  footer a {
+      color: lightblue;
+      display: inline-block;
+      margin-bottom: 2.5vh;
+  }
+  footer p {
+      font-size: 0.8rem;
   }
 }
 @media only screen and (min-width: 751px) {
