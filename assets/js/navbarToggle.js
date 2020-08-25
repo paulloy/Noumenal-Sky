@@ -9,6 +9,9 @@ function navbarIsOpen() {
   $("body").prepend($("nav"));
   $("html").children().animate({ left: "250px" }, 500);
 
+  $("#navbar").append($("footer"));
+  $("footer").show();
+
   $("#top-bar").removeClass("top-bar-close");
   $("#middle-bar").removeClass("middle-bar-close");
   $("#bottom-bar").removeClass("bottom-bar-close");
@@ -23,12 +26,17 @@ function navbarIsClosed() {
   setTimeout(function () {
     $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
     $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
-  }, 510);
+  }, 525);
 
   $("html, body").children().animate({ left: "0" }, 500);
   $("#navbar").animate({ left: "-250px" }, 500, function () {
     $("header").append($("nav"));
   });
+
+  setTimeout(function () {
+    $("body").append($("footer"));
+    $("footer").hide();
+  }, 525);
 
   $("#top-bar").removeClass("top-bar-open");
   $("#middle-bar").removeClass("middle-bar-open");
@@ -38,7 +46,7 @@ function navbarIsClosed() {
   $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
   setTimeout(function () {
     $("html, body").css("position", "static");
-  }, 510);
+  }, 525);
 }
 function toggleButtonAnimation(clickCount) {
   oddEven = clickCount % 2;
@@ -49,7 +57,7 @@ function toggleButtonAnimation(clickCount) {
     navbarIsClosed();
     setTimeout(function () {
       $("nav").hide();
-    }, 510);
+    }, 525);
   }
   //When called this function will toggle the classes that animates the navbar toggle icon
 }
