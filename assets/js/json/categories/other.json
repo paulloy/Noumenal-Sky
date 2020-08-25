@@ -34,6 +34,13 @@
       "image": "assets/images/space-images/other/quaoar.jpg",
       "alt": "Image of 50000 Quaoar, taken by Hubble Space Telescope.",
       "about": "50000 Quaoar is a possible dwarf planet in the Kuiper belt. The object was discovered by American astronomers Chad Trujillo and Michael Brown at the Palomar Observatory on 4 June 2002."
+    },
+    {
+      "name": "sun",
+      "quaoar": "../objects/other/sun.json",
+      "image": "assets/images/space-images/other/sun.jpg",
+      "alt": "The Sun photographed at 304 angstroms by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory. This is a false-color image of the Sun observed in the extreme ultraviolet region of the spectrum.",
+      "about": "The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma. It is by far the most important source of energy for life on Earth. It accounts for about 99.86% of the total mass of the Solar System. The Sun is a G-type main-sequence star (G2V) based on its spectral class. As such, it is informally and not completely accurately referred to as a yellow dwarf."
     }
   ]
 }
