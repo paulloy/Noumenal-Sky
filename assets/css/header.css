@@ -60,7 +60,7 @@ h1 {
   top: 0;
   left: 0;
   display: none;
-  background-color: #00000095;
+  background-color: #000000ab;
   z-index: 2;
 }
 .navbar-mobile {
@@ -68,8 +68,7 @@ h1 {
   left: -250px;
   height: 100vh;
   width: 250px;
-  box-shadow: inset 0 0 0 50vh #344058bb;
-  border-right: 1px solid rgba(173, 216, 230, 0.377);
+  box-shadow: inset 0 0 0 50vh #313846cc;
   background-color: #131925;
   background-image: url("../images/helix-nebula.jpg");
   background-size: cover;
@@ -101,26 +100,17 @@ h1 {
 .navbar-mobile .font-awesome-icon {
   font-size: 2.4rem;
 }
-.navbar-mobile li:nth-child(1) a,
-.navbar-mobile li:nth-child(2) a {
-  background-color: rgba(108, 172, 255, 0.268);
-  padding: 5px 25px 5px 25px;
-  border-radius: 10px;
-}
-.navbar-mobile li:nth-child(1) a:hover,
-.navbar-mobile li:nth-child(2) a:hover {
-  background-color: rgba(108, 172, 255, 0.151);
-}
-.navbar-mobile li:nth-child(1) a:active,
-.navbar-mobile li:nth-child(2) a:active {
-  background-color: rgba(243, 108, 255, 0.151);
+.navbar-mobile li:nth-child(3):before {
+    content: "FOLLOW US";
+    text-align: center;
+    width: 250px;
+    display: block;
+    margin-bottom: 15px;
 }
 .navbar-mobile li:nth-child(3),
 .navbar-mobile li:nth-child(4),
 .navbar-mobile li:nth-child(5) {
-  width: 30%;
-  margin: 0;
-  justify-self: center;
+  width: 76px;
   display: inline-block;
   text-align: center;
   margin-top: 10vh;
@@ -355,19 +345,20 @@ footer {
     margin: 3px;
   }
   footer {
-      position: absolute;
-      bottom: 10vh;
-      flex-direction: column;
-      width: 100%;
-      padding: 0 20px 0 20px;
+      width: 250px;
+      margin-top: 15vh;
+      text-align: left;
   }
   footer a {
       color: lightblue;
       display: inline-block;
       margin-bottom: 2.5vh;
+      font-size: 0.8rem;
+      padding-left: 20px;
   }
   footer p {
       font-size: 0.8rem;
+      padding-left: 20px;
   }
 }
 @media only screen and (min-width: 751px) {
