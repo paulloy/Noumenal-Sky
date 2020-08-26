@@ -1,42 +1,44 @@
-// Functional but needs fine tuning so it can be really good
 
-function navbarIsOpen() {
-  $("html, body").css("position", "fixed");
-  $("#navbar-cover").fadeIn();
+
+function navbarIsOpen() { 
+  $("html, body").css("position", "fixed"); //Display the body as fixed.
+  $("#navbar-cover").fadeIn(); // Fade in the navbar-cover
   $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
   $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
+// Toggle between the two navbar css styles.
+  $("body").prepend($("nav")); //prepend the nav to the body when it is being opened.
+  $("html").children().animate({ left: "250px" }, 500); //Animate the body so that it slides to the right of the screen.
 
-  $("body").prepend($("nav"));
-  $("html").children().animate({ left: "250px" }, 500);
+  $("#navbar").append($("footer")); //Append the footer to the navbar
+  $("footer").show(); //Display the hidden footer
 
-  $("#navbar").append($("footer"));
-  $("footer").show();
-
-  $("#top-bar").removeClass("top-bar-close");
+  $("#top-bar").removeClass("top-bar-close"); //The following classes are responsible for the navbar toggle icon animation
   $("#middle-bar").removeClass("middle-bar-close");
   $("#bottom-bar").removeClass("bottom-bar-close");
   $("#top-bar").addClass("top-bar-open"); //This class will rotate the top bar
   $("#middle-bar").addClass("middle-bar-open"); //This class will display the middle bar as none
   $("#bottom-bar").addClass("bottom-bar-open"); //This class will rotate the bottom bar
 
-  $("#navbar").animate({ left: "0px" }, 500);
+  $("#navbar").animate({ left: "0px" }, 500); // animate the navbar so it slides to the right, giving the look of pushing the body off the screen.
 }
 function navbarIsClosed() {
-  $("#navbar-cover").fadeOut();
+  $("#navbar-cover").fadeOut(); //hide the navbar cover when the navbar is being closed.
+
+  $("html, body").children().animate({ left: "0" }, 500); // move the body back to the left.
+  $("#navbar").animate({ left: "-250px" }, 500); // move the navbar to the left.
+  setTimeout(function () {
+    $("header").append($("nav")); //append the nav back to the header.
+  }, 500);
+
   setTimeout(function () {
     $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
     $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
-  }, 525);
-
-  $("html, body").children().animate({ left: "0" }, 500);
-  $("#navbar").animate({ left: "-250px" }, 500, function () {
-    $("header").append($("nav"));
-  });
+  }, 500); // Gives time for the navbar to close before toggling the classes.
 
   setTimeout(function () {
-    $("body").append($("footer"));
+    $("body").append($("footer")); //append the footer to the body and hide it.
     $("footer").hide();
-  }, 525);
+  }, 500);
 
   $("#top-bar").removeClass("top-bar-open");
   $("#middle-bar").removeClass("middle-bar-open");
@@ -46,18 +48,20 @@ function navbarIsClosed() {
   $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
   setTimeout(function () {
     $("html, body").css("position", "static");
-  }, 525);
+  }, 500);
 }
 function toggleButtonAnimation(clickCount) {
-  oddEven = clickCount % 2;
+    /* When the navbar is opened the clickCount will be odd, so oddEven will be 1. When closed, clickCount will be even
+    and so oddEven will be 0. */
+  oddEven = clickCount % 2; 
   if (oddEven === 1) {
-    navbarIsOpen();
+    navbarIsOpen(); // When navbar is being opened, run the navbarIsOpen function on line 3, and show the nav element.
     $("nav").show();
   } else if (oddEven === 0) {
     navbarIsClosed();
-    setTimeout(function () {
-      $("nav").hide();
-    }, 525);
+    setTimeout(function () { // When navbar is being closed, run the navbarIsClosed function on line 24.
+      $("nav").hide(); // After 500ms hide the nav. This gives the nav time to run its closing animation before hiding.
+    }, 500);
   }
   //When called this function will toggle the classes that animates the navbar toggle icon
 }
@@ -74,7 +78,7 @@ document.getElementsByTagName("body")[0].onresize = function () {
   $("#top-bar").addClass("top-bar-close"); //This class will rotate the top bar
   $("#middle-bar").addClass("middle-bar-close"); //This class will display the middle bar as none
   $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
-  clickCount = 0;
+  clickCount = 0; // on resize set clickCount to 0;
   //This event listener will run when the screen size changes. Such as when a user rotates their mobile or tablet
   var windowWidth = window.innerWidth; //Gets value of window width in px
   if (windowWidth > 750) {
@@ -94,8 +98,8 @@ document.getElementsByTagName("body")[0].onresize = function () {
   }
 };
 
-var clickCount = 0;
-$("#navbarToggle, #navbar-cover").click(function () {
-  clickCount++;
-  toggleButtonAnimation(clickCount);
+var clickCount = 0; // This counter will count how many times the user has clicked #navbarToggle or #navbar-cover
+$("#navbarToggle, #navbar-cover").click(function () { // Run this function when #navbarToggle or #navbar-cover are clicked
+  clickCount++; // On each click add 1 to clickCount
+  toggleButtonAnimation(clickCount); // Run function on line 52
 });
