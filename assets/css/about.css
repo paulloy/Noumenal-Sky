@@ -4,7 +4,7 @@
 /* not for about.css */
 body {
     width: 100%;
-  background-image: url("../images/heic1307a.jpg");
+  background-image: url("../images/about-background-image.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -109,7 +109,11 @@ h2 {
 label {
   text-align: left;
   justify-self: center;
-  font-size: 18px;
+  font-size: 1rem;
+  font-family: 'Mulish', sans-serif;
+  margin-bottom: 5px;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 input {
   border-radius: 10px;
@@ -171,8 +175,8 @@ button {
       flex-direction: column;
       padding-left: 10vw;
       padding-right: 10vw;
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+      padding-top: 8vh;
+      padding-bottom: 8vh;
       height: 70%;
   }
   #form {
@@ -214,4 +218,5 @@ button {
     .paragraph {
     padding-left: 10vw;
     padding-right: 10vw;
+}
 }
