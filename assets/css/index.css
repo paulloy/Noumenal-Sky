@@ -125,6 +125,11 @@ body {
 }
 #information-container div ul li {
   list-style-type: none;
+  background-color: #9bcfff41;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }
 #property-values {
   background-color: #2f3f5c9a;
@@ -154,7 +159,6 @@ body {
   width: 100%;
 }
 #property-values table tbody tr td {
-  width: 25%;
   text-align: center;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -192,22 +196,18 @@ body {
 #category-list p:hover,
 #object-list p:hover,
 #property-list p:hover {
-  color: #9bcfff;
   cursor: pointer;
-  border: 1px solid #9bcfff;
 }
 #category-list ul,
 #object-list ul,
 #property-list ul {
   padding: 0.5rem;
-  width: 14vw;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  width: 170px;
   background-color: #406384;
   box-shadow: 3px 3px 3px #00345f2c;
   position: absolute;
   left: 50%;
-  margin-left: -7vw;
+  margin-left: -85px;
   top: 3rem;
   max-height: 12rem;
   overflow-y: scroll;
@@ -227,16 +227,18 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding-bottom: 0.2rem;
+  position: relative;
 }
 #category-list ul li:hover,
 #object-list ul li:hover,
 #property-list ul li:hover {
-  color: #9bcfff;
   cursor: pointer;
-  border-bottom: 1px solid #9bcfff;
-  width: 76%;
-  margin-left: 6%;
-  margin-bottom: -1px;
+  background-color: rgba(255, 166, 0, 0.322);
+}
+#category-list ul li:active,
+#object-list ul li:active,
+#property-list ul li:active {
+  background-color: rgba(170, 111, 0, 0.322);
 }
 #category-list ul li:last-of-type:hover,
 #object-list ul li:last-of-type:hover,
@@ -367,3 +369,23 @@ body {
       max-height: 23vw;
   }
 }*/
+
+tr {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5f799269;
+  padding: 5px;
+  border: 1px solid rgba(233, 247, 255, 0.391);
+}
+tr:first-of-type {
+  background-color: #40638469;
+}
+td {
+  width: 100px;
+  text-align: left !important;
+}
+td a {
+  color: rgba(179, 227, 255, 0.829);
+}
