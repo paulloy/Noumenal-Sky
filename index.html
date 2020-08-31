@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
-    <!--Font Awesome--><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
-    <!--Angular--><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!--Angular-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
 
   <body>
-    <noscript>Javascript must be enabled for this website to function</noscript>
-<div id= "navbar-cover"></div>
+    <noscript
+      ><p>JavaScript must be enabled for this website to function</p></noscript
+    >
+    <div id="navbar-cover"></div>
     <header class="fade-in">
       <div id="navbarToggle">
         <span id="top-bar"></span>
@@ -67,6 +76,7 @@
           <div id="category-list">
             <p>CATEGORIES</p>
             <ul>
+              <!--change to category list later and add style-->
               <li id="planets">
                 Planets
               </li>
@@ -77,7 +87,6 @@
               <li id="other">Other</li>
             </ul>
           </div>
-
           <div id="object-list">
             <p>OBJECTS</p>
             <ul></ul>
@@ -90,30 +99,7 @@
         </div>
 
         <div id="property-values">
-          <table>
-            <tbody>
-              <tr>
-                <td>perihelion</td>
-                <td>5 AU</td>
-                <td>[1]</td>
-              </tr>
-              <tr>
-                <td>aphelion</td>
-                <td>5 AU</td>
-                <td>[2]</td>
-              </tr>
-              <tr>
-                <td>eccentricity</td>
-                <td>0</td>
-                <td>[1]</td>
-              </tr>
-              <tr>
-                <td>Mean Distance</td>
-                <td>5 AU</td>
-                <td>[1]</td>
-              </tr>
-            </tbody>
-          </table>
+         
         </div>
 
         <div id="explanation-container">
@@ -130,8 +116,8 @@
       </div>
     </div>
     <footer>
+      <a href="references.html">References</a>
       <p>Copyright&copy; 2020</p>
-      <a href="references.html">references</a>
     </footer>
 
     <!--JQuery-->
@@ -141,7 +127,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/navbarToggle.js"></script>
-    <script src="assets/js/index.js"></script>
-   <!-- <script src="assets/js/propertyList.js"></script>-->
+    <script src="assets/js/indexApp.js"></script>
+    <!-- <script src="assets/js/propertyList.js"></script>-->
   </body>
 </html>
