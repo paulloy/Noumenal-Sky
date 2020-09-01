@@ -54,53 +54,44 @@
     </header>
 
     <div id="app">
+      <div id="image-information">
+        <article>
+          <h2>Welcome to Noumenal Sky</h2>
+          <p></p>
+        </article>
+      </div>
       <div id="top-container">
         <!--This is the top container when <810px, otherwise it is on the left-->
-        <div>
-          <div id="image-information">
-            <article>
-              <h2>Welcome to Noumenal Sky</h2>
-              <p></p>
-            </article>
-          </div>
 
-          <div id="image-container">
-            <img id="image" src="#" alt="" />
+        <div id="image-container">
+          <img id="image" src="assets/images/helix-nebula.jpg" alt="" />
+        </div>
+        <div id="category-list">
+          <div id="menu-title">
+            <span><i class="fas fa-chevron-left"></i></span>
+            <h3>Menu</h3>
           </div>
+          <ul>
+            <li id="planets">
+              Planets
+            </li>
+            <li id="dwarf">
+              Dwarf Planets
+            </li>
+            <li id="moons">Moons</li>
+            <li id="other">Other</li>
+          </ul>
         </div>
       </div>
 
       <div id="bottom-container">
         <!--This is the bottom container when <810px, otherwise it is on the right-->
-        <div id="information-container">
-          <div id="category-list">
-            <p>CATEGORIES</p>
-            <ul>
-              <!--change to category list later and add style-->
-              <li id="planets">
-                Planets
-              </li>
-              <li id="dwarf">
-                Dwarf Planets
-              </li>
-              <li id="moons">Moons</li>
-              <li id="other">Other</li>
-            </ul>
-          </div>
-          <div id="object-list">
-            <p>OBJECTS</p>
-            <ul></ul>
-          </div>
+        <!--<div id="property-list">
+          <h3>Property Menu<i class="fas fa-chevron-down"></i></h3>
+          <ul></ul>
+        </div>-->
 
-          <div id="property-list">
-            <p>PROPERTIES</p>
-            <ul></ul>
-          </div>
-        </div>
-
-        <div id="property-values">
-         
-        </div>
+        <div id="property-values"></div>
 
         <div id="explanation-container">
           <article>
