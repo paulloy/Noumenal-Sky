@@ -21,9 +21,7 @@ body {
   justify-content: flex-start;
 }
 #top-container {
-  height: 80vh;
   display: inline-block;
-  width: 40vw;
   padding: 0;
 }
 #bottom-container {
@@ -31,10 +29,6 @@ body {
   display: inline-block;
   width: 60vw;
   padding: 0 10px 0 10px;
-}
-#top-container > div:first-of-type {
-  margin: 0 10px 0 10px;
-  height: 100%;
 }
 #image-information {
   font-family: "Mulish", sans-serif;
@@ -79,18 +73,17 @@ body {
 #image-container {
   overflow: hidden;
   justify-self: center;
-  height: 300px;
-  width: 300px;
+  width: 50px;
+  height: 50px;
   display: flex;
   position: relative;
-  margin: auto auto;
   justify-content: center;
   top: 2rem;
 }
 #image-container img {
+  width: 100%;
   height: 100%;
-  overflow: hidden;
-  object-fit: scale-down;
+  object-fit: fill;
   align-self: center;
 }
 
@@ -180,82 +173,17 @@ body {
   position: absolute;
   top: 2rem;
 }*/
-#category-list,
-#object-list,
-#property-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-#category-list p,
-#object-list p,
-#property-list p {
-  position: relative;
-}
-#category-list p:hover,
-#object-list p:hover,
-#property-list p:hover {
-  cursor: pointer;
-}
-#category-list ul,
-#object-list ul,
-#property-list ul {
-  padding: 0.5rem;
-  width: 170px;
-  background-color: #406384;
-  box-shadow: 3px 3px 3px #00345f2c;
-  position: absolute;
-  left: 50%;
-  margin-left: -85px;
-  top: 3rem;
-  max-height: 12rem;
-  overflow-y: scroll;
-}
-/*#category-list ul:hover,
-#object-list ul:hover,
-#property-list ul:hover {
-  display: block;
-  position: absolute;
-  top: 2rem;
-}*/
-#category-list ul li,
-#object-list ul li,
-#property-list ul li {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.2rem;
-  position: relative;
-}
-#category-list ul li:hover,
-#object-list ul li:hover,
-#property-list ul li:hover {
-  cursor: pointer;
-  background-color: rgba(255, 166, 0, 0.322);
-}
-#category-list ul li:active,
-#object-list ul li:active,
-#property-list ul li:active {
-  background-color: rgba(170, 111, 0, 0.322);
-}
-#category-list ul li:last-of-type:hover,
-#object-list ul li:last-of-type:hover,
-#property-list ul li:last-of-type:hover {
-  margin-bottom: 7px;
-}
 
 @media only screen and (max-width: 810px) {
   #app {
     flex-direction: column;
   }
   #top-container {
-    height: 40vh;
-    width: 100vw;
     padding: 0;
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border-top: #2f3f5c solid 0.5rem;
+    border-bottom: #2f3f5c solid 0.5rem;
   }
   #bottom-container {
     height: 44.5vh;
@@ -265,21 +193,86 @@ body {
     padding: 0;
     margin-bottom: 10px;
   }
-  #top-container > div:first-of-type {
-    position: relative;
-  }
   #image-information {
     display: none;
   }
   #image-container {
-    height: 100%;
     top: 0;
-    min-width: 200px;
-    max-width: 400px;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
   }
   #image-container img {
     width: 100%;
     height: 100%;
+  }
+  #category-list {
+    width: 50vw;
+    height: 50vw;
+    background-color: #2f3f5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+  }
+  #category-list ul {
+    padding: 0;
+    overflow-y: scroll;
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  #category-list ul li {
+    list-style-type: none;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    background-color: #9bcfff5a;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    width: 80%;
+    margin: 0.3rem auto 0 auto;
+    text-transform: capitalize;
+  }
+  #category-list ul li:hover {
+    cursor: pointer;
+    background-color: #ffda4564;
+  }
+  #menu-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    background-color: #7da3c780;
+    position: absolute;
+    top: 0;
+  }
+  #menu-title i {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c3d2b67;
+  }
+  #menu-title span {
+    display: none;
+  }
+  #menu-title i:hover {
+    cursor: pointer;
+    background-color: #0000002c;
+  }
+  #menu-title i:active {
+    background-color: #00000083;
+  }
+  #menu-title h3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
   }
   #information-container div p {
     font-size: 0.8rem;
@@ -313,6 +306,9 @@ body {
   #explanation-container article h3 {
     margin: 0;
   }
+  #property-values {
+    display: none;
+  }
   #property-values table tbody tr td {
     font-size: 0.9rem;
   }
@@ -328,6 +324,49 @@ body {
     background-color: #2f3f5cad !important;
     justify-items: center;
     align-items: center;
+  }
+  #image-information {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: #2f3f5c;
+    top: 0;
+  }
+  #image-information div {
+    width: 100vw;
+    height: 100vw;
+  }
+  #image-information article {
+    overflow-x: scroll;
+  }
+  #property-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    background-color: #7da3c780;
+  }
+  #property-list h3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+   #property-list i {
+    margin-left: 10px;
+  }
+  #property-list ul {
+      position: relative;
+      width: 200px;
+      height: auto;
+      background-color: #2f3f5c;
+      z-index: 1;
   }
 }
 /*phone in landscape*/ /*
