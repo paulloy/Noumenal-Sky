@@ -1,25 +1,30 @@
-function openCloseLists(listElement) {
-  var listElement; //category-list, object-list, property-list
-  $("#" + listElement)
-    .find("p")
-    .click(function () {
-      //when the listElements daughter <p> element is clicked, run function
-      var root = $(this).parent(); // set root as the parent of the <p> element
-      root.find("ul").toggle(); // find the <ul> child element and toggle it
-      root.siblings().find("ul").hide(); // find the two siblings of the listElement and hide their <ul> elements
-    });
-}
-openCloseLists("category-list"); // run this function for each listElement clicked
-openCloseLists("object-list");
-openCloseLists("property-list");
-
 var url = "assets/js/json/";
+var mainMenu =
+  '<li id="planets">Planets</li><li id="dwarf">Dwarf Planets</li><li id="moons">Moons</li><li id="other">Other</li>';
+var categoryList = true;
+
+$("#menu-title i").click(function () {
+  $("#category-list ul").empty();
+  $("#menu-title span").hide();
+  $("#category-list ul").append(mainMenu);
+  categoryList = true;
+});
+
+$("#image-container").click(function() {
+    $("#image-information").prepend($("#image-container"));
+    $("#image-information").show()
+});
+$("#image-information").click(function() {
+    $("#top-container").prepend($("#image-container"));
+    $("#image-information").hide();
+});
 
 function loadObjectList(objectUrl, cat) {
   $.getJSON(url + objectUrl + ".json").done(function (data) {
     for (var i = 0; i < data[cat].length; i++) {
       var newListItem = "<li id=" + i + ">" + data[cat][i].name + "</li>";
-      $("#object-list ul").append(newListItem);
+      categoryList = false;
+      $("#category-list ul").append(newListItem);
       var objectKey;
       $("#" + i).click(function () {
         //when list item is selected the following click function will get id attribute and call function
@@ -48,6 +53,7 @@ function LoadPropertyList(objectKey, cat) {
         for (var propertyKey in data[objectKeyToLC][i]) {
           var newListItem = "<li>" + propertyKey + "</li>";
           $("#property-list ul").append(newListItem);
+        $("#property-values").show();
         }
       }
       $("#property-list ul li").click(function () {
@@ -71,7 +77,7 @@ function LoadPropertyList(objectKey, cat) {
             data[objectKeyToLC][i][name][0][values][2] +
             "</a></td></tr>";
           $("#property-values table tbody").append(newTableRow);
-          $("#property-list ul").hide();
+         // $("#property-list ul").hide();
         }
 
         //when list item is selected the following click function will get id attribute and call function
@@ -86,15 +92,18 @@ function LoadPropertyList(objectKey, cat) {
       console.log("status: 404; Could not load property data");
     });
 }
-
-$("#category-list ul li").click(function () {
-  //run this function when a category list item is clicked
-  objectUrl = "categories/" + $(this).attr("id"); //get id of current list item
-  catId = $(this).attr("id");
-  loadObjectList(objectUrl, catId);
-  $("#object-list ul").empty(); //empty any values currently displayed in object list
-  $("#object-list ul").show(); //display object list
-  $("#category-list ul").hide(); //hide category list after being clicked
+$("#category-list").click(function () {
+  if (categoryList === true) {
+    $("#category-list ul li").click(function () {
+      //run this function when a category list item is clicked
+      objectUrl = "categories/" + $(this).attr("id"); //get id of current list item
+      console.log($(this).attr("id"));
+      catId = $(this).attr("id");
+      loadObjectList(objectUrl, catId);
+      $("#category-list ul").empty();
+      $("#menu-title span").show();
+    });
+  }
 });
 
 var el = document.getElementById("image"); //sets img element with id of image as a variable
