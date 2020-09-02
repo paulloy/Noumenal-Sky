@@ -10,13 +10,20 @@ $("#menu-title i").click(function () {
   categoryList = true;
 });
 
-$("#image-container").click(function() {
-    $("#image-information").prepend($("#image-container"));
-    $("#image-information").show()
+
+
+$("#image-container").click(function () {
+  $("#image-information").prepend($("#image-container"));
+  $("#expand").hide();
+
+  $("#close").show();
+  $("#image-information").show();
 });
-$("#image-information").click(function() {
-    $("#top-container").prepend($("#image-container"));
-    $("#image-information").hide();
+$("#image-information").click(function () {
+  $("#top-container").prepend($("#image-container"));
+  $("#image-information").hide();
+  $("#expand").show();
+  $("#close").hide();
 });
 
 function loadObjectList(objectUrl, cat) {
@@ -38,7 +45,7 @@ function loadObjectList(objectUrl, cat) {
   });
 }
 function LoadPropertyList(objectKey, cat) {
-  $("#property-list ul").empty();
+  $("#category-list ul").empty();
   var objectKeyToLC = objectKey.toLowerCase();
   if (objectKeyToLC === "tesla roadster") {
     objectKeyToLC = "teslaRoadster";
@@ -52,11 +59,11 @@ function LoadPropertyList(objectKey, cat) {
       for (var i = 0; i < data[objectKeyToLC].length; i++) {
         for (var propertyKey in data[objectKeyToLC][i]) {
           var newListItem = "<li>" + propertyKey + "</li>";
-          $("#property-list ul").append(newListItem);
-        $("#property-values").show();
+          $("#category-list ul").append(newListItem);
+          $("#property-values").show();
         }
       }
-      $("#property-list ul li").click(function () {
+      $("#category-list ul li").click(function () {
         var name = $(this).text();
         var i = $(this).index();
         $("#property-values").empty();
@@ -73,11 +80,9 @@ function LoadPropertyList(objectKey, cat) {
             data[objectKeyToLC][i][name][0][values][0] +
             "</td><td>" +
             data[objectKeyToLC][i][name][0][values][1] +
-            "</td><td><a href='references.html' target='_blank'>" +
-            data[objectKeyToLC][i][name][0][values][2] +
-            "</a></td></tr>";
+            "</td><td><a href='references.html' target='_blank'>"
           $("#property-values table tbody").append(newTableRow);
-         // $("#property-list ul").hide();
+          // $("#property-list ul").hide();
         }
 
         //when list item is selected the following click function will get id attribute and call function
