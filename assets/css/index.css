@@ -56,14 +56,13 @@ body {
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #9bcfff56;
 }
 ::-webkit-scrollbar-thumb {
   background: #9bcfff;
-  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #9bcfff77;
@@ -127,7 +126,6 @@ body {
 #property-values {
   background-color: #2f3f5c9a;
   overflow-y: scroll;
-  max-height: 30vh;
   padding: 1rem;
   font-family: "Mulish", sans-serif;
 }
@@ -191,7 +189,6 @@ body {
     position: relative;
     display: block;
     padding: 0;
-    margin-bottom: 10px;
   }
   #image-information {
     display: none;
@@ -202,9 +199,27 @@ body {
     height: 50vw;
     overflow: hidden;
   }
+  #image-container:hover {
+    cursor: pointer;
+  }
+  #expand {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    color: rgba(233, 247, 255, 0.95);
+  }
+  #close {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    color: rgba(233, 247, 255, 0.95);
+    display: none;
+  }
   #image-container img {
     width: 100%;
-    height: 100%;
+    height: rgba(233, 247, 255, 0.392);
   }
   #category-list {
     width: 50vw;
@@ -227,11 +242,12 @@ body {
     font-family: "Mulish", sans-serif;
     text-align: center;
     background-color: #9bcfff5a;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     width: 80%;
-    margin: 0.3rem auto 0 auto;
+    margin: 0.5rem auto 0 auto;
     text-transform: capitalize;
+    font-size: 1.2rem;
   }
   #category-list ul li:hover {
     cursor: pointer;
@@ -248,7 +264,7 @@ body {
   }
   #menu-title i {
     height: 2rem;
-    width: 2rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,15 +374,15 @@ body {
     display: flex;
     align-items: center;
   }
-   #property-list i {
+  #property-list i {
     margin-left: 10px;
   }
   #property-list ul {
-      position: relative;
-      width: 200px;
-      height: auto;
-      background-color: #2f3f5c;
-      z-index: 1;
+    position: relative;
+    width: 200px;
+    height: auto;
+    background-color: #2f3f5c;
+    z-index: 1;
   }
 }
 /*phone in landscape*/ /*
@@ -422,7 +438,6 @@ tr:first-of-type {
   background-color: #40638469;
 }
 td {
-  width: 100px;
   text-align: left !important;
 }
 td a {
