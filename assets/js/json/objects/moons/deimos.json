@@ -2,7 +2,7 @@
   "deimos": [
     {
       "size": [{
-          "mass": ["1.4762", "10$e$15$kg", "[16]"],
+          "mass": ["1.4762", "10^15kg", "[16]"],
           "radius": ["6.2", "km", "[16]"],
           "density": ["1.471", "g/m^3", "[16]"],
           "gravity": ["0.003", "m/s^2", "[16]"]
@@ -10,17 +10,17 @@
     },
     {
       "time": [{
-          "rotationPeriod":  ["30.2976", "hours", "[16]"],
-          "orbitalPeriod ": ["30.2976", "hours", "[16]"]
+          "rotation period":  ["30.2976", "hours", "[16]"],
+          "orbital period ": ["30.2976", "hours", "[16]"]
         }]
     },
     {
       "orbit": [{
-          "orbitalDistance": ["23458", "km", "[a]"],
+          "orbital distance": ["23458", "km", "[a]"],
           "periapsis": ["23,453", "km", "[16]"],
           "apoapsis": ["23,463", "km", "[16]"],
-          "orbitalVelocity": ["4,864.8", "km/h", "[16]"],
-          "orbitalEccentricity": ["0.0002", "[16]"]
+          "orbital velocity": ["4,864.8","no unit", "km/h", "[16]"],
+          "eccentricity": ["0.0002","no unit", "[16]"]
         }]
     }
   ]

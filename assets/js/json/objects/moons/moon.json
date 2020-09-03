@@ -2,32 +2,32 @@
   "moon": [
     {
       "size": [{
-          "mass": ["73.5", "10$e$24$kg", "[1]"],
-          "diameter": ["0.272", "Earth=1", "[1]"],
+          "mass": ["73.5", "10^24kg", "[1]"],
+          "diameter": ["0.272", "Earth", "[1]"],
           "density": ["3340", "kg/m^3", "[1]"],
           "gravity": ["1.6", "m/s^2", "[1]"]
         }]
     },
     {
       "time": [{
-          "rotationPeriod": ["655.7", "hours", "[1]"],
-          "orbitalPeriod ": ["27.3", "days", "[1]"]
+          "rotation period": ["655.7", "hours", "[1]"],
+          "orbital period ": ["27.3", "days", "[1]"]
         }]
     },
     {
       "orbit": [{
-          "orbitalDistance": ["384", "10$e$6$km", "[1]"],
-          "periapse": ["363", "10$e$6$km", "[1]"],
-          "apoapse": ["406", "10$e$6$km", "[1]"],
-          "orbitalVelocity": ["1.0", "km/s", "[1]"],
-          "orbitalEccentricity": ["0.055", "[1]"],
-          "axialTilt": ["6.7", "deg", "[1]"]
+          "orbital distance": ["384", "10^6km", "[1]"],
+          "periapse": ["363", "10^km", "[1]"],
+          "apoapse": ["406", "10^6km", "[1]"],
+          "orbital velocity": ["1.0", "km/s", "[1]"],
+          "eccentricity": ["0.055","no unit", "[1]"],
+          "axial tilt": ["6.7", "deg", "[1]"]
         }]
     },
     {
       "temperature": [{
-          "meanTemperature": ["-20", "C", "[1]"],
-          "bondAlbedo": ["0.11", "[42]"]
+          "mean temperature": ["-20", "C", "[1]"],
+          "bond albedo": ["0.11","no unit", "[42]"]
         }]
     }
   ]

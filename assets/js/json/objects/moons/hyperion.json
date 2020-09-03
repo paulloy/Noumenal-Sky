@@ -3,7 +3,7 @@
     {
       "size": [
         {
-          "mass": ["5.5855", "10$e$18$kg", "[23]"],
+          "mass": ["5.5855", "10^18kg", "[23]"],
           "radius": ["135", "km", "[23]"],
           "density ": ["0.544", "g/m^3", "[23]"],
           "gravity ": [" 0.020", "m/s^2", "[23]"]
@@ -13,21 +13,22 @@
     {
       "time": [
         {
-          "rotationPeriod ": ["13", "days", "[60]"],
-          "orbitalPeriod ": ["21.28", "days", "[23]"]
+          "rotation period ": ["13", "days", "[60]"],
+          "orbital period ": ["21.28", "days", "[23]"]
         }
       ]
     },
     {
       "orbit": [
         {
-          "orbitalDistance": ["1909000", "km", "[a]"],
+          "orbital distance": ["1,909,000", "km", "[a]"],
           "periapsis": ["1,466,112", "km", "[23]"],
           "apoapsis": ["1,535,756", "km", "[23]"],
-          "orbitalVelocity ": ["18,462.9", "km/h", "[23]"],
-          "orbitalEccentricity": ["0.232", "[23]"]
+          "orbital velocity ": ["18,462.9", "km/h", "[23]"],
+          "eccentricity": ["0.232","no unit", "[23]"]
         }
       ]
     }
   ]
 }
+

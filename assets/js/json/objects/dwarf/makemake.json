@@ -1,9 +1,9 @@
 {
-  "Makemake": [
+  "makemake": [
     {
       "size": [
         {
-          "mass": ["3.1", "10$e$24$kg", "[6]"],
+          "mass": ["3.1", "10^24kg", "[6]"],
           "diameter": ["1,420", "km", "[7]"],
           "density": ["2.1", "g/m^3", "[6]"],
           "gravity": ["0.57", "m/s^2", "[a]"]
@@ -13,34 +13,34 @@
     {
       "time": [
         {
-          "rotationPeriod": ["22.5", "hours", "[9]"],
-          "orbitalPeriod ": ["305", "year", "[9]"]
+          "rotation period": ["22.5", "hours", "[9]"],
+          "orbital period ": ["305", "year", "[9]"]
         }
       ]
     },
     {
       "orbit": [
         {
-          "distanceFromSun": ["6783", "10$e$6$km", "[8]"],
-          "perihelion": ["38.1043", "AU", "[10]"],
-          "aphelion": ["52.7563", "AU", "[10]"],
-          "orbitalVelocity": ["15,816", "km/h", "[8]"],
-          "orbitalEccentricity": ["0.163844964", "[8]"]
+          "distance from sun": ["6783", "10^6km", "[8]"],
+          "perihelion": ["38.1", "AU", "[10]"],
+          "aphelion": ["52.8", "AU", "[10]"],
+          "orbital velocity": ["15,816", "km/h", "[8]"],
+          "eccentricity": ["0.164", "no unit", "[8]"]
         }
       ]
     },
     {
       "moons": [
         {
-          "numberOfMoons": ["1", "[9]"]
+          "number of moons": ["1", "no unit", "[9]"]
         }
       ]
     },
     {
       "temperature": [
         {
-          "meanTemperature": ["40", "K", "[7]"],
-          "bondAlbedo": ["0.62", "[50]"]
+          "mean temperature": ["40", "K", "[7]"],
+          "bond albedo": ["0.62", "no unit", "[50]"]
         }
       ]
     }

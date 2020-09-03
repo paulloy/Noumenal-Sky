@@ -1,9 +1,9 @@
 {
-  "sedna": [
+  "quaoar": [
     {
       "size": [
         {
-          "mass": ["1.40", "10$e$21$kg", "[63]"],
+          "mass": ["1.40", "10^21kg", "[63]"],
           "radius": ["534", "km", "[50]"],
           "density ": ["2.18", "g/m^3", "[50]"]
         }
@@ -12,25 +12,25 @@
     {
       "time": [
         {
-          "rotationPeriod ": ["8.840", "hours", "[52]"],
-          "orbitalPeriod ": ["288.83", "year", "[52]"]
+          "rotation period ": ["8.840", "hours", "[52]"],
+          "orbital period ": ["288.83", "year", "[52]"]
         }
       ]
     },
     {
       "orbit": [
         {
-          "orbitalDistance": ["43.694", "AU", "[52]"],
+          "orbital distance": ["43.694", "AU", "[52]"],
           "perihelion": ["41.900", "AU", "[52]"],
           "aphelion": ["45.488", "AU", "[52]"],
-          "orbitalEccentricity": ["0.04105", "[52]"]
+          "eccentricity": ["0.041","no unit", "[52]"]
         }
       ]
     },
     {
       "temperature": [
         {
-          "bondAlbedo": ["0.07", "[50]"]
+          "bond albedo": ["0.07","no unit", "[50]"]
         }
       ]
     }

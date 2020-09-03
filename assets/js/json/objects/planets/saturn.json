@@ -1,8 +1,8 @@
 {
-  "Saturn": [
+  "saturn": [
     {
       "size": [{
-          "mass": ["568", "10$e$24$kg", "[1]"],
+          "mass": ["568", "10^24kg", "[1]"],
           "diameter": ["120,536", "km", "[1]"],
           "density": ["687", "kg/m^3", "[1]"],
           "gravity": ["9.0", "m/s^2", "[1]"]
@@ -10,31 +10,30 @@
     },
     {
       "time": [{
-          "rotationPeriod": ["10.7", "hours", "[1]"],
-          "lengthOfDay": ["10.7", "hours", "[1]"],
-          "orbitalPeriod ": ["10,747", "days", "[1]"]
+          "rotation period": ["10.7", "hours", "[1]"],
+          "orbital period ": ["10,747", "days", "[1]"]
         }]
     },
     {
       "orbit": [{
-          "distanceFromSun": ["1433.5", "10$e$6$km", "[1]"],
-          "perihelion": ["1352.6", "10$e$6$km", "[1]"],
-          "aphelion": ["1514.5", "10$e$6$km", "[1]"],
-          "orbitalVelocity": ["9.7", "km/s", "[1]"],
-          "orbitalEccentricity": ["0.057", "[1]"],
-          "axialTilt": ["26.7", "deg", "[1]"]
+          "distance from sun": ["1433.5", "10^6km", "[1]"],
+          "perihelion": ["1352.6", "10^6km", "[1]"],
+          "aphelion": ["1514.5", "10^6km", "[1]"],
+          "orbital velocity": ["9.7", "km/s", "[1]"],
+          "eccentricity": ["0.057","no unit", "[1]"],
+          "axial tilt": ["26.7", "deg", "[1]"]
         }]
     },
     {
       "moons": [{
-          "numberOfMoons": ["82", "[1]"],
-          "ringSystem": ["True", "[1]"]
+          "number of moons": ["82","no unit", "[1]"],
+          "ring system": ["True","no unit", "[1]"]
         }]
     },
     {
       "temperature": [{
-          "meanTemperature": ["-140", "C", "[1]"],
-          "bondAlbedo": ["0.342", "[45]"]
+          "mean temperature": ["-140", "C", "[1]"],
+          "bond albedo": ["0.342","no unit", "[45]"]
         }]
     }
   ]

@@ -11,25 +11,25 @@
     {
       "time": [
         {
-          "rotationPeriod ": ["10.273", "hours", "[51]"],
-          "orbitalPeriod ": ["10662.67", "Year", "[51]"]
+          "rotation period ": ["10.273", "hours", "[51]"],
+          "orbital period ": ["10662.67", "Year", "[51]"]
         }
       ]
     },
     {
       "orbit": [
         {
-          "orbitalDistance": ["484.438", "AU", "[51]"],
+          "orbital distance": ["484.438", "AU", "[51]"],
           "perihelion": ["76.256", "AU", "[51]"],
           "aphelion": ["892.62", "AU", "[51]"],
-          "orbitalEccentricity": ["0.842", "[51]"]
+          "eccentricity": ["0.842","no unit", "[51]"]
         }
       ]
     },
     {
       "temperature": [
         {
-          "bondAlbedo": ["0.19", "[50]"]
+          "bond albedo": ["0.19","no unit", "[50]"]
         }
       ]
     }
