@@ -10,7 +10,7 @@
     },
     {
       "time": [{
-          "rotationPeriod": ["23.9", "hours", "[1]"],
+          "rotation period": ["23.9", "hours", "[1]"],
           "orbital period ": ["365.2", "days", "[1]"]
         }]
     },

@@ -25,9 +25,8 @@ body {
   padding: 0;
 }
 #bottom-container {
-  height: 80vh;
   display: inline-block;
-  width: 60vw;
+  width: 100%;
   padding: 0 10px 0 10px;
 }
 #image-information {
@@ -184,7 +183,6 @@ body {
     border-bottom: #2f3f5c solid 0.5rem;
   }
   #bottom-container {
-    height: 44.5vh;
     width: 100vw;
     position: relative;
     display: block;
@@ -354,9 +352,6 @@ body {
     width: 100vw;
     height: 100vw;
   }
-  #image-information article {
-    overflow-x: scroll;
-  }
   #property-list {
     display: flex;
     flex-direction: row;
@@ -433,13 +428,19 @@ tr {
   background-color: #5f799269;
   padding: 5px;
   border: 1px solid rgba(233, 247, 255, 0.391);
+  text-transform: capitalize;
 }
 tr:first-of-type {
   background-color: #40638469;
 }
-td {
-  text-align: left !important;
+
+td,
+th {
+  width: 100%;
+  text-align: center !important;
+  height: 2rem;
 }
-td a {
-  color: rgba(179, 227, 255, 0.829);
+tr td:first-of-type,
+tr th:first-of-type {
+  text-align: left !important;
 }

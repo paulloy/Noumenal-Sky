@@ -10,7 +10,11 @@ $("#menu-title i").click(function () {
   categoryList = true;
 });
 
-
+var headerHeight = $("header").height();
+var topContainerHeight = $("#top-container").height();
+var sum = headerHeight + topContainerHeight + 8 + 8 + 16 + 16;
+var remainingHeight = screen.availHeight - sum;
+$("#property-values").css("height",remainingHeight);
 
 $("#image-container").click(function () {
   $("#image-information").prepend($("#image-container"));
@@ -69,7 +73,9 @@ function LoadPropertyList(objectKey, cat) {
         $("#property-values").empty();
 
         var newTable = "<table><tbody></tbody></table>";
+        var tableHeader = "<tr><th>Property</th><th>Value</th><th>Unit</th></tr>"
         $("#property-values").append(newTable);
+          $("#property-values table tbody").append(tableHeader);
         for (values in data[objectKeyToLC][i][name][0]) {
           console.log(data[objectKeyToLC][i][name][0][values]);
 
@@ -80,7 +86,7 @@ function LoadPropertyList(objectKey, cat) {
             data[objectKeyToLC][i][name][0][values][0] +
             "</td><td>" +
             data[objectKeyToLC][i][name][0][values][1] +
-            "</td><td><a href='references.html' target='_blank'>"
+            "</td></tr>"
           $("#property-values table tbody").append(newTableRow);
           // $("#property-list ul").hide();
         }
