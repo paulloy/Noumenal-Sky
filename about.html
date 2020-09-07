@@ -26,15 +26,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_Bhu3aze5EPVtC6BlZNdyc");
-        emailjs.send("gmail", "noumenal_sky_contact", {
-          name: "John",
-          notes: "etc",
-        });
-      })();
-    </script>
   </head>
 
   <body>
@@ -109,7 +100,7 @@
       </div>
     </section>
 
-    <form id="form" onsubmit="return sendEmail(this);" method="post">
+    <form id="form" method="post">
       <div class="title">
         <h2>Got Feedback? Contact us below</h2>
       </div>
@@ -140,7 +131,7 @@
             name="message"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <button id="submit" type="submit">Send Message</button>
         </div>
       </div>
     </form>
