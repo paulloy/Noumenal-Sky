@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* not for about.css */
 body {
-    width: 100%;
+  width: 100%;
   background-image: url("../images/about-background-image.jpg");
   background-size: cover;
   background-position: center;
@@ -19,12 +19,12 @@ body {
 }*/
 
 #about-container {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 section {
-    height: 100vh;
+  height: 100vh;
 }
 
 .title {
@@ -44,7 +44,7 @@ section {
   align-self: center;
   justify-self: center;
   justify-items: center;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 3vh;
   text-align: justify;
@@ -110,7 +110,7 @@ label {
   text-align: left;
   justify-self: center;
   font-size: 1rem;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   margin-bottom: 5px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -120,7 +120,7 @@ input {
   background-color: #13192588;
   border: 1px solid #c2d5db;
   margin-bottom: 30px;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   height: 30px;
 }
 textarea {
@@ -141,6 +141,24 @@ button {
   align-self: center;
   padding: 5px 20px 5px 20px;
   margin-top: 5vh;
+  position: relative;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #c2d5db2e;
+}
+input:disabled,
+textarea:disabled,
+button:disabled {
+  background-color: rgba(60, 60, 60, 0.803);
+  cursor: auto;
+}
+button:disabled::after {
+  content: "Message Sent";
+  color: rgba(229, 255, 0, 0.837);
+  position: absolute;
+  left: 20px;
+  top: 45px;
 }
 
 .form-common-styling {
@@ -167,30 +185,31 @@ button {
 }
 
 @media only screen and (max-width: 900px) {
-    .paragraph {
-        padding-left: 20vw;
-        padding-right: 20vw;
-    }
-    #form-div {
-      flex-direction: column;
-      padding-left: 10vw;
-      padding-right: 10vw;
-      padding-top: 8vh;
-      padding-bottom: 8vh;
-      height: 70%;
+  .paragraph {
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+  #form-div {
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    height: 70%;
   }
   #form {
-      height: 100vh;
+    height: 100vh;
   }
-  #col-1, #col-2 {
-      width: 100%;
-      padding: 0;
+  #col-1,
+  #col-2 {
+    width: 100%;
+    padding: 0;
   }
   input {
-      height: 20px;
+    height: 20px;
   }
   textarea {
-      height: 100px;
+    height: 100px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -199,9 +218,9 @@ button {
     text-align: center;
   }
   section {
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
   }
   .paragraph {
     font-size: 3vh;
@@ -212,11 +231,10 @@ button {
     font-weight: 300;
     letter-spacing: 1px;
   }
-  
 }
 @media only screen and (max-width: 450px) {
-    .paragraph {
+  .paragraph {
     padding-left: 10vw;
     padding-right: 10vw;
-}
+  }
 }
