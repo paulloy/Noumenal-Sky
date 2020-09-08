@@ -1,34 +1,24 @@
 {
-  "hyperion": [
-    {
-      "size": [
-        {
-          "mass": ["5.5855", "10^18kg", "[23]"],
-          "radius": ["135", "km", "[23]"],
-          "density ": ["0.544", "g/m^3", "[23]"],
-          "gravity ": [" 0.020", "m/s^2", "[23]"]
-        }
-      ]
+  "hyperion": {
+    "orbital Characteristics": {
+      "rotation period ": ["13", "days", "[60]"],
+      "orbital period ": ["21.28", "days", "[23]"],
+      "distance": ["1,909,000", "km", "[a]"],
+      "periapsis": ["1,466,112", "km", "[23]"],
+      "apoapsis": ["1,535,756", "km", "[23]"],
+      "orbital velocity ": ["18,462.9", "km/h", "[23]"],
+      "eccentricity": ["0.232", "no unit", "[23]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["13", "days", "[60]"],
-          "orbital period ": ["21.28", "days", "[23]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["5.5855", "10^18kg", "[23]"],
+      "radius": ["135", "km", "[23]"],
+      "density ": ["0.544", "g/m^3", "[23]"],
+      "gravity ": [" 0.020", "m/s^2", "[23]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["1,909,000", "km", "[a]"],
-          "periapsis": ["1,466,112", "km", "[23]"],
-          "apoapsis": ["1,535,756", "km", "[23]"],
-          "orbital velocity ": ["18,462.9", "km/h", "[23]"],
-          "eccentricity": ["0.232","no unit", "[23]"]
-        }
-      ]
+    "about": {
+        "about": "Hyperion is distinguished by its irregular shape, its chaotic rotation, and its unexplained sponge-like appearance. It was the first non-round moon to be discovered.",
+        "discovery": "Discovered by William Cranch Bond, George Phillips Bond and William Lassell in 1848.",
+        "name": "The moon is named after Hyperion, the Titan god of watchfulness and observation – the elder brother of Cronus, the Greek equivalent of Saturn – in Greek mythology."
     }
-  ]
+  }
 }
-

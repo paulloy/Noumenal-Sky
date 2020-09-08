@@ -1,33 +1,24 @@
 {
-  "oberon": [
-    {
-      "size": [
-        {
-          "mass": ["2.8834", "10^21kg", "[30]"],
-          "radius": ["761.4", "km", "[30]"],
-          "density ": ["1.559", "g/m^3", "[30]"],
-          "gravity ": ["0.332", "m/s^2", "[30]"]
-        }
-      ]
+  "oberon": {
+    "orbital Characteristics": {
+      "rotation period ": ["13.46", "days", "[30]"],
+      "orbital period ": ["13.46", "days", "[30]"],
+      "distance": ["583,500", "km", "[a]"],
+      "periapsis": ["582,683", "km", "[30]"],
+      "apoapsis": ["584,317", "km", "[30]"],
+      "orbital velocity ": ["11,349.2", "km/h", "[30]"],
+      "eccentricity": ["0.0014", "no unit", "[30]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["13.46", "days", "[30]"],
-          "orbital period ": ["13.46", "days", "[30]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["2.8834", "10^21kg", "[30]"],
+      "radius": ["761.4", "km", "[30]"],
+      "density ": ["1.559", "g/m^3", "[30]"],
+      "gravity ": ["0.332", "m/s^2", "[30]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["583,500", "km", "[a]"],
-          "periapsis": ["582,683", "km", "[30]"],
-          "apoapsis": ["584,317", "km", "[30]"],
-          "orbital velocity ": ["11,349.2", "km/h", "[30]"],
-          "eccentricity": ["0.0014","no unit", "[30]"]
-        }
-      ]
+    "about": {
+        "about": "It is likely that Oberon formed from the accretion disk that surrounded Uranus just after the planet's formation. The moon consists of approximately equal amounts of ice and rock, and is probably differentiated into a rocky core and an icy mantle. The Uranian system has been studied up close only once: the spacecraft Voyager 2 took several images of Oberon in January 1986, allowing 40% of the moon's surface to be mapped.",
+        "discovery": "Oberon was discovered by William Herschel on January 11, 1787; on the same day he discovered Uranus's largest moon, Titania.",
+        "name": "The name Oberon was derived from Oberon, the King of the Fairies in A Midsummer Night's Dream."
     }
-  ]
+  }
 }

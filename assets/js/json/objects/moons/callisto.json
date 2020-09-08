@@ -1,41 +1,26 @@
 {
-  "callisto": [
-    {
-      "size": [
-        {
-          "mass": ["107.6", "10^21kg", "[2]"],
-          "diameter": ["0.378", "Earth", "[2]"],
-          "density ": ["1830", "kg/m^3", "[2]"],
-          "gravity ": ["1.24", "m/s^2", "[2]"]
-        }
-      ]
+  "callisto": {
+    "orbital Characteristics": {
+      "rotation period ": ["400.5", "hours", "[2]"],
+      "orbital period ": ["16.7", "days", "[2]"],
+      "distance": ["1883", "10^3km", "[2]"],
+      "periapsis": ["1870", "10^3km", "[2]"],
+      "apoapsis": ["1896", "10^3km", "[2]"],
+      "orbital velocity ": ["8.2", "km/s", "[2]"],
+      "eccentricity": ["0.007", "no unit", "[2]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["400.5", "hours", "[2]"],
-          "orbital period ": ["16.7", "days", "[2]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["107.6", "10^21kg", "[2]"],
+      "diameter": ["0.378", "Earth", "[2]"],
+      "density ": ["1830", "kg/m^3", "[2]"],
+      "gravity ": ["1.24", "m/s^2", "[2]"],
+      "mean temperature": ["-155", "C", "[2]"],
+      "bond albedo": ["0.11", "no unit", "[56]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["1883", "10^3km", "[2]"],
-          "periapse": ["1870", "10^3km", "[2]"],
-          "apoapse": ["1896", "10^3km", "[2]"],
-          "orbital velocity ": ["8.2", "km/s", "[2]"],
-          "eccentricity": ["0.007", "no unit", "[2]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["-155", "C", "[2]"],
-          "bond albedo": ["0.11", "no unit", "[56]"]
-        }
-      ]
+    "about": {
+        "about": "The surface of Callisto is the oldest and most heavily cratered in the Solar System. Its surface is completely covered with impact craters. The likely presence of an ocean within Callisto leaves open the possibility that it could harbor life. However, conditions are thought to be less favorable than on nearby Europa. Various space probes from Pioneers 10 and 11 to Galileo and Cassini have studied Callisto.",
+        "discovery": "Callisto was discovered by Galileo in January 1610.",
+        "name": "Callisto is named after one of Zeus's many lovers in Greek mythology. Callisto was a nymph who was associated with the goddess of the hunt, Artemis. The name was suggested by Simon Marius soon after Callisto's discovery. Marius attributed the suggestion to Johannes Kepler."
     }
-  ]
+  }
 }

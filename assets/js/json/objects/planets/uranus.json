@@ -1,40 +1,30 @@
 {
-  "uranus": [
-    {
-      "size": [{
-          "mass": ["86.8", "10^24kg", "[1]"],
-          "diameter": ["51,118", "km", "[1]"],
-          "density": ["1271", "kg/m^3", "[1]"],
-          "gravity": ["8.7", "m/s^2", "[1]"]
-        }]
+  "uranus": {
+    "orbital Characteristics": {
+      "rotation period": ["-17.2", "hours", "[1]"],
+      "orbital period ": ["30,589", "days", "[1]"],
+      "distance": ["2872.5", "10^6km", "[1]"],
+      "periapsis": ["2741.3", "10^6km", "[1]"],
+      "apoapsis": ["3003.6", "10^6km", "[1]"],
+      "orbital velocity": ["6.8", "km/s", "[1]"],
+      "eccentricity": ["0.046", "no unit", "[1]"],
+      "axial tilt": ["97.8", "deg", "[1]"],
+      "number of moons": ["27", "no unit", "[1]"]
     },
-    {
-      "time": [{
-          "rotation period": ["-17.2", "hours", "[1]"],
-          "orbital period ": ["30,589", "days", "[1]"]
-        }]
+    "physical characteristics": {
+      "mass": ["86.8", "10^24kg", "[1]"],
+      "diameter": ["51,118", "km", "[1]"],
+      "density": ["1271", "kg/m^3", "[1]"],
+      "gravity": ["8.7", "m/s^2", "[1]"],
+
+      "ring system": ["True", "no unit", "[1]"],
+      "mean temperature": ["-195", "C", "[1]"],
+      "bond albedo": ["0.300", "no unit", "[46]"]
     },
-    {
-      "orbit": [{
-          "distance from sun": ["2872.5", "10^6km", "[1]"],
-          "perihelion": ["2741.3", "10^6km", "[1]"],
-          "aphelion": ["3003.6", "10^6km", "[1]"],
-          "orbital velocity": ["6.8", "km/s", "[1]"],
-          "eccentricity": ["0.046","no unit", "[1]"],
-          "axial tilt": ["97.8", "deg", "[1]"]
-        }]
-    },
-    {
-      "moons": [{
-          "number of moons": ["27","no unit", "[1]"],
-          "ring system": ["True","no unit", "[1]"]
-        }]
-    },
-    {
-      "temperature": [{
-          "mean temperature": ["-195", "C", "[1]"],
-          "bond albedo": ["0.300","no unit", "[46]"]
-        }]
+    "about": {
+        "about": "Uranus is the seventh planet from the Sun. Uranus had been observed on many occasions before its recognition as a planet, but it was generally mistaken for a star.",
+        "discovery": "Possibly the earliest known observation was by Hipparchos, who in 128 BC might have recorded it as a star for his star catalogue. The earliest definite sighting was in 1690, when John Flamsteed observed it at least six times, cataloguing it as 34 Tauri. Sir William Herschel observed Uranus on 13 March 1781 from the garden of his house at Somerset, England, and initially reported it as a comet. Finnish-Swedish astronomer Anders Johan Lexell, working in Russia, was the first to compute the orbit of the new object. Its nearly circular orbit led him to a conclusion that it was a planet rather than a comet.",
+        "name": "Herschel decided to name the object Georgium Sidus (George's Star), or the 'Georgian Planet' in honour of his new patron, King George III. The name of Uranus references the ancient Greek deity of the sky Uranus, the father of Cronus (Saturn) and grandfather of Zeus (Jupiter). Consensus on the name was not reached until almost 70 years after the planet's discovery."
     }
-  ]
+  }
 }

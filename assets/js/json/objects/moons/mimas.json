@@ -1,40 +1,25 @@
 {
-  "mimas": [
-    {
-      "size": [
-        {
-          "mass": ["3.7505", "10^19kg", "[17]"],
-          "radius": ["198", "km", "[17]"],
-          "density ": ["1.15", "g/m^3", "[17]"],
-          "gravity ": ["0.064", "m/s^2", "[17]"]
-        }
-      ]
+  "mimas": {
+    "orbital Characteristics": {
+      "rotation period ": ["22.6", "hours", "[17]"],
+      "orbital period ": ["22.6", "hours", "[17]"],
+      "distance": ["185,539", "km", "[17]"],
+      "periapsis": ["181,902", "km", "[18]"],
+      "apoapsis": ["189,176", "km", "[18]"],
+      "orbital velocity ": ["51,559.8", "km/h", "[17]"],
+      "eccentricity": ["0.0196", "no unit", "[17]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["22.6", "hours", "[17]"],
-          "orbital period ": ["22.6", "hours", "[17]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["3.7505", "10^19kg", "[17]"],
+      "radius": ["198", "km", "[17]"],
+      "density ": ["1.15", "g/m^3", "[17]"],
+      "gravity ": ["0.064", "m/s^2", "[17]"],
+      "bond albedo": ["0.67", "no unit", "[53]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["185,539", "km", "[17]"],
-          "periapsis": ["181,902", "km", "[18]"],
-          "apoapsis": ["189,176", "km", "[18]"],
-          "orbital velocity ": ["51,559.8", "km/h", "[17]"],
-          "eccentricity": ["0.0196","no unit", "[17]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.67","no unit", "[53]"]
-        }
-      ]
+    "about": {
+        "about": "The surface area of Mimas is slightly less than the land area of Spain. Mimas's most distinctive feature is a giant impact crater, named Herschel after the discoverer of Mimas.",
+        "discovery": "Mimas was discovered by the astronomer William Herschel on 17 September 1789.",
+        "name": "Mimas is named after one of the Giants in Greek mythology, Mimas."
     }
-  ]
+  }
 }

@@ -2,38 +2,28 @@
   "dwarf": [
     {
       "name": "ceres",
-      "ceres": "../objects/dwarfPlanets/ceres.json",
       "image": "assets/images/space-images/dwarf-planets/ceres.jpg",
-      "alt": "Images were acquired by Dawn at 04:13 UT May 4, 2015, at a distance of 13641 km. At the time, Dawn was over Ceres' northern hemisphere.",
-      "about": "Ceres is the largest object in the main asteroid belt that lies between the orbits of Mars and Jupiter. Ceres is both the largest of the asteroids and the only dwarf planet inside Neptune's orbit. Ceres was the first asteroid to be discovered (by Giuseppe Piazzi at Palermo Astronomical Observatory on 1 January 1801). It was originally considered a planet, but was reclassified as an asteroid in the 1850s after many other objects in similar orbits were discovered."
-    },
+      "alt": "Images were acquired by Dawn at 04:13 UT May 4, 2015, at a distance of 13641 km. At the time, Dawn was over Ceres' northern hemisphere."
+       },
     {
       "name": "pluto",
-      "pluto": "../objects/dwarfPlanets/pluto.json",
       "image": "assets/images/space-images/dwarf-planets/pluto.jpg",
-      "alt": "This image was taken as New Horizons zipped toward Pluto and its moons on July 14, 2015, from a range of 22,025 miles (35,445) kilometers.",
-      "about": "Pluto is an icy dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. Pluto was discovered by Clyde Tombaugh in 1930 and declared to be the ninth planet from the Sun. After 1992, its status as a planet was questioned following the discovery of several objects of similar size in the Kuiper belt."
-    },
+      "alt": "This image was taken as New Horizons zipped toward Pluto and its moons on July 14, 2015, from a range of 22,025 miles (35,445) kilometers."
+          },
     {
       "name": "eris",
-      "eris": "../objects/dwarfPlanets/eris.json",
       "image": "assets/images/space-images/dwarf-planets/eris.jpg",
-      "alt": "An image of the dwarf planet Eris and its moon Dysnomia.",
-      "about": "Eris is the most massive and second-largest known dwarf planet in the Solar System. Eris was discovered in January 2005 by a Palomar Observatory-based team led by Mike Brown, and its discovery was verified later that year. In September 2006 it was named after the goddess of strife and discord."
-    },
+      "alt": "An image of the dwarf planet Eris and its moon Dysnomia."
+      },
     {
       "name": "makemake",
-      "makemake": "../objects/dwarfPlanets/makemake.json",
       "image": "assets/images/space-images/dwarf-planets/makemake.jpg",
-      "alt": "This Hubble Space Telescope image reveals the first moon ever discovered around the dwarf planet Makemake.",
-      "about": "Makemake is a likely dwarf planet. Makemake was discovered on March 31, 2005, by a team led by Michael E. Brown, and announced on July 29, 2005. Initially, it was known as 2005 FY9 and later given the minor-planet number 136472. In July 2008 it was named after Makemake, the creator god of the Rapa Nui people of Easter Island, under the expectation by the International Astronomical Union (IAU) that it would prove to be a dwarf planet."
-    },
+      "alt": "This Hubble Space Telescope image reveals the first moon ever discovered around the dwarf planet Makemake."
+     },
     {
       "name": "haumea",
-      "haumea": "../objects/dwarfPlanets/haumea.json",
       "image": "assets/images/space-images/dwarf-planets/haumea.jpg",
-      "alt": "Haumea and its satellites, imaged on June 30, 2015 by the Hubble Space Telescope.",
-      "about": "Haumea is a likely dwarf planet located beyond Neptune's orbit. It was discovered in 2004 by a team headed by Mike Brown of Caltech at the Palomar Observatory in the United States. On September 17, 2008, it was named after Haumea, the Hawaiian goddess of childbirth, under the expectation by the International Astronomical Union (IAU) that it would prove to be a dwarf planet."
-    }
+      "alt": "Haumea and its satellites, imaged on June 30, 2015 by the Hubble Space Telescope."
+     }
   ]
 }

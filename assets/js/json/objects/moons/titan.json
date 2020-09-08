@@ -1,41 +1,26 @@
 {
-  "titan": [
-    {
-      "size": [
-        {
-          "mass": ["134.6", "10^21kg", "[2]"],
-          "diameter": ["0.404", "Earth", "[2]"],
-          "density ": ["1881", "kg/m^3", "[2]"],
-          "gravity ": ["1.35", "m/s^2", "[2]"]
-        }
-      ]
+  "titan": {
+    "orbital Characteristics": {
+      "rotation period ": ["382.7", "hours", "[2]"],
+      "orbital period ": ["15.9", "days", "[2]"],
+      "distance": ["1222", "10$e$3$km", "[2]"],
+      "periapsis": ["1186", "10$e$3$km", "[2]"],
+      "apoapsis": ["1258", "10$e$3$km", "[2]"],
+      "orbital velocity ": ["5.6", "km/s", "[2]"],
+      "eccentricity": ["0.029", "no unit", "[2]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["382.7", "hours", "[2]"],
-          "orbital period ": ["15.9", "days", "[2]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["134.6", "10^21kg", "[2]"],
+      "diameter": ["0.404", "Earth", "[2]"],
+      "density ": ["1881", "kg/m^3", "[2]"],
+      "gravity ": ["1.35", "m/s^2", "[2]"],
+      "mean temperature": ["-180", "C", "[2]"],
+      "bond albedo": ["0.27", "no unit", "[57]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["1222", "10$e$3$km", "[2]"],
-          "periapse": ["1186", "10$e$3$km", "[2]"],
-          "apoapse": ["1258", "10$e$3$km", "[2]"],
-          "orbital velocity ": ["5.6", "km/s", "[2]"],
-          "eccentricity": ["0.029","no unit", "[2]"]
-        }
-      ]
-    },
-    {
-      "Temperature": [
-        {
-          "mean temperature": ["-180", "C", "[2]"],
-          "bond albedo": ["0.27","no unit", "[57]"]
-        }
-      ]
+    "about": {
+        "about": "Titan is the largest moon of Saturn and the second-largest natural satellite in the Solar System. It is the only moon known to have a dense atmosphere, and the only known body in space, other than Earth, where clear evidence of stable bodies of surface liquid has been found.",
+        "discovery": "Titan was discovered on March 25, 1655, by the Dutch astronomer Christiaan Huygens. Huygens was inspired by Galileo's discovery of Jupiter's four largest moons in 1610 and his improvements in telescope technology. Christiaan, with the help of his elder brother Constantijn Huygens, Jr., began building telescopes around 1650 and discovered the first observed moon orbiting Saturn with one of the telescopes they built.",
+        "name": "In Greek mythology, the Titans were a race of powerful deities, descendants of Gaia and Uranus, that ruled during the legendary Golden Age."
     }
-  ]
+  }
 }

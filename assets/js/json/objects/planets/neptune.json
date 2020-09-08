@@ -1,40 +1,29 @@
 {
-  "neptune": [
-    {
-      "size": [{
-          "mass": ["102", "10^24kg", "[1]"],
-          "diameter": ["49,528", "km", "[1]"],
-          "density": ["1638", "kg/m^3", "[1]"],
-          "gravity": ["11.0", "m/s^2", "[1]"]
-        }]
+  "neptune": {
+    "orbital Characteristics": {
+      "rotation period": ["16.1", "hours", "[1]"],
+      "orbital period ": ["59,800", "days", "[1]"],
+      "distance": ["4495.1", "10^6km", "[1]"],
+      "periapsis": ["4444.5", "10^6km", "[1]"],
+      "apoapsis": ["4545.7", "10^6km", "[1]"],
+      "orbital velocity": ["5.4", "km/s", "[1]"],
+      "eccentricity": ["0.011", "no unit", "[1]"],
+      "axial tilt": ["28.3", "deg", "[1]"],
+      "number of moons": ["14", "no unit", "[1]"]
     },
-    {
-      "time": [{
-          "rotation period": ["16.1", "hours", "[1]"],
-          "orbital period ": ["59,800", "days", "[1]"]
-        }]
+    "physical characteristics": {
+      "mass": ["102", "10^24kg", "[1]"],
+      "diameter": ["49,528", "km", "[1]"],
+      "density": ["1638", "kg/m^3", "[1]"],
+      "gravity": ["11.0", "m/s^2", "[1]"],
+      "ring system": ["True", "no unit", "[1]"],
+      "mean temperature": ["-200", "C", "[1]"],
+      "bond albedo": ["0.290", "no unit", "[47]"]
     },
-    {
-      "orbit": [{
-          "distance from sun": ["4495.1", "10^6km", "[1]"],
-          "perihelion": ["4444.5", "10^6km", "[1]"],
-          "aphelion": ["4545.7", "10^6km", "[1]"],
-          "orbital velocity": ["5.4", "km/s", "[1]"],
-          "eccentricity": ["0.011","no unit", "[1]"],
-          "axial tilt": ["28.3", "deg", "[1]"]
-        }]
-    },
-    {
-      "moons": [{
-          "number of moons": ["14","no unit", "[1]"],
-          "ring system": ["True","no unit", "[1]"]
-        }]
-    },
-    {
-      "temperature": [{
-          "mean temperature": ["-200", "C", "[1]"],
-          "bond albedo": ["0.290","no unit", "[47]"]
-        }]
+    "about": {
+        "about": "Neptune is the eighth and farthest-known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is not visible to the unaided eye and is the only planet in the Solar System found by mathematical prediction rather than by empirical observation.",
+        "discovery": "Unexpected changes in the orbit of Uranus led Alexis Bouvard to deduce that its orbit was subject to gravitational perturbation by an unknown planet. Neptune was subsequently observed with a telescope on 23 September 1846 by Johann Galle within a degree of the position predicted by Le Verrier.",
+        "name": "Claiming the right to name his discovery, Le Verrier quickly proposed the name Neptune for this new planet."
     }
-  ]
+  }
 }

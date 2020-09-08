@@ -1,31 +1,22 @@
 {
-  "vesta": [
-    {
-      "size": [
-        {
-          "mass": ["0.259076", "10^21kg", "[62]"],
-          "diameter": ["525.4", "km", "[36]"],
-          "density ": ["3.456", "g/m^3", "[36]"]
-        }
-      ]
+  "vesta": {
+    "orbital Characteristics": {
+      "rotation period ": ["5.342", "hours", "[62]"],
+      "orbital period ": ["3.63", "years", "[62]"],
+      "distance": ["2.361", "AU", "[a]"],
+      "periapsis": ["2.152", "AU", "[36]"],
+      "apoapsis": ["2.571", "AU", "[36]"],
+      "eccentricity": ["0.0887", "no unit", "[36]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["5.342", "hours", "[62]"],
-          "orbital period ": ["3.63", "years", "[62]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["0.259076", "10^21kg", "[62]"],
+      "diameter": ["525.4", "km", "[36]"],
+      "density ": ["3.456", "g/m^3", "[36]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["2.361", "AU", "[a]"],
-          "perihelion": ["2.152", "AU", "[36]"],
-          "aphelion": ["2.571", "AU", "[36]"],
-          "eccentricity": ["0.0887","no unit", "[36]"]
-        }
-      ]
+    "about": {
+        "about": "Vesta is one of the largest objects in the asteroid belt. Vesta is the second-most-massive and probably the second-largest asteroid, after the dwarf planet Ceres, and contributes an estimated 9% of the mass of the asteroid belt. Vesta is the only known remaining rocky protoplanet of the kind that formed the terrestrial planets.",
+        "discovery": "It was discovered by the German astronomer Heinrich Wilhelm Matthias Olbers on 29 March 1807.",
+        "name": "Upon its discovery, Vesta was, like Ceres, Pallas, and Juno before it, classified as a planet. The name Vesta, or national variants thereof, is in international use with two exceptions: Greece and China. In Greek, the name adopted was the Hellenic equivalent of Vesta, Hestia. In Chinese, Vesta is called the 'hearth-god(dess) star', 灶神星 zàoshénxīng."
     }
-  ]
+  }
 }

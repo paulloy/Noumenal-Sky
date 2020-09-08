@@ -2,164 +2,118 @@
   "moons": [
     {
       "name": "moon",
-      "moon": "../objects/moons/moon.json",
       "image": "assets/images/space-images/moons/moon.jpg",
-      "alt": "Full Moon photograph taken 10-22-2010 from Madison, Alabama, USA.",
-      "about": "The Moon is an astronomical body orbiting Earth and is the planet's only natural satellite. It is the fifth-largest satellite in the Solar System, and by far the largest among planetary satellites relative to the size of the planet that it orbits."
+      "alt": "Full Moon photograph taken 10-22-2010 from Madison, Alabama, USA."
     },
     {
       "name": "phobos",
-      "phobos": "../objects/moons/phobos.json",
       "image": "assets/images/space-images/moons/phobos.jpg",
-      "alt": "Color image of Phobos, imaged by the Mars Reconnaissance Orbiter on 23 March 2008.",
-      "about": "Phobos is the innermost and larger of the two natural satellites of Mars. It was discovered in 1877 by American astronomer Asaph Hall."
+      "alt": "Color image of Phobos, imaged by the Mars Reconnaissance Orbiter on 23 March 2008."
     },
     {
       "name": "deimos",
-      "deimos": "../objects/moons/deimos.json",
       "image": "assets/images/space-images/moons/deimos.jpg",
-      "alt": "Color-enhanced image of Deimos, a moon of Mars, captured by the HiRISE instrument on the Mars Reconnaissance Orbiter on 21 Feb 2009.",
-      "about": "Deimos is the smaller and outermost of the two natural satellites of Mars. It was discovered in 1877 by American astronomer Asaph Hall."
+      "alt": "Color-enhanced image of Deimos, a moon of Mars, captured by the HiRISE instrument on the Mars Reconnaissance Orbiter on 21 Feb 2009."
     },
     {
       "name": "io",
-      "io": "../objects/moons/io.json",
       "image": "assets/images/space-images/moons/io.jpg",
-      "alt": "NASA's Galileo spacecraft acquired its highest resolution images of Jupiter's moon Io on 3 July 1999.",
-      "about": "Io is the innermost and third-largest of the four Galilean moons of the planet Jupiter. It was discovered in 1610 by Galileo Galilei."
+      "alt": "NASA's Galileo spacecraft acquired its highest resolution images of Jupiter's moon Io on 3 July 1999."
     },
     {
       "name": "europa",
-      "europa": "../objects/moons/europa.json",
       "image": "assets/images/space-images/moons/europa.jpg",
-      "alt": "This image was taken on September 7, 1996, at a range of 677,000 kilometers (417,900 miles) by the solid state imaging television camera onboard the Galileo spacecraft during its second orbit around Jupiter.",
-      "about": "Europa is the smallest of the four Galilean moons orbiting Jupiter, and the sixth-closest to the planet of all the 79 known moons of Jupiter. It was discovered in 1610 by Galileo Galilei."
+      "alt": "This image was taken on September 7, 1996, at a range of 677,000 kilometers (417,900 miles) by the solid state imaging television camera onboard the Galileo spacecraft during its second orbit around Jupiter."
     },
     {
       "name": "ganymede",
-      "ganymede": "../objects/moons/ganymede.json",
       "image": "assets/images/space-images/moons/ganymede.jpg",
-      "alt": "True color image of Ganymede, obtained by the Galileo spacecraft, with enhanced contrast.",
-      "about": "Ganymede is a satellite of Jupiter. It is the largest and most massive of the Solar System's moons. It is the ninth-largest object in the Solar System. Ganymede's discovery is credited to Galileo Galilei, who was the first to observe it, on January 7, 1610."
+      "alt": "True color image of Ganymede, obtained by the Galileo spacecraft, with enhanced contrast."
     },
     {
       "name": "callisto",
-      "callisto": "../objects/moons/callisto.json",
       "image": "assets/images/space-images/moons/callisto.jpg",
-      "alt": "Image of Callisto from NASA's Galileo spacecraft. The picture, taken in May 2001, is the only complete global color image of Callisto obtained by Galileo, which has been orbiting Jupiter since December 1995.",
-      "about": "Callisto is the second-largest moon of Jupiter. Callisto was discovered in 1610 by Galileo Galilei."
+      "alt": "Image of Callisto from NASA's Galileo spacecraft. The picture, taken in May 2001, is the only complete global color image of Callisto obtained by Galileo, which has been orbiting Jupiter since December 1995."
     },
     {
       "name": "mimas",
-      "mimas": "../objects/moons/mimas.json",
       "image": "assets/images/space-images/moons/mimas.jpg",
-      "alt": "In this view captured by NASA's Cassini spacecraft on its closest-ever flyby of Saturn's moon Mimas, large Herschel Crater dominates Mimas, making the moon look like the Death Star in the movie Star Wars.",
-      "about": "Mimas is a moon of Saturn which was discovered in 1789 by William Herschel. It is named after Mimas, a son of Gaia in Greek mythology."
+      "alt": "In this view captured by NASA's Cassini spacecraft on its closest-ever flyby of Saturn's moon Mimas, large Herschel Crater dominates Mimas, making the moon look like the Death Star in the movie Star Wars."
     },
     {
       "name": "enceladus",
-      "enceladus": "../objects/moons/enceladus.json",
       "image": "assets/images/space-images/moons/enceladus.jpg",
-      "alt": "NASA's Cassini spacecraft captured this view as it neared icy Enceladus for its closest-ever dive past the moon's active south polar region.",
-      "about": "Enceladus is the sixth-largest moon of Saturn. Enceladus was discovered on August 28, 1789, by William Herschel. "
+      "alt": "NASA's Cassini spacecraft captured this view as it neared icy Enceladus for its closest-ever dive past the moon's active south polar region."
     },
     {
       "name": "tethys",
-      "tethys": "../objects/moons/tethys.json",
       "image": "assets/images/space-images/moons/tethys.jpg",
-      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on April 11, 2015.",
-      "about": "Tethys is a mid-sized moon of Saturn. It was discovered by G. D. Cassini in 1684 and is named after the titan Tethys of Greek mythology."
+      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on April 11, 2015."
     },
     {
       "name": "dione",
-      "dione": "../objects/moons/dione.json",
       "image": "assets/images/space-images/moons/dione.jpg",
-      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on Feb. 8, 2008.",
-      "about": "Dione is a moon of Saturn. It was discovered by Italian astronomer Giovanni Domenico Cassini in 1684. It is named after the Titaness Dione of Greek mythology."
+      "alt": "The image was taken in visible light with the Cassini spacecraft narrow-angle camera on Feb. 8, 2008."
     },
     {
       "name": "rhea",
-      "rhea": "../objects/moons/rhea.json",
       "image": "assets/images/space-images/moons/rhea.jpg",
-      "alt": "The images in this mosaic were taken with the Cassini spacecraft narrow-angle camera during a close flyby on Nov. 26, 2005.",
-      "about": "Rhea is the second-largest moon of Saturn. It was discovered in 1672 by Giovanni Domenico Cassini."
+      "alt": "The images in this mosaic were taken with the Cassini spacecraft narrow-angle camera during a close flyby on Nov. 26, 2005."
     },
     {
       "name": "titan",
-      "titan": "../objects/moons/titan.json",
       "image": "assets/images/space-images/moons/titan.jpg",
-      "alt": "The images were obtained with the Cassini spacecraft wide-angle camera on Jan. 30, 2012.",
-      "about": "Titan is the largest moon of Saturn and the second-largest natural satellite in the Solar System. It is the only moon known to have a dense atmosphere, and the only known body in space, other than Earth, where clear evidence of stable bodies of surface liquid has been found. Discovered in 1655 by the Dutch astronomer Christiaan Huygens, Titan was the first known moon of Saturn."
+      "alt": "The images were obtained with the Cassini spacecraft wide-angle camera on Jan. 30, 2012."
     },
     {
       "name": "hyperion",
-      "hyperion": "../objects/moons/hyperion.json",
       "image": "assets/images/space-images/moons/hyperion.jpg",
-      "alt": "Approximately true-color mosaic of Saturn's moon Hyperion. Taken during Cassini's flyby of this lumpy moon on 26th September 2005.",
-      "about": "Hyperion is a moon of Saturn discovered by William Cranch Bond, George Phillips Bond and William Lassell in 1848."
+      "alt": "Approximately true-color mosaic of Saturn's moon Hyperion. Taken during Cassini's flyby of this lumpy moon on 26th September 2005."
     },
     {
       "name": "iapetus",
-      "iapetus": "../objects/moons/iapetus.json",
       "image": "assets/images/space-images/moons/iapetus.jpg",
-      "alt": "Iapetus as seen by the Cassini probe.",
-      "about": "Iapetus is the third-largest natural satellite of Saturn. Iapetus was discovered by Giovanni Domenico Cassini, an Italian-born French astronomer, in October 1671."
+      "alt": "Iapetus as seen by the Cassini probe."
     },
     {
       "name": "phoebe",
-      "phoebe": "../objects/moons/phoebe.json",
       "image": "assets/images/space-images/moons/phoebe.jpg",
-      "alt": "Phoebe, as imaged by the Cassini probe.",
-      "about": "Phoebe is a satellite of Saturn. It was discovered by William Henry Pickering on March 18, 1899."
+      "alt": "Phoebe, as imaged by the Cassini probe."
     },
     {
       "name": "puck",
-      "puck": "../objects/moons/puck.json",
       "image": "assets/images/space-images/moons/puck.jpg",
-      "alt": "Image taken from Voyager 2 on 24 January 1986.",
-      "about": "Puck is an inner moon of Uranus. It was discovered in December 1985 by the Voyager 2 spacecraft."
+      "alt": "Image taken from Voyager 2 on 24 January 1986."
     },
     {
       "name": "miranda",
-      "miranda": "../objects/moons/miranda.json",
       "image": "assets/images/space-images/moons/miranda.jpg",
-      "alt": "Uranus' icy moon Miranda is seen in this image from Voyager 2 on January 24, 1986.",
-      "about": "Miranda is the smallest and innermost of Uranus's five round satellites. It was discovered by Gerard Kuiper on 16 February 1948 at McDonald Observatory in Texas, and named after Miranda from William Shakespeare's play The Tempest."
+      "alt": "Uranus' icy moon Miranda is seen in this image from Voyager 2 on January 24, 1986."
     },
     {
       "name": "ariel",
-      "ariel": "../objects/moons/ariel.json",
       "image": "assets/images/space-images/moons/ariel.jpg",
-      "alt": "This mosaic of the four highest-resolution images of Ariel represents the most detailed Voyager 2 picture of this satellite of Uranus.",
-      "about": "Ariel is the fourth-largest of the 27 known moons of Uranus. It was discovered in October 1851 by William Lassell."
+      "alt": "This mosaic of the four highest-resolution images of Ariel represents the most detailed Voyager 2 picture of this satellite of Uranus."
     },
     {
       "name": "umbriel",
-      "umbriel": "../objects/moons/umbriel.json",
       "image": "assets/images/space-images/moons/umbriel.jpg",
-      "alt": "The southern hemisphere of Umbriel displays heavy cratering in this Voyager 2 image, taken Jan. 24, 1986.",
-      "about": "Umbriel is a moon of Uranus discovered on October 24, 1851, by William Lassell. It was discovered at the same time as Ariel."
+      "alt": "The southern hemisphere of Umbriel displays heavy cratering in this Voyager 2 image, taken Jan. 24, 1986."
     },
     {
       "name": "oberon",
-      "oberon": "../objects/moons/oberon.json",
       "image": "assets/images/space-images/moons/oberon.jpg",
-      "alt": "This Voyager 2 picture of Oberon is the best the spacecraft acquired of Uranus' outermost moon. The picture was taken shortly after 3:30 a.m. PST on Jan. 24, 1986.",
-      "about": "Oberon is the outermost major moon of the planet Uranus. It is the second-largest and second most massive of the Uranian moons. Discovered by William Herschel in 1787, Oberon is named after the mythical king of the fairies who appears as a character in Shakespeare's A Midsummer Night's Dream."
+      "alt": "This Voyager 2 picture of Oberon is the best the spacecraft acquired of Uranus' outermost moon. The picture was taken shortly after 3:30 a.m. PST on Jan. 24, 1986."
     },
     {
       "name": "triton",
-      "triton": "../objects/moons/triton.json",
       "image": "assets/images/space-images/moons/triton.jpg",
-      "alt": "Global Color Mosaic of Triton, taken by Voyager 2 in 1989.",
-      "about": "Triton is the largest natural satellite of the planet Neptune, and the first Neptunian moon to be discovered. The discovery was made on October 10, 1846, by English astronomer William Lassell."
+      "alt": "Global Color Mosaic of Triton, taken by Voyager 2 in 1989."
     },
     {
       "name": "charon",
-      "charon": "../objects/moons/charon.json",
       "image": "assets/images/space-images/moons/charon.jpg",
-      "alt": "This image was taken on July 14, 2015, from a range of 46,091 miles (74,176 kilometers). This single color MVIC scan includes no data from other New Horizons imagers or instruments added.",
-      "about": "Charon (/ˈkɛərən/ or /ˈʃærən/), also known as (134340) Pluto I, is the largest of the five known natural satellites of the dwarf planet Pluto. It was discovered in 1978 at the United States Naval Observatory in Washington, D.C."
+      "alt": "This image was taken on July 14, 2015, from a range of 46,091 miles (74,176 kilometers). This single color MVIC scan includes no data from other New Horizons imagers or instruments added."
     }
   ]
 }

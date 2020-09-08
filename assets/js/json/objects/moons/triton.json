@@ -1,40 +1,25 @@
 {
-  "triton": [
-    {
-      "size": [
-        {
-          "mass": ["21.5", "10^21kg", "[2]"],
-          "diameter": ["0.212", "Earth", "[2]", "[2]"],
-          "density ": ["2050", "kg/m^3", "[2]"],
-          "gravity ": ["0.78", "m/s^2", "[2]"]
-        }
-      ]
+  "triton": {
+    "orbital Characteristics": {
+      "rotation period ": ["141.0", "hours", "[2]"],
+      "orbital period ": ["5.9", "days", "[2]"],
+      "distance": ["355", "10^3km", "[2]"],
+      "periapsis": ["355", "10^3km", "[2]"],
+      "apoapsis": ["355", "10^3km", "[2]"],
+      "orbital velocity ": ["4.4", "km/s", "[2]"],
+      "eccentricity": ["0.000", "no unit", "[2]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["141.0", "hours", "[2]"],
-          "orbital period ": ["5.9", "days", "[2]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["21.5", "10^21kg", "[2]"],
+      "diameter": ["0.212", "Earth", "[2]", "[2]"],
+      "density ": ["2050", "kg/m^3", "[2]"],
+      "gravity ": ["0.78", "m/s^2", "[2]"],
+      "mean temperature": ["-215", "C", "[2]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["355", "10^3km", "[2]"],
-          "periapse": ["355", "10^3km", "[2]"],
-          "apoapse": ["355", "10^3km", "[2]"],
-          "orbital velocity ": ["4.4", "km/s", "[2]"],
-          "eccentricity": ["0.000","no unit", "[2]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["-215", "C", "[2]"]
-        }
-      ]
+    "about": {
+        "about": "Triton is the largest natural satellite of the planet Neptune, and the first Neptunian moon to be discovered. Triton has a surface of mostly frozen nitrogen, a mostly water-ice crust, an icy mantle and a substantial core of rock and metal. The core makes up two-thirds of its total mass.",
+        "discovery": "Triton was discovered by British astronomer William Lassell on October 10, 1846, just 17 days after the discovery of Neptune.",
+        "name": "Triton is named after the Greek sea god Triton, the son of Poseidon (the Greek god corresponding to the Roman Neptune)."
     }
-  ]
+  }
 }

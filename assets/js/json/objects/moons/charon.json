@@ -1,41 +1,25 @@
 {
-  "charon": [
-    {
-      "size": [
-        {
-          "mass": ["1.546,626", "10^21kg", "[31]"],
-          "radius": ["603.6", "km", "[31]"],
-          "density ": ["1.678", "g/m^3", "[31]"],
-          "gravity ": ["0.283", "m/s^2", "[31]"]
-        }
-      ]
+  "charon": {
+    "orbital Characteristics": {
+      "rotation period ": ["6.387", "days", "[31]"],
+      "orbital period ": ["6.387", "year", "[31]"],
+      "distance": ["17,536", "km", "[a]"],
+      "periapsis": ["17,497", "km", "[31]"],
+      "apoapsis": ["17,575", "km", "[31]"],
+      "orbital velocity ": ["718.8", "km/h", "[31]"],
+      "eccentricity": ["0.0022", "no unit", "[31]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["6.387", "days", "[31]"],
-          "orbital period ": ["6.387", "year", "[31]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["1.546,626", "10^21kg", "[31]"],
+      "radius": ["603.6", "km", "[31]"],
+      "density ": ["1.678", "g/m^3", "[31]"],
+      "gravity ": ["0.283", "m/s^2", "[31]"],
+      "bond albedo": ["0.25", "no unit", "[50]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["17,536", "km", "[a]"],
-          "periapsis": ["17,497", "km", "[31]"],
-          "apoapsis": ["17,575", "km", "[31]"],
-          "orbital velocity ": ["718.8", "km/h", "[31]"],
-          "eccentricity": ["0.0022","no unit", "[31]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.25","no unit", "[50]"]
-        }
-      ]
+    "about": {
+        "about": "With half the diameter and one eighth the mass of Pluto, Charon is a very large moon in comparison to its parent body. Its gravitational influence is such that the barycenter of the Plutonian system lies outside Pluto. The New Horizons spacecraft is the only probe that has visited the Pluto system. It approached Charon in 2015.",
+        "discovery": "Charon was discovered by United States Naval Observatory astronomer James Christy. On June 22, 1978, he had been examining highly magnified images of Pluto on photographic plates taken with the telescope two months prior. Christy noticed that a slight elongation appeared periodically. Subsequent observations of Pluto determined that the bulge was due to a smaller accompanying body.",
+        "name": "Author Edmond Hamilton referred to three moons of Pluto in his 1940 science fiction novel Calling Captain Future, naming them Charon, Styx, and Cerberus. The IAU officially adopted the name in late 1985 and it was announced on January 3, 1986."
     }
-  ]
+  }
 }
-

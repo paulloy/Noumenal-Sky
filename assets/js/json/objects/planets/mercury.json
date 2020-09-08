@@ -1,50 +1,28 @@
 {
-  "mercury": [
-    {
-      "size": [
-        {
-          "mass": ["0.330", "10^24kg", "[1]"],
-          "diameter": ["4879", "km", "[1]"],
-          "density": ["5427", "kg/m^3", "[1]"],
-          "gravity": ["3.7", "m/s^2", "[1]"]
-        }
-      ]
+  "mercury": {
+    "orbital Characteristics": {
+      "rotation period": ["1407.6", "hours", "[1]"],
+      "orbital period ": ["88.0", "days", "[1]"],
+      "distance": ["57.9", "10^6km", "[1]"],
+      "periapsis": ["46.0", "10^6km", "[1]"],
+      "apoapsis": ["69.8", "10^6km", "[1]"],
+      "orbital velocity": ["47.4", "km/s", "[1]"],
+      "eccentricity": ["0.205", "no unit", "[1]"],
+      "axial tilt": ["0.034", "deg", "[1]"],
+      "number of moons": ["0", "no unit", "[1]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["1407.6", "hours", "[1]"],
-          "orbital period ": ["88.0", "days", "[1]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["0.330", "10^24kg", "[1]"],
+      "diameter": ["4879", "km", "[1]"],
+      "density": ["5427", "kg/m^3", "[1]"],
+      "gravity": ["3.7", "m/s^2", "[1]"],
+      "ring system": ["false", "no unit", "[1]"],
+      "mean temperature": ["167", "C", "[1]"],
+      "bond albedo": ["0.088", "no unit", "[39]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["57.9", "10^6km", "[1]"],
-          "perihelion": ["46.0", "10^6km", "[1]"],
-          "aphelion": ["69.8", "10^6km", "[1]"],
-          "orbital velocity": ["47.4", "km/s", "[1]"],
-          "eccentricity": ["0.205","no unit", "[1]"],
-          "axial tilt": ["0.034", "deg", "[1]"]
-        }
-      ]
-    },
-    {
-      "moons": [
-        {
-          "number of moons": ["0","no unit", "[1]"],
-          "ring system": ["false","no unit", "[1]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["167", "C", "[1]"],
-          "bond albedo": ["0.088","no unit", "[39]"]
-        }
-      ]
+    "about": {
+        "about": "Mercury is the smallest and innermost planet in the Solar System. Two spacecraft have visited Mercury: Mariner 10 flew by in 1974 and 1975; and MESSENGER, launched in 2004, orbited Mercury over 4,000 times in four years before exhausting its fuel and crashing into the planet's surface on April 30, 2015. The BepiColombo spacecraft is planned to arrive at Mercury in 2025.",
+        "name": "The Romans knew of seven bright objects in the sky: the Sun, the Moon, and the five brightest planets. They named them after their most important gods. Because Mercury was the fastest planet as it moved around the Sun, it was named after the Roman messenger god Mercury. "
     }
-  ]
+  }
 }

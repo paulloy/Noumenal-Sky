@@ -1,47 +1,27 @@
 {
-  "eris": [
-    {
-      "size": [
-        {
-          "mass": ["1.66", "10^22kg", "[4]"],
-          "diameter": ["2400", "km", "[4]"],
-          "density": ["2.3", "g/cm^-3", "[4]"],
-          "gravity": ["0.82", "m/s^2", "[a]"]
-        }
-      ]
+  "eris": {
+    "orbital Characteristics": {
+      "rotation period": ["25.92", "hours", "[3]"],
+      "orbital period ": ["559.1", "year", "[3]"],
+      "distance": ["67.9", "AU", "[a]"],
+      "periapsis": ["38.3", "AU", "[3]"],
+      "apoapsis": ["97.5", "AU", "[3]"],
+      "orbital velocity": ["3.43 ", "km/s", "[3]"],
+      "eccentricity": ["0.436", "no unit", "[3]"],
+      "number of moons": ["1", "no unit", "[3]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["25.92", "hours", "[3]"],
-          "orbital period ": ["559.1", "year", "[3]"]
-        }
-      ]
+
+    "physical characteristics": {
+      "mass": ["1.66", "10^22kg", "[4]"],
+      "diameter": ["2400", "km", "[4]"],
+      "density": ["2.3", "g/cm^-3", "[4]"],
+      "gravity": ["0.82", "m/s^2", "[a]"],
+      "bond albedo": ["0.55", "no unit", "[50]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["67.9", "AU", "[a]"],
-          "perihelion": ["38.3", "AU", "[3]"],
-          "aphelion": ["97.5", "AU", "[3]"],
-          "orbital velocity": ["3.43 ", "km/s", "[3]"],
-          "eccentricity": ["0.436", "no unit", "[3]"]
-        }
-      ]
-    },
-    {
-      "moons": [
-        {
-          "number of moons": ["1", "no unit", "[3]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.55", "no unit", "[50]"]
-        }
-      ]
+    "about": {
+        "about": "Eris is the most massive and second-largest known dwarf planet in the Solar System. Because Eris appeared to be larger than Pluto, NASA initially described it as the Solar System's tenth planet. This, along with the prospect of other objects of similar size being discovered in the future, motivated the International Astronomical Union (IAU) to define the term planet for the first time." ,
+        "discovery": "Eris was discovered by the team of Mike Brown, Chad Trujillo, and David Rabinowitz on January 5, 2005, from images taken on October 21, 2003.",
+        "name": "Eris is named after the Greek goddess Eris, a personification of strife and discord. The name was proposed by the Caltech team on September 6, 2006, and it was assigned on September 13, 2006."
     }
-  ]
+  }
 }

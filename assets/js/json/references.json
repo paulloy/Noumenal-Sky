@@ -1,254 +1,327 @@
 {
-    "1": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
-        "author": "Dr. David R. Williams",
-        "title": "Planetary Fact Sheet - Metric"},
-    "2": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html",
-        "author": "Dr. David R. Williams",
-        "title": "Solar System Small Worlds Fact Sheet"},
-    "3": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=136199",
-        "author": "JPL Small-Body Database Browser",
-        "title": "136199 Eris (2003 UB313)"},
-    "4": {
-        "href": "https://web.archive.org/web/20160304053122/http://hubblesite.org/pubinfo/pdf/2007/24/pdf.pdf",
-        "author": "Michael E. Brown; Emily L. Schaller",
-        "title": "The Mass of Dwarf Planet Eris."},
-    "5": {
-        "href": "https://ui.adsabs.harvard.edu/abs/2018DPS....5050903H/abstract",
-        "author": "Holler, Bryan J.; Grundy, William; Buie, Marc W.; Noll, Keith (October 2018).",
-        "title": "Breaking the degeneracy of Eris' pole orientation."},
-    "6": {
-        "href": "https://web.archive.org/web/20191204084356/http://www.mpe.mpg.de/~tmueller/sbnaf/doc/parker_dps18.pdf",
-        "author": "Alex Parker et al.",
-        "title": "The Mass, Density, and Figure of the Kuiper Belt Dwarf Planet Makemake"},
-    "7": {
-        "href": "https://orbi.uliege.be/handle/2268/142198",
-        "author": "Ortiz, J. L. et al.",
-        "title": "Albedo and atmospheric constraints of dwarf planet Makemake from a stellar occultation"},
-    "8": {
-        "href": "https://solarsystem.nasa.gov/planets/dwarf-planets/makemake/by-the-numbers/",
-        "author": "NASA Science Solar System Exploration",
-        "title": "Makemake - By the Numbers"},
-    "9": {
-        "href": "https://solarsystem.nasa.gov/planets/dwarf-planets/makemake/in-depth/",
-        "author": "NASA Science Solar System Exploration",
-        "title": "Makemake - In Depth"},
-    "10": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=136472",
-        "author": "JPL Small-Body Database Browser",
-        "title": "136472 Makemake (2005 FY9)"},
-    "11": {
-        "href": "https://iopscience.iop.org/article/10.1088/0004-6256/137/6/4766/pdf",
-        "author": "D. Ragozzine; M. E. Brown",
-        "title": "ORBITS AND MASSES OF THE SATELLITES OF THE DWARF PLANET HAUMEA (2003 EL61)"},
-    "12": {
-        "href": "https://iopscience.iop.org/article/10.3847/1538-4357/ab13b3/pdf",
-        "author": "E. T. Dunham; S. J. Desch; L. Probst",
-        "title": "Haumea’s Shape, Composition, and Internal Structure"},
-    "13": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2136108",
-        "author": "JPL Small-Body Database Browser",
-        "title": "136108 Haumea (2003 EL61)"},
-    "14": {
-        "href": "https://iopscience.iop.org/article/10.1086/509861/pdf",
-        "author": "Michael E. Brown; Kristina M. Barkume; Emily L. Schaller",
-        "title": "THE SURFACE OF 2003 EL61 IN THE NEAR-INFRARED"},
-    "15": {
-        "href": "https://web.archive.org/web/20131019162634/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Phobos&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Phobos: Facts & Figures"},
-    "16": {
-        "href": "https://web.archive.org/web/20131019172735/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Deimos&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Deimos: Facts & Figures"},
-    "17": {
-        "href": "https://solarsystem.nasa.gov/moons/saturn-moons/mimas/in-depth/",
-        "author": "NASA: Solar System Exploration",
-        "title": "Mimas: In Depth"},
-    "18": {
-        "href": "http://www.astronoo.com/en/mimas.html",
-        "author": "Astronoo",
-        "title": "Mimas"},
-    "19": {
-        "href": "https://web.archive.org/web/20131016093801/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Enceladus&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Enceladus: Facts & Figures"},
-    "20": {
-        "href": "https://web.archive.org/web/20121004150451/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Tethys&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Tethys: Facts & Figures"},
-    "21": {
-        "href": "https://web.archive.org/web/20121012084815/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Dione&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Dione: Facts & Figures"},
-    "22": {
-        "href": "https://web.archive.org/web/20121013010903/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Rhea&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Rhea: Facts & Figures"},
-    "23": {
-        "href": "https://web.archive.org/web/20140812203926/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Hyperion&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Hyperion: Facts & Figures"},
-    "24": {
-        "href": "https://web.archive.org/web/20121014104617/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Iapetus&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Iapetus: Facts & Figures"},
-    "25": {
-        "href": "https://web.archive.org/web/20121004231632/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Phoebe&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Phoebe: Facts & Figures"},
-    "26": {
-        "href": "https://web.archive.org/web/20121003172750/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Puck&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Puck: Facts & Figures"},
-    "27": {
-        "href": "https://web.archive.org/web/20121017193925/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Miranda&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Miranda: Facts & Figures"},
-    "28": {
-        "href": "https://web.archive.org/web/20121018063927/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Ariel&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Ariel: Facts & Figures"},
-    "29": {
-        "href": "https://web.archive.org/web/20121003173754/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Umbriel&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Umbriel: Facts & Figures"},
-    "30": {
-        "href": "https://web.archive.org/web/20121015061157/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Oberon&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Oberon: Facts & Figures"},
-    "31": {
-        "href": "https://web.archive.org/web/20120930192704/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Plu_Charon&Display=Facts",
-        "author": "NASA: Solar System Exploration",
-        "title": "Charon: Facts & Figures"},
-    "32": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=67P",
-        "author": "JPL Small-Body Database Browser",
-        "title": "67P/Churyumov-Gerasimenko"},
-    "33": {
-        "href": "https://www.nature.com/articles/nature16535",
-        "author": "M. Pätzold et al.",
-        "title": "A homogeneous nucleus for comet 67P/Churyumov–Gerasimenko from its gravity field"},
-    "34": {
-        "href": "http://www.esa.int/ESA_Multimedia/Images/2015/01/Comet_vital_statistics",
-        "author": "European Space Agency",
-        "title": "Comet 67P/Churyumov-Gerasimenko vital statistics"},
-    "35": {
-        "href": "https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=-143205&CENTER=%27500@10%27&MAKE_EPHEM=YES&TABLE_TYPE=ELEMENTS&START_TIME=2018-05-01&STOP_TIME=%272018-05-01+00:00:01%27&OUT_UNITS=AU-D&REF_PLANE=ECLIPTIC&REF_SYSTEM=J2000&TP_TYPE=ABSOLUTE&ELEM_LABELS=YES&CSV_FORMAT=NO&OBJ_DATA=YES",
-        "author": "Jon.D.Giorgini",
-        "title": "Tesla Roadster (spacecraft)"},
-    "36": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=4",
-        "author": "JPL Small-Body Database Browser",
-        "title": "4 Vesta (A807 FA)"},
-    "37": {
-        "href": "https://starchild.gsfc.nasa.gov/docs/StarChild/solar_system_level2/eris.html",
-        "author": "High Energy Astrophysics Science Archive Research Center (HEASARC), Dr. Alan Smale (Director), within the Astrophysics Science Division (ASD) at NASA/ GSFC",
-        "title": "Eris: A Dwarf Planet"},
-    "38": {
-        "href": "https://ui.adsabs.harvard.edu/abs/2019ApJ...877...41D/abstract",
-        "author": "Dunham, E. T.; Desch, S. J.; Probst, L.",
-        "title": "Haumea’s Shape, Composition, and Internal Structure"},
-    "39": {
-        "href": "https://arxiv.org/abs/1703.02670",
-        "author": "Anthony Mallama",
-        "title": "The Spherical Bolometric Albedo of Planet Mercury"},
-    "40": {
-        "href": "https://ui.adsabs.harvard.edu/abs/2016Icar..272..178H/abstract",
-        "author": "Haus, R. et al",
-        "title": "Radiative energy balance of Venus based on improved models of the middle and lower atmosphere"},
-    "41": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
-        "author": "Dr. David R. Williams",
-        "title": "Earth Fact Sheet"},
-    "42": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
-        "author": "Dr. David R. Williams",
-        "title": "Moon Fact Sheet"},
-    "43": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
-        "author": "Dr. David R. Williams",
-        "title": "Mars Fact Sheet"},
-    "44": {
-        "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6137063/",
-        "author": "Liming Li et al.",
-        "title": "Less absorbed solar energy and more internal heat for Jupiter"},
-    "45": {
-        "href": "https://ui.adsabs.harvard.edu/abs/1983Icar...53..262H/abstract",
-        "author": "Hanel, R. A.; Conrath, B. J.; Kunde, V. G.; Pearl, J. C.; Pirraglia, J. A.",
-        "title": "Albedo, internal heat flux, and energy balance of Saturn"},
-    "46": {
-        "href": "https://ui.adsabs.harvard.edu/abs/1990Icar...84...12P/abstract",
-        "author": "Pearl, J. C.; Conrath, B. J.; Hanel, R. A.; Pirraglia, J. A.; Coustenis, A.",
-        "title": "The albedo, effective temperature, and energy balance of Uranus, as determined from Voyager IRIS data"},
-    "47": {
-        "href": "https://ui.adsabs.harvard.edu/abs/1991JGR....9618921P/abstract",
-        "author": "Pearl, J. C.; Conrath, B. J.",
-        "title": "The albedo, effective temperature, and energy balance of Neptune, as determined from Voyager data"},
-    "48": {
-        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0019103518305426#:~:text=The%20single%2Dscattering%20albedo%20of,albedo%20is%200.037%20%C2%B1%200.002.",
-        "author": "Jian-YangLi(李荐扬) et al.",
-        "title": "Spectrophotometric modeling and mapping of Ceres"},
-    "49": {
-        "href": "https://arxiv.org/abs/1604.06129",
-        "author": "B. J. Buratti et al.",
-        "title": "Global Albedos of Pluto and Charon from LORRI New Horizons Observations"},
-    "50": {
-        "href": "https://iopscience.iop.org/article/10.1088/0004-637X/809/1/43/pdf",
-        "author": "R. E. Johnson1, A. Oza3, L. A. Young, A. N. Volkov, and C. Schmidt",
-        "title": "VOLATILE LOSS AND CLASSIFICATION OF KUIPER BELT OBJECTS"},
-    "51": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=Sedna",
-        "author": "JPL Small-Body Database Browser",
-        "title": "90377 Sedna (2003 VB12)"},
-    "52": {
-        "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2050000",
-        "author": "JPL Small-Body Database Browser",
-        "title": "50000 Quaoar (2002 LM60)"},
-    "53": {
-        "href": "https://www.lpi.usra.edu/meetings/lpsc2010/pdf/2035.pdf",
-        "author": "K. M. Pitman, B. J. Buratti, J. A. Mosher",
-        "title": "BOLOMETRIC BOND ALBEDOS FOR SATURNIAN SATELLITES FROM CASSINI VIMS: LEADING AND TRAILING HEMISPHERES."},
-    "54": {
-        "href": "https://www.sciencedirect.com/science/article/abs/pii/001910358890040",
-        "author": "Damon P.Simonelli; Joseph Veverka",
-        "title": "Bolometric albedos and diurnal temperatures of the brightest regions on Io"},
-    "55": {
-        "href": "https://arxiv.org/pdf/1608.07372.pdf",
-        "author": "Yosef Ashkenazy",
-        "title": "The surface temperature of Europa"},
-    "56": {
-        "href": "https://www.sciencedirect.com/science/article/abs/pii/0019103582901725",
-        "author": "Steven W. Squyres; Joseph Veverka",
-        "title": "Color photometry of surface features on Ganymede and Callisto"},
-    "57": {
-        "href": "https://www.sciencedirect.com/science/article/abs/pii/0019103574900360",
-        "author": "Robert L.Younkin",
-        "title": "The albedo of Titan"},
-    "58": {
-        "href": "https://www.sciencedirect.com/science/article/abs/pii/S0019103507004642",
-        "author": "B.J.Buratti et al.",
-        "title": "Infrared (0.83–5.1 μm) photometry of Phoebe from the Cassini Visual Infrared Mapping Spectrometer"},
-    "59": {
-        "href": "https://solarsystem.nasa.gov/moons/saturn-moons/rhea/by-the-numbers/",
-        "author": "NASA Science Solar System Exploration",
-        "title": "Rhea - By the Numbers"},
-    "60": {
-        "href": "https://solarsystem.nasa.gov/moons/saturn-moons/hyperion/in-depth/#:~:text=Hyperion%20rotates%20roughly%20every%2013,is%20its%20deeply%20cratered%20surface.",
-        "author": "NASA Science Solar System Exploration",
-        "title": "Hyperion - In Depth"},
-    "61": {
-        "href": "https://solarsystem.nasa.gov/moons/saturn-moons/phoebe/in-depth/#:~:text=Phoebe%20rotates%20on%20its%20axis,175%20degrees%20to%20Saturn's%20equator.",
-        "author": "NASA Science Solar System Exploration",
-        "title": "Phoebe - In Depth"},
-    "62": {
-        "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
-        "author": "Dr. David R. Williams",
-        "title": "Asteroid Fact Sheet"},
-    "63": {
-        "href": "https://ui.adsabs.harvard.edu/abs/2013ApJ...773...26B/abstract",
-        "author": "Braga-Ribas et al.",
-        "title": "The Size, Shape, Albedo, Density, and Atmospheric Limit of Transneptunian Object (50000) Quaoar from Multi-chord Stellar Occultations"}
+  "1": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/index.html",
+    "author": "Dr. David R. Williams",
+    "title": "Planetary Fact Sheet - Metric"
+  },
+  "2": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/galileanfact_table.html",
+    "author": "Dr. David R. Williams",
+    "title": "Solar System Small Worlds Fact Sheet"
+  },
+  "3": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=136199",
+    "author": "JPL Small-Body Database Browser",
+    "title": "136199 Eris (2003 UB313)"
+  },
+  "4": {
+    "href": "https://web.archive.org/web/20160304053122/http://hubblesite.org/pubinfo/pdf/2007/24/pdf.pdf",
+    "author": "Michael E. Brown; Emily L. Schaller",
+    "title": "The Mass of Dwarf Planet Eris."
+  },
+  "5": {
+    "href": "https://ui.adsabs.harvard.edu/abs/2018DPS....5050903H/abstract",
+    "author": "Holler, Bryan J.; Grundy, William; Buie, Marc W.; Noll, Keith (October 2018).",
+    "title": "Breaking the degeneracy of Eris' pole orientation."
+  },
+  "6": {
+    "href": "https://web.archive.org/web/20191204084356/http://www.mpe.mpg.de/~tmueller/sbnaf/doc/parker_dps18.pdf",
+    "author": "Alex Parker et al.",
+    "title": "The Mass, Density, and Figure of the Kuiper Belt Dwarf Planet Makemake"
+  },
+  "7": {
+    "href": "https://orbi.uliege.be/handle/2268/142198",
+    "author": "Ortiz, J. L. et al.",
+    "title": "Albedo and atmospheric constraints of dwarf planet Makemake from a stellar occultation"
+  },
+  "8": {
+    "href": "https://solarsystem.nasa.gov/planets/dwarf-planets/makemake/by-the-numbers/",
+    "author": "NASA Science Solar System Exploration",
+    "title": "Makemake - By the Numbers"
+  },
+  "9": {
+    "href": "https://solarsystem.nasa.gov/planets/dwarf-planets/makemake/in-depth/",
+    "author": "NASA Science Solar System Exploration",
+    "title": "Makemake - In Depth"
+  },
+  "10": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=136472",
+    "author": "JPL Small-Body Database Browser",
+    "title": "136472 Makemake (2005 FY9)"
+  },
+  "11": {
+    "href": "https://iopscience.iop.org/article/10.1088/0004-6256/137/6/4766/pdf",
+    "author": "D. Ragozzine; M. E. Brown",
+    "title": "ORBITS AND MASSES OF THE SATELLITES OF THE DWARF PLANET HAUMEA (2003 EL61)"
+  },
+  "12": {
+    "href": "https://iopscience.iop.org/article/10.3847/1538-4357/ab13b3/pdf",
+    "author": "E. T. Dunham; S. J. Desch; L. Probst",
+    "title": "Haumea’s Shape, Composition, and Internal Structure"
+  },
+  "13": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2136108",
+    "author": "JPL Small-Body Database Browser",
+    "title": "136108 Haumea (2003 EL61)"
+  },
+  "14": {
+    "href": "https://iopscience.iop.org/article/10.1086/509861/pdf",
+    "author": "Michael E. Brown; Kristina M. Barkume; Emily L. Schaller",
+    "title": "THE SURFACE OF 2003 EL61 IN THE NEAR-INFRARED"
+  },
+  "15": {
+    "href": "https://web.archive.org/web/20131019162634/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Phobos&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Phobos: Facts & Figures"
+  },
+  "16": {
+    "href": "https://web.archive.org/web/20131019172735/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Mar_Deimos&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Deimos: Facts & Figures"
+  },
+  "17": {
+    "href": "https://solarsystem.nasa.gov/moons/saturn-moons/mimas/in-depth/",
+    "author": "NASA: Solar System Exploration",
+    "title": "Mimas: In Depth"
+  },
+  "18": {
+    "href": "http://www.astronoo.com/en/mimas.html",
+    "author": "Astronoo",
+    "title": "Mimas"
+  },
+  "19": {
+    "href": "https://web.archive.org/web/20131016093801/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Enceladus&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Enceladus: Facts & Figures"
+  },
+  "20": {
+    "href": "https://web.archive.org/web/20121004150451/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Tethys&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Tethys: Facts & Figures"
+  },
+  "21": {
+    "href": "https://web.archive.org/web/20121012084815/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Dione&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Dione: Facts & Figures"
+  },
+  "22": {
+    "href": "https://web.archive.org/web/20121013010903/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Rhea&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Rhea: Facts & Figures"
+  },
+  "23": {
+    "href": "https://web.archive.org/web/20140812203926/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Hyperion&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Hyperion: Facts & Figures"
+  },
+  "24": {
+    "href": "https://web.archive.org/web/20121014104617/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Iapetus&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Iapetus: Facts & Figures"
+  },
+  "25": {
+    "href": "https://web.archive.org/web/20121004231632/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Sat_Phoebe&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Phoebe: Facts & Figures"
+  },
+  "26": {
+    "href": "https://web.archive.org/web/20121003172750/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Puck&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Puck: Facts & Figures"
+  },
+  "27": {
+    "href": "https://web.archive.org/web/20121017193925/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Miranda&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Miranda: Facts & Figures"
+  },
+  "28": {
+    "href": "https://web.archive.org/web/20121018063927/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Ariel&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Ariel: Facts & Figures"
+  },
+  "29": {
+    "href": "https://web.archive.org/web/20121003173754/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Umbriel&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Umbriel: Facts & Figures"
+  },
+  "30": {
+    "href": "https://web.archive.org/web/20121015061157/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Ura_Oberon&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Oberon: Facts & Figures"
+  },
+  "31": {
+    "href": "https://web.archive.org/web/20120930192704/http://solarsystem.nasa.gov/planets/profile.cfm?Object=Plu_Charon&Display=Facts",
+    "author": "NASA: Solar System Exploration",
+    "title": "Charon: Facts & Figures"
+  },
+  "32": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=67P",
+    "author": "JPL Small-Body Database Browser",
+    "title": "67P/Churyumov-Gerasimenko"
+  },
+  "33": {
+    "href": "https://www.nature.com/articles/nature16535",
+    "author": "M. Pätzold et al.",
+    "title": "A homogeneous nucleus for comet 67P/Churyumov–Gerasimenko from its gravity field"
+  },
+  "34": {
+    "href": "http://www.esa.int/ESA_Multimedia/Images/2015/01/Comet_vital_statistics",
+    "author": "European Space Agency",
+    "title": "Comet 67P/Churyumov-Gerasimenko vital statistics"
+  },
+  "35": {
+    "href": "https://ssd.jpl.nasa.gov/horizons_batch.cgi?batch=1&COMMAND=-143205&CENTER=%27500@10%27&MAKE_EPHEM=YES&TABLE_TYPE=ELEMENTS&START_TIME=2018-05-01&STOP_TIME=%272018-05-01+00:00:01%27&OUT_UNITS=AU-D&REF_PLANE=ECLIPTIC&REF_SYSTEM=J2000&TP_TYPE=ABSOLUTE&ELEM_LABELS=YES&CSV_FORMAT=NO&OBJ_DATA=YES",
+    "author": "Jon.D.Giorgini",
+    "title": "Tesla Roadster (spacecraft)"
+  },
+  "36": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=4",
+    "author": "JPL Small-Body Database Browser",
+    "title": "4 Vesta (A807 FA)"
+  },
+  "37": {
+    "href": "https://starchild.gsfc.nasa.gov/docs/StarChild/solar_system_level2/eris.html",
+    "author": "High Energy Astrophysics Science Archive Research Center (HEASARC), Dr. Alan Smale (Director), within the Astrophysics Science Division (ASD) at NASA/ GSFC",
+    "title": "Eris: A Dwarf Planet"
+  },
+  "38": {
+    "href": "https://ui.adsabs.harvard.edu/abs/2019ApJ...877...41D/abstract",
+    "author": "Dunham, E. T.; Desch, S. J.; Probst, L.",
+    "title": "Haumea’s Shape, Composition, and Internal Structure"
+  },
+  "39": {
+    "href": "https://arxiv.org/abs/1703.02670",
+    "author": "Anthony Mallama",
+    "title": "The Spherical Bolometric Albedo of Planet Mercury"
+  },
+  "40": {
+    "href": "https://ui.adsabs.harvard.edu/abs/2016Icar..272..178H/abstract",
+    "author": "Haus, R. et al",
+    "title": "Radiative energy balance of Venus based on improved models of the middle and lower atmosphere"
+  },
+  "41": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+    "author": "Dr. David R. Williams",
+    "title": "Earth Fact Sheet"
+  },
+  "42": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+    "author": "Dr. David R. Williams",
+    "title": "Moon Fact Sheet"
+  },
+  "43": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html",
+    "author": "Dr. David R. Williams",
+    "title": "Mars Fact Sheet"
+  },
+  "44": {
+    "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6137063/",
+    "author": "Liming Li et al.",
+    "title": "Less absorbed solar energy and more internal heat for Jupiter"
+  },
+  "45": {
+    "href": "https://ui.adsabs.harvard.edu/abs/1983Icar...53..262H/abstract",
+    "author": "Hanel, R. A.; Conrath, B. J.; Kunde, V. G.; Pearl, J. C.; Pirraglia, J. A.",
+    "title": "Albedo, internal heat flux, and energy balance of Saturn"
+  },
+  "46": {
+    "href": "https://ui.adsabs.harvard.edu/abs/1990Icar...84...12P/abstract",
+    "author": "Pearl, J. C.; Conrath, B. J.; Hanel, R. A.; Pirraglia, J. A.; Coustenis, A.",
+    "title": "The albedo, effective temperature, and energy balance of Uranus, as determined from Voyager IRIS data"
+  },
+  "47": {
+    "href": "https://ui.adsabs.harvard.edu/abs/1991JGR....9618921P/abstract",
+    "author": "Pearl, J. C.; Conrath, B. J.",
+    "title": "The albedo, effective temperature, and energy balance of Neptune, as determined from Voyager data"
+  },
+  "48": {
+    "href": "https://www.sciencedirect.com/science/article/abs/pii/S0019103518305426#:~:text=The%20single%2Dscattering%20albedo%20of,albedo%20is%200.037%20%C2%B1%200.002.",
+    "author": "Jian-YangLi(李荐扬) et al.",
+    "title": "Spectrophotometric modeling and mapping of Ceres"
+  },
+  "49": {
+    "href": "https://arxiv.org/abs/1604.06129",
+    "author": "B. J. Buratti et al.",
+    "title": "Global Albedos of Pluto and Charon from LORRI New Horizons Observations"
+  },
+  "50": {
+    "href": "https://iopscience.iop.org/article/10.1088/0004-637X/809/1/43/pdf",
+    "author": "R. E. Johnson1, A. Oza3, L. A. Young, A. N. Volkov, and C. Schmidt",
+    "title": "VOLATILE LOSS AND CLASSIFICATION OF KUIPER BELT OBJECTS"
+  },
+  "51": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=Sedna",
+    "author": "JPL Small-Body Database Browser",
+    "title": "90377 Sedna (2003 VB12)"
+  },
+  "52": {
+    "href": "https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=2050000",
+    "author": "JPL Small-Body Database Browser",
+    "title": "50000 Quaoar (2002 LM60)"
+  },
+  "53": {
+    "href": "https://www.lpi.usra.edu/meetings/lpsc2010/pdf/2035.pdf",
+    "author": "K. M. Pitman, B. J. Buratti, J. A. Mosher",
+    "title": "BOLOMETRIC BOND ALBEDOS FOR SATURNIAN SATELLITES FROM CASSINI VIMS: LEADING AND TRAILING HEMISPHERES."
+  },
+  "54": {
+    "href": "https://www.sciencedirect.com/science/article/abs/pii/001910358890040",
+    "author": "Damon P.Simonelli; Joseph Veverka",
+    "title": "Bolometric albedos and diurnal temperatures of the brightest regions on Io"
+  },
+  "55": {
+    "href": "https://arxiv.org/pdf/1608.07372.pdf",
+    "author": "Yosef Ashkenazy",
+    "title": "The surface temperature of Europa"
+  },
+  "56": {
+    "href": "https://www.sciencedirect.com/science/article/abs/pii/0019103582901725",
+    "author": "Steven W. Squyres; Joseph Veverka",
+    "title": "Color photometry of surface features on Ganymede and Callisto"
+  },
+  "57": {
+    "href": "https://www.sciencedirect.com/science/article/abs/pii/0019103574900360",
+    "author": "Robert L.Younkin",
+    "title": "The albedo of Titan"
+  },
+  "58": {
+    "href": "https://www.sciencedirect.com/science/article/abs/pii/S0019103507004642",
+    "author": "B.J.Buratti et al.",
+    "title": "Infrared (0.83–5.1 μm) photometry of Phoebe from the Cassini Visual Infrared Mapping Spectrometer"
+  },
+  "59": {
+    "href": "https://solarsystem.nasa.gov/moons/saturn-moons/rhea/by-the-numbers/",
+    "author": "NASA Science Solar System Exploration",
+    "title": "Rhea - By the Numbers"
+  },
+  "60": {
+    "href": "https://solarsystem.nasa.gov/moons/saturn-moons/hyperion/in-depth/#:~:text=Hyperion%20rotates%20roughly%20every%2013,is%20its%20deeply%20cratered%20surface.",
+    "author": "NASA Science Solar System Exploration",
+    "title": "Hyperion - In Depth"
+  },
+  "61": {
+    "href": "https://solarsystem.nasa.gov/moons/saturn-moons/phoebe/in-depth/#:~:text=Phoebe%20rotates%20on%20its%20axis,175%20degrees%20to%20Saturn's%20equator.",
+    "author": "NASA Science Solar System Exploration",
+    "title": "Phoebe - In Depth"
+  },
+  "62": {
+    "href": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/asteroidfact.html",
+    "author": "Dr. David R. Williams",
+    "title": "Asteroid Fact Sheet"
+  },
+  "63": {
+    "href": "https://ui.adsabs.harvard.edu/abs/2013ApJ...773...26B/abstract",
+    "author": "Braga-Ribas et al.",
+    "title": "The Size, Shape, Albedo, Density, and Atmospheric Limit of Transneptunian Object (50000) Quaoar from Multi-chord Stellar Occultations"
+  },
+  "64": {
+    "href": "https://arxiv.org/abs/1203.4898",
+    "author": "Marcelo Emilio et al.",
+    "title": "Measuring the Solar Radius from Space during the 2003 and 2006 Mercury Transits"
+  },
+  "65": {
+    "href": "https://web.archive.org/web/20100715200549/http://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html",
+    "author": "Dr. David R. Williams",
+    "title": "Sun Fact Sheet"
+  }
 }

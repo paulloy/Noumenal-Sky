@@ -1,41 +1,27 @@
 {
-  "ceres": [
-    {
-      "size": [
-        {
-          "mass": ["0.94", "10^21kg", "[2]"],
-          "diameter": ["0.074", "Earth", "[2]"],
-          "density": ["2600", "kg/m^3", "[2]"],
-          "gravity": ["0.26", "m/s^2", "[2]"]
-        }
-      ]
+  "ceres": {
+    "orbital Characteristics": {
+      "rotation period": ["9.1", "hours", "[2]"],
+      "orbital period ": ["1680", "days", "[2]"],
+      "distance": ["414,000", "10^3km", "[2]"],
+      "periapsis": ["381,000", "10^3km", "[2]"],
+      "apoapsis": ["447,000", "10^3km", "[2]"],
+      "velocity": ["17.9", "km/s", "[2]"],
+      "eccentricity": ["0.079", "no unit", "[2]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["9.1", "hours", "[2]"],
-          "orbital period ": ["1680", "days", "[2]"]
-        }
-      ]
+
+    "physical characteristics": {
+      "mass": ["0.94", "10^21kg", "[2]"],
+      "diameter": ["0.074", "Earth", "[2]"],
+      "density": ["2600", "kg/m^3", "[2]"],
+      "gravity": ["0.26", "m/s^2", "[2]"],
+      "mean temperature": ["-105", "C", "[2]"],
+      "bond albedo": ["0.037", "no unit", "[48]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["414,000", "10^3km", "[2]"],
-          "perihelion": ["381,000", "10^3km", "[2]"],
-          "aphelion": ["447,000", "10^3km", "[2]"],
-          "velocity": ["17.9", "km/s", "[2]"],
-          "eccentricity": ["0.079", "no unit", "[2]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["-105", "C", "[2]"],
-          "bond albedo": ["0.037", "no unit", "[48]"]
-        }
-      ]
+    "about": {
+        "about": "Ceres is the largest object in the main asteroid belt that lies between the orbits of Mars and Jupiter. Ceres is both the largest of the asteroids and the only dwarf planet inside Neptune's orbit.",
+        "discovery": "Ceres was the first asteroid to be discovered by Giuseppe Piazzi at Palermo Astronomical Observatory on 1 January 1801. It was originally considered a planet, but was reclassified as an asteroid in the 1850s after many other objects in similar orbits were discovered.",
+        "name": "Piazzi originally suggested the name Cerere Ferdinandea for his discovery, after the goddess Ceres (Roman goddess of agriculture, Cerere in Italian, who was believed to have originated in Sicily and whose oldest temple was there) and King Ferdinand of Sicily."
     }
-  ]
+  }
 }

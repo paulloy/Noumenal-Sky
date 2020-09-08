@@ -1,41 +1,26 @@
 {
-  "ganymede": [
-    {
-      "size": [
-        {
-          "mass": ["148.2", "10^21kg", "[2]"],
-          "diameter": ["0.413", "Earth", "[2]"],
-          "density ": ["1940", "kg/m^3", "[2]"],
-          "gravity ": ["1.43", "m/s^2", "[2]"]
-        }
-      ]
+  "ganymede": {
+    "orbital Characteristics": {
+      "rotation period ": ["171.7", "hours", "[2]"],
+      "orbital period ": ["7.2", "days", "[2]"],
+      "distance": ["1070", "10^3km", "[2]"],
+      "periapsis": ["1068", "10^3km", "[2]"],
+      "apoapsis": ["1072", "10^3km", "[2]"],
+      "orbital velocity ": ["10.9", "km/s", "[2]"],
+      "eccentricity": ["0.001", "no unit", "[2]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["171.7", "hours", "[2]"],
-          "orbital period ": ["7.2", "days", "[2]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["148.2", "10^21kg", "[2]"],
+      "diameter": ["0.413", "Earth", "[2]"],
+      "density ": ["1940", "kg/m^3", "[2]"],
+      "gravity ": ["1.43", "m/s^2", "[2]"],
+      "mean temperature": ["-160", "C", "[2]"],
+      "bond albedo": ["0.35", "no unit", "[56]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["1070", "10^3km", "[2]"],
-          "periapse": ["1068", "10^3km", "[2]"],
-          "apoapse": ["1072", "10^3km", "[2]"],
-          "orbital velocity ": ["10.9", "km/s", "[2]"],
-          "eccentricity": ["0.001","no unit", "[2]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["-160", "C", "[2]"],
-          "bond albedo": ["0.35","no unit", "[56]"]
-        }
-      ]
+    "about": {
+        "about": "Beginning with Pioneer 10, several spacecraft have explored Ganymede. The Voyager probes, Voyager 1 and Voyager 2, refined measurements of its size, while Galileo discovered its underground ocean and magnetic field. It is a fully differentiated body with an iron-rich, liquid core, and an internal ocean that may contain more water than all of Earth's oceans combined.",
+        "discovery": "Ganymede's discovery is credited to Galileo Galilei, who was the first to observe it, on January 7, 1610.",
+        "name": "The satellite's name was suggested by astronomer Simon Marius, after the mythological Ganymede, a Trojan prince desired by Zeus (the Greek counterpart of Jupiter), who carried him off to be the cupbearer of the gods."
     }
-  ]
+  }
 }

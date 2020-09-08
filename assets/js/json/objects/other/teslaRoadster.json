@@ -1,12 +1,13 @@
 {
-  "teslaRoadster": [
-    {
-      "orbit": [{
-          "perihelion": ["0.99", "AU", "[35]"],
-          "aphelion": ["1.67", "AU", "[35]"],
-          "eccentricity": ["0.256","no unit", "[35]"],
-          "orbital period": ["1.525", "year", "[35]"]
-        }]
+  "teslaRoadster": {
+    "orbital Characteristics": {
+      "periapsis": ["0.99", "AU", "[35]"],
+      "apoapsis": ["1.67", "AU", "[35]"],
+      "eccentricity": ["0.256", "no unit", "[35]"],
+      "orbital period": ["1.525", "year", "[35]"]
+    },
+    "about": {
+        "about": "Elon Musk's Tesla Roadster is an electric sports car that served as the dummy payload for the February 2018 Falcon Heavy test flight and became an artificial satellite of the Sun. 'Starman', a mannequin dressed in a spacesuit, occupies the driver's seat. The car and rocket are products of Tesla and SpaceX, respectively, both companies headed by Elon Musk. The car, mounted on the rocket's second stage, acquired enough velocity to escape Earth's gravity and enter an elliptical heliocentric orbit crossing the orbit of Mars."
     }
-  ]
+  }
 }

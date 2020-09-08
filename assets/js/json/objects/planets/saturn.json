@@ -1,40 +1,28 @@
 {
-  "saturn": [
-    {
-      "size": [{
-          "mass": ["568", "10^24kg", "[1]"],
-          "diameter": ["120,536", "km", "[1]"],
-          "density": ["687", "kg/m^3", "[1]"],
-          "gravity": ["9.0", "m/s^2", "[1]"]
-        }]
+  "saturn": {
+    "orbital Characteristics": {
+      "rotation period": ["10.7", "hours", "[1]"],
+      "orbital period ": ["10,747", "days", "[1]"],
+      "distance": ["1433.5", "10^6km", "[1]"],
+      "periapsis": ["1352.6", "10^6km", "[1]"],
+      "apoapsis": ["1514.5", "10^6km", "[1]"],
+      "orbital velocity": ["9.7", "km/s", "[1]"],
+      "eccentricity": ["0.057", "no unit", "[1]"],
+      "axial tilt": ["26.7", "deg", "[1]"],
+      "number of moons": ["82", "no unit", "[1]"]
     },
-    {
-      "time": [{
-          "rotation period": ["10.7", "hours", "[1]"],
-          "orbital period ": ["10,747", "days", "[1]"]
-        }]
+    "physical characteristics": {
+      "mass": ["568", "10^24kg", "[1]"],
+      "diameter": ["120,536", "km", "[1]"],
+      "density": ["687", "kg/m^3", "[1]"],
+      "gravity": ["9.0", "m/s^2", "[1]"],
+      "ring system": ["True", "no unit", "[1]"],
+      "mean temperature": ["-140", "C", "[1]"],
+      "bond albedo": ["0.342", "no unit", "[45]"]
     },
-    {
-      "orbit": [{
-          "distance from sun": ["1433.5", "10^6km", "[1]"],
-          "perihelion": ["1352.6", "10^6km", "[1]"],
-          "aphelion": ["1514.5", "10^6km", "[1]"],
-          "orbital velocity": ["9.7", "km/s", "[1]"],
-          "eccentricity": ["0.057","no unit", "[1]"],
-          "axial tilt": ["26.7", "deg", "[1]"]
-        }]
-    },
-    {
-      "moons": [{
-          "number of moons": ["82","no unit", "[1]"],
-          "ring system": ["True","no unit", "[1]"]
-        }]
-    },
-    {
-      "temperature": [{
-          "mean temperature": ["-140", "C", "[1]"],
-          "bond albedo": ["0.342","no unit", "[45]"]
-        }]
+    "about": {
+        "about": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles, with a smaller amount of rocky debris and dust. At least 82 moons are known to orbit Saturn, of which 53 are officially named; this does not include the hundreds of moonlets in its rings.",
+        "name": "Saturn is named after the Roman god of harvest and time, the equivalent of the Greek god of time, Cronos."
     }
-  ]
+  }
 }

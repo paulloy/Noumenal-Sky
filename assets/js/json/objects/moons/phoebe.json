@@ -1,40 +1,25 @@
 {
-  "phoebe": [
-    {
-      "size": [
-        {
-          "mass": ["8.2906", "10^18kg", "[25]"],
-          "radius": ["106.5", "km", "[25]"],
-          "density ": ["1.638", "g/m^3", "[25]"],
-          "gravity ": ["0.049", "m/s^2", "[25]"]
-        }
-      ]
+  "phoebe": {
+    "orbital Characteristics": {
+      "rotation period ": ["9", "hours", "[61]"],
+      "orbital period ": ["550.3", "days", "[25]"],
+      "distance": ["12,950", "km", "[a]"],
+      "periapsis": ["10,832", "km", "[25]"],
+      "apoapsis": ["15,063", "km", "[25]"],
+      "orbital velocity ": ["6,118.5", "km/h", "[25]"],
+      "eccentricity": ["0.1634", "no unit", "[25]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["9", "hours", "[61]"],
-          "orbital period ": ["550.3", "days", "[25]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["8.2906", "10^18kg", "[25]"],
+      "radius": ["106.5", "km", "[25]"],
+      "density ": ["1.638", "g/m^3", "[25]"],
+      "gravity ": ["0.049", "m/s^2", "[25]"],
+      "bond albedo": ["0.023", "no unit", "[58]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["12,950", "km", "[a]"],
-          "periapsis": ["10,832", "km", "[25]"],
-          "apoapsis": ["15,063", "km", "[25]"],
-          "orbital velocity ": ["6,118.5", "km/h", "[25]"],
-          "eccentricity": ["0.1634","no unit", "[25]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.023","no unit", "[58]"]
-        }
-      ]
+    "about": {
+        "about": "Phoebe was the first target encountered upon the arrival of the Cassini spacecraft in the Saturn system in 2004, and is thus unusually well-studied for an irregular satellite of its size. Phoebe is roughly spherical and has a differentiated interior. It was spherical and hot early in its history and was battered out of roundness by repeated impacts.",
+        "discovery": "Phoebe was discovered by William Henry Pickering on 17 March 1899 from photographic plates that had been taken starting on 16 August 1898 at the Boyden Observatory near Arequipa, Peru, by DeLisle Stewart. It was the first satellite to be discovered photographically.",
+        "name": "Phoebe was named after Phoebe, a Titaness in Greek mythology that was associated with the Moon. It is also designated Saturn IX in some scientific literature. "
     }
-  ]
+  }
 }

@@ -1,40 +1,25 @@
 {
-  "enceladus": [
-    {
-      "size": [
-        {
-          "mass": ["1.079", "10^20kg", "[19]"],
-          "radius": ["252.1", "km", "[19]"],
-          "density ": ["1.608", "g/m^3", "[19]"],
-          "gravity ": ["0.113", "m/s^2", "[19]"]
-        }
-      ]
+  "enceladus": {
+    "orbital Characteristics": {
+      "rotation period ": ["1.370218", "days", "[a]"],
+      "orbital period ": ["1.370218", "days", "[19]"],
+      "distance": ["238,037", "km", "[a]"],
+      "periapsis": ["236,918", "km", "[19]"],
+      "apoapsis": ["239,156", "km", "[19]"],
+      "orbital velocity ": ["45,487.3", "km/h", "[19]"],
+      "eccentricity": ["0.0047", "no unit", "[19]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["1.370218", "days", "[a]"],
-          "orbital period ": ["1.370218", "days", "[19]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["1.079", "10^20kg", "[19]"],
+      "radius": ["252.1", "km", "[19]"],
+      "density ": ["1.608", "g/m^3", "[19]"],
+      "gravity ": ["0.113", "m/s^2", "[19]"],
+      "bond albedo": ["0.85", "no unit", "[53]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["238,037", "km", "[a]"],
-          "periapsis": ["236,918", "km", "[19]"],
-          "apoapsis": ["239,156", "km", "[19]"],
-          "orbital velocity ": ["45,487.3", "km/h", "[19]"],
-          "eccentricity": ["0.0047","no unit", "[19]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.85","no unit", "[53]"]
-        }
-      ]
+    "about": {
+        "about": "Enceladus is mostly covered by fresh, clean ice, making it one of the most reflective bodies of the Solar System. Cassini discovered water-rich plumes venting from the south polar region. According to NASA scientists, the plumes are similar in composition to comets. In 2014, NASA reported that Cassini found evidence for a large south polar subsurface ocean of liquid water with a thickness of around 10 km. On June 27, 2018, scientists reported the detection of complex macromolecular organics on Enceladus's jet plumes, as sampled by the Cassini orbiter.",
+        "discovery": "Enceladus was discovered by William Herschel on August 28, 1789, during the first use of his new 40-foot telescope, then the largest in the world, at Observatory House in Slough, England.",
+        "name": "Enceladus is named after the giant Enceladus of Greek mythology. The name, like the names of each of the first seven satellites of Saturn to be discovered, was suggested by William Herschel's son John Herschel in his 1847 publication 'Results of Astronomical Observations made at the Cape of Good Hope.'"
     }
-  ]
+  }
 }

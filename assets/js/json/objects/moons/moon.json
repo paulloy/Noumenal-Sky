@@ -1,34 +1,25 @@
 {
-  "moon": [
-    {
-      "size": [{
-          "mass": ["73.5", "10^24kg", "[1]"],
-          "diameter": ["0.272", "Earth", "[1]"],
-          "density": ["3340", "kg/m^3", "[1]"],
-          "gravity": ["1.6", "m/s^2", "[1]"]
-        }]
+  "moon": {
+    "orbital Characteristics": {
+      "rotation period": ["655.7", "hours", "[1]"],
+      "orbital period ": ["27.3", "days", "[1]"],
+      "distance": ["384", "10^6km", "[1]"],
+      "periapsis": ["363", "10^km", "[1]"],
+      "apoapsis": ["406", "10^6km", "[1]"],
+      "orbital velocity": ["1.0", "km/s", "[1]"],
+      "eccentricity": ["0.055", "no unit", "[1]"],
+      "axial tilt": ["6.7", "deg", "[1]"]
     },
-    {
-      "time": [{
-          "rotation period": ["655.7", "hours", "[1]"],
-          "orbital period ": ["27.3", "days", "[1]"]
-        }]
+    "physical characteristics": {
+      "mass": ["73.5", "10^24kg", "[1]"],
+      "diameter": ["0.272", "Earth", "[1]"],
+      "density": ["3340", "kg/m^3", "[1]"],
+      "gravity": ["1.6", "m/s^2", "[1]"],
+      "mean temperature": ["-20", "C", "[1]"],
+      "bond albedo": ["0.11", "no unit", "[42]"]
     },
-    {
-      "orbit": [{
-          "orbital distance": ["384", "10^6km", "[1]"],
-          "periapse": ["363", "10^km", "[1]"],
-          "apoapse": ["406", "10^6km", "[1]"],
-          "orbital velocity": ["1.0", "km/s", "[1]"],
-          "eccentricity": ["0.055","no unit", "[1]"],
-          "axial tilt": ["6.7", "deg", "[1]"]
-        }]
-    },
-    {
-      "temperature": [{
-          "mean temperature": ["-20", "C", "[1]"],
-          "bond albedo": ["0.11","no unit", "[42]"]
-        }]
+    "about": {
+        "about": "The Moon is an astronomical body orbiting Earth and is the planet's only natural satellite. It is the fifth-largest satellite in the Solar System, and by far the largest among planetary satellites relative to the size of the planet that it orbits. The most widely accepted explanation for the origin of the moon is that it formed from the debris left over after a giant impact between Earth and a hypothetical Mars-sized body called Theia."
     }
-  ]
+  }
 }

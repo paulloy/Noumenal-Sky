@@ -1,47 +1,27 @@
 {
-  "haumea": [
-    {
-      "size": [
-        {
-          "mass": ["4.006", "10^21kg", "[11]"],
-          "diameter": ["780", "km", "[38]"],
-          "density": ["2.018", "k/m^3", "[12]"],
-          "gravity": ["0.401", "m/s^2", "[a]"]
-        }
-      ]
+  "haumea": {
+    "orbital Characteristics": {
+      "rotation period": ["3.9154", "hours", "[13]"],
+      "orbital period ": ["283.77", "year", "[13]"],
+      "distance": ["43.2", "AU", "[a]"],
+      "periapsis": ["34.8", "AU", "[13]"],
+      "apoapsis": ["51.6", "AU", "[13]"],
+      "orbital velocity": ["4.531", "km/s", "[13]"],
+      "eccentricity": ["0.195", "no unit", "[13]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["3.9154", "hours", "[13]"],
-          "orbital period ": ["283.77", "year", "[13]"]
-        }
-      ]
+
+    "physical characteristics": {
+      "mass": ["4.006", "10^21kg", "[11]"],
+      "diameter": ["780", "km", "[38]"],
+      "density": ["2.018", "k/m^3", "[12]"],
+      "gravity": ["0.401", "m/s^2", "[a]"],
+      "number of moons": ["2", "no unit", "[13]"],
+      "mean temperature": ["50", "K", "[14]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["43.2", "AU", "[a]"],
-          "perihelion": ["34.8", "AU", "[13]"],
-          "aphelion": ["51.6", "AU", "[13]"],
-          "orbital velocity": ["4.531", "km/s", "[13]"],
-          "eccentricity": ["0.195", "no unit", "[13]"]
-        }
-      ]
-    },
-    {
-      "moons": [
-        {
-          "number of moons": ["2", "no unit", "[13]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["50", "K", "[14]"]
-        }
-      ]
+    "about": {
+        "about": "Haumea is a likely dwarf planet located beyond Neptune's orbit. In October 2017, astronomers announced the discovery of a ring system around Haumea, representing the first ring system discovered for a trans-Neptunian object.",
+        "discovery": "Two teams claim credit for the discovery of Haumea. Mike Brown and his team at Caltech discovered Haumea in December 28, 2004 on images they had taken on May 6, 2004. José Luis Ortiz Moreno and his team at the Instituto de Astrofísica de Andalucía at Sierra Nevada Observatory in Spain found Haumea on images taken on March 7–10, 2003.",
+        "name": "Haumea is the matron goddess of the island of Hawaii, where the Mauna Kea Observatory is located."
     }
-  ]
+  }
 }

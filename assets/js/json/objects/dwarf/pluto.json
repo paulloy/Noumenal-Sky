@@ -1,49 +1,28 @@
 {
-  "pluto": [
-    {
-      "size": [
-        {
-          "mass": ["0.0146", "10^24kg", "[1]"],
-          "diameter": ["2370", "km", "[1]"],
-          "density": ["2095", "kg/m^3", "[1]"],
-          "gravity": ["0.7", "m/s^2", "[1]"]
-        }
-      ]
+  "pluto": {
+    "orbital Characteristics": {
+      "rotation period": ["-153.3", "hours", "[1]"],
+      "orbital period ": ["90,560", "days", "[1]"],
+      "distance": ["5906.4", "10^6km", "[1]"],
+      "periapsis": ["4436.8", "10^6km", "[1]"],
+      "apoapsis": ["7375.9", "10^6km", "[1]"],
+      "orbital velocity": ["4.7", "km/s", "[1]"],
+      "eccentricity": ["0.244", "no unit", "[1]"],
+      "number of moons": ["5", "no unit", "[1]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["-153.3", "hours", "[1]"],
-          "orbital period ": ["90,560", "days", "[1]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["0.0146", "10^24kg", "[1]"],
+      "diameter": ["2370", "km", "[1]"],
+      "density": ["2095", "kg/m^3", "[1]"],
+      "gravity": ["0.7", "m/s^2", "[1]"],
+      "ring system": ["false", "no unit", "[1]"],
+      "mean temperature": ["-225", "C", "[1]"],
+      "bond albedo": ["0.72", "no unit", "[49]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["5906.4", "10^6km", "[1]"],
-          "perihelion": ["4436.8", "10^6km", "[1]"],
-          "aphelion": ["7375.9", "10^6km", "[1]"],
-          "orbital velocity": ["4.7", "km/s", "[1]"],
-          "eccentricity": ["0.244", "no unit", "[1]"]
-        }
-      ]
-    },
-    {
-      "moons": [
-        {
-          "number of moons": ["5", "no unit", "[1]"],
-          "ring system": ["false", "no unit", "[1]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["-225", "C", "[1]"],
-          "bond albedo": ["0.72", "no unit", "[49]"]
-        }
-      ]
+    "about": {
+        "about": "It is the ninth-largest and tenth-most-massive known object directly orbiting the Sun. It is the largest known trans-Neptunian object by volume but is less massive than Eris. The New Horizons spacecraft performed a flyby of Pluto on July 14, 2015, becoming the first ever, and to date only, spacecraft to do so." ,
+        "discovery": "Pluto was discovered by Clyde Tombaugh in 1930 and declared to be the ninth planet from the Sun. After 1992, its status as a planet was questioned following the discovery of several objects of similar size in the Kuiper belt. In 2005, Eris, was discovered. This led the International Astronomical Union (IAU) to define the term 'planet' formally in 2006, during their 26th General Assembly. That definition excluded Pluto and reclassified it as a dwarf planet.",
+        "name": "The name Pluto, after the Roman god of the underworld, was proposed by Venetia Burney, an eleven-year-old schoolgirl in Oxford, England, who was interested in classical mythology. She suggested it in a conversation with her grandfather Falconer Madan, a former librarian at the University of Oxford's Bodleian Library, who passed the name to astronomy professor Herbert Hall Turner, who cabled it to colleagues in the United States. The name was announced on May 1, 1930"
     }
-  ]
+  }
 }

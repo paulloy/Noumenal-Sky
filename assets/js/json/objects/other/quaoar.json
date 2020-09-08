@@ -1,38 +1,24 @@
 {
-  "quaoar": [
-    {
-      "size": [
-        {
-          "mass": ["1.40", "10^21kg", "[63]"],
-          "radius": ["534", "km", "[50]"],
-          "density ": ["2.18", "g/m^3", "[50]"]
-        }
-      ]
+  "quaoar": {
+    "orbital Characteristics": {
+      "rotation period ": ["8.840", "hours", "[52]"],
+      "orbital period ": ["288.83", "year", "[52]"],
+      "distance": ["43.694", "AU", "[52]"],
+      "periapsis": ["41.900", "AU", "[52]"],
+      "apoapsis": ["45.488", "AU", "[52]"],
+      "eccentricity": ["0.041", "no unit", "[52]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["8.840", "hours", "[52]"],
-          "orbital period ": ["288.83", "year", "[52]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["1.40", "10^21kg", "[63]"],
+      "radius": ["534", "km", "[50]"],
+      "density ": ["2.18", "g/m^3", "[50]"],
+
+      "bond albedo": ["0.07", "no unit", "[50]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["43.694", "AU", "[52]"],
-          "perihelion": ["41.900", "AU", "[52]"],
-          "aphelion": ["45.488", "AU", "[52]"],
-          "eccentricity": ["0.041","no unit", "[52]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.07","no unit", "[50]"]
-        }
-      ]
+    "about": {
+        "about": "50000 Quaoar is a non-resonant trans-Neptunian object and a possible dwarf planet in the Kuiper belt. Quaoar's size was at first uncertain, and its high brightness led the discovery team to speculate that it may be a possible tenth planet.",
+        "discovery": "Quaoar was discovered on 4 June 2002 by American astronomers Chad Trujillo and Michael Brown at the Palomar Observatory in the Palomar Mountain Range in San Diego County, California. The discovery of Quaoar was formally announced by the Minor Planet Center in a Minor Planet Electronic Circular on 7 October 2002.",
+        "name": "The team settled on selecting names from Native American mythologies local to the Palomar Mountain region, the location where they discovered Quaoar. Through Internet searching, the team eventually decided upon the name Kwawar (Quaoar), the creator god of the Tongva people indigenous to the area around Los Angeles."
     }
-  ]
+  }
 }

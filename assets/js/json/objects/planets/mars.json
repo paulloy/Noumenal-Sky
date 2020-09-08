@@ -1,40 +1,28 @@
 {
-  "mars": [
-    {
-      "size": [{
-          "mass": ["0.642", "10^24kg", "[1]"],
-          "diameter": ["6792", "km", "[1]"],
-          "density": ["3933", "kg/m^3", "[1]"],
-          "gravity": ["3.7", "m/s^2", "[1]"]
-        }]
+  "mars": {
+    "orbital Characteristics": {
+      "rotation period": ["24.6", "hours", "[1]"],
+      "orbital period ": ["687.0", "days", "[1]"],
+      "distance": ["227.9", "10$e$6$km", "[1]"],
+      "periapsis": ["206.6", "10$e$6$km", "[1]"],
+      "apoapsis": ["249.2", "10$e$6$km", "[1]"],
+      "orbital velocity": ["24.1", "km/s", "[1]"],
+      "eccentricity": ["0.094", "no unit", "[1]"],
+      "axial tilt": ["25.2", "deg", "[1]"],
+      "number of moons": ["2", "no unit", "[1]"]
     },
-    {
-      "time": [{
-          "rotation period": ["24.6", "hours", "[1]"],
-          "orbital period ": ["687.0", "days", "[1]"]
-        }]
+    "physical characteristics": {
+      "mass": ["0.642", "10^24kg", "[1]"],
+      "diameter": ["6792", "km", "[1]"],
+      "density": ["3933", "kg/m^3", "[1]"],
+      "gravity": ["3.7", "m/s^2", "[1]"],
+      "ring system": ["false", "no unit", "[1]"],
+      "mean temperature": ["-65", "C", "[1]"],
+      "bond albedo": ["0.250", "no unit", "[43]"]
     },
-    {
-      "orbit": [{
-          "distance from sun": ["227.9", "10$e$6$km", "[1]"],
-          "perihelion": ["206.6", "10$e$6$km", "[1]"],
-          "aphelion": ["249.2", "10$e$6$km", "[1]"],
-          "orbital velocity": ["24.1", "km/s", "[1]"],
-          "eccentricity": ["0.094","no unit", "[1]"],
-          "axial tilt": ["25.2", "deg", "[1]"]
-        }]
-    },
-    {
-      "moons": [{
-          "number of moons": ["2","no unit", "[1]"],
-          "ring system": ["false","no unit", "[1]"]
-        }]
-    },
-    {
-      "temperature": [{
-          "mean temperature": ["-65", "C", "[1]"],
-          "bond albedo": ["0.250","no unit", "[43]"]
-        }]
+    "about": {
+        "about": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being only larger than Mercury. Mars has been explored by unmanned spacecraft. Mariner 4, launched by NASA on 28 November 1964, was the first spacecraft to visit Mars. There are investigations assessing the past habitability of Mars, as well as the possibility of extant life. Astrobiology missions are planned, including the Perseverance and Rosalind Franklin rovers.",
+        "name": "The red planet was named after the Roman god of war, Mars. Mars rode on a chariot pulled by two horses named Phobos and Deimos. The two small moons of Mars are named after these two mythical horses."
     }
-  ]
+  }
 }

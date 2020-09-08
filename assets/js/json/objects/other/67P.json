@@ -1,24 +1,22 @@
 {
-  "67p": [
-    {
-      "size": [{
-          "mass": ["9.982", "10^12kg", "[33]"],
-          "density": ["0.533", "g/m^3", "[33]"]
-        }]
+  "67P": {
+    "orbital Characteristics": {
+      "rotation period": ["12.76137", "hours", "[32]"],
+      "orbital period ": ["6.44", "year", "[32]"],
+
+      "distance": ["3.4689", "AU", "[a]"],
+      "periapsis": ["1.245279", "AU", "[32]"],
+      "apoapsis": ["5.68419", "AU", "[32]"],
+      "eccentricity": ["0.641", "no unit", "[32]"]
     },
-    {
-      "time": [{
-          "rotation period": ["12.76137", "hours", "[32]"],
-          "orbital period ": ["6.44", "year", "[32]"]
-        }]
+    "physical characteristics": {
+      "mass": ["9.982", "10^12kg", "[33]"],
+      "density": ["0.533", "g/m^3", "[33]"]
     },
-    {
-      "orbit": [{
-          "distance from sun": ["3.4689", "AU", "[a]"],
-          "perihelion": ["1.245279", "AU", "[32]"],
-          "aphelion": ["5.68419", "AU", "[32]"],
-          "eccentricity": ["0.641","no unit", "[32]"]
-        }]
+    "about": {
+        "about": "67P/Churyumov–Gerasimenko (abbreviated as 67P or 67P/C-G) is a Jupiter-family comet, originally from the Kuiper belt. Churyumov–Gerasimenko was the destination of the European Space Agency's Rosetta mission, launched on 2 March 2004. Rosetta's lander, Philae, landed on the comet's surface on 12 November 2014, becoming the first spacecraft to land on a comet nucleus.",
+        "discovery": "Churyumov–Gerasimenko was discovered in 1969 by Klim Ivanovich Churyumov of the Kiev University's Astronomical Observatory, who examined a photograph that had been exposed for comet Comas Solà by Svetlana Ivanovna Gerasimenko on 11 September 1969 at the Alma-Ata Astrophysical Institute.",
+        "name": "It was first observed on photographic plates in 1969 by Soviet astronomers Klim Ivanovych Churyumov and Svetlana Ivanovna Gerasimenko, after whom it is named."
     }
-  ]
+  }
 }

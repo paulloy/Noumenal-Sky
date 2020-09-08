@@ -1,37 +1,22 @@
 {
-  "sedna": [
-    {
-      "size": [
-        {
-          "radius": ["498", "km", "[50]"],
-          "density ": ["1.6–2.1", "g/m^3", "[50]"]
-        }
-      ]
+  "sedna": {
+    "orbital Characteristics": {
+      "rotation period ": ["10.273", "hours", "[51]"],
+      "orbital period ": ["10662.67", "Year", "[51]"],
+      "distance": ["484.438", "AU", "[51]"],
+      "periapsis": ["76.256", "AU", "[51]"],
+      "apoapsis": ["892.62", "AU", "[51]"],
+      "eccentricity": ["0.842", "no unit", "[51]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["10.273", "hours", "[51]"],
-          "orbital period ": ["10662.67", "Year", "[51]"]
-        }
-      ]
+    "physical characteristics": {
+      "radius": ["498", "km", "[50]"],
+      "density ": ["1.6–2.1", "g/m^3", "[50]"],
+      "bond albedo": ["0.19", "no unit", "[50]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["484.438", "AU", "[51]"],
-          "perihelion": ["76.256", "AU", "[51]"],
-          "aphelion": ["892.62", "AU", "[51]"],
-          "eccentricity": ["0.842","no unit", "[51]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.19","no unit", "[50]"]
-        }
-      ]
+    "about": {
+        "about": "90377 Sedna, is a large planetoid in the outer reaches of the Solar System. Sedna has an exceptionally long and elongated orbit, taking approximately 11,400 years to complete and a distant point of closest approach to the Sun at 76 AU. These facts have led to much speculation about its origin.",
+        "discovery": "Sedna was discovered by Michael Brown (Caltech), Chad Trujillo (Gemini Observatory), and David Rabinowitz (Yale University) on 14 November 2003. Precovery images have later been found in images of the Palomar Digitized Sky Survey dating back to 25 September 1990.",
+        "name": "Brown initially nicknamed Sedna 'The Flying Dutchman', or 'Dutch', after a legendary ghost ship, because its slow movement had initially masked its presence from his team. For an official name for the object, Brown settled on Sedna, a name from Inuit mythology, which Brown chose partly because the Inuit were the closest polar culture to his home in Pasadena, and partly because the name, unlike Quaoar, would be easily pronounceable"
     }
-  ]
+  }
 }

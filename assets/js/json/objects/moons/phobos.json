@@ -1,27 +1,24 @@
 {
-  "phobos": [
-    {
-      "size": [{
-          "mass": ["1.0659", "10^16kg", "[15]"],
-          "radius": ["11.1", "km", "[15]"],
-          "density": ["1.872", "g/m^3", "[15]"],
-          "gravity": ["0.0057", "m/s^2", "[15]"]
-        }]
+  "phobos": {
+    "orbital Characteristics": {
+      "rotation period": ["7.65", "hours", "[15]"],
+      "orbital period ": ["7.65", "hours", "[15]"],
+      "distance": ["9,376", "km", "[a]"],
+      "periapsis": [" 9,234", "km", "[15]"],
+      "apoapsis": ["9,518", "km", "[15]"],
+      "orbital velocity": ["7696.7", "km/h", "[15]"],
+      "eccentricity": ["0.0151", "no unit", "[15]"]
     },
-    {
-      "time": [{
-          "rotation period":  ["7.65", "hours", "[15]"],
-          "orbital period ": ["7.65", "hours", "[15]"]
-        }]
+    "physical characteristics": {
+      "mass": ["1.0659", "10^16kg", "[15]"],
+      "radius": ["11.1", "km", "[15]"],
+      "density": ["1.872", "g/m^3", "[15]"],
+      "gravity": ["0.0057", "m/s^2", "[15]"]
     },
-    {
-      "orbit": [{
-          "orbital distance": ["9,376", "km", "[a]"],
-          "periapsis": [" 9,234", "km", "[15]"],
-          "apoapsis": ["9,518", "km", "[15]"],
-          "orbital velocity": ["7696.7", "km/h", "[15]"],
-          "eccentricity": ["0.0151","no unit", "[15]"]
-        }]
+    "about": {
+        "about": "Phobos is the innermost and larger of the two natural satellites of Mars. Phobos is one of the least reflective bodies in the Solar System. Images and models indicate that Phobos may be a rubble pile held together by a thin crust, and that it is being torn apart by tidal interactions. Phobos gets closer to Mars by about 2 meters every 100 years, and it is predicted that within 30 to 50 million years it will either collide with the planet, or break up into a planetary ring.",
+        "discovery": "Phobos was discovered by astronomer Asaph Hall on 18 August 1877, at the United States Naval Observatory in Washington, D.C.",
+        "name": "The names were suggested by Henry Madan, science master at Eton College, based on Greek mythology, in which Phobos is a companion to the god Ares."
     }
-  ]
+  }
 }

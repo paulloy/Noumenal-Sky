@@ -2,59 +2,43 @@
   "planets": [
     {
       "name": "Mercury",
-      "mercury": "../objects/planets/mercury.json",
       "image": "assets/images/space-images/planets/mercury.jpg",
-      "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER.",
-      "about": "Mercury is the smallest and innermost planet in the Solar System. Two spacecraft have visited Mercury: Mariner 10 flew by in 1974 and 1975; and MESSENGER, launched in 2004, orbited Mercury over 4,000 times in four years before exhausting its fuel and crashing into the planet's surface on April 30, 2015. The BepiColombo spacecraft is planned to arrive at Mercury in 2025."
+      "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER."
     },
     {
       "name": "Venus",
       "venus": "../objects/planets/venus.json",
-      "image": "assets/images/space-images/planets/venus.jpg",
-      "alt": "This image was processed from archived Mariner 10 data by JPL engineer Kevin M. Gill.",
-      "about": "Venus is the second planet from the Sun. It is the second brightest natural object in the night sky after the Moon. As one of the brightest objects in the sky, Venus has been a major fixture in human culture for as long as records have existed. It has been made sacred to gods of many cultures, and has been a prime inspiration for writers and poets as the morning star and evening star. Venus was the first planet to have its motions plotted across the sky, as early as the second millennium BC."
+      "alt": "This image was processed from archived Mariner 10 data by JPL engineer Kevin M. Gill."
     },
     {
       "name": "Earth",
-      "earth": "../objects/planets/earth.json",
       "image": "assets/images/space-images/planets/earth.jpg",
-      "alt": "The Blue Marble is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of about 29,000 kilometres (18,000 mi). It shows Africa, Antarctica, and the Arabian Peninsula.",
-      "about": "Earth is the third planet from the Sun and the only astronomical object known to harbor life. According to radiometric dating estimation and other evidence, Earth formed over 4.5 billion years ago. Earth is the densest planet in the Solar System and the largest and most massive of the four innermost rocky planets."
+      "alt": "The Blue Marble is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of about 29,000 kilometres (18,000 mi). It shows Africa, Antarctica, and the Arabian Peninsula."
     },
     {
       "name": "Mars",
-      "mars": "../objects/planets/mars.json",
       "image": "assets/images/space-images/planets/mars.jpg",
-      "alt": "True color image of Mars taken by the OSIRIS instrument on the ESA Rosetta spacecraft during its February 2007 flyby of the planet.",
-      "about": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being only larger than Mercury. Mars has been explored by unmanned spacecraft. Mariner 4, launched by NASA on 28 November 1964, was the first spacecraft to visit Mars. There are investigations assessing the past habitability of Mars, as well as the possibility of extant life. Astrobiology missions are planned, including the Perseverance and Rosalind Franklin rovers."
+      "alt": "True color image of Mars taken by the OSIRIS instrument on the ESA Rosetta spacecraft during its February 2007 flyby of the planet."
     },
     {
       "name": "Jupiter",
-      "jupiter": "../objects/planets/jupiter.json",
       "image": "assets/images/space-images/planets/jupiter.jpg",
-      "alt": "This full-disc image of Jupiter was taken on 21 April 2014 with Hubble's Wide Field Camera 3 (WFC3).",
-      "about": "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter is one of the brightest objects visible to the naked eye in the night sky, and has been known to ancient civilizations since before recorded history. Pioneer 10 was the first spacecraft to visit Jupiter, making its closest approach to the planet on December 4, 1973."
+      "alt": "This full-disc image of Jupiter was taken on 21 April 2014 with Hubble's Wide Field Camera 3 (WFC3)."
     },
     {
       "name": "Saturn",
-      "saturn": "../objects/planets/saturn.json",
       "image": "assets/images/space-images/planets/saturn.jpg",
-      "alt": "This captivating natural color view of the planet Saturn was created from images collected shortly after Cassini began its extended Equinox Mission in July 2008.",
-      "about": "Saturn is the sixth planet from the Sun and the second-largest in the Solar System. The planet's most famous feature is its prominent ring system, which is composed mostly of ice particles, with a smaller amount of rocky debris and dust. At least 82 moons are known to orbit Saturn, of which 53 are officially named; this does not include the hundreds of moonlets in its rings."
+      "alt": "This captivating natural color view of the planet Saturn was created from images collected shortly after Cassini began its extended Equinox Mission in July 2008."
     },
     {
       "name": "Uranus",
-      "uranus": "../objects/planets/uranus.json",
       "image": "assets/images/space-images/planets/uranus.jpg",
-      "alt": "This is an image of the planet Uranus taken by the spacecraft Voyager 2 in 1986.",
-      "about": "Uranus is the seventh planet from the Sun. Uranus had been observed on many occasions before its recognition as a planet, but it was generally mistaken for a star. Possibly the earliest known observation was by Hipparchos, who in 128 BC might have recorded it as a star for his star catalogue. The earliest definite sighting was in 1690, when John Flamsteed observed it at least six times, cataloguing it as 34 Tauri. Sir William Herschel observed Uranus on 13 March 1781 from the garden of his house at Somerset, England, and initially reported it as a comet. Finnish-Swedish astronomer Anders Johan Lexell, working in Russia, was the first to compute the orbit of the new object. Its nearly circular orbit led him to a conclusion that it was a planet rather than a comet."
+      "alt": "This is an image of the planet Uranus taken by the spacecraft Voyager 2 in 1986."
     },
     {
       "name": "Neptune",
-      "neptune": "../objects/planets/neptune.json",
       "image": "assets/images/space-images/planets/neptune.jpg",
-      "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25.",
-      "about": "Neptune is the eighth and farthest-known planet from the Sun in the Solar System. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. Neptune is not visible to the unaided eye and is the only planet in the Solar System found by mathematical prediction rather than by empirical observation. Unexpected changes in the orbit of Uranus led Alexis Bouvard to deduce that its orbit was subject to gravitational perturbation by an unknown planet.  Neptune was subsequently observed with a telescope on 23 September 1846[1] by Johann Galle within a degree of the position predicted by Le Verrier."
+      "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25."
     }
   ]
 }

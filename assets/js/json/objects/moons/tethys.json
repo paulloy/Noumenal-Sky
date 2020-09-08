@@ -1,40 +1,25 @@
 {
-  "tethys": [
-    {
-      "size": [
-        {
-          "mass": ["6.1755", "10^20kg", "[20]"],
-          "radius": ["533.0", "km", "[20]"],
-          "density ": ["0.973", "g/m^3", "[20]"],
-          "gravity ": ["0.145", "m/s^2", "[20]"]
-        }
-      ]
+  "tethys": {
+    "orbital Characteristics": {
+      "rotation period ": ["1.888", "hours", "[20]"],
+      "orbital period ": ["1.888", "days", "[20]"],
+      "distance": ["294,672", "km", "[a]"],
+      "periapsis": ["294,643", "km", "[20]"],
+      "apoapsis": ["294,701", "km", "[20]"],
+      "orbital velocity ": ["40,860.", "km/h", "[20]"],
+      "eccentricity": ["0.0001", "no unit", "[20]"]
     },
-    {
-      "time": [
-        {
-          "rotation period ": ["1.888", "hours", "[20]"],
-          "orbital period ": ["1.888", "days", "[20]"]
-        }
-      ]
+    "physical characteristics": {
+      "mass": ["6.1755", "10^20kg", "[20]"],
+      "radius": ["533.0", "km", "[20]"],
+      "density ": ["0.973", "g/m^3", "[20]"],
+      "gravity ": ["0.145", "m/s^2", "[20]"],
+      "bond albedo": ["0.61", "no unit", "[53]"]
     },
-    {
-      "orbit": [
-        {
-          "orbital distance": ["294,672", "km", "[a]"],
-          "periapsis": ["294,643", "km", "[20]"],
-          "apoapsis": ["294,701", "km", "[20]"],
-          "orbital velocity ": ["40,860.", "km/h", "[20]"],
-          "eccentricity": ["0.0001","no unit", "[20]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "bond albedo": ["0.61","no unit", "[53]"]
-        }
-      ]
+    "about": {
+        "about": "Tethys has been approached by several space probes including Pioneer 11, Voyager 1, Voyager 2, and multiple times by Cassini. Like all other regular moons of Saturn, Tethys formed from the Saturnian sub-nebula—a disk of gas and dust that surrounded Saturn soon after its formation.",
+        "discovery": "Tethys was discovered by Giovanni Domenico Cassini in 1684 together with Dione, another moon of Saturn. Cassini observed all of these moons using a large aerial telescope he set up on the grounds of the Paris Observatory.",
+        "name": "The modern names of all seven satellites of Saturn come from John Herschel. It is named after the titaness Tethys."
     }
-  ]
+  }
 }

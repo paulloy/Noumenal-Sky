@@ -1,48 +1,28 @@
 {
-  "makemake": [
-    {
-      "size": [
-        {
-          "mass": ["3.1", "10^24kg", "[6]"],
-          "diameter": ["1,420", "km", "[7]"],
-          "density": ["2.1", "g/m^3", "[6]"],
-          "gravity": ["0.57", "m/s^2", "[a]"]
-        }
-      ]
+  "makemake": {
+    "orbital Characteristics": {
+      "rotation period": ["22.5", "hours", "[9]"],
+      "orbital period ": ["305", "year", "[9]"],
+      "distance": ["6783", "10^6km", "[8]"],
+      "periapsis": ["38.1", "AU", "[10]"],
+      "apoapsis": ["52.8", "AU", "[10]"],
+      "orbital velocity": ["15,816", "km/h", "[8]"],
+      "eccentricity": ["0.164", "no unit", "[8]"],
+      "number of moons": ["1", "no unit", "[9]"]
     },
-    {
-      "time": [
-        {
-          "rotation period": ["22.5", "hours", "[9]"],
-          "orbital period ": ["305", "year", "[9]"]
-        }
-      ]
+
+    "physical characteristics": {
+      "mass": ["3.1", "10^24kg", "[6]"],
+      "diameter": ["1,420", "km", "[7]"],
+      "density": ["2.1", "g/m^3", "[6]"],
+      "gravity": ["0.57", "m/s^2", "[a]"],
+      "mean temperature": ["40", "K", "[7]"],
+      "bond albedo": ["0.62", "no unit", "[50]"]
     },
-    {
-      "orbit": [
-        {
-          "distance from sun": ["6783", "10^6km", "[8]"],
-          "perihelion": ["38.1", "AU", "[10]"],
-          "aphelion": ["52.8", "AU", "[10]"],
-          "orbital velocity": ["15,816", "km/h", "[8]"],
-          "eccentricity": ["0.164", "no unit", "[8]"]
-        }
-      ]
-    },
-    {
-      "moons": [
-        {
-          "number of moons": ["1", "no unit", "[9]"]
-        }
-      ]
-    },
-    {
-      "temperature": [
-        {
-          "mean temperature": ["40", "K", "[7]"],
-          "bond albedo": ["0.62", "no unit", "[50]"]
-        }
-      ]
+    "about": {
+        "about": "Makemake is a likely dwarf planet and perhaps the second largest Kuiper belt object. Makemake's extremely low average temperature means its surface is covered with methane, ethane, and possibly nitrogen ices.",
+        "discovery": "Makemake was discovered on March 31, 2005, by a team at the Palomar Observatory, led by Michael E. Brown, and was announced to the public on July 29, 2005. Makemake is the brightest trans-Neptunian object after Pluto.",
+        "name": "The discovery team used the codename 'Easterbunny' for the object, because of its discovery shortly after Easter. The name of Makemake, the creator of humanity and god of fertility in the myths of the Rapa Nui, the native people of Easter Island, was chosen in part to preserve the object's connection with Easter."
     }
-  ]
+  }
 }
