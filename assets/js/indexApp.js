@@ -14,7 +14,7 @@ var headerHeight = $("header").height();
 var topContainerHeight = $("#top-container").height();
 var sum = headerHeight + topContainerHeight + 8 + 8 + 16 + 16;
 var remainingHeight = screen.availHeight - sum;
-$("#property-values").css("height",remainingHeight);
+$("#property-values").css("height", remainingHeight);
 
 $("#image-container").click(function () {
   $("#image-information").prepend($("#image-container"));
@@ -44,59 +44,60 @@ function loadObjectList(objectUrl, cat) {
         //get id of current list item
         objectKey = data[cat][getId].name;
         LoadPropertyList(objectKey, cat);
+        
+        
       });
     }
   });
 }
 function LoadPropertyList(objectKey, cat) {
-  $("#category-list ul").empty();
   var objectKeyToLC = objectKey.toLowerCase();
   if (objectKeyToLC === "tesla roadster") {
     objectKeyToLC = "teslaRoadster";
-  }
+  } 
   $.getJSON("assets/js/json/objects/" + cat + "/" + objectKeyToLC + ".json")
     .done(function (data) {
-      // var newListItem = "<li id=" + i + ">" + data.Ceres[0].size[0].name + "</li>";
       for (objectKeyToLC in data) {
         console.log(objectKeyToLC);
       }
-      for (var i = 0; i < data[objectKeyToLC].length; i++) {
-        for (var propertyKey in data[objectKeyToLC][i]) {
-          var newListItem = "<li>" + propertyKey + "</li>";
-          $("#category-list ul").append(newListItem);
-          $("#property-values").show();
-        }
+      $("#property-values").append("<ul></ul>");
+      for (var propertyKey in data[objectKeyToLC]) {
+        var newListItem = "<li>" + propertyKey + "</li>";
+        $("#property-values ul").prepend(newListItem);
+        $("#property-values").show();
       }
-      $("#category-list ul li").click(function () {
-        var name = $(this).text();
-        var i = $(this).index();
+
+      $("#property-values ul li").click(function () {
+        propertyKey = $(this).text();
         $("#property-values").empty();
+        var heading =
+          "<table><tbody><tr><th>Property</th><th>Value</th><th>Unit</th></tr></tbody></table>";
+    //    $("#property-values").append(
+       //   '<span id="return"><i class="fas fa-chevron-left"></i><p>RETURN</p></span>'
+     //   );
+        
 
-        var newTable = "<table><tbody></tbody></table>";
-        var tableHeader = "<tr><th>Property</th><th>Value</th><th>Unit</th></tr>"
-        $("#property-values").append(newTable);
-          $("#property-values table tbody").append(tableHeader);
-        for (values in data[objectKeyToLC][i][name][0]) {
-          console.log(data[objectKeyToLC][i][name][0][values]);
-
-          var newTableRow =
-            "<tr><td>" +
-            values +
-            "</td><td>" +
-            data[objectKeyToLC][i][name][0][values][0] +
-            "</td><td>" +
-            data[objectKeyToLC][i][name][0][values][1] +
-            "</td></tr>"
-          $("#property-values table tbody").append(newTableRow);
-          // $("#property-list ul").hide();
+        if (propertyKey === "about") {
+          var newArticle = "<article></article>";
+          $("#property-values").append(newArticle);
+          for (key in data[objectKeyToLC][propertyKey]) {
+            var newPoint = "<h2>"+key+"</h2><p>"+data[objectKeyToLC][propertyKey][key]+"</p>"
+            $("#property-values article").append(newPoint);
+          }
+        } else {
+          $("#property-values").append(heading);
+          for (key in data[objectKeyToLC][propertyKey]) {
+            var newRow =
+              "<tr><td>" +
+              key +
+              "</td><td>" +
+              data[objectKeyToLC][propertyKey][key][0] +
+              "</td><td>" +
+              data[objectKeyToLC][propertyKey][key][1] +
+              "</td></tr>";
+            $("#property-values table tbody").append(newRow);
+          }
         }
-
-        //when list item is selected the following click function will get id attribute and call function
-        /* var getId = $(this).attr("id");
-          setObjectInfo(getId, catId, data);
-          //get id of current list item
-          objectKey = data[cat][getId].name;
-          LoadPropertyList(objectKey, cat);*/
       });
     })
     .fail(function () {
@@ -125,24 +126,12 @@ function setObjectInfo(i, cat, data) {
   el.removeAttribute("alt");
   el.setAttribute("src", data[cat][i].image); // set src attribute to contain the image values from json
   el.setAttribute("alt", data[cat][i].alt); // set alt attribute to contain the alt values from json
-  var newArticle =
-    "<article>" +
-    "<h2>" +
+  newImageArticle =
+    "<article><h2>" +
     data[cat][i].name +
-    "</h2>" +
-    "<p>" +
-    data[cat][i].about +
-    "</p>" +
-    "</article>";
-  var newImageArticle =
-    "<article>" +
-    "<h2>" +
-    data[cat][i].name +
-    "</h2>" +
-    "<p>" +
+    "</h2><p>" +
     data[cat][i].alt +
-    "</p>" +
-    "</article>";
+    "</p></article>";
   $("#image-information").empty();
   $("#image-information").append(newImageArticle);
   //$("#image-information article h2").text(data[cat][i].name); // set text of <h2> in #image-information to value of name from json
@@ -157,6 +146,5 @@ function setObjectInfo(i, cat, data) {
   //createParagraph.appendChild(paragraphTextNode);
   //createArticle.appendChild(createH2);
   //createArticle.appendChild(createParagraph);
-  $("#property-values").append(newArticle); // Get #property-values and append the createArticle variable
   $("#object-list ul").hide(); // Hide the list after it is clicked
 }
