@@ -428,10 +428,10 @@ tr {
   background-color: #5f799269;
   padding: 5px;
   border: 1px solid rgba(233, 247, 255, 0.391);
-  text-transform: capitalize;
 }
 tr:first-of-type {
   background-color: #40638469;
+  text-transform: capitalize;
 }
 
 td,
@@ -443,4 +443,40 @@ th {
 tr td:first-of-type,
 tr th:first-of-type {
   text-align: left !important;
+  text-transform: capitalize;
+}
+
+#return {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: orange;
+}
+
+#property-values ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+#property-values ul li {
+    font-family: "Mulish", sans-serif;
+    background-color: #9bcfff5a;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 80%;
+    margin: 0.5rem auto 0 auto;
+    font-size: 1.2rem;
+}
+#property-values ul li:hover {
+    cursor: pointer;
+    background-color: #ffda4564;
 }
