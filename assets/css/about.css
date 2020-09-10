@@ -18,42 +18,49 @@ body {
     opacity: 0;
 }*/
 
+#about {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+#q-and-a {
+  width: 40vw;
+  top: 0;
+  left: 0;
+  margin-left: 5vw;
+}
+
 #about-container {
   display: flex;
   flex-direction: column;
   height: auto;
 }
-section {
-  height: 100vh;
-}
 
 .title {
   width: 100%;
-  height: 40vh;
   background-size: cover;
   background-position: center;
   display: flex;
+  box-shadow: inset 0 0 0 50vh #13192573;
 }
 .paragraph-container {
-  display: flex;
-  height: 60vh;
+  display: none;
   width: 100%;
   justify-content: center;
 }
+
 .paragraph {
   align-self: center;
   justify-self: center;
   justify-items: center;
   font-family: "Mulish", sans-serif;
   font-weight: 400;
-  font-size: 3vh;
   text-align: justify;
-  padding-left: 25vw;
-  padding-right: 25vw;
-  letter-spacing: 2px;
   color: rgba(233, 247, 255, 0.95);
   margin: 0;
-  line-height: 5vh;
+  background-color: #13192573;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
 }
 #what-is div:first-child {
   background-image: url("../images/052517_AY_jupiter_main_FREE.jpg");
@@ -66,9 +73,9 @@ h2 {
   align-self: center;
   font-family: "Roboto Mono", monospace;
   margin: auto;
-  font-size: 35px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   color: rgba(233, 247, 255, 0.95);
-  background-color: #13192573;
   padding: 5px 20px 5px 20px;
 }
 
@@ -80,20 +87,23 @@ h2 {
   background-image: url("../images/heic0515a.jpg");
   overflow: hidden;
 }
-#form > div:first-child {
-  background-image: url("../images/Comet_67P_on_19_September_2014_NavCam_mosaic.jpg");
-  overflow: hidden;
-}
 #form {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  width: 40vw;
+  margin-right: 5vw;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
+.title:hover {
+  box-shadow: inset 0 0 0 50vh #596e98bb;
+  cursor: pointer;
+}
 #form-div {
   width: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   height: 60vh;
@@ -160,7 +170,15 @@ button:disabled::after {
   left: 20px;
   top: 45px;
 }
-
+.div-header {
+    padding: 0;
+    margin-bottom: 1.2rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 .form-common-styling {
   font-family: "Roboto Mono", monospace;
   color: rgba(233, 247, 255, 0.95);
@@ -183,22 +201,52 @@ button:disabled::after {
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
+#contact,
+#qA {
+  display: none;
+}
 
 @media only screen and (max-width: 900px) {
   .paragraph {
     padding-left: 20vw;
     padding-right: 20vw;
   }
+  #q-and-a {
+    width: 90vw;
+  }
+  #contact {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .div-header {
+      margin-top: 0;
+  }
+  .button {
+    width: 13rem;
+    margin-bottom: 1rem;
+    margin-top: 1.4rem;
+  }
+  #about {
+    align-content: center;
+    flex-direction: column;
+  }
+
+  #form {
+    height: 90vh;
+    display: none;
+    width: 100vw;
+    margin: 0;
+    right: 5vw;
+    top: 6rem;
+    position: static;
+  }
   #form-div {
     flex-direction: column;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
-    height: 70%;
-  }
-  #form {
-    height: 100vh;
+    width: 90%;
+    margin: 0;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   #col-1,
   #col-2 {

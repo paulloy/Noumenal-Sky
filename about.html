@@ -61,51 +61,53 @@
       </nav>
     </header>
 
-    <section id="what-is">
-      <div class="title">
-        <h2>What is Noumenal Sky?</h2>
-      </div>
-      <div class="paragraph-container">
-        <p class="paragraph">
-          Noumenal Sky is an educational website that aims to teach users some
-          interesting facts about the objects within our solar system.
-        </p>
-      </div>
-    </section>
+    <div id="about">
+    <button class="button" id="contact">VIEW CONTACT</button>
+    <button class="button" id="qA">VIEW Q&A</button>
+      <div id="q-and-a">
+      <h2 class="div-header">Questions & Answers</h2>
+        <section id="what-is">
+          <div class="title">
+            <h2>What is Noumenal Sky?</h2>
+          </div>
+          <div class="paragraph-container">
+            <p class="paragraph">
+              Noumenal Sky is an educational website that aims to teach users
+              some interesting facts about the objects within our solar system.
+            </p>
+          </div>
+        </section>
 
-    <section id="how-to">
-      <div class="title">
-        <h2>How do I use this?</h2>
-      </div>
-      <div class="paragraph-container">
-        <p class="paragraph">
-          If you come across something you have never heard of and don't
-          understand; jargon such as albedo, or perihelion, simply click on them
-          and a window will appear that will hopefully assist in making clear
-          what those concepts are and what they mean.
-        </p>
-      </div>
-    </section>
+        <section id="how-to">
+          <div class="title">
+            <h2>How do I use this?</h2>
+          </div>
+          <div class="paragraph-container">
+            <p class="paragraph">
+              If you come across something you have never heard of and don't
+              understand; jargon such as albedo, or perihelion, simply click on
+              them and a window will appear that will hopefully assist in making
+              clear what those concepts are and what they mean.
+            </p>
+          </div>
+        </section>
 
-    <section id="now-what">
-      <div class="title">
-        <h2>Now what?</h2>
+        <section id="now-what">
+          <div class="title">
+            <h2>Now what?</h2>
+          </div>
+          <div class="paragraph-container">
+            <p class="paragraph">
+              We hope you have fun learning with our website and it succeeds in
+              teaching you some interesting things about our universe!
+              <span><i class="far fa-smile-beam"></i></span>
+            </p>
+          </div>
+        </section>
       </div>
-      <div class="paragraph-container">
-        <p class="paragraph">
-          We hope you have fun learning with our website and it succeeds in
-          teaching you some interesting things about our universe!
-          <span><i class="far fa-smile-beam"></i></span>
-        </p>
-      </div>
-    </section>
-
-    <form id="form" method="post">
-      <div class="title">
-        <h2>Got Feedback? Contact us below</h2>
-      </div>
-      <div id="form-div">
-        <div id="col-1">
+      <form id="form" method="post">
+      <h2 class="div-header">Contact Us</h2>
+        <div id="form-div">
           <label class="form-common-styling" for="name">Name</label>
           <input
             name="name"
@@ -122,8 +124,6 @@
             id="email"
             required
           />
-        </div>
-        <div id="col-2">
           <label class="form-common-styling" for="message">Your Message</label>
           <textarea
             class="form-common-styling"
@@ -133,14 +133,16 @@
           ></textarea>
           <button id="submit" type="submit">Send Message</button>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
+
     <footer>
       <a href="references.html">References</a>
       <p>Copyright&copy; 2020</p>
     </footer>
 
     <script src="assets/js/navbarToggle.js"></script>
+    <script src="assets/js/about.js"></script>
     <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>
