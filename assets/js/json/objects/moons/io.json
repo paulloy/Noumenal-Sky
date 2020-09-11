@@ -4,7 +4,7 @@
       "rotation period ": ["42.5", "hours", "[2]"],
       "orbital period ": ["1.8", "days", "[2]"],
       "distance": ["422", "10^3km", "[2]"],
-      "periapsis": ["420", "10&3km", "[2]"],
+      "periapsis": ["420", "10^3km", "[2]"],
       "apoapsis": ["424", "10^3km", "[2]"],
       "orbital velocity ": ["17.3", "km/s", "[2]"],
       "eccentricity": ["0.004", "no unit", "[2]"]

@@ -7,7 +7,7 @@
     },
     {
       "name": "Venus",
-      "venus": "../objects/planets/venus.json",
+      "image": "assets/images/space-images/planets/venus.jpg",
       "alt": "This image was processed from archived Mariner 10 data by JPL engineer Kevin M. Gill."
     },
     {

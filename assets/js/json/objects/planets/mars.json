@@ -3,9 +3,9 @@
     "orbital Characteristics": {
       "rotation period": ["24.6", "hours", "[1]"],
       "orbital period ": ["687.0", "days", "[1]"],
-      "distance": ["227.9", "10$e$6$km", "[1]"],
-      "periapsis": ["206.6", "10$e$6$km", "[1]"],
-      "apoapsis": ["249.2", "10$e$6$km", "[1]"],
+      "distance": ["227.9", "10^6km", "[1]"],
+      "periapsis": ["206.6", "10^6km", "[1]"],
+      "apoapsis": ["249.2", "10^6km", "[1]"],
       "orbital velocity": ["24.1", "km/s", "[1]"],
       "eccentricity": ["0.094", "no unit", "[1]"],
       "axial tilt": ["25.2", "deg", "[1]"],

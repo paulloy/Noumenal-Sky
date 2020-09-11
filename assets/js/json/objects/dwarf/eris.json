@@ -14,7 +14,7 @@
     "physical characteristics": {
       "mass": ["1.66", "10^22kg", "[4]"],
       "diameter": ["2400", "km", "[4]"],
-      "density": ["2.3", "g/cm^-3", "[4]"],
+      "density": ["2.3", "g/cm^3", "[4]"],
       "gravity": ["0.82", "m/s^2", "[a]"],
       "bond albedo": ["0.55", "no unit", "[50]"]
     },
