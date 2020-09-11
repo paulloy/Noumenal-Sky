@@ -14,8 +14,6 @@
       integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
       crossorigin="anonymous"
     />
-    <!--Angular-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
 
   <body>
@@ -73,7 +71,7 @@
             <span><i class="fas fa-chevron-left"></i></span>
             <h3>Menu</h3>
           </div>
-          <ul>
+          <ul id="cat-list">
             <li id="planets">
               Planets
             </li>
@@ -83,6 +81,7 @@
             <li id="moons">Moons</li>
             <li id="other">Other</li>
           </ul>
+          <ul id="object-list"></ul>
         </div>
       </div>
 
@@ -93,25 +92,13 @@
           <ul></ul>
         </div>-->
 
-        <div id="property-values"></div>
-
-        <div id="explanation-container">
-          <article>
-            <h3>Perihelion</h3>
-            <p>
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-              ipsum lorem ipsum lorem ipsum lorem ipsum
-            </p>
-          </article>
-        </div>
+        <div id="property-values" class="common-style"></div>
+        <div id="display-values" class="common-style"></div>
+        <div id="display-more-info" class="common-style"></div>
+       
       </div>
     </div>
-    <footer>
-      <a href="references.html">References</a>
-      <p>Copyright&copy; 2020</p>
-    </footer>
+   
 
     <!--JQuery-->
     <script
