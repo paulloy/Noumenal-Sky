@@ -9,8 +9,6 @@ function navbarIsOpen() {
   $("body").prepend($("nav")); //prepend the nav to the body when it is being opened.
   $("html").children().animate({ left: "250px" }, 500); //Animate the body so that it slides to the right of the screen.
 
-  $("#navbar").append($("footer")); //Append the footer to the navbar
-  $("footer").show(); //Display the hidden footer
 
   $("#top-bar").removeClass("top-bar-close"); //The following classes are responsible for the navbar toggle icon animation
   $("#middle-bar").removeClass("middle-bar-close");
@@ -35,10 +33,7 @@ function navbarIsClosed() {
     $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
   }, 500); // Gives time for the navbar to close before toggling the classes.
 
-  setTimeout(function () {
-    $("body").append($("footer")); //append the footer to the body and hide it.
-    $("footer").hide();
-  }, 500);
+ 
 
   $("#top-bar").removeClass("top-bar-open");
   $("#middle-bar").removeClass("middle-bar-open");
