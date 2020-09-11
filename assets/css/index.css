@@ -21,8 +21,19 @@ body {
   justify-content: flex-start;
 }
 #top-container {
-  display: inline-block;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  border-top: #2f3f5c solid 0.5rem;
+  border-bottom: #2f3f5c solid 0.5rem;
+  height: 70vh;
+}
+#display-values h3 {
+    width: 100px;
+}
+#return,
+#return-again {
+    z-index: 1;
 }
 #bottom-container {
   display: inline-block;
@@ -33,7 +44,7 @@ body {
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   background-color: rgba(208, 192, 163, 0.15);
-  display: block;
+  display: none;
   min-width: 300px;
 }
 #image-information article {
@@ -69,14 +80,10 @@ body {
 }
 
 #image-container {
+  top: 0;
+  width: 25vw;
+  height: 25vw;
   overflow: hidden;
-  justify-self: center;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  top: 2rem;
 }
 #image-container img {
   width: 100%;
@@ -84,7 +91,16 @@ body {
   object-fit: fill;
   align-self: center;
 }
-
+#category-list {
+    width: 20vw;
+    height: 100%;
+    background-color: #2f3f5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
 #information-container {
   display: flex;
   flex-direction: row;
@@ -122,33 +138,33 @@ body {
   margin-right: auto;
   padding: 5px;
 }
-#property-values {
+.common-style {
   background-color: #2f3f5c9a;
   overflow-y: scroll;
   padding: 1rem;
   font-family: "Mulish", sans-serif;
 }
-#property-values h2 {
+.common-style h2 {
   text-align: center;
   margin: 0;
   text-transform: capitalize;
 }
-#property-values p {
+.common-style p {
   text-align: justify;
   font-size: 1rem;
 }
-#property-values table {
+.common-style table {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
-#property-values table tbody {
+.common-style table tbody {
   width: 100%;
 }
-#property-values table tbody tr {
+.common-style table tbody tr {
   width: 100%;
 }
-#property-values table tbody tr td {
+.common-style table tbody tr td {
   text-align: center;
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -170,6 +186,65 @@ body {
   position: absolute;
   top: 2rem;
 }*/
+#menu-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2rem;
+    background-color: #7da3c780;
+    position: absolute;
+    top: 0;
+  }
+  #menu-title i {
+    height: 2rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c3d2b67;
+  }
+  #menu-title span {
+    display: none;
+  }
+  #menu-title i:hover {
+    cursor: pointer;
+    background-color: #0000002c;
+  }
+  #menu-title i:active {
+    background-color: #00000083;
+  }
+  #menu-title h3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  #category-list ul {
+    padding: 0;
+    overflow-y: scroll;
+    margin: 0;
+    margin-top: 2.5rem;
+  }
+  #category-list ul li {
+    list-style-type: none;
+    font-family: "Mulish", sans-serif;
+    text-align: center;
+    background-color: #9bcfff5a;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 80%;
+    margin: 0.5rem auto 0 auto;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+  #category-list ul li:hover {
+    cursor: pointer;
+    background-color: #ffda4564;
+  }
 
 @media only screen and (max-width: 810px) {
   #app {
@@ -320,13 +395,13 @@ body {
   #explanation-container article h3 {
     margin: 0;
   }
-  #property-values {
+  .common-style {
     display: none;
   }
-  #property-values table tbody tr td {
+  .common-style table tbody tr td {
     font-size: 0.9rem;
   }
-  #property-values table tr td:nth-of-type(2) {
+  .common-style table tr td:nth-of-type(2) {
     text-align: right;
   }
   .mobile-display-image-info {
@@ -415,7 +490,7 @@ body {
       top: 50%;
       margin-top: -25%;
   }
-  #property-values {
+  .common-style {
       max-height: 23vw;
   }
 }*/
@@ -446,37 +521,74 @@ tr th:first-of-type {
   text-transform: capitalize;
 }
 
-#return {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: orange;
+#return,
+#return-again {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(163, 148, 112, 0.459);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-#property-values ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    flex-direction: column;
-    height: 10rem;
-    justify-content: space-evenly;
-    align-content: center;
-    text-align: center;
-    text-transform: capitalize;
+.common-style ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  text-transform: capitalize;
 }
-#property-values ul li {
-    font-family: "Mulish", sans-serif;
-    background-color: #9bcfff5a;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 80%;
-    margin: 0.5rem auto 0 auto;
-    font-size: 1.2rem;
+.common-style ul li {
+  font-family: "Mulish", sans-serif;
+  background-color: #9bcfff5a;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 80%;
+  margin: 0.5rem auto 0 auto;
+  font-size: 1.2rem;
 }
-#property-values ul li:hover {
-    cursor: pointer;
-    background-color: #ffda4564;
+.common-style ul li:hover {
+  cursor: pointer;
+  background-color: #ffda4564;
+}
+
+#display-values h3 {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  text-transform: capitalize;
+}
+
+#display-values table {
+  margin-top: 2rem;
+}
+#display-more-info tr {
+  margin-top: 2rem;
+}
+#display-more-info a {
+  color: rgba(104, 245, 255, 0.926);
+}
+#menu-title {
+  background-color: rgba(121, 203, 228, 0.495);
+}
+#display-more-info h3 {
+  text-transform: capitalize;
+}
+#display-values tr:not(:first-child):hover {
+  background-color: #9bcfff62;
+  cursor: pointer;
+}
+#return:hover,
+#return-again:hover {
+  background-color: #9bcfff62;
+  cursor: pointer;
 }
