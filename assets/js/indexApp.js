@@ -1,20 +1,10 @@
 var url = "assets/js/json/";
-var mainMenu =
-  '<li id="planets">Planets</li><li id="dwarf">Dwarf Planets</li><li id="moons">Moons</li><li id="other">Other</li>';
-var categoryList = true;
 
 $("#menu-title i").click(function () {
-  $("#category-list ul").empty();
   $("#menu-title span").hide();
-  $("#category-list ul").append(mainMenu);
-  categoryList = true;
+  $("#object-list").hide();
+  $("#cat-list").show();
 });
-
-var headerHeight = $("header").height();
-var topContainerHeight = $("#top-container").height();
-var sum = headerHeight + topContainerHeight + 8 + 8 + 16 + 16;
-var remainingHeight = screen.availHeight - sum;
-$("#property-values").css("height", remainingHeight);
 
 $("#image-container").click(function () {
   $("#image-information").prepend($("#image-container"));
@@ -34,8 +24,7 @@ function loadObjectList(objectUrl, cat) {
   $.getJSON(url + objectUrl + ".json").done(function (data) {
     for (var i = 0; i < data[cat].length; i++) {
       var newListItem = "<li id=" + i + ">" + data[cat][i].name + "</li>";
-      categoryList = false;
-      $("#category-list ul").append(newListItem);
+      $("#object-list").append(newListItem);
       var objectKey;
       $("#" + i).click(function () {
         //when list item is selected the following click function will get id attribute and call function
@@ -44,8 +33,6 @@ function loadObjectList(objectUrl, cat) {
         //get id of current list item
         objectKey = data[cat][getId].name;
         LoadPropertyList(objectKey, cat);
-        
-        
       });
     }
   });
@@ -54,38 +41,48 @@ function LoadPropertyList(objectKey, cat) {
   var objectKeyToLC = objectKey.toLowerCase();
   if (objectKeyToLC === "tesla roadster") {
     objectKeyToLC = "teslaRoadster";
-  } 
+  }
   $.getJSON("assets/js/json/objects/" + cat + "/" + objectKeyToLC + ".json")
     .done(function (data) {
       for (objectKeyToLC in data) {
         console.log(objectKeyToLC);
       }
+      $("#property-values").append("<h2>" + objectKeyToLC + "</h2>");
       $("#property-values").append("<ul></ul>");
       for (var propertyKey in data[objectKeyToLC]) {
         var newListItem = "<li>" + propertyKey + "</li>";
         $("#property-values ul").prepend(newListItem);
         $("#property-values").show();
+        $("#display-values").hide();
+        $("#display-more-info").empty().hide();
       }
 
       $("#property-values ul li").click(function () {
         propertyKey = $(this).text();
-        $("#property-values").empty();
+        $("#property-values").hide();
+        $("#display-values").empty();
+        $("#display-values").show();
         var heading =
           "<table><tbody><tr><th>Property</th><th>Value</th><th>Unit</th></tr></tbody></table>";
-    //    $("#property-values").append(
-       //   '<span id="return"><i class="fas fa-chevron-left"></i><p>RETURN</p></span>'
-     //   );
-        
+        $("#display-values").append(
+          '<span id="return"><i class="fas fa-chevron-left"></i></span>'
+        );
 
         if (propertyKey === "about") {
           var newArticle = "<article></article>";
-          $("#property-values").append(newArticle);
+          $("#display-values").append(newArticle);
           for (key in data[objectKeyToLC][propertyKey]) {
-            var newPoint = "<h2>"+key+"</h2><p>"+data[objectKeyToLC][propertyKey][key]+"</p>"
-            $("#property-values article").append(newPoint);
+            var newPoint =
+              "<h2>" +
+              key +
+              "</h2><p>" +
+              data[objectKeyToLC][propertyKey][key] +
+              "</p>";
+            $("#display-values article").append(newPoint);
           }
         } else {
-          $("#property-values").append(heading);
+          $("#display-values").append("<h3>" + propertyKey + "</h3>");
+          $("#display-values").append(heading);
           for (key in data[objectKeyToLC][propertyKey]) {
             var newRow =
               "<tr><td>" +
@@ -94,28 +91,71 @@ function LoadPropertyList(objectKey, cat) {
               data[objectKeyToLC][propertyKey][key][0] +
               "</td><td>" +
               data[objectKeyToLC][propertyKey][key][1] +
+              "</td><td style='display: none;'>" +
+              data[objectKeyToLC][propertyKey][key][2] +
               "</td></tr>";
-            $("#property-values table tbody").append(newRow);
+            $("#display-values table tbody").append(newRow);
           }
+
+          $("#display-values tr").click(function () {
+            var referenceKeyNumber = $(this).children().last().text();
+            var referenceIndex = referenceKeyNumber.match(/\d+/)[0];
+            $("#display-values").hide();
+            $("#display-more-info").append(
+              '<span id="return-again"><i class="fas fa-chevron-left"></i></span>'
+            );
+            $("#display-more-info").append($(this).clone());
+            $.getJSON("assets/js/json/explanation.json").done(function (data) {
+              explanationPropertyKey = $("#display-more-info tr td:first-of-type").text()
+                .toLowerCase();
+              explanationUnitKey = $("#display-more-info tr td:nth-child(3)").text().toLowerCase();
+              $("#display-more-info").append("<h3>"+explanationPropertyKey+"</h3><p>"+data[explanationPropertyKey]+"</p>");
+              $("#display-more-info").append("<h3>"+explanationUnitKey+"</h3><p>"+data[explanationUnitKey]+"</p>");
+            });
+            $.getJSON("assets/js/json/references.json").done(function (data) {
+              var newReference =
+                "<p><span>" +
+                referenceKeyNumber +
+                "</span> " +
+                data[referenceIndex].author +
+                "<br>" +
+                data[referenceIndex].title +
+                ' <a href="' +
+                data[referenceIndex].href +
+                '" target="_blank"><i class="fas fa-external-link-alt"></i></a></p><br><p><a href="references.html">Click for full references</a></p>';
+              $("#display-more-info").append("<h3>Data Reference</h3>");
+              $("#display-more-info").append(newReference);
+            });
+
+            $("#display-more-info").show();
+            $("#return-again").click(function () {
+              $("#display-more-info").hide();
+              $("#display-more-info").empty();
+              $("#display-values").show();
+            });
+          });
         }
+        $("#return").click(function () {
+          $("#display-values").hide();
+          $("#property-values").show();
+        });
       });
     })
     .fail(function () {
       console.log("status: 404; Could not load property data");
     });
 }
-$("#category-list").click(function () {
-  if (categoryList === true) {
-    $("#category-list ul li").click(function () {
-      //run this function when a category list item is clicked
-      objectUrl = "categories/" + $(this).attr("id"); //get id of current list item
-      console.log($(this).attr("id"));
-      catId = $(this).attr("id");
-      loadObjectList(objectUrl, catId);
-      $("#category-list ul").empty();
-      $("#menu-title span").show();
-    });
-  }
+
+$("#category-list ul li").click(function () {
+  //run this function when a category list item is clicked
+  objectUrl = "categories/" + $(this).attr("id"); //get id of current list item
+  console.log($(this).attr("id"));
+  catId = $(this).attr("id");
+  loadObjectList(objectUrl, catId);
+  $("#category-list ul").hide();
+  $("#object-list").empty();
+  $("#object-list").show();
+  $("#menu-title span").show();
 });
 
 var el = document.getElementById("image"); //sets img element with id of image as a variable
