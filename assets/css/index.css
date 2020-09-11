@@ -26,7 +26,6 @@ body {
   flex-direction: row;
   border-top: #2f3f5c solid 0.5rem;
   border-bottom: #2f3f5c solid 0.5rem;
-  height: 70vh;
 }
 #display-values h3 {
     width: 100px;
@@ -84,6 +83,7 @@ body {
   width: 25vw;
   height: 25vw;
   overflow: hidden;
+  position: relative;
 }
 #image-container img {
   width: 100%;
