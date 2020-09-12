@@ -11,7 +11,7 @@ $("#image-container").click(function () {
   $("#expand").hide();
 
   $("#close").show();
-  $("#image-information").show();
+  $("#image-information").css("display", "flex");
 });
 $("#image-information").click(function () {
   $("#top-container").prepend($("#image-container"));
@@ -82,6 +82,7 @@ function LoadPropertyList(objectKey, cat) {
           }
         } else {
           $("#display-values").append("<h3>" + propertyKey + "</h3>");
+          $("#display-values").append("<p><i class='fas fa-mouse'></i> Click on a table row for more information.</p>");
           $("#display-values").append(heading);
           for (key in data[objectKeyToLC][propertyKey]) {
             var newRow =
@@ -101,6 +102,7 @@ function LoadPropertyList(objectKey, cat) {
             var referenceKeyNumber = $(this).children().last().text();
             var referenceIndex = referenceKeyNumber.match(/\d+/)[0];
             $("#display-values").hide();
+            $("#display-more-info").show();
             $("#display-more-info").append(
               '<span id="return-again"><i class="fas fa-chevron-left"></i></span>'
             );
@@ -127,7 +129,6 @@ function LoadPropertyList(objectKey, cat) {
               $("#display-more-info").append(newReference);
             });
 
-            $("#display-more-info").show();
             $("#return-again").click(function () {
               $("#display-more-info").hide();
               $("#display-more-info").empty();
@@ -154,6 +155,7 @@ $("#category-list ul li").click(function () {
   loadObjectList(objectUrl, catId);
   $("#category-list ul").hide();
   $("#object-list").empty();
+  $("#object-list").append('<div id="spinner"></div>');
   $("#object-list").show();
   $("#menu-title span").show();
 });
