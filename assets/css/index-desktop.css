@@ -223,12 +223,7 @@ body {
     display: flex;
     align-items: center;
   }
-  #category-list ul {
-    padding: 0;
-    overflow-y: scroll;
-    margin: 0;
-    margin-top: 2.5rem;
-  }
+  
   #category-list ul li {
     list-style-type: none;
     font-family: "Mulish", sans-serif;
@@ -246,7 +241,7 @@ body {
     background-color: #ffda4564;
   }
 
-@media only screen and (max-width: 810px) {
+
   #app {
     flex-direction: column;
   }
@@ -254,22 +249,29 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    border-top: #2f3f5c solid 0.5rem;
-    border-bottom: #2f3f5c solid 0.5rem;
+    border: #2f3f5c solid 0.5rem;
+    width: 70vw;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   #bottom-container {
-    width: 100vw;
+    width: 70vw;
     position: relative;
     display: block;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: #2f3f5c solid 0.5rem;
+    margin-bottom: 1.5rem;
   }
   #image-information {
     display: none;
   }
   #image-container {
     top: 0;
-    width: 50vw;
-    height: 50vw;
+    width: 30vw;
+    height: 30vw;
     overflow: hidden;
   }
   #image-container:hover {
@@ -295,8 +297,8 @@ body {
     height: rgba(233, 247, 255, 0.392);
   }
   #category-list {
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 30vw;
     background-color: #2f3f5c;
     display: flex;
     flex-direction: column;
@@ -309,6 +311,9 @@ body {
     overflow-y: scroll;
     margin: 0;
     margin-top: 2.5rem;
+  }
+  #object-list {
+      display: none;
   }
   #category-list ul li {
     list-style-type: none;
@@ -417,16 +422,29 @@ body {
   #image-information {
     display: none;
     position: fixed;
-    height: 100vh;
-    width: 100vw;
     z-index: 1;
     background-color: #2f3f5c;
-    top: 0;
+    flex-direction: row;
+    left: 50%;
+    margin-left: -45vw;
+    top: 50%;
+    margin-top: -22.5vw;
   }
   #image-information div {
-    width: 100vw;
-    height: 100vw;
+    width: 45vw;
+    height: 45vw;
   }
+  #image-information article {
+      width: 45vw;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;     
+  } 
+  #image-information article p {
+          padding-left: 8vw;
+          padding-right: 8vw;
+      }
   #property-list {
     display: flex;
     flex-direction: row;
@@ -454,7 +472,7 @@ body {
     background-color: #2f3f5c;
     z-index: 1;
   }
-}
+
 /*phone in landscape*/ /*
 @media only screen and (orientation: landscape) {
   #app {
@@ -564,8 +582,9 @@ tr th:first-of-type {
   text-align: center;
   width: 100px;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -90px;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 #display-values table {
@@ -592,3 +611,4 @@ tr th:first-of-type {
   background-color: #9bcfff62;
   cursor: pointer;
 }
+
