@@ -42,9 +42,9 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  
-    background-color: rgba(32, 64, 102, 0.275);
-    border: 1px solid white;
+
+  background-color: rgba(32, 64, 102, 0.275);
+  border: 1px solid white;
 }
 .paragraph-container {
   display: none;
@@ -60,44 +60,12 @@ body {
   font-weight: 400;
   text-align: justify;
   color: rgba(233, 247, 255, 0.95);
+  border-left: 1px solid #6e83b135;
+  border-right: 1px solid #6e83b135;
   margin: 0;
-  background-color: #13192573;
+  background-color: #6e83b135;
   padding: 1rem 0.2rem 1rem 0.2rem;
 }
-.faq {
-}
-/*#q1:first-child {
-  background-image: url("../images/space-images/q-and-a/q1.jpg");
-  overflow: hidden;
-}
-#q2 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q2.jpg");
-  overflow: hidden;
-}
-#q3 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q3.jpg");
-  overflow: hidden;
-}
-#q4 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q4.jpg");
-  overflow: hidden;
-}
-#q5 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q5.jpg");
-  overflow: hidden;
-}
-#q6 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q6.jpg");
-  overflow: hidden;
-}
-#q7 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q7.jpg");
-  overflow: hidden;
-}
-#q8 div:first-child {
-  background-image: url("../images/space-images/q-and-a/q8.jpg");
-  overflow: hidden;
-}*/
 h2 {
   letter-spacing: 2px;
   font-weight: 300;
@@ -228,6 +196,12 @@ button:disabled::after {
 #contact,
 #qA {
   display: none;
+  width: 15rem;
+  background-color: rgba(142, 150, 67, 0.2);
+}
+#contact:hover,
+#qA:hover {
+    background-color: rgba(142, 150, 67, 0.3);
 }
 
 @media only screen and (max-width: 900px) {
@@ -286,7 +260,7 @@ button:disabled::after {
 }
 @media only screen and (max-width: 750px) {
   h2 {
-    font-size: 5.9vw;
+    font-size: 1.2rem;
     text-align: center;
   }
   section {
@@ -295,7 +269,7 @@ button:disabled::after {
     align-content: space-between;
   }
   .paragraph {
-    font-size: 3vh;
+    font-size: 1rem;
     padding-left: 15vw;
     padding-right: 15vw;
     justify-self: center;
