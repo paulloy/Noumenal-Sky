@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noumenal Sky</title>
+    <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
@@ -17,33 +18,43 @@
   </head>
 
   <body>
-    <noscript
-      ><p>JavaScript must be enabled for this website to function</p></noscript
-    >
+    <noscript>
+      <p>JavaScript must be enabled for this website to function</p>
+    </noscript>
     <div id="navbar-cover"></div>
+    <div id="image-information-background"></div>
     <header class="fade-in">
-      <div id="navbarToggle">
+      <div id="navbarToggle" tabindex="0" aria-label="toggle navigation menu" role="button">
         <span id="top-bar"></span>
         <span id="middle-bar"></span>
         <span id="bottom-bar"></span>
       </div>
       <h1><a id="logo" href="index.html">Noumenal Sky</a></h1>
       <nav>
-        <ul id="navbar" class="navbar-browser">
+        <ul id="navbar" class="navbar-browser" role="navigation">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li>
-            <a href="https://www.facebook.com" target="_blank" class="font-awesome-icon"
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="font-awesome-icon"
               ><i class="fab fa-facebook-square"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com" target="_blank" class="font-awesome-icon"
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="font-awesome-icon"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.twitter.com" target="_blank" class="font-awesome-icon"
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="font-awesome-icon"
               ><i class="fab fa-twitter-square"></i
             ></a>
           </li>
@@ -52,50 +63,47 @@
     </header>
 
     <div id="app">
-      <div id="image-information">
+      <div id="image-modal">
         <article>
           <h2>Welcome to Noumenal Sky</h2>
           <p></p>
         </article>
+        <span id="close-modal" aria-label="close modal" tabindex="0" role="button"><i class="far fa-times-circle"></i></span>
       </div>
       <div id="top-container">
-        <!--This is the top container when <810px, otherwise it is on the left-->
-
         <div id="image-container">
           <img id="image" src="assets/images/helix-nebula.jpg" alt="" />
-          <span id="close"><i class="far fa-times-circle"></i></span>
-          <span id="expand"><i class="fas fa-expand-arrows-alt"></i></span>
+          <span id="open-modal" aria-label="open modal" tabindex="0" role="button"><i class="fas fa-expand-arrows-alt"></i></span>
         </div>
-        <div id="category-list">
+        <div id="full-list">
           <div id="menu-title">
-            <span><i class="fas fa-chevron-left"></i></span>
+            <span
+              ><i
+                class="fas fa-chevron-left"
+                aria-label="return to category list"
+                 tabindex="0" role="button"
+              ></i
+            ></span>
             <h3>Menu</h3>
           </div>
-          <ul id="cat-list">
-            <li id="planets">
+          <ul id="category-list">
+            <li id="planets" tabindex="0">
               Planets
             </li>
-            <li id="dwarf">
+            <li id="dwarf" tabindex="0">
               Dwarf Planets
             </li>
-            <li id="moons">Moons</li>
-            <li id="other">Other</li>
+            <li id="moons" tabindex="0">Moons</li>
+            <li id="other" tabindex="0">Other</li>
           </ul>
           <ul id="object-list"></ul>
         </div>
       </div>
 
       <div id="bottom-container">
-        <!--This is the bottom container when <810px, otherwise it is on the right-->
-        <!--<div id="property-list">
-          <h3>Property Menu<i class="fas fa-chevron-down"></i></h3>
-          <ul></ul>
-        </div>-->
-
         <div id="property-values" class="common-style"></div>
         <div id="display-values" class="common-style"></div>
         <div id="display-more-info" class="common-style"></div>
-       
       </div>
     </div>
 
@@ -105,8 +113,8 @@
       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
       crossorigin="anonymous"
     ></script>
+    <!--Custom JS-->
     <script src="assets/js/navbarToggle.js"></script>
-    <script src="assets/js/indexApp.js"></script>
-    <!-- <script src="assets/js/propertyList.js"></script>-->
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
