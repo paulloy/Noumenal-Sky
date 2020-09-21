@@ -5,54 +5,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Noumenal Sky</title>
+    <!--Custom CSS-->
 	<link rel="stylesheet" href="assets/css/global.css" />
 	<link rel="stylesheet" href="assets/css/header.css">
 	<link rel="stylesheet" href="assets/css/references.css">
 	<!--Font Awesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-		integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-
-	<!--JQuery-->
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 
 <body>
 	<noscript>Javascript must be enabled for this website to function</noscript>
-	<div id="navbar-cover"></div>
+	<div id="navbar-cover" class="dark-background"></div>
     
-	<header class="fade-in">
-		<div id="navbarToggle">
-			<span id="top-bar"></span>
-			<span id="middle-bar"></span>
-			<span id="bottom-bar"></span>
-		</div>
-		<h1><a id="logo" href="index.html">Noumenal Sky</a></h1>
-		<nav>
-			<ul id="navbar" class="navbar-browser">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="https://www.facebook.com" target="_blank" class="font-awesome-icon"><i class="fab fa-facebook-square"></i></a></li>
-				<li><a href="https://www.instagram.com" class="font-awesome-icon"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="https://www.twitter.com" class="font-awesome-icon"><i class="fab fa-twitter-square"></i></a></li>
-			</ul>
-		</nav>
-	</header>
+	 <header>
+      <div id="navbarToggle" tabindex="0" aria-label="toggle navigation menu" role="button">
+        <span id="top-bar"></span>
+        <span id="middle-bar"></span>
+        <span id="bottom-bar"></span>
+      </div>
+      <h1><a id="logo" href="index.html">Noumenal Sky</a></h1>
+      <nav>
+        <ul id="navbar" class="navbar-browser">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="font-awesome-icon"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a aria-label="instagram" href="https://www.instagram.com" target="_blank" class="font-awesome-icon"><i class="fab fa-instagram"></i></a></li>
+          <li><a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="font-awesome-icon"><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+      </nav>
+    </header>
 
 	<section id="references">
 		<h3>References</h3>
 		<p><span>[a] </span>Calculated based upon known parameters</p>
-
 	</section>
 
-	<footer>
-		<p>Copyright&copy; 2020</p>
-	</footer>
-
-
-
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="assets/js/navbarToggle.js"></script>
+    <!--Custom JS-->
 	<script src="assets/js/references.js"></script>
 </body>
 

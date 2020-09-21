@@ -4,35 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noumenal Sky</title>
+    <!--Custom CSS-->
     <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/about.css" />
     <!--Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-
-    <!--JQuery-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <!--Email.js-->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
-    ></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"/>
   </head>
 
   <body>
     <noscript>JavaScript must be enabled for this website to function</noscript>
-    <div id="navbar-cover"></div>
-    <header class="fade-in">
-      <div id="navbarToggle">
+    <div id="navbar-cover" class="dark-background"></div>
+     <header>
+      <div id="navbarToggle" tabindex="0" aria-label="toggle navigation menu" role="button">
         <span id="top-bar"></span>
         <span id="middle-bar"></span>
         <span id="bottom-bar"></span>
@@ -42,51 +26,35 @@
         <ul id="navbar" class="navbar-browser">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
-          <li>
-            <a
-              href="https://www.facebook.com"
-              target="_blank"
-              class="font-awesome-icon"
-              ><i class="fab fa-facebook-square"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" class="font-awesome-icon"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" class="font-awesome-icon"
-              ><i class="fab fa-twitter-square"></i
-            ></a>
-          </li>
+          <li><a aria-label="facebook" href="https://www.facebook.com" target="_blank" class="font-awesome-icon"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a aria-label="instagram" href="https://www.instagram.com" target="_blank" class="font-awesome-icon"><i class="fab fa-instagram"></i></a></li>
+          <li><a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="font-awesome-icon"><i class="fab fa-twitter-square"></i></a></li>
         </ul>
       </nav>
     </header>
 
-    <div id="about">
-      <button class="button" id="contact">VIEW CONTACT <i class="fas fa-envelope-open-text"></i></button>
-      <button class="button" id="qA">VIEW Q&A <i class="far fa-question-circle"></i></button>
-      <div id="q-and-a">
-        <h2 class="div-header">Questions & Answers</h2>
-        <section id="q1">
-          <div class="title" tabindex="0">
-            <h2>What is Noumenal Sky?</h2>
+    <div id="container">
+      <button class="button" id="view-contact">VIEW CONTACT <i class="fas fa-envelope-open-text"></i></button>
+      <button class="button" id="view-faq">VIEW FAQ <i class="far fa-question-circle"></i></button>
+      <div id="faq">
+        <h2 class="div-header">FREQUENTLY ASKED QUESTIONS</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">What is Noumenal Sky?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               Noumenal Sky is an educational website that aims to teach users
               some interesting facts about the objects within our solar system.
             </p>
           </div>
         </section>
-
-        <section id="q2">
-          <div class="title" tabindex="0">
-            <h2>How do I use this?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">How do I use this?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               If you come across something you have never heard of and don't
               understand; jargon such as albedo, or perihelion, simply click on
               them and a window will appear that will hopefully assist in making
@@ -94,13 +62,12 @@
             </p>
           </div>
         </section>
-
-        <section id="q3">
-          <div class="title" tabindex="0">
-            <h2>What information can I find about each object?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">What information can I find about each object?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               You will find an image of each object with a description of the
               image. You will find a description of each object, when it was
               discovered, and where its name comes from. There will be tables
@@ -110,13 +77,12 @@
             </p>
           </div>
         </section>
-
-        <section id="q4">
-          <div class="title" tabindex="0">
-            <h2>I don't understand the terms in the tables</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">I don't understand the terms in the tables</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               Click on the row on the table that you don't understand to display
               more information which will explain the meaning of the terms. If
               you don't find the explanation to be clear enough, please leave us
@@ -124,26 +90,24 @@
             </p>
           </div>
         </section>
-
-        <section id="q5">
-          <div class="title" tabindex="0">
-            <h2>Where do you get your data?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">Where do you get your data?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               We source our data from original sources. You can find references
               for each data point and a link to the original source. For a full
               list of references <a href="references.html">click here.</a>
             </p>
           </div>
         </section>
-
-        <section id="q6">
-          <div class="title" tabindex="0">
-            <h2>Why study planets?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">Why study planets?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               For this question we will quote the astrophysicist Carl Sagan.<br />
               "Exploration is in our nature. We began as wanderers, and we are
               wanderers still. We have lingered long enough on the shores of the
@@ -151,13 +115,12 @@
             </p>
           </div>
         </section>
-
-        <section id="q7">
-          <div class="title" tabindex="0">
-            <h2>Why is Pluto not a planet?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">Why is Pluto not a planet?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               After the discovery of other Pluto like objects, the International
               Astronomical Union created a new category of object called a Dwarf
               Planet. Pluto along with 4 other objects met the definiton of
@@ -168,13 +131,12 @@
             </p>
           </div>
         </section>
-
-        <section id="q8">
-          <div class="title" tabindex="0">
-            <h2>How precise is the data?</h2>
+        <section>
+          <div class="question" tabindex="0" role="button">
+            <h2 class="font">How precise is the data?</h2>
           </div>
-          <div class="paragraph-container">
-            <p class="paragraph">
+          <div class="paragraph">
+            <p class="font">
               Many of the results are rounded. For more precise measurements,
               you can view the data reference to a particular result. To not
               overwhelm the user with too much detail, values such as diameter
@@ -185,43 +147,25 @@
           </div>
         </section>
       </div>
-
       <form id="form" method="post">
         <h2 class="div-header">Contact Us</h2>
-        <div id="form-div">
+        <div>
           <label class="form-common-styling" for="name">Name</label>
-          <input
-            name="name"
-            class="form-common-styling"
-            type="text"
-            id="name"
-            required
-          />
+          <input name="name" class="form-common-styling" type="text" id="name" required/>
           <label class="form-common-styling" for="email">Email</label>
-          <input
-            name="email"
-            class="form-common-styling"
-            type="email"
-            id="email"
-            required
-          />
+          <input name="email" class="form-common-styling" type="email" id="email" required/>
           <label class="form-common-styling" for="message">Your Message</label>
-          <textarea
-            class="form-common-styling"
-            id="message"
-            name="message"
-            required
-          ></textarea>
+          <textarea class="form-common-styling" id="message" name="message" required></textarea>
           <button id="submit" type="submit">Send Message</button>
         </div>
       </form>
     </div>
 
-    <footer>
-      <a href="references.html">References</a>
-      <p>Copyright&copy; 2020</p>
-    </footer>
-
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!--Email.js-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <!--Custom JS-->
     <script src="assets/js/navbarToggle.js"></script>
     <script src="assets/js/about.js"></script>
     <script src="assets/js/sendEmail.js"></script>

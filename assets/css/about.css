@@ -1,84 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* not for about.css */
 body {
-  width: 100%;
-  background-image: url("../images/about-background-image.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 50vw #131925bb; /*This adds a color filter over the image instead of creating a new div*/
-  position: static;
+  background-image: url("../images/about-background-image.jpg");  
 }
-/* ------ */
-
-/*section {
-    opacity: 0;
-}*/
-
-#about {
+#container {
   height: 100vh;
   position: relative;
   display: flex;
 }
-
-#q-and-a {
+#view-contact,
+#view-faq {
+  display: none;
+  width: 15rem;
+  background-color: rgba(142, 150, 67, 0.2);
+}
+#view-contact:hover,
+#view-faq:hover {
+  background-color: rgba(142, 150, 67, 0.3);
+}
+#faq {
   width: 40vw;
   top: 0;
   left: 0;
   margin-left: 5vw;
 }
-
-#about-container {
-  display: flex;
-  flex-direction: column;
-  height: auto;
+.div-header {
+  padding: 0;
+  margin-bottom: 1.2rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
-
-.title {
+.question {
   width: 100%;
   background-size: cover;
   background-position: center;
   display: flex;
   text-align: center;
   background-color: rgba(32, 64, 102, 0.275);
-  border: 1px solid white;
+  border: 1px solid rgba(233, 247, 255, 0.95);
 }
-.paragraph-container {
+.question:hover {
+  background-color: #596e98bb;
+  cursor: pointer;
+}
+.question:focus {
+  background-color: #596e98bb;
+}
+h2 {
+  letter-spacing: 2px;
+  justify-self: center;
+  align-self: center;
+  margin: auto;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 5px 20px 5px 20px;
+}
+.paragraph {
   display: none;
   width: 100%;
   justify-content: center;
 }
-
-.paragraph {
+.paragraph p {
   align-self: center;
   justify-self: center;
   justify-items: center;
-  font-family: "Mulish", sans-serif;
-  font-weight: 400;
   text-align: justify;
-  color: rgba(233, 247, 255, 0.95);
   border-left: 1px solid #273a6375;
   border-right: 1px solid #273a6375;
   margin: 0;
   background-color: #273a6375;
   padding: 1rem 0.2rem 1rem 0.2rem;
 }
-h2 {
-  letter-spacing: 2px;
-  font-weight: 300;
-  justify-self: center;
-  align-self: center;
-  font-family: "Mulish", sans-serif;
-  margin: auto;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  color: rgba(233, 247, 255, 0.95);
-  padding: 5px 20px 5px 20px;
+.paragraph a {
+    color: rgba(104, 245, 255, 0.926);
 }
-
 #form {
   display: flex;
   flex-direction: column;
@@ -88,14 +84,7 @@ h2 {
   top: 0;
   right: 0;
 }
-.title:hover {
-  background-color: #596e98bb;
-  cursor: pointer;
-}
-.title:focus {
-  background-color: #596e98bb;
-}
-#form-div {
+#form div {
   width: auto;
   display: flex;
   flex-direction: column;
@@ -103,13 +92,11 @@ h2 {
   align-content: center;
   height: 60vh;
 }
-#col-1,
-#col-2 {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  padding: 10vh;
+.form-common-styling {
+  font-family: "Roboto Mono", monospace;
+  color: rgba(233, 247, 255, 0.95);
+  width: 100%;
+  align-self: center;
 }
 label {
   text-align: left;
@@ -165,57 +152,16 @@ button:disabled::after {
   left: 20px;
   top: 45px;
 }
-.div-header {
-  padding: 0;
-  margin-bottom: 1.2rem;
-  width: 100%;
-  margin-top: 1.5rem;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.form-common-styling {
-  font-family: "Roboto Mono", monospace;
-  color: rgba(233, 247, 255, 0.95);
-  width: 100%;
-  align-self: center;
-}
-
-@keyframes fade-in-about {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.fade-in-about {
-  animation-name: fade-in-about;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
-}
-#contact,
-#qA {
-  display: none;
-  width: 15rem;
-  background-color: rgba(142, 150, 67, 0.2);
-}
-#contact:hover,
-#qA:hover {
-  background-color: rgba(142, 150, 67, 0.3);
-}
 
 @media only screen and (max-width: 900px) {
-  .paragraph {
+  .paragraph p {
     padding-left: 20vw;
     padding-right: 20vw;
   }
-  #q-and-a {
+  #faq {
     width: 90vw;
   }
-  #contact {
+  #view-contact {
     display: block;
     margin-bottom: 2rem;
   }
@@ -227,11 +173,10 @@ button:disabled::after {
     margin-bottom: 1rem;
     margin-top: 1.4rem;
   }
-  #about {
+  #container {
     align-content: center;
     flex-direction: column;
   }
-
   #form {
     height: 90vh;
     display: none;
@@ -241,18 +186,13 @@ button:disabled::after {
     top: 6rem;
     position: static;
   }
-  #form-div {
+  #form div {
     flex-direction: column;
     width: 90%;
     margin: 0;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
-  }
-  #col-1,
-  #col-2 {
-    width: 100%;
-    padding: 0;
   }
   input {
     height: 20px;
@@ -266,12 +206,7 @@ button:disabled::after {
     font-size: 1.2rem;
     text-align: center;
   }
-  section {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
-  .paragraph {
+  .paragraph p {
     font-size: 1rem;
     padding-left: 15vw;
     padding-right: 15vw;
@@ -282,7 +217,7 @@ button:disabled::after {
   }
 }
 @media only screen and (max-width: 450px) {
-  .paragraph {
+  .paragraph p {
     padding-left: 10vw;
     padding-right: 10vw;
   }
