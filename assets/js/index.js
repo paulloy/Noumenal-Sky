@@ -1,36 +1,35 @@
-var url = "assets/js/json/";
+const url = "assets/js/json/";
 
-/* When clicked this will hide the span containing the i element, and the #object-list.
-The #category-list will then display */
-$("#menu-title i").on("click",function () {
+/* When #return-category-list button is clicked:
+#return-category parent span will hide.
+#object-list will hide.
+#category-list will show */
+$("#return-category-list").on("click",function () {
   $("#menu-title span").hide();
   $("#object-list").hide();
   $("#category-list").show();
 });
 
-/* When #open-modal is clicked, #image-information will be displayed in #image-information. 
-#image-information-background will display. 
-#open-modal is hidden. */
+/* When #open-modal is clicked:
+#image-information-background will show.
+#image-modal will add inline css with a display of flex. */
 $("#open-modal").click(function () {
-  $("#image-modal").prepend($("#image-container")); //Instead of append, create a new div
-  $("#open-modal").hide();
   $("#image-information-background").show();
-  $("#image-modal").show().css("display", "flex");
+  $("#image-modal").css("display", "flex");
 });
-/* When #close-modal or #image-information-background is clicked,
-#close-modal, #image-information, and #image-information-background will hide.
-#image-container will display.
-#open-modal will display. */
+/* When #close-modal or #image-information-background is clicked:
+#image-information-background and #image-modal will hide */
 $("#close-modal, #image-information-background").click(function () {
   $("#image-information-background, #image-modal").hide();
-  $("#top-container").prepend($("#image-container"));
-  $("#open-modal").show();
 });
 
-/* When a list-item in #category-list is clicked:
-loadObjectList function is called with two variables defined in this function.
-#category-list is hidden, #object-list is emptied, and then displayed with a new list.
-#menu-title span is display so the user can return to #category-list */
+/* When a listitem in #category-list is clicked:
+objectUrl will be defined.
+catId will be defined.
+loadObjectList will be called with objectUrl and catId as variables.
+#category-list will hide.
+#object-list will empty so a new list may be appended.
+#object-list and #menu-title span will show. */
 $("#category-list li").click(function () {
   objectUrl = "categories/" + $(this).attr("id");
   catId = $(this).attr("id");
@@ -40,28 +39,34 @@ $("#category-list li").click(function () {
   $("#object-list, #menu-title span").show();
 });
 
-var el = document.getElementById("image"); //sets img element with id of image as a variable
-
+/* When setObjectInfo is called:
+#image img src will be set.
+#image img alt will be set.
+#image-modal img src will be set. 
+#image-modal img alt will be set.
+#image-modal h2 will be set. 
+#image-modal p will be set.
+#info-selection h2 and #info-selection ul will empty. */
 function setObjectInfo(i, cat, data) {
-  //write in jQuery to remain consistent
-  //i = array index; cat = category key (planets, moons, dwarf, other)
-  el.removeAttribute("src");
-  el.removeAttribute("alt");
-  el.setAttribute("src", data[cat][i].image); // set src attribute to contain the image values from json
-  el.setAttribute("alt", data[cat][i].alt); // set alt attribute to contain the alt values from json
-  newImageArticle = `<article><h2>${data[cat][i].name}</h2><p>${data[cat][i].alt}</p></article>`;
-  $("#image-modal article h2").empty().append(data[cat][i].name);
-  $("#image-modal article p").empty().append(data[cat][i].alt);
-  $("#property-values").empty();
-  $("#object-list ul").hide(); // Hide the list after it is clicked
+ $("#image img").attr("src", data[cat][i].image);
+  $("#image img").attr("alt", data[cat][i].alt);
+  $("#image-modal img").attr("src", data[cat][i].image);
+  $("#image-modal img").attr("alt", data[cat][i].alt);
+  $("#image-modal h2").empty().append(data[cat][i].name);
+  $("#image-modal p").empty().append(data[cat][i].alt);
+  $("#info-selection h2, #info-selection ul").empty();
 }
 
+/*When called this function will display a list within #object-list.*/
 function loadObjectList(objectUrl, cat) {
   $.getJSON(url + objectUrl + ".json").done(function (data) {
     for (var i = 0; i < data[cat].length; i++) {
+        //for loop is used to create a new object list
       var newListItem = `<li id="${i}" tabindex="0">${data[cat][i].name}</li>`;
       $("#object-list").append(newListItem);
       var objectKey;
+      //A new function is applied to each list item.
+      //setObjectInfo and LoadPropertyList are called.
       $("#" + i).click(function () {
         var getId = $(this).attr("id");
         setObjectInfo(getId, catId, data);
@@ -71,103 +76,151 @@ function loadObjectList(objectUrl, cat) {
     }
   });
 }
+
 function LoadPropertyList(objectKey, cat) {
-  var objectKeyToLC = objectKey.toLowerCase();
-  if (objectKeyToLC === "tesla roadster") {
-    objectKeyToLC = "teslaRoadster";
+  //var objectKeyToLC = objectKey.toLowerCase();
+  //This is a small fix to the problem of the objectKey of tesla roadster having a space in it. Not a hude problem now but may become a problem later if other objects such as Alpha Centauri are added later.
+  if (objectKey === "tesla roadster") {
+    objectKey = "teslaRoadster";
   }
-  $.getJSON(`assets/js/json/objects/${cat}/${objectKeyToLC}.json`)
+  //Get the json file for clicked on object.
+  $.getJSON(`assets/js/json/objects/${cat}/${objectKey}.json`)
     .done(function (data) {
-      for (objectKeyToLC in data);
-      $("#property-values")
-        .append(`<h2>${objectKeyToLC}</h2>`)
-        .append(`<ul role="directory"></ul>`);
-      for (var propertyKey in data[objectKeyToLC]) {
+        //empty contents of #info-selection and append new <h2> with objectKey, and blank <ul>
+        $("#info-selection").empty()
+        .append(
+            `<h2>${objectKey}</h2>
+            <ul></ul>`
+            );
+        //Create a new listitem with propertyKey and prepend each list to blank <ul>
+      for (var propertyKey in data[objectKey]) {
         var newListItem = `<li tabindex="0">${propertyKey}</li>`;
-        $("#property-values ul").prepend(newListItem);
-        $("#property-values").show();
-        $("#display-values").hide();
-        $("#display-more-info").empty().hide();
+        $("#info-selection ul").prepend(newListItem);
+        //display #info-selection after list is complete.
+        $("#info-selection").show();
+        //hide these if a user clicks a new object instead of clicking the return buttons
+        $("#display-info").hide();
+        $("#row-info").empty().hide();
       }
 
-      $("#property-values ul li").click(function () {
+      //Add a new function to each listitem in #info-selection
+      $("#info-selection ul li").click(function () {
         propertyKey = $(this).text();
-        $("#property-values").hide();
-        $("#display-values").empty().show();
-        var heading = `<table><tr><th>Property</th><th>Value</th><th>Unit</th></tr></table>`;
-        $("#display-values").append(
-          `<span id="return" aria-label="return to previous menu" tabindex="0" role="button"><i class="fas fa-chevron-left"></i></span>`
+        $("#info-selection").hide();
+        //empty and display #display-info
+        $("#display-info").empty().show();
+        const tableHeading =    `<table>
+                                    <tr>   
+                                        <th>Property</th>
+                                        <th>Value</th>
+                                        <th>Unit</th>
+                                        <th style="display:none;">hidden reference</th>
+                                    </tr>
+                                </table>`;
+        $("#display-info")
+        .append(
+            `<span id="return-info-selection" aria-label="return to previous menu" tabindex="0" role="button">
+                <i class="fas fa-chevron-left"></i>
+            </span>`
         );
 
+        //the content is different if about is clicked. The other two buttons will display tables.
+
         if (propertyKey === "about") {
-          var newArticle = "<article></article>";
-          $("#display-values").append(newArticle);
-          for (key in data[objectKeyToLC][propertyKey]) {
-            var newPoint = `<h2>${key}</h2><p>${data[objectKeyToLC][propertyKey][key]}</p>`;
-            $("#display-values article").append(newPoint);
+            //display new articles with "about" content
+          for (key in data[objectKey][propertyKey]) {
+            var newArticle =    `<article>
+                                    <h2>${key}</h2>
+                                    <p>${data[objectKey][propertyKey][key]}</p>
+                                </article>`;
+            $("#display-info").append(newArticle);
           }
         } else {
-          $("#display-values")
+            //if not "about" then do this
+          $("#display-info")
             .append(`<h3>${propertyKey}</h3>`)
-            .append(
+            .append( //on testing it was not obvious that a user could click a table row, this will make it clearer.
               `<p><i class="fas fa-mouse"></i> Click on a table row for more information.</p>`
             )
-            .append(heading);
-          for (key in data[objectKeyToLC][propertyKey]) {
-            var newRow = `<tr tabindex="0"><td>${key}</td><td>${data[objectKeyToLC][propertyKey][key][0]}</td><td>${data[objectKeyToLC][propertyKey][key][1]}</td><td style="display: none;">${data[objectKeyToLC][propertyKey][key][2]}</td></tr>`;
-            $("#display-values table tbody").append(newRow);
+            .append(tableHeading);
+          for (key in data[objectKey][propertyKey]) {
+            var newRow =    `<tr tabindex="0">
+                                <td>${key}</td>
+                                <td>${data[objectKey][propertyKey][key][0]}</td>
+                                <td>${data[objectKey][propertyKey][key][1]}</td>
+                                <td style="display: none;">${data[objectKey][propertyKey][key][2]}</td>
+                            </tr>`;
+            $("#display-info table").append(newRow);
           }
-
-          $("#display-values tr").click(function () {
+        //When a table row is clicked a function is run
+          $("#display-info tr").click(function () {
             var referenceKeyNumber = $(this).children().last().text();
-            var referenceIndex = referenceKeyNumber.match(/\d+/)[0];
-            $("#display-values").hide();
-            $("#display-more-info")
+            if (referenceKeyNumber != "[a]") {
+                var referenceIndex = referenceKeyNumber.match(/\d+/)[0];
+            }
+            $("#display-info").hide();
+            $("#row-info")
               .show()
               .append(
-                `<span id="return-again" aria-label="return to previous menu" tabindex="0" role="button"><i class="fas fa-chevron-left"></i></span>`
-              )
+                `<span id="return-display-info" aria-label="return to previous menu" tabindex="0" role="button">
+                    <i class="fas fa-chevron-left"></i>
+                </span>`
+              );
+              $("#row-info").append("<table></table>");
+              $("#row-info table")
               .append($(this).clone());
-              $("#display-more-info tr").removeAttr("tabindex"); //This clone isnt interactive so focus isn't required.
+              $("#row-info tr").removeAttr("tabindex"); //This clone isnt interactive so focus isn't required.
+              // get explanantion.json
             $.getJSON("assets/js/json/explanation.json").done(function (data) {
-              explanationPropertyKey = $(
-                "#display-more-info tr td:first-of-type"
-              )
-                .text()
-                .toLowerCase();
-              explanationUnitKey = $("#display-more-info tr td:nth-child(3)")
-                .text()
-                .toLowerCase();
-              $("#display-more-info")
+              explanationPropertyKey = $("#row-info tr td:first-of-type").text().toLowerCase();
+              explanationUnitKey = $("#row-info tr td:nth-child(3)").text().toLowerCase();
+              $("#row-info")
                 .append(
-                  `<h3>${explanationPropertyKey}</h3><p>${data[explanationPropertyKey]}</p>`
+                    `<article>
+                        <h3>${explanationPropertyKey}</h3>
+                        <p>${data[explanationPropertyKey]}</p>
+                    </article>`
                 )
                 .append(
-                  `<h3>${explanationUnitKey}</h3><p>${data[explanationUnitKey]}</p>`
+                    `<article>
+                        <h3>${explanationUnitKey}</h3>
+                        <p>${data[explanationUnitKey]}</p>
+                    </article>`
                 );
             });
             $.getJSON("assets/js/json/references.json").done(function (data) {
-              var newReference = `<p>
-              <span>${referenceKeyNumber}</span> ${data[referenceIndex].author}<br>
-              ${data[referenceIndex].title} 
-              <a href='"${data[referenceIndex].href}"' target='_blank'>
-              <i class='fas fa-external-link-alt'></i>
-              </a></p><br>
-              <p><a href='references.html'>Click for full references</a></p>`;
-              $("#display-more-info")
+            if (referenceKeyNumber === "[a]") {
+                var newReference = `<p>
+                                        <span>${referenceKeyNumber}</span> Calculated based upon known parameters
+                                    </p>
+                                    <p>
+                                        <a href='references.html'>Click for full references</a>
+                                    </p>`
+            } else {
+              var newReference =    `<p>
+                                        <span>${referenceKeyNumber}</span> ${data[referenceIndex].author}<br>${data[referenceIndex].title} 
+                                            <a aria-label="open external reference" href="${data[referenceIndex].href}" target='_blank'>
+                                                <i class='fas fa-external-link-alt'></i>
+                                            </a>
+                                    </p><br>
+                                    <p>
+                                        <a href='references.html'>Click for full references</a>
+                                    </p>`;
+            }
+              $("#row-info")
                 .append("<h3>Data Reference</h3>")
                 .append(newReference);
             });
-
-            $("#return-again").click(function () {
-              $("#display-more-info").hide().empty();
-              $("#display-values").show();
+        //when clicked, return to #display-info
+            $("#return-display-info").click(function () {
+              $("#row-info").hide().empty();
+              $("#display-info").show();
             });
           });
         }
-        $("#return").click(function () {
-          $("#display-values").hide();
-          $("#property-values").show();
+        $("#return-info-selection").click(function () {
+          $("#display-info").hide();
+          $("#info-selection").show();
         });
       });
     })

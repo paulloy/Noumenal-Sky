@@ -1,19 +1,14 @@
+//This allows a user to send an email using Email.js
 (function () {
   emailjs.init("user_Bhu3aze5EPVtC6BlZNdyc");
 })();
 
 $("#form").submit(function () {
-  return sendEmail(this);
+  return sendEmail(this); //Send email on form submit.
 });
 $("#form").submit(function () {
-  $("#name").attr("disabled", "disabled");
-  $("#name").val("");
-  $("#email").attr("disabled", "disabled");
-  $("#email").val("");
-  $("#message").attr("disabled", "disabled");
-  $("#message").val("");
-  $("#submit").attr("disabled", "disabled");
-  $("#submit").val("");
+    //After submission, disable and clear the form so that multiple emails are not sent and a user knows the message was successfully sent.
+  $("#name, #email, #message, #submit").attr("disabled", "disabled").val("");
 });
 
 function sendEmail(contactForm) {
@@ -22,14 +17,6 @@ function sendEmail(contactForm) {
       name: contactForm.name.value,
       email: contactForm.email.value,
       message: contactForm.message.value,
-    })
-    .then(
-      function (response) {
-        console.log("SUCCESS", response);
-      },
-      function (error) {
-        console.log("balls");
-      }
-    );
+    });
   return false;
 }

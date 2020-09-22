@@ -1,68 +1,79 @@
 
-
+/*When the navbar is hidden, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsOpen() { 
-  $("html, body").css("position", "fixed"); //Display the body as fixed.
-  $("#navbar-cover").fadeIn(200); // Fade in the navbar-cover
-  $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
-  $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
-// Toggle between the two navbar css styles.
-  $("body").prepend($("nav")); //prepend the nav to the body when it is being opened.
-  $("html").children().animate({ left: "250px" }, 200); //Animate the body so that it slides to the right of the screen.
-
-
-  $("#top-bar").removeClass("top-bar-close"); //The following classes are responsible for the navbar toggle icon animation
+  $("html, body").css("position", "fixed");
+  $("#navbar-cover").fadeIn(200); //A dark background is added behind the navbar to cover body.
+  /*Toggle between navbar styles.*/
+  $("#navbar").toggleClass("navbar-mobile"); 
+  $("#navbar").toggleClass("navbar-browser"); 
+  $("body").prepend($("nav"));
+  $("html").children().animate({ left: "250px" }, 200);
+/*Classes are added and removed to toggle an animation on #navbarToggle, so it toggles between a burger button
+and a cross.*/
+  $("#top-bar").removeClass("top-bar-close"); 
   $("#middle-bar").removeClass("middle-bar-close");
   $("#bottom-bar").removeClass("bottom-bar-close");
-  $("#top-bar").addClass("top-bar-open"); //This class will rotate the top bar
-  $("#middle-bar").addClass("middle-bar-open"); //This class will display the middle bar as none
-  $("#bottom-bar").addClass("bottom-bar-open"); //This class will rotate the bottom bar
-
-  $("#navbar").animate({ left: "0px" }, 200); // animate the navbar so it slides to the right, giving the look of pushing the body off the screen.
+  $("#top-bar").addClass("top-bar-open"); 
+  $("#middle-bar").addClass("middle-bar-open"); 
+  $("#bottom-bar").addClass("bottom-bar-open"); 
+/*#navbar is animated to move from the left onto the screen when opening.*/
+  $("#navbar").animate({ left: "0px" }, 200); 
 }
+/*When the navbar is displayed, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsClosed() {
-  $("#navbar-cover").fadeOut(200); //hide the navbar cover when the navbar is being closed.
-
-  $("html, body").children().animate({ left: "0" }, 200); // move the body back to the left.
-  $("#navbar").animate({ left: "-250px" }, 200); // move the navbar to the left.
+  $("#navbar-cover").fadeOut(200); //Fade out dark background.
+/*Animate html, body, and #navbar*/
+  $("html, body").children().animate({ left: "0" }, 200); 
+  $("#navbar").animate({ left: "-250px" }, 200);
+  /*After the animation is complete, the nav will be appended back to header.
+  The class for the navbar will be toggled after the animation completes.*/
   setTimeout(function () {
-    $("header").append($("nav")); //append the nav back to the header.
+    $("header").append($("nav")); 
   }, 200);
-
   setTimeout(function () {
-    $("#navbar").toggleClass("navbar-browser"); //Default display of navbar-browser is block;
-    $("#navbar").toggleClass("navbar-mobile"); //Default display of navbar-mobile is none;
-  }, 200); // Gives time for the navbar to close before toggling the classes.
-
- 
-
+    $("#navbar").toggleClass("navbar-browser"); 
+    $("#navbar").toggleClass("navbar-mobile"); 
+  }, 200); 
+/*Classes are added and removed to toggle an animation on #navbarToggle, so it toggles between a burger button
+and a cross.*/
   $("#top-bar").removeClass("top-bar-open");
   $("#middle-bar").removeClass("middle-bar-open");
   $("#bottom-bar").removeClass("bottom-bar-open");
-  $("#top-bar").addClass("top-bar-close"); //This class will rotate the top bar
-  $("#middle-bar").addClass("middle-bar-close"); //This class will display the middle bar as none
-  $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
+  $("#top-bar").addClass("top-bar-close");
+  $("#middle-bar").addClass("middle-bar-close"); 
+  $("#bottom-bar").addClass("bottom-bar-close"); 
+  //clear position: fixed.
   setTimeout(function () {
-    $("html, body").css("position", "static");
+    $("html, body").removeAttr("style");
   }, 200);
 }
-function toggleButtonAnimation(clickCount) {
-    /* When the navbar is opened the clickCount will be odd, so oddEven will be 1. When closed, clickCount will be even
-    and so oddEven will be 0. */
-  oddEven = clickCount % 2; 
+
+var clickCount = 0; //1 is added when a user clicks #navbarToggle or #navbar-cover
+$("#navbarToggle, #navbar-cover").click(function () { 
+  clickCount++; 
+  toggleNavbar(clickCount); 
+});
+
+//This function will run either navbarIsOpen(), or navbarIsClosed()
+function toggleNavbar(clickCount) {
+    //When #navbarToggle is clicked, 1 will be added to clickCount.
+  oddEven = clickCount % 2;   
+    //When oddEven = 1, navbarIsOpen will be called and nav displayed.
   if (oddEven === 1) {
-    navbarIsOpen(); // When navbar is being opened, run the navbarIsOpen function on line 3, and show the nav element.
+    navbarIsOpen(); 
     $("nav").show();
   } else if (oddEven === 0) {
+    //When oddEven = 0, navbarIsClosed will be called and nav hidden, after animation is complete.
     navbarIsClosed();
-    setTimeout(function () { // When navbar is being closed, run the navbarIsClosed function on line 24.
-      $("nav").hide(); // After 200ms hide the nav. This gives the nav time to run its closing animation before hiding.
+    setTimeout(function () { 
+      $("nav").hide(); 
     }, 200);
   }
-  //When called this function will toggle the classes that animates the navbar toggle icon
 }
 
-// Figure out a method better than nested if else statements
-
+/*When the body is resized a function is called which will reset
+#navbarToggle and the nav to their original conditions when the page was first loaded.
+i.e. nav will be hidden, and the body will return to a static position.*/
 document.getElementsByTagName("body")[0].onresize = function () {
   $("html, body").children().css("left", "0px");
   $("header").append($("nav"));
@@ -70,31 +81,22 @@ document.getElementsByTagName("body")[0].onresize = function () {
   $("#top-bar").removeClass("top-bar-open");
   $("#middle-bar").removeClass("middle-bar-open");
   $("#bottom-bar").removeClass("bottom-bar-open");
-  $("#top-bar").addClass("top-bar-close"); //This class will rotate the top bar
-  $("#middle-bar").addClass("middle-bar-close"); //This class will display the middle bar as none
-  $("#bottom-bar").addClass("bottom-bar-close"); //This class will rotate the bottom bar
-  clickCount = 0; // on resize set clickCount to 0;
-  //This event listener will run when the screen size changes. Such as when a user rotates their mobile or tablet
-  var windowWidth = window.innerWidth; //Gets value of window width in px
-  if (windowWidth > 750) {
-    //If window width is larger than 750px, the nested if statement will run
+  $("#top-bar").addClass("top-bar-close"); 
+  $("#middle-bar").addClass("middle-bar-close"); 
+  $("#bottom-bar").addClass("bottom-bar-close"); 
+  clickCount = 0; //clickCount will be returned to 0
+  //check if window.innerWidth is larger or smaller than 750px
+  if (window.innerWidth > 750) {
     $("#navbar").attr("class", "navbar-browser");
-    $("#navbar").removeAttr("style"); //stops displaying wrong css
-    //The switch from navbar-mobile to navbar-browser is incase a user switches from a screen larger than 750px to less than.
-
-    //$(".navbar-browser").css("display", "flex"); (probably not needed now)
-  } else if (windowWidth <= 750) {
-    $("#navbar").attr("class", "navbar-browser"); //change class
-    $("nav").css("display", "none"); //display nav to none
+    $("#navbar").removeAttr("style"); 
+  } else if (window.innerWidth <= 750) {
+    $("#navbar").attr("class", "navbar-browser");
+    $("nav").css("display", "none"); 
     $("#top-bar").removeClass("top-bar");
-    $("#middle-bar").removeClass("middle-bar"); //remove classes so a cross doesn't appear when the navbar is closed.
+    $("#middle-bar").removeClass("middle-bar"); 
     $("#bottom-bar").removeClass("bottom-bar");
-    $("#navbar").removeAttr("style"); //stops displaying wrong css
+    $("#navbar").removeAttr("style"); 
   }
 };
 
-var clickCount = 0; // This counter will count how many times the user has clicked #navbarToggle or #navbar-cover
-$("#navbarToggle, #navbar-cover").click(function () { // Run this function when #navbarToggle or #navbar-cover are clicked
-  clickCount++; // On each click add 1 to clickCount
-  toggleButtonAnimation(clickCount); // Run function on line 52
-});
+
