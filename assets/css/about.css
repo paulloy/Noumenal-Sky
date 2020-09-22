@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/about-background-image.jpg");  
+  background-image: url("../images/about-background-image.jpg");
 }
 #container {
   height: 100vh;
@@ -73,7 +73,7 @@ h2 {
   padding: 1rem 0.2rem 1rem 0.2rem;
 }
 .paragraph a {
-    color: rgba(104, 245, 255, 0.926);
+  color: rgba(104, 245, 255, 0.926);
 }
 #form {
   display: flex;
@@ -160,6 +160,8 @@ button:disabled::after {
   }
   #faq {
     width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   #view-contact {
     display: block;
@@ -214,6 +216,9 @@ button:disabled::after {
     align-self: center;
     font-weight: 300;
     letter-spacing: 1px;
+  }
+  section:last-of-type {
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 450px) {

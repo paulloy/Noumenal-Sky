@@ -226,12 +226,12 @@ body {
 #display-info tr:not(:first-child):focus {
   background-color: #8c792f9e;
 }
-#return,
-#return-again {
+#return-info-selection,
+#return-display-info {
   z-index: 1;
 }
-#return,
-#return-again {
+#return-info-selection,
+#return-display-info {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -243,13 +243,13 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
-#return:hover,
-#return-again:hover {
+#return-info-selection:hover,
+#return-display-info:hover {
   background-color: #8c792f9e;
   cursor: pointer;
 }
-#return:focus,
-#return-again:focus {
+#return-info-selection:focus,
+#return-display-info:focus {
   background-color: #8c792f9e;
 }
 #row-info tr {

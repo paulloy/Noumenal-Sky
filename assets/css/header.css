@@ -24,6 +24,10 @@ header {
   margin: 4px;
   border-radius: 10px;
 }
+#navbarToggle:hover span,
+#navbarToggle:focus span {
+    background-color: #7ca5cc;
+}
 #navbarToggle .top-bar-open {
   position: relative;
   animation-name: top-bar-open;
@@ -72,8 +76,9 @@ h1 {
   justify-self: center;
   align-self: center;
 }
-#logo:hover {
-  color: #beefff;
+#logo:hover,
+#logo:focus {
+  color: #7ca5cc;
   animation-name: hover-navitem-no-underline;
   animation-duration: 0.2s;
   animation-timing-function: linear;
@@ -107,8 +112,10 @@ h1 {
   letter-spacing: 2px;
 }
 .navbar-browser li:nth-child(1) a:hover,
-.navbar-browser li:nth-child(2) a:hover {
-  border-bottom: 1px solid #beefff;
+.navbar-browser li:nth-child(2) a:hover, 
+.navbar-browser li:nth-child(1) a:focus,
+.navbar-browser li:nth-child(2) a:focus {
+  border-bottom: 1px solid #7ca5cc;
   animation-name: hover-navitem;
   animation-duration: 0.2s;
   animation-timing-function: linear;
@@ -118,8 +125,9 @@ h1 {
 .navbar-browser .font-awesome-icon {
   font-size: 30px;
 }
-.navbar-browser .font-awesome-icon:hover {
-  color: #beefff;
+.navbar-browser .font-awesome-icon:hover,
+.navbar-browser .font-awesome-icon:focus {
+  color: #7ca5cc;
   animation-name: hover-navitem-no-underline;
   animation-duration: 0.2s;
   animation-timing-function: linear;
@@ -185,6 +193,10 @@ h1 {
   }
   nav {
     display: none;
+  }
+  #navbar a:hover,
+  #navbar a:focus {
+      color: #7ca5cc;
   }
   h1 {
     font-size: 1.4rem;
@@ -279,7 +291,7 @@ h1 {
   }
   to {
     width: 96%;
-    color: #beefff;
+    color: #7ca5cc;
   }
 }
 @keyframes hover-navitem-no-underline {
@@ -287,6 +299,6 @@ h1 {
     color: rgba(233, 247, 255, 0.95);
   }
   to {
-    color: #beefff;
+    color: #7ca5cc;
   }
 }
