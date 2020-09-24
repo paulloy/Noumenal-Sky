@@ -1,19 +1,19 @@
 {
   "dione": {
     "orbital Characteristics": {
-      "rotation period ": ["2.737", "days", "[21]"],
+      "rotation period": ["2.737", "days", "[21]"],
       "orbital period ": ["2.737", "days", "[21]"],
       "distance": ["377,415", "km", "[a]"],
       "periapsis": ["376,585", "km", "[21]"],
       "apoapsis": ["378,245", "km", "[21]"],
-      "orbital velocity ": ["36,100.4", "km/h", "[21]"],
+      "orbital velocity": ["36,100.4", "km/h", "[21]"],
       "eccentricity": ["0.0022", "no unit", "[21]"]
     },
     "physical characteristics": {
       "mass": ["1.095", "10^21kg", "[21]"],
       "radius": ["561.7", "km", "[21]"],
-      "density ": ["1.476", "g/m^3", "[21]"],
-      "gravity ": ["0.232", "m/s^2", "[21]"],
+      "density": ["1.476", "g/cm^3", "[21]"],
+      "gravity": ["0.232", "m/s^2", "[21]"],
       "bond albedo": ["0.52", "no unit", "[53]"]
     },
     "about": {

@@ -265,7 +265,7 @@ body {
 #row-info tr td:nth-of-type(3) {
   text-transform: lowercase;
 }
-#row-info h3:nth-of-type(2) {
+#row-info article:nth-of-type(2) h3 {
   text-transform: lowercase;
 }
 .common-style {

@@ -1,19 +1,19 @@
 {
   "callisto": {
     "orbital Characteristics": {
-      "rotation period ": ["400.5", "hours", "[2]"],
-      "orbital period ": ["16.7", "days", "[2]"],
+      "rotation period": ["400.5", "hours", "[2]"],
+      "orbital period": ["16.7", "days", "[2]"],
       "distance": ["1883", "10^3km", "[2]"],
       "periapsis": ["1870", "10^3km", "[2]"],
       "apoapsis": ["1896", "10^3km", "[2]"],
-      "orbital velocity ": ["8.2", "km/s", "[2]"],
+      "orbital velocity": ["8.2", "km/s", "[2]"],
       "eccentricity": ["0.007", "no unit", "[2]"]
     },
     "physical characteristics": {
       "mass": ["107.6", "10^21kg", "[2]"],
       "diameter": ["0.378", "Earth", "[2]"],
-      "density ": ["1830", "kg/m^3", "[2]"],
-      "gravity ": ["1.24", "m/s^2", "[2]"],
+      "density": ["1830", "kg/m^3", "[2]"],
+      "gravity": ["1.24", "m/s^2", "[2]"],
       "mean temperature": ["-155", "C", "[2]"],
       "bond albedo": ["0.11", "no unit", "[56]"]
     },

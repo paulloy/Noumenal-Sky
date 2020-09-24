@@ -6,7 +6,7 @@
       "distance": ["414,000", "10^3km", "[2]"],
       "periapsis": ["381,000", "10^3km", "[2]"],
       "apoapsis": ["447,000", "10^3km", "[2]"],
-      "velocity": ["17.9", "km/s", "[2]"],
+      "orbital velocity": ["17.9", "km/s", "[2]"],
       "eccentricity": ["0.079", "no unit", "[2]"]
     },
 

@@ -1,8 +1,8 @@
 {
   "vesta": {
     "orbital Characteristics": {
-      "rotation period ": ["5.342", "hours", "[62]"],
-      "orbital period ": ["3.63", "years", "[62]"],
+      "rotation period": ["5.342", "hours", "[62]"],
+      "orbital period": ["3.63", "years", "[62]"],
       "distance": ["2.361", "AU", "[a]"],
       "periapsis": ["2.152", "AU", "[36]"],
       "apoapsis": ["2.571", "AU", "[36]"],
@@ -11,7 +11,7 @@
     "physical characteristics": {
       "mass": ["0.259076", "10^21kg", "[62]"],
       "diameter": ["525.4", "km", "[36]"],
-      "density ": ["3.456", "g/m^3", "[36]"]
+      "density": ["3.456", "g/cm^3", "[36]"]
     },
     "about": {
         "about": "Vesta is one of the largest objects in the asteroid belt. Vesta is the second-most-massive and probably the second-largest asteroid, after the dwarf planet Ceres, and contributes an estimated 9% of the mass of the asteroid belt. Vesta is the only known remaining rocky protoplanet of the kind that formed the terrestrial planets.",

@@ -2,7 +2,7 @@
   "phobos": {
     "orbital Characteristics": {
       "rotation period": ["7.65", "hours", "[15]"],
-      "orbital period ": ["7.65", "hours", "[15]"],
+      "orbital period": ["7.65", "hours", "[15]"],
       "distance": ["9,376", "km", "[a]"],
       "periapsis": [" 9,234", "km", "[15]"],
       "apoapsis": ["9,518", "km", "[15]"],
@@ -12,7 +12,7 @@
     "physical characteristics": {
       "mass": ["1.0659", "10^16kg", "[15]"],
       "radius": ["11.1", "km", "[15]"],
-      "density": ["1.872", "g/m^3", "[15]"],
+      "density": ["1.872", "g/cm^3", "[15]"],
       "gravity": ["0.0057", "m/s^2", "[15]"]
     },
     "about": {

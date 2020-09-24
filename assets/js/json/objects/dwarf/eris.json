@@ -2,7 +2,7 @@
   "eris": {
     "orbital Characteristics": {
       "rotation period": ["25.92", "hours", "[3]"],
-      "orbital period ": ["559.1", "year", "[3]"],
+      "orbital period": ["559.1", "year", "[3]"],
       "distance": ["67.9", "AU", "[a]"],
       "periapsis": ["38.3", "AU", "[3]"],
       "apoapsis": ["97.5", "AU", "[3]"],

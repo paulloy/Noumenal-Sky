@@ -1,19 +1,19 @@
 {
   "triton": {
     "orbital Characteristics": {
-      "rotation period ": ["141.0", "hours", "[2]"],
-      "orbital period ": ["5.9", "days", "[2]"],
+      "rotation period": ["141.0", "hours", "[2]"],
+      "orbital period": ["5.9", "days", "[2]"],
       "distance": ["355", "10^3km", "[2]"],
       "periapsis": ["355", "10^3km", "[2]"],
       "apoapsis": ["355", "10^3km", "[2]"],
-      "orbital velocity ": ["4.4", "km/s", "[2]"],
+      "orbital velocity": ["4.4", "km/s", "[2]"],
       "eccentricity": ["0.000", "no unit", "[2]"]
     },
     "physical characteristics": {
       "mass": ["21.5", "10^21kg", "[2]"],
       "diameter": ["0.212", "Earth", "[2]", "[2]"],
-      "density ": ["2050", "kg/m^3", "[2]"],
-      "gravity ": ["0.78", "m/s^2", "[2]"],
+      "density": ["2050", "kg/m^3", "[2]"],
+      "gravity": ["0.78", "m/s^2", "[2]"],
       "mean temperature": ["-215", "C", "[2]"]
     },
     "about": {

@@ -1,19 +1,19 @@
 {
   "charon": {
     "orbital Characteristics": {
-      "rotation period ": ["6.387", "days", "[31]"],
-      "orbital period ": ["6.387", "year", "[31]"],
+      "rotation period": ["6.387", "days", "[31]"],
+      "orbital period": ["6.387", "year", "[31]"],
       "distance": ["17,536", "km", "[a]"],
       "periapsis": ["17,497", "km", "[31]"],
       "apoapsis": ["17,575", "km", "[31]"],
-      "orbital velocity ": ["718.8", "km/h", "[31]"],
+      "orbital velocity": ["718.8", "km/h", "[31]"],
       "eccentricity": ["0.0022", "no unit", "[31]"]
     },
     "physical characteristics": {
       "mass": ["1.546,626", "10^21kg", "[31]"],
       "radius": ["603.6", "km", "[31]"],
-      "density ": ["1.678", "g/m^3", "[31]"],
-      "gravity ": ["0.283", "m/s^2", "[31]"],
+      "density": ["1.678", "g/cm^3", "[31]"],
+      "gravity": ["0.283", "m/s^2", "[31]"],
       "bond albedo": ["0.25", "no unit", "[50]"]
     },
     "about": {

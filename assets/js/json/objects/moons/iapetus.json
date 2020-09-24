@@ -1,19 +1,19 @@
 {
   "iapetus": {
     "orbital Characteristics": {
-      "rotation period ": ["79.33", "days", "[24]"],
-      "orbital period ": ["79.33", "days", "[24]"],
+      "rotation period": ["79.33", "days", "[24]"],
+      "orbital period": ["79.33", "days", "[24]"],
       "distance": ["3,560,851", "km", "[a]"],
       "periapsis": ["3,456,518", "km", "[24]"],
       "apoapsis": ["3,665,184", "km", "[24]"],
-      "orbital velocity ": ["11,748.8", "km/h", "[24]"],
+      "orbital velocity": ["11,748.8", "km/h", "[24]"],
       "eccentricity": ["0.0293", "no unit", "[24]"]
     },
     "physical characteristics": {
       "mass": ["1.8060", "10^21kg", "[24]"],
       "radius": ["735.6", "km", "[24]"],
-      "density ": ["1.083", "g/m^3", "[24]"],
-      "gravity ": ["0.223", "m/s^2", "[24]"]
+      "density": ["1.083", "g/cm^3", "[24]"],
+      "gravity": ["0.223", "m/s^2", "[24]"]
     },
     "about": {
         "about": "The low density of Iapetus indicates that it is mostly composed of ice.  Discoveries by the Cassini mission in 2007 revealed several unusual features, such as a massive equatorial ridge running three-quarters of the way around the moon.",

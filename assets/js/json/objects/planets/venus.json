@@ -2,7 +2,7 @@
   "venus": {
     "orbital Characteristics": {
       "rotation period": ["5832.5", "hours", "[1]"],
-      "orbital period ": ["224.7", "days", "[1]"],
+      "orbital period": ["224.7", "days", "[1]"],
       "distance": ["108.2", "10^6km", "[1]"],
       "periapsis": ["107.5", "10^6km", "[1]"],
       "apoapsis": ["108.9", "10^6km", "[1]"],
@@ -18,7 +18,7 @@
       "gravity": ["8.9", "m/s^2", "[1]"],
       "ring system": ["false", "no unit", "[1]"],
       "mean temperature": ["464", "C", "[1]"],
-      "bond albedo": ["0.76", "[40]"]
+      "bond albedo": ["0.76", "no unit", "[40]"]
     },
     "about": {
         "about": "Venus is the second planet from the Sun. It is the second brightest natural object in the night sky after the Moon. As one of the brightest objects in the sky, Venus has been a major fixture in human culture for as long as records have existed. It has been made sacred to gods of many cultures, and has been a prime inspiration for writers and poets as the morning star and evening star. Venus was the first planet to have its motions plotted across the sky, as early as the second millennium BC.",

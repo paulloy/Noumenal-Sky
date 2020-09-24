@@ -2,7 +2,7 @@
   "uranus": {
     "orbital Characteristics": {
       "rotation period": ["-17.2", "hours", "[1]"],
-      "orbital period ": ["30,589", "days", "[1]"],
+      "orbital period": ["30,589", "days", "[1]"],
       "distance": ["2872.5", "10^6km", "[1]"],
       "periapsis": ["2741.3", "10^6km", "[1]"],
       "apoapsis": ["3003.6", "10^6km", "[1]"],

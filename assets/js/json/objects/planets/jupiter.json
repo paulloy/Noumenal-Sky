@@ -2,7 +2,7 @@
   "jupiter": {
     "orbital Characteristics": {
       "rotation period": ["9.9", "hours", "[1]"],
-      "orbital period ": ["4331", "days", "[1]"],
+      "orbital period": ["4331", "days", "[1]"],
       "distance": ["778.6", "10^6km", "[1]"],
       "periapsis": ["740.5", "10^6km", "[1]"],
       "apoapsis": ["816.6", "10^6km", "[1]"],

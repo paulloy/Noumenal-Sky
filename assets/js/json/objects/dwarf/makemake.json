@@ -2,7 +2,7 @@
   "makemake": {
     "orbital Characteristics": {
       "rotation period": ["22.5", "hours", "[9]"],
-      "orbital period ": ["305", "year", "[9]"],
+      "orbital period": ["305", "year", "[9]"],
       "distance": ["6783", "10^6km", "[8]"],
       "periapsis": ["38.1", "AU", "[10]"],
       "apoapsis": ["52.8", "AU", "[10]"],

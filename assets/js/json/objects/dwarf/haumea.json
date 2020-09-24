@@ -2,7 +2,7 @@
   "haumea": {
     "orbital Characteristics": {
       "rotation period": ["3.9154", "hours", "[13]"],
-      "orbital period ": ["283.77", "year", "[13]"],
+      "orbital period": ["283.77", "year", "[13]"],
       "distance": ["43.2", "AU", "[a]"],
       "periapsis": ["34.8", "AU", "[13]"],
       "apoapsis": ["51.6", "AU", "[13]"],

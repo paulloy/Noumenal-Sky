@@ -2,7 +2,7 @@
   "neptune": {
     "orbital Characteristics": {
       "rotation period": ["16.1", "hours", "[1]"],
-      "orbital period ": ["59,800", "days", "[1]"],
+      "orbital period": ["59,800", "days", "[1]"],
       "distance": ["4495.1", "10^6km", "[1]"],
       "periapsis": ["4444.5", "10^6km", "[1]"],
       "apoapsis": ["4545.7", "10^6km", "[1]"],

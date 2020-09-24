@@ -1,19 +1,19 @@
 {
   "europa": {
     "orbital Characteristics": {
-      "rotation period ": ["85.2", "hours", "[2]"],
-      "orbital period ": ["3.6", "days", "[2]"],
-      "distance": ["671", "10$e$3$km", "[2]"],
-      "periapsis": ["664", "10$e$3$km", "[2]"],
-      "apoapsis": ["678", "10$e$3$km", "[2]"],
-      "orbital velocity ": ["13.7", "km/s", "[2]"],
+      "rotation period": ["85.2", "hours", "[2]"],
+      "orbital period": ["3.6", "days", "[2]"],
+      "distance": ["671", "10^3km", "[2]"],
+      "periapsis": ["664", "10^3km", "[2]"],
+      "apoapsis": ["678", "10^3km", "[2]"],
+      "orbital velocity": ["13.7", "km/s", "[2]"],
       "eccentricity": ["0.009", "no unit", "[2]"]
     },
     "physical characteristics": {
       "mass": ["48.0", "10^21kg", "[2]"],
       "diameter": ["0.245", "Earth", "[2]"],
-      "density ": ["3010", "kg/m^3", "[2]"],
-      "gravity ": ["1.31", "m/s^2", "[2]"],
+      "density": ["3010", "kg/m^3", "[2]"],
+      "gravity": ["1.31", "m/s^2", "[2]"],
       "mean temperature": ["-170", "C", "[2]"],
       "bond albedo": ["0.68", "no unit", "[55]"]
     },

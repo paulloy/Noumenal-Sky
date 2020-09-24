@@ -2,7 +2,7 @@
   "67p": {
     "orbital Characteristics": {
       "rotation period": ["12.76137", "hours", "[32]"],
-      "orbital period ": ["6.44", "year", "[32]"],
+      "orbital period": ["6.44", "year", "[32]"],
 
       "distance": ["3.4689", "AU", "[a]"],
       "periapsis": ["1.245279", "AU", "[32]"],
@@ -11,7 +11,7 @@
     },
     "physical characteristics": {
       "mass": ["9.982", "10^12kg", "[33]"],
-      "density": ["0.533", "g/m^3", "[33]"]
+      "density": ["0.533", "g/cm^3", "[33]"]
     },
     "about": {
         "about": "67P/Churyumov–Gerasimenko (abbreviated as 67P or 67P/C-G) is a Jupiter-family comet, originally from the Kuiper belt. Churyumov–Gerasimenko was the destination of the European Space Agency's Rosetta mission, launched on 2 March 2004. Rosetta's lander, Philae, landed on the comet's surface on 12 November 2014, becoming the first spacecraft to land on a comet nucleus.",

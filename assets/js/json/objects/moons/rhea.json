@@ -1,19 +1,19 @@
 {
   "rhea": {
     "orbital Characteristics": {
-      "rotation period ": ["4.518", "days", "[22]"],
-      "orbital period ": ["4.518", "days", "[22]"],
+      "rotation period": ["4.518", "days", "[22]"],
+      "orbital period": ["4.518", "days", "[22]"],
       "distance": ["527,068", "km", "[a]"],
       "periapsis": ["526,541", "km", "[22]"],
       "apoapsis": ["527,595", "km", "[22]"],
-      "orbital velocity ": ["30,541.4", "km/h", "[22]"],
+      "orbital velocity": ["30,541.4", "km/h", "[22]"],
       "eccentricity": ["0.001", "no unit", "[22]"]
     },
     "physical characteristics": {
       "mass": ["2.3071", "10^21kg", "[59]"],
       "radius": ["764.3", "km", "[22]"],
-      "density ": ["1.233", "g/m^3", "[22]"],
-      "gravity ": ["0.264", "m/s^2", "[22]"],
+      "density": ["1.233", "g/cm^3", "[22]"],
+      "gravity": ["0.264", "m/s^2", "[22]"],
       "bond albedo": ["0.48", "no unit", "[53]"]
     },
     "about": {

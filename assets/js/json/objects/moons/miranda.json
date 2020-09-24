@@ -1,18 +1,18 @@
 {
   "miranda": {
     "orbital Characteristics": {
-      "orbital period ": ["1.413", "days", "[27]"],
+      "orbital period": ["1.413", "days", "[27]"],
       "distance": ["129,900", "km", "[a]"],
       "periapsis": ["129,731", "km", "[27]"],
       "apoapsis": ["130,069", "km", "[27]"],
-      "orbital velocity ": ["24,067.7", "km/h", "[27]"],
+      "orbital velocity": ["24,067.7", "km/h", "[27]"],
       "eccentricity": ["0.0013", "no unit", "[27]"]
     },
     "physical characteristics": {
       "mass": ["6.5,941,41", "10^19kg", "[27]"],
       "radius": ["235.8", "km", "[27]"],
-      "density ": ["1.214", "g/m^3", "[27]"],
-      "gravity ": ["0.079", "m/s^2", "[27]"]
+      "density": ["1.214", "g/cm^3", "[27]"],
+      "gravity": ["0.079", "m/s^2", "[27]"]
     },
     "about": {
         "about": "Miranda is the smallest and innermost of Uranus's five round satellites. The only close-up images of Miranda are from the Voyager 2 probe, which made observations of Miranda during its Uranus flyby in January 1986.",

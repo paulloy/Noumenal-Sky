@@ -1,6 +1,6 @@
 {
   "rotation period": "This is the length of time it takes for a body to rotate once around its axis. e.g. The rotation period of Earth is approximately 24 hours. The rotation can be measured with respect to the stars, sidereal, or the Sun, synodic.",
-  "orbital period ": "This is the length of time it takes for a body to complete one full orbit around another body. e.g. The orbital period of the Moon around the Earth is approximately 27 days.",
+  "orbital period": "This is the length of time it takes for a body to complete one full orbit around another body. e.g. The orbital period of the Moon around the Earth is approximately 27 days.",
   "distance": "This is the average distance a body is from the one it is orbiting. e.g. The average distance of the Earth from the Sun is approximately 150 million km.",
   "periapsis": "This is the closest distance an orbiting body will get to the body it is orbiting.",
   "apoapsis": "This is the furthest distance an orbiting body will get from the body it is orbiting.",
@@ -18,8 +18,9 @@
   "c": "Celcius. Water freezes at 0 and boils at 100.",
   "deg": "This is a measurement of an angle. A full rotation is 360 degrees.",
   "km/s": "kilometers per second. e.g. 10 k/s; for every second the body will cover a distance of 10 kilometers.",
+  "au": "Astronomical Unit. This is typically used for measuring large distances within the solar system instead of millions of km. 1 AU is equal to the Earth's average distance from the Sun.",
   "AU": "Astronomical Unit. This is typically used for measuring large distances within the solar system instead of millions of km. 1 AU is equal to the Earth's average distance from the Sun.",
-  "km": "The kilometer is the standard unit of distance that most physicists will use. Some people don't use standard units to the annoyance of their peers.",
+  "km": "The kilometer is the standard unit of distance that most physicists will use.",
   "hours": "One hour is equal to 60 minutes or 3600 seconds.",
   "days": "One day is equal to 24 hours/ 1440 minutes/ 86000 seconds.",
   "10^3km": "This is scientific notation that makes it easier to write down large or small numbers. 10^3km is 1,000km",
@@ -50,5 +51,9 @@
   "10^12kg": "This is scientific notation that makes it easier to write out large/small numbers. e.g. 1.23 10^6kg would be 1,230,000kg.",
   "10^11kg": "This is scientific notation that makes it easier to write out large/small numbers. e.g. 1.23 10^6kg would be 1,230,000kg.",
   "10^10kg": "This is scientific notation that makes it easier to write out large/small numbers. e.g. 1.23 10^6kg would be 1,230,000kg.",
-  "10^6km": "This is scientific notation that makes it easier to write out large/small numbers. e.g. 1.23 10^6kg would be 1,230,000kg."
+  "10^6km": "This is scientific notation that makes it easier to write out large/small numbers. e.g. 1.23 10^6kg would be 1,230,000kg.",
+  "year": "A year is approximately 365.25 days.",
+  "k": "Kelvin is the base unit of temperature in the International System of Units. 0 K is the lowest possible temperature, approximately -273 C. The lowest temperture ever recorded of 2.721 K was of the Cosmic Microwave Background. 0 C is approximately 273 K.",
+  "radius": "The radius of a circle or sphere is the straight line length from any point on its surface to its center. Radius is half the length of diameter.",
+  "earth": "Some values are measured with respect to the Earth. e.g. A diameter of 0.5 Earth would be half the diameter of Earth, or a mass of 10 Earth would be a mass 10 times larger than Earth."
 }
