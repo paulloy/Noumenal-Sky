@@ -349,6 +349,7 @@ th {
   width: 100%;
   text-align: center !important;
   height: 2rem;
+  pointer-events: none;
 }
 tr td:first-of-type,
 tr th:first-of-type {

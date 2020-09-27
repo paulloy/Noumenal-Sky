@@ -1,9 +1,8 @@
 {
   "67p": {
-    "orbital Characteristics": {
+    "orbital characteristics": {
       "rotation period": ["12.76137", "hours", "[32]"],
       "orbital period": ["6.44", "year", "[32]"],
-
       "distance": ["3.4689", "AU", "[a]"],
       "periapsis": ["1.245279", "AU", "[32]"],
       "apoapsis": ["5.68419", "AU", "[32]"],

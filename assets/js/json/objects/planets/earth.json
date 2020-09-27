@@ -1,6 +1,6 @@
 {
   "earth": {
-    "orbital Characteristics": {
+    "orbital characteristics": {
       "rotation period": ["23.9", "hours", "[1]"],
       "orbital period": ["365.2", "days", "[1]"],
       "distance": ["149.6", "10^6km", "[1]"],

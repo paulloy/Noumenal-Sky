@@ -1,6 +1,6 @@
 {
   "makemake": {
-    "orbital Characteristics": {
+    "orbital characteristics": {
       "rotation period": ["22.5", "hours", "[9]"],
       "orbital period": ["305", "year", "[9]"],
       "distance": ["6783", "10^6km", "[8]"],

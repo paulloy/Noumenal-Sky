@@ -1,6 +1,6 @@
 {
   "teslaRoadster": {
-    "orbital Characteristics": {
+    "orbital characteristics": {
       "periapsis": ["0.99", "AU", "[35]"],
       "apoapsis": ["1.67", "AU", "[35]"],
       "eccentricity": ["0.256", "no unit", "[35]"],

@@ -31,6 +31,9 @@ body {
   font-weight: 400;
   letter-spacing: 1px;
 }
+section {
+  pointer-events: none;
+}
 .question {
   width: 100%;
   background-size: cover;
@@ -39,6 +42,7 @@ body {
   text-align: center;
   background-color: rgba(32, 64, 102, 0.275);
   border: 1px solid rgba(233, 247, 255, 0.95);
+  pointer-events: auto;
 }
 .question:hover {
   background-color: #596e98bb;
@@ -55,11 +59,13 @@ h2 {
   font-size: 1.2rem;
   text-transform: uppercase;
   padding: 5px 20px 5px 20px;
+  pointer-events: none;
 }
 .paragraph {
   display: none;
   width: 100%;
   justify-content: center;
+  pointer-events: none;
 }
 .paragraph p {
   align-self: center;
@@ -70,7 +76,7 @@ h2 {
   border-right: 1px solid #273a6375;
   margin: 0;
   background-color: #273a6375;
-  padding: 1rem 0.2rem 1rem 0.2rem;
+  padding: 1rem;
 }
 .paragraph a {
   color: rgba(104, 245, 255, 0.926);
