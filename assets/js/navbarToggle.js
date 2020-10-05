@@ -1,7 +1,7 @@
 
 /*When the navbar is hidden, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsOpen() { 
-  $("html, body").css("position", "absolute");
+  $("body").css("position", "fixed");
   $("#navbar-cover").fadeIn(200); //A dark background is added behind the navbar to cover body.
   /*Toggle between navbar styles.*/
   $("#navbar").toggleClass("navbar-mobile"); 

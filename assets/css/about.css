@@ -29,7 +29,7 @@ body {
   margin-top: 1.5rem;
   text-align: center;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 section {
   pointer-events: none;
@@ -41,7 +41,7 @@ section {
   display: flex;
   text-align: center;
   background-color: rgba(32, 64, 102, 0.275);
-  border: 1px solid rgba(233, 247, 255, 0.95);
+  border: 0.0625rem solid rgba(233, 247, 255, 0.95);
   pointer-events: auto;
 }
 .question:hover {
@@ -52,13 +52,13 @@ section {
   background-color: #596e98bb;
 }
 h2 {
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   justify-self: center;
   align-self: center;
   margin: auto;
   font-size: 1.2rem;
   text-transform: uppercase;
-  padding: 5px 20px 5px 20px;
+  padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
   pointer-events: none;
 }
 .paragraph {
@@ -72,8 +72,8 @@ h2 {
   justify-self: center;
   justify-items: center;
   text-align: justify;
-  border-left: 1px solid #273a6375;
-  border-right: 1px solid #273a6375;
+  border-left: 0.0625rem solid #273a6375;
+  border-right: 0.0625rem solid #273a6375;
   margin: 0;
   background-color: #273a6375;
   padding: 1rem;
@@ -109,35 +109,35 @@ label {
   justify-self: center;
   font-size: 1rem;
   font-family: "Mulish", sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 input {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #13192588;
-  border: 1px solid #c2d5db;
-  margin-bottom: 30px;
+  border: 0.0625rem solid #c2d5db;
+  margin-bottom: 1.875rem;
   font-family: "Mulish", sans-serif;
-  height: 30px;
+  height: 1.875rem;
 }
 textarea {
   resize: none;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #13192573;
-  border: 1px solid #c2d5db;
+  border: 0.0625rem solid #c2d5db;
   height: 10rem;
 }
 button {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #13192573;
-  border: 1px solid #c2d5db;
+  border: 0.0625rem solid #c2d5db;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(233, 247, 255, 0.95);
   font-family: "Roboto Mono", monospace;
   align-self: center;
-  padding: 5px 20px 5px 20px;
+  padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
   margin-top: 5vh;
   position: relative;
 }
@@ -155,8 +155,8 @@ button:disabled::after {
   content: "Message Sent";
   color: rgba(229, 255, 0, 0.837);
   position: absolute;
-  left: 20px;
-  top: 45px;
+  left: 1.25rem;
+  top: 2.8125;
 }
 
 @media only screen and (max-width: 900px) {
@@ -203,10 +203,10 @@ button:disabled::after {
     margin-right: auto;
   }
   input {
-    height: 20px;
+    height: 1.25rem;
   }
   textarea {
-    height: 100px;
+    height: 6.25rem;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -221,7 +221,7 @@ button:disabled::after {
     justify-self: center;
     align-self: center;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
   }
   section:last-of-type {
     margin-bottom: 3rem;

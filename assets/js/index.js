@@ -112,6 +112,7 @@ function loadObjectList(objectUrl, cat) {
 /*This function declares the variables that will be used 
 as arguments in displayImage and loadInfoSelection. */
 function selectObjectList(e, cat, data) {
+  $("#bottom-container").show();
   var target, targetId, objectKey;
   target = e.target;
   targetId = target.getAttribute("id");

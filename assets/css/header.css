@@ -19,14 +19,12 @@ header {
 #navbarToggle span {
   display: inline-block;
   background-color: white;
-  height: 2px;
-  width: 25px;
-  margin: 4px;
-  border-radius: 10px;
+  height: 0.125rem;
+  border-radius: 0.625rem;
 }
 #navbarToggle:hover span,
 #navbarToggle:focus span {
-    background-color: #7ca5cc;
+  background-color: #7ca5cc;
 }
 #navbarToggle .top-bar-open {
   position: relative;
@@ -62,7 +60,7 @@ header {
 }
 h1 {
   margin: 0;
-  height: 50px;
+  height: 4rem;
   display: flex;
   font-size: 1.6rem;
   margin-left: 3vw;
@@ -71,7 +69,7 @@ h1 {
   color: rgba(233, 247, 255, 0.95);
   font-weight: 300;
   text-decoration: none;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   text-transform: uppercase;
   justify-self: center;
   align-self: center;
@@ -99,7 +97,7 @@ h1 {
   display: flex;
   margin-left: 2vw;
   margin-right: 2vw;
-  height: 50px;
+  height: 4rem;
 }
 .navbar-browser li a {
   text-decoration: none;
@@ -109,21 +107,21 @@ h1 {
   align-self: center;
   font-size: 1.2rem;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 .navbar-browser li:nth-child(1) a:hover,
-.navbar-browser li:nth-child(2) a:hover, 
+.navbar-browser li:nth-child(2) a:hover,
 .navbar-browser li:nth-child(1) a:focus,
 .navbar-browser li:nth-child(2) a:focus {
-  border-bottom: 1px solid #7ca5cc;
+  border-bottom: 0.0625rem solid #7ca5cc;
   animation-name: hover-navitem;
   animation-duration: 0.2s;
   animation-timing-function: linear;
-  margin-top: 1px;
+  margin-top: 0.0625rem;
   animation-fill-mode: forwards;
 }
 .navbar-browser .font-awesome-icon {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .navbar-browser .font-awesome-icon:hover,
 .navbar-browser .font-awesome-icon:focus {
@@ -131,14 +129,13 @@ h1 {
   animation-name: hover-navitem-no-underline;
   animation-duration: 0.2s;
   animation-timing-function: linear;
-  margin-top: 1px;
   animation-fill-mode: forwards;
 }
 .navbar-mobile {
   position: fixed;
-  left: -250px;
+  left: -15.625rem;
   height: 100vh;
-  width: 250px;
+  width: 15.625rem;
   box-shadow: inset 0 0 0 50vh #313846cc;
   background-color: #131925;
   background-image: url("../images/helix-nebula.jpg");
@@ -155,7 +152,7 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 50px;
+  height: 3.125rem;
   justify-content: center;
   margin-bottom: 5vh;
 }
@@ -166,7 +163,7 @@ h1 {
   align-self: center;
   font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 .navbar-mobile .font-awesome-icon {
   font-size: 2.4rem;
@@ -174,14 +171,14 @@ h1 {
 .navbar-mobile li:nth-child(3):before {
   content: "FOLLOW US";
   text-align: center;
-  width: 250px;
+  width: 15.625rem;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 .navbar-mobile li:nth-child(3),
 .navbar-mobile li:nth-child(4),
 .navbar-mobile li:nth-child(5) {
-  width: 76px;
+  width: 4.75rem;
   display: inline-block;
   text-align: center;
   margin-top: 10vh;
@@ -196,19 +193,20 @@ h1 {
   }
   #navbar a:hover,
   #navbar a:focus {
-      color: #7ca5cc;
+    color: #7ca5cc;
   }
   h1 {
     font-size: 1.4rem;
     margin-left: auto;
     margin-right: auto;
+    height: 3.75rem;
   }
   header {
     padding: 0 4vw 0 4vw;
   }
   #navbarToggle span {
-    width: 20px;
-    margin: 3px;
+    width: 1.25rem;
+    margin: 0.1875rem;
   }
 }
 @media only screen and (min-width: 751px) {
@@ -221,13 +219,13 @@ h1 {
 @keyframes top-bar-open {
   from {
     transform: rotate(0deg);
-    top: 0px;
+    top: 0;
     z-index: 0;
     opacity: 0;
   }
   to {
     transform: rotate(45deg);
-    top: 4px;
+    top: 0.25rem;
     z-index: 2;
     opacity: 1;
   }
@@ -235,13 +233,13 @@ h1 {
 @keyframes top-bar-close {
   from {
     transform: rotate(45deg);
-    top: 4px;
+    top: 0.25rem;
     z-index: 2;
     opacity: 0;
   }
   to {
     transform: rotate(0deg);
-    top: 0px;
+    top: 0;
     z-index: 0;
     opacity: 1;
   }
@@ -249,13 +247,13 @@ h1 {
 @keyframes bottom-bar-open {
   from {
     transform: rotate(0deg);
-    top: 0px;
+    top: 0;
     z-index: 0;
     opacity: 0;
   }
   to {
     transform: rotate(-45deg);
-    bottom: 4px;
+    bottom: 0.25rem;
     z-index: 2;
     opacity: 1;
   }
@@ -263,13 +261,13 @@ h1 {
 @keyframes bottom-bar-close {
   from {
     transform: rotate(-45deg);
-    top: 4px;
+    top: 0.25rem;
     z-index: 2;
     opacity: 0;
   }
   to {
     transform: rotate(0deg);
-    top: 0px;
+    top: 0;
     z-index: 0;
     opacity: 1;
   }
