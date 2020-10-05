@@ -30,6 +30,7 @@ body {
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.0625rem;
+  font-size: 1.4rem;
 }
 section {
   pointer-events: none;
@@ -45,11 +46,11 @@ section {
   pointer-events: auto;
 }
 .question:hover {
-  background-color: #596e98bb;
+  background-color: #8c792f9e;
   cursor: pointer;
 }
 .question:focus {
-  background-color: #596e98bb;
+  background-color: #8c792f9e;
 }
 h2 {
   letter-spacing: 0.125rem;
@@ -148,7 +149,7 @@ button:hover {
 input:disabled,
 textarea:disabled,
 button:disabled {
-  background-color: rgba(60, 60, 60, 0.803);
+  background-color: rgba(99, 80, 55, 0.604);
   cursor: auto;
 }
 button:disabled::after {
@@ -156,7 +157,7 @@ button:disabled::after {
   color: rgba(229, 255, 0, 0.837);
   position: absolute;
   left: 1.25rem;
-  top: 2.8125;
+  top: 2.8125rem;
 }
 
 @media only screen and (max-width: 900px) {

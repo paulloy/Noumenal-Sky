@@ -63,12 +63,12 @@ body {
 }
 #close-modal:hover,
 #open-modal:hover {
-  color: #ffffff9c;
+  color: #8c792f9e;
   cursor: pointer;
 }
 #close-modal:focus,
 #open-modal:focus {
-  color: #ffffff9c;
+  color: #8c792f9e;
 }
 #top-container {
   width: 70vw;
