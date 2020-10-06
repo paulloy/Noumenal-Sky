@@ -41,7 +41,7 @@ body {
 }
 #image-modal h2 {
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   text-align: center;
   margin: 0;
   letter-spacing: 0.0625rem;
@@ -49,8 +49,7 @@ body {
 }
 #image-modal p {
   text-align: justify;
-  margin: 0.625rem 1.25rem 0.625rem 1.25rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   padding-left: 8vw;
   padding-right: 8vw;
 }
@@ -393,9 +392,6 @@ tr th:first-of-type {
     width: 100vw;
     padding-left: 0;
     padding-right: 0;
-  }
-  #image-modal p {
-    padding: 0;
   }
 }
 

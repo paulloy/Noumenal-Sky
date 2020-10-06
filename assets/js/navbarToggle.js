@@ -1,3 +1,5 @@
+/*globals $:false */
+/*jshint esversion: 6 */
 
 /*When the navbar is hidden, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsOpen() { 
@@ -57,7 +59,7 @@ $("#navbarToggle, #navbar-cover").click(function () {
 //This function will run either navbarIsOpen(), or navbarIsClosed()
 function toggleNavbar(clickCount) {
     //When #navbarToggle is clicked, 1 will be added to clickCount.
-  oddEven = clickCount % 2;   
+  var oddEven = clickCount % 2;   
     //When oddEven = 1, navbarIsOpen will be called and nav displayed.
   if (oddEven === 1) {
     navbarIsOpen(); 

@@ -1,3 +1,6 @@
+/*globals $:false */
+/*jshint esversion: 6 */
+
 //When .question is selected, .paragraph will slideToggle
 $('.question').click(function () {
   $(this).next().slideToggle();

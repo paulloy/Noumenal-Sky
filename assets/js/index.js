@@ -1,3 +1,6 @@
+/*globals $:false */
+/*jshint esversion: 6 */
+
 //var target refers to the element that was selected
 //e refers to the event object
 //keyCode of Enter button is 13
@@ -75,7 +78,7 @@ $("#category-list li").keypress(function (e) {
 call loadObjectList. After it is called #category-list 
 will hide then #object-list and #menu-title span will display*/
 function selectCategoryList(e) {
-  var target, targetId;
+  var target, targetId, objectUrl;
   target = e.target;
   targetId = target.getAttribute("id") || $(this).attr("id");
   objectUrl = "categories/" + targetId;
@@ -94,18 +97,17 @@ function loadObjectList(objectUrl, cat) {
   $.getJSON(url + objectUrl + ".json").done(function (data) {
     for (var i = 0; i < data[cat].length; i++) {
       var newListItem = `<li id="${i}" tabindex="0">${data[cat][i].name}</li>`;
-      $("#object-list").append(newListItem);
-
-      //selecting a listitem will call the selectObjectList function
-      $("#" + i).click(function (e) {
+      $("#object-list").append(newListItem);      
+    }
+    //selecting a listitem will call the selectObjectList function
+      $("#object-list li").click(function (e) {
         selectObjectList(e, cat, data);
       });
-      $("#" + i).keypress(function (e) {
+      $("#object-list li").keypress(function (e) {
         if (e.keyCode === 13 || e.keyCode === 32) {
           selectObjectList(e, cat, data);
         }
       });
-    }
   });
 }
 
@@ -154,6 +156,7 @@ function loadInfoSelection(objectKey, cat) {
 
     //add listitems to #info-selection ul.
     for (var propertyKey in data[objectKey]) {
+      if(data[objectKey].hasOwnProperty(propertyKey)) {
       var newListItem = `<li tabindex="0">${propertyKey}</li>`;
       $("#info-selection ul").prepend(newListItem);
       $("#info-selection").show();
@@ -161,6 +164,7 @@ function loadInfoSelection(objectKey, cat) {
       $("#display-info").hide();
       $("#row-info").find("*").not("span, span i").remove();
       $("#row-info").hide();
+      }
     }
 
     //Selecting #info-selection ul listitem will call selectInfoSelection
@@ -178,7 +182,7 @@ function loadInfoSelection(objectKey, cat) {
 /*When called this function will add content to and 
 display #display-info, then hide #info-selection.*/
 function selectInfoSelection(e, data, objectKey) {
-  var target, targetInnerText;
+  var target, targetInnerText, key;
   target = e.target;
   targetInnerText = target.innerText.toLowerCase();
   $("#info-selection").hide();
@@ -200,11 +204,13 @@ function selectInfoSelection(e, data, objectKey) {
   if (targetInnerText === "about") {
     //if 'about' then display articles
     for (key in data[objectKey][targetInnerText]) {
+      if(data[objectKey][targetInnerText].hasOwnProperty(key)) {
       var newArticle = `<article>
                             <h2>${key}</h2>
                             <p>${data[objectKey][targetInnerText][key]}</p>
                         </article>`;
       $("#display-info").append(newArticle);
+    }
     }
   } else {
     //else display tables
@@ -216,6 +222,7 @@ function selectInfoSelection(e, data, objectKey) {
       )
       .append(tableHeading);
     for (key in data[objectKey][targetInnerText]) {
+     if(data[objectKey][targetInnerText].hasOwnProperty(key)) {
       //the 4th <td> is for holding the referenceKeyNumber
       var newRow = `<tr tabindex="0">
                         <td>${key}</td>
@@ -225,6 +232,7 @@ function selectInfoSelection(e, data, objectKey) {
                     </tr>`;
       //append new table rows.
       $("#display-info table").append(newRow);
+     }
     }
 
     //When a table row is selected, selectDisplayInfo is called
@@ -243,7 +251,7 @@ function selectInfoSelection(e, data, objectKey) {
   function selectDisplayInfo(e) {
     //Remove all content from #row-info except the span.
     $("#row-info").find("*").not("span, span i").remove();
-    var target, referenceKeyNumber;
+    var target, referenceKeyNumber, explanationPropertyKey, explanationUnitKey;
     target = e.target;
     referenceKeyNumber = target.childNodes[7].innerHTML;
     //This prevents an error that occured when match was used on [a]
@@ -283,15 +291,16 @@ function selectInfoSelection(e, data, objectKey) {
     });
     //Get references for values used
     $.getJSON("assets/js/json/references.json").done(function (data) {
+      var newReference;
       if (referenceKeyNumber === "[a]") {
-        var newReference = `<p>
+        newReference = `<p>
                                 <span>${referenceKeyNumber}</span> Calculated based upon known parameters
                             </p>
                             <p>
                                 <a href='references.html'>Click for full references</a>
                             </p>`;
       } else {
-        var newReference = `<p>
+        newReference = `<p>
                                 <span>${referenceKeyNumber}</span> ${data[referenceIndex].author}<br>${data[referenceIndex].title} 
                                 <a aria-label="open external reference" href="${data[referenceIndex].href}" target="_blank">
                                     <i class='fas fa-external-link-alt'></i>
@@ -305,3 +314,4 @@ function selectInfoSelection(e, data, objectKey) {
     });
   }
 }
+
