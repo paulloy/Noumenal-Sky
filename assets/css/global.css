@@ -48,16 +48,17 @@ noscript {
   top: 0;
   background-color: #131925;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  justify-items: center;
+  align-items: center;
   font-size: 2rem;
+  text-align: center;
 }
 footer {
   display: flex;
   flex-direction: row;
   width: 100vw;
   height: 2rem;
-  bottom: 0;
+  top: 1rem;
   position: relative;
 }
 footer a {
