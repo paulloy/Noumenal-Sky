@@ -22,7 +22,7 @@ Moons:
 (io.jpg)[https://en.wikipedia.org/wiki/File:Io_highest_resolution_true_color.jpg]
 (europa.jpg)[https://en.wikipedia.org/wiki/File:Europa-moon-with-margins.jpg]
 (ganymede.jpg)[https://en.wikipedia.org/wiki/File:Ganymede_g1_true-edit1.jpg]
-(callistojpg)[https://en.wikipedia.org/wiki/File:Callisto.jpg]
+(callisto.jpg)[https://en.wikipedia.org/wiki/File:Callisto.jpg]
 (mimas.jpg)[https://en.wikipedia.org/wiki/File:Mimas_Cassini.jpg]
 (enceladus.jpg)[https://en.wikipedia.org/wiki/File:PIA17202_-_Approaching_Enceladus.jpg]
 (tethys.jpg)[https://en.wikipedia.org/wiki/File:PIA18317-SaturnMoon-Tethys-Cassini-20150411.jpg]
