@@ -2,32 +2,32 @@
   "other": [
     {
       "name": "67p",
-      "image": "assets/images/space-images/other/67p.jpg",
+      "image": "assets/images/object-images/other/67p.jpg",
       "alt": "Mosaic of four images taken by Rosetta's navigation camera (NAVCAM) on 19 September 2014."
     },
     {
       "name": "tesla roadster",
-      "image": "assets/images/space-images/other/tesla-roadster.jpg",
+      "image": "assets/images/object-images/other/tesla-roadster.jpg",
       "alt": "Elon Musk's Tesla Roadster, with Earth in background. 'Starman' mannequin wearing SpaceX Spacesuit in driving seat. Camera mounted on external boom."
     },
     {
       "name": "vesta",
-      "image": "assets/images/space-images/other/vesta.jpg",
+      "image": "assets/images/object-images/other/vesta.jpg",
       "alt": "This photo was processed from data acquired on July 24, 2011, from a distance of about 5200 kilometers, during the third 'rotation characterization' observation by Dawn."
     },
     {
       "name": "sedna",
-      "image": "assets/images/space-images/other/sedna.jpg",
+      "image": "assets/images/object-images/other/sedna.jpg",
       "alt": "Image of Sedna, taken by Hubble Space Telescope."
     },
     {
       "name": "quaoar",
-      "image": "assets/images/space-images/other/quaoar.jpg",
+      "image": "assets/images/object-images/other/quaoar.jpg",
       "alt": "Image of 50000 Quaoar, taken by Hubble Space Telescope."
     },
     {
       "name": "sun",
-      "image": "assets/images/space-images/other/sun.jpg",
+      "image": "assets/images/object-images/other/sun.jpg",
       "alt": "The Sun photographed at 304 angstroms by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory. This is a false-color image of the Sun observed in the extreme ultraviolet region of the spectrum."
     }
   ]

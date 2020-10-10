@@ -2,42 +2,42 @@
   "planets": [
     {
       "name": "mercury",
-      "image": "assets/images/space-images/planets/mercury.jpg",
+      "image": "assets/images/object-images/planets/mercury.jpg",
       "alt": "The surface of Mercury in front of the Sun as viewed by MESSENGER."
     },
     {
       "name": "venus",
-      "image": "assets/images/space-images/planets/venus.jpg",
+      "image": "assets/images/object-images/planets/venus.jpg",
       "alt": "This image was processed from archived Mariner 10 data by JPL engineer Kevin M. Gill."
     },
     {
       "name": "earth",
-      "image": "assets/images/space-images/planets/earth.jpg",
+      "image": "assets/images/object-images/planets/earth.jpg",
       "alt": "The Blue Marble is a famous photograph of the Earth taken on December 7, 1972, by the crew of the Apollo 17 spacecraft en route to the Moon at a distance of about 29,000 kilometres (18,000 mi). It shows Africa, Antarctica, and the Arabian Peninsula."
     },
     {
       "name": "mars",
-      "image": "assets/images/space-images/planets/mars.jpg",
+      "image": "assets/images/object-images/planets/mars.jpg",
       "alt": "True color image of Mars taken by the OSIRIS instrument on the ESA Rosetta spacecraft during its February 2007 flyby of the planet."
     },
     {
       "name": "jupiter",
-      "image": "assets/images/space-images/planets/jupiter.jpg",
+      "image": "assets/images/object-images/planets/jupiter.jpg",
       "alt": "This full-disc image of Jupiter was taken on 21 April 2014 with Hubble's Wide Field Camera 3 (WFC3)."
     },
     {
       "name": "saturn",
-      "image": "assets/images/space-images/planets/saturn.jpg",
+      "image": "assets/images/object-images/planets/saturn.jpg",
       "alt": "This captivating natural color view of the planet Saturn was created from images collected shortly after Cassini began its extended Equinox Mission in July 2008."
     },
     {
       "name": "uranus",
-      "image": "assets/images/space-images/planets/uranus.jpg",
+      "image": "assets/images/object-images/planets/uranus.jpg",
       "alt": "This is an image of the planet Uranus taken by the spacecraft Voyager 2 in 1986."
     },
     {
       "name": "neptune",
-      "image": "assets/images/space-images/planets/neptune.jpg",
+      "image": "assets/images/object-images/planets/neptune.jpg",
       "alt": "Voyager 2 Narrow Angle Camera image of Neptune taken on August 20, 1989 as the spacecraft approached the planet for a flyby on August 25."
     }
   ]

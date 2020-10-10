@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/index-background-image.jpg");
+  background-image: url("../images/background-images/index-background-image.jpg");
 }
 #app {
   display: flex;

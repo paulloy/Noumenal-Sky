@@ -2,27 +2,27 @@
   "dwarf": [
     {
       "name": "ceres",
-      "image": "assets/images/space-images/dwarf-planets/ceres.jpg",
+      "image": "assets/images/object-images/dwarf-planets/ceres.jpg",
       "alt": "Images were acquired by Dawn at 04:13 UT May 4, 2015, at a distance of 13641 km. At the time, Dawn was over Ceres' northern hemisphere."
        },
     {
       "name": "pluto",
-      "image": "assets/images/space-images/dwarf-planets/pluto.jpg",
+      "image": "assets/images/object-images/dwarf-planets/pluto.jpg",
       "alt": "This image was taken as New Horizons zipped toward Pluto and its moons on July 14, 2015, from a range of 22,025 miles (35,445) kilometers."
           },
     {
       "name": "eris",
-      "image": "assets/images/space-images/dwarf-planets/eris.jpg",
+      "image": "assets/images/object-images/dwarf-planets/eris.jpg",
       "alt": "An image of the dwarf planet Eris and its moon Dysnomia."
       },
     {
       "name": "makemake",
-      "image": "assets/images/space-images/dwarf-planets/makemake.jpg",
+      "image": "assets/images/object-images/dwarf-planets/makemake.jpg",
       "alt": "This Hubble Space Telescope image reveals the first moon ever discovered around the dwarf planet Makemake."
      },
     {
       "name": "haumea",
-      "image": "assets/images/space-images/dwarf-planets/haumea.jpg",
+      "image": "assets/images/object-images/dwarf-planets/haumea.jpg",
       "alt": "Haumea and its satellites, imaged on June 30, 2015 by the Hubble Space Telescope."
      }
   ]
