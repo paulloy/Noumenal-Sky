@@ -4,23 +4,33 @@
 
 ![Noumenal Sky displayed on various devices](assets/images/readme-images/devices.jpg)
 
-Noumenal Sky is designed to be a user friendly website for learning different facts about objects in our solar system, such as the planets, their moons, and so on. Provided on each object is some trivia, name origins, discovery details, and
-information on their physical and orbital characteristics. Alongside the physicial and orbital characteristics are brief explanations of the lexicon used that a user may be unfamiliar with, such as "bond albedo," or "periapsis." Each data point
-such as the mass of Earth or the density of Jupiter is provided with a reference to the source of the data so that the user may check out the source themselves and be assured that the website provides accurate data.
+The main goal of this project is to provide the user with an educational experience with an interactive site that responds to user actions and allows the user to display their preferred information to achieve their goals.
 
-My hope is that Noumenal Sky is useful to curious newcomers who want to begin learning about the solar system, or even undergraduate physics students who want to make use of the data and references provided. The About page provides a new user
-with an FAQ to aid them. The contact form can allow a user to contact me about any concerns with the website; maybe an explanation of some lexicon isn't clear enough, or a reference has been redacted or isn't the most up to date.
+Noumenal Sky is designed to be a user friendly website for learning various facts about objects in our solar system; such as planets, their respective moons, and so on. For each object the user is provided with some trivia; name origins and discovery details,
+and information on their physical and orbital characteristics. Alongside the physicial and orbital characteristics are brief explanations of the lexicon used that a user may be unfamiliar with, such as "bond albedo," or "periapsis." Each data point
+such as the mass of Earth or the density of Jupiter is provided with a reference to the source of the data so that the user may visit the source themselves and be assured that the website provides accurate data.
+
+My hope is that Noumenal Sky is useful to curious newcomers who want to learn about the solar system, or even undergraduate physics students who want to make use of the data and references provided. The About page provides a new user
+with an FAQ to aid them, and a contact form that may allow a user to contact the developer about any concerns with the website; maybe an explanation of some lexicon isn't clear enough, or a reference has been redacted or isn't the most up to date.
 
 [Click here to view the live project](https://paulloy.github.io/Noumenal-Sky/index.html)
 
+## Table of Contents
+
 ## UX
 
-### Main Goals
+### Project Goals
 
 - Develop an interactive website with an intuitive navigation structure that new users may navigate with ease.
 - Develop a responsive website design that will adjust well to all device widths between 320px and 1242px.
-- Provide a user with an educational experience with information that is accessible and satisfying to understand.
+- Provide a user with an educational experience with information that is accessible and easy to understand.
 - To build a website in line with good coding practice.
+
+### User Goals
+
+- An easy way to learn new information about the solar system.
+- Accessable with mobile, tablet, or desktop.
+- To feel that use of this website is meaningful.
 
 ### Project Wireframe
 
@@ -28,156 +38,64 @@ The project wireframe was redesigned throughout the course of the project to pro
 Lists on mobile were too small and the responsive design was poor. The final project wireframe is an improvement over the initial design and now users seem to be able to navigate it better.
 The Contact and About page were both added to one page called "About" in the final design.
 
-[Initial Project Wireframe](assets/wireframes/initial-project-wireframes.pdf)
+[Initial Project Wireframe](assets/wireframes/initial-project-wireframe.pdf)
 
 The initial project wireframe served as a good starting point and with user feedback provided me with better solutions for UX.
 
-[Deployed Project Wireframe](assets/wireframes/project-wireframes.pdf)
+[Deployed Project Wireframe](assets/wireframes/project-wireframe.pdf)
 
 ### User Stories
 
-#### New User
-(add images)
-- As a user I wish to learn some more about the solar system.
-- When the home page loads, I am greeted with an image and a menu with four listitems. I click on a listitem. e.g. Moons.
-- I am presented with a new list I can scroll through. I don't know what Charon is, so I click that and an image appears and below the menu and image appears a new list.
-- I see an icon on the image that I click and it brings up a larger view of the image and a description of the image.
-- I click on About and I learn that Charon is a moon of Pluto, why it was called Charon and when it was discovered.
-- I click the arrow button and I return to the list I was previously viewing.
-- I click on Physical Characteristics and I now see a table headed with Properties, Values, and Units.
-- I notice that it says to click on a table row to learn more. I don't know what Bond Albedo is, so I click on that.
-- I am presented with a brief explanation of what Bond Albedo is and a reference to where the value of Charon's Bond Albedo was sourced.
-- I now click on a new moon and start learning more.
-
-#### Amateur Astronomer
-
-- I am an amateur astronomer who has been looking at the planets through a telescope for some time.
-- I click on the planets category, and begin clicking on Mars.
-- In physical characteristics I find out the diameter, mass, and density of Mars. 
-- I now click on Jupiter, and I can find its mass, density, and diameter.
-- Comparing these values I can see how much more massive Jupiter is than Mars.
-- I can see why Venus is so much more brighter than the other planets because of its high Bond Albedo.
-
-### As a developer
-
-- As a developer I aim to create an educational website on objects in the solar system.
-- With user feedback I want to learn what type of information users are thirsty for so that I may implement new designs to update the website and have it remain fresh and relevent.
+- As a user I want to be able to find the data I want on any object with an easy navigation structure to understand.
+- As a user I want a visually appealing design with high quality images that load quickly.
+- As a user with visual impairment, I want a website that I can navigate by keyboard and with a screen reader.
+- As a user, I want to be able to leave feedback to the developer.
+- As a user I want good feedback from the page so I do not get lost while navigating.
+- As a user I want to learn more about the solar system and the lexicon that astrophysicists use.
 
 ### UX Design Process
 
-#### Strategy 
+#### Strategy
 
-My initial idea for this project was to create an educational website where a user could go to learn some more about solar system objects such as planets, moons, etc. I decided to settle on providing the user with content on 
-the physical and orbital characteristics of these objects as this is a topic I have the most familiarity with; having studied undergraduate astrophysics in university.
+My initial idea for this project was to create an educational website where a user could go to learn some more about solar system objects such as planets, moons, etc. I decided to settle on providing the user with content on
+the physical and orbital characteristics of these objects as this is a topic I have the most familiarity with; having studied undergraduate physics in university.
 
 #### Scope
 
 - Content Requirements:
-The content I wanted to present to the user was an image of the object they were viewing with a description about the image, such as when it was taken and with what equipment. I wanted to include some interesting trivia on the objects
-such as when they were discovered, or the origin of their names. Then I wanted to include information on the physical and orbital characteristics of the objects with references to where the data was sourced, and explanantions on what 
-the presented lexicon meant for a user who didn't understand it. e.g. I hope to educate users on what lexicon such as periapsis, bond albedo, astronomical units, etc are.
+  The content I wanted to present to the user was an image of the object they were viewing with a description about the image, such as when it was taken and with what equipment. I wanted to include some interesting trivia on the objects
+  such as when they were discovered, or the origin of their names. Then I wanted to include information on the physical and orbital characteristics of the objects with references to where the data was sourced, and explanantions on what
+  the presented lexicon meant for a user who didn't understand it. e.g. I hope to educate users on what lexicon such as periapsis, bond albedo, astronomical units, etc are.
+  I wanted to provide the user with an FAQ to answer any common questions they may have about the project. If the FAQ didn't answer their question, I wanted to provide them with a contact page with which they may contact the developer with
+  any questions or feedback they have. I wanted to provide the user with a full list of references from where I collected my data so they can be assured that it is accurate.
 
 - Functional Requirements:
-I planned to create a set of lists that a user can click through to find an object they want to view and select what information they would like to learn more about.
-![functional requirements](assets/images/readme-images/functional-requirements.jpg)
+  I planned to create a set of lists that a user can click through to find an object they want to view and select what information they would like to learn more about.
+  ![functional requirements](assets/images/readme-images/functional-requirements.jpg)
 
 #### Structure
 
 - Interaction Design:
-I felt it would be best to include all lists on one page so a user is not having to constantly load separate pages and get lost. I wanted to create a simple navigation structure that was intuitive to use. The user clicks through different
-lists to get the information they want. The lists should display only those elements they are able to interact with and hide elements that have already been interacted with, with the ability to return to a previous list at anytime.
+  I felt it would be best to include all lists on one page so a user is not having to constantly load separate pages and get lost. I wanted to create a simple navigation structure that was intuitive to use. The user clicks through different
+  lists to get the information they want. The lists should display only those elements they are able to interact with and hide elements that have already been interacted with, with the ability to return to a previous list at anytime.
+  The FAQ and contact form would be placed in a separate page.
 
 - Information Architecture:
-I thought it was best to have all information displayed within five divs. It would be too confusing to navigate if one object opened more or less divs than another. After interacting with a few elements, the user should feel confident that they 
-can navigate the project with ease and never feeling confused or lost during navigation. I aim to effectively organise the information so that a user may acomplish their goals.
+  I thought it was best to have all information displayed within five divs. It would be too confusing to navigate if one object opened more or less divs than another. After interacting with a few elements, the user should feel confident that they
+  can navigate the project with ease. I aim to effectively organise the information so that a user may acomplish their goals.
 
 #### Skeleton
 
-My [initial project wireframe](assets/wireframes/initial-project-wireframe.pdf) proved to be a poor navigational design. When tested on friends and family it became obvious that the lists provided were confusing to navigate and the information 
+My [initial project wireframe](assets/wireframes/initial-project-wireframe.pdf) proved to be a poor navigational design. When tested on friends and family it became obvious that the lists provided were confusing to navigate and the information
 was not well organised. Following this I designed a new wireframe for the project and split my information into several JSON files organised into various folders to work with my new design.
 
-I developed a [new project wireframe](assets/wireframes/project-wireframe.pdf) that had a better navigation that my friends and family seemed to be able to explore with ease and intuitively grasp.
+I developed a [new project wireframe](assets/wireframes/project-wireframe.pdf) that had a better navigation that my friends and family seemed to be able to explore with ease and intuitively grasp its navigation structure.
 
 #### Surface
 
-I decided to use consistent colours for highlighting elements that are hovered over or focused on. The Category and Object lists are displayed next to or below the displayed object image. The bottom container contains the information that 
-a user will navigate on the object.
-
-## Testing
-
-### noscript
-
-Each page contains a noscript element that will display the message "Please enable JavaScript to use this website. This can be done in your browser settings" if JavaScript is disabled. Once JavaScipt is enabled and a user reloads the page
-the website will function as intended.
-
-### Home / Menu
-
-1. Selecting a #category-list item will hide this list and display #object-list in the menu with a return button.
-1. Selecting the return button will hide the #object-list and display the #cateogry-list.
-1. Selecting an #object-list item will display an image of the object, and the #bottom-container will display containing #info-selection, which will contain a heading with the object name and list.
-
-### Home / Image 
-
-1. Selecting the icon at the bottom right of the image will display a modal with an enlarged image and article containing the object name and a description of the image.
-1. Selecting the icon at the top right of the modal, or clicking outside the modal will hide the modal.
-
-### Home / #bottom-container
-
-1. Selecting "About" will hide #info-selection and display #display-info with trivia on the selected object.
-1. Selecting the return icon will hide #display-info and display #info-selection again.
-1. Selecting an item in #object-list while #display-info is displayed will display #info-selection and hide #display-info.
-1. Selecting "Physical Characteristics," or "orbital Characteristics" will display #display-info with a table on the Orbital or Physical Characteristics of the object.
-1. Selecting a row in #display-info will hide #display-info and display #row-info with the selected row and more information on the row property, value, and unit.
-1. Selecting the return icon will hide #row-info and display #display-info again.
-1. Selecting the hyperlink icon next to the data reference will display a new browser window with the data reference source.
-1. Selecting "Click for full references" will load references.html.
-1. Selecting an item in #object-list while #row-info is displayed will display #info-selection and hide #row-info.
-
-### Home Responsive Design 
-
-1. At a width of 810px the image will move above the menu with a new border around it. It will take up the full screen width. The menu will take up the full screen width, and the #bottom-container will take up the full screen width.
-1. At a width of 750px the navbar will hide and a navbar toggle icon will display that a user can select.
-1. Selecting the navbar toggle icon will push the body out of the window to make space for the navbar which will move in from the left side of the window. The navbar toggle icon will change from a burger icon into a cross icon.
-1. Selecting the navbar toggle icon again, or clicking outside of the navbar will hide the navbar, move the body back to its original position and change the navbar toggle icon back into a burger icon.
-1. At 400px the footer will display as a column.
-
-### About / FAQ
-
-1. Selecting a queston will cause the answer to display below the selected question.
-1. Selecting the question again will cause the answer to hide.
-
-### About / Contact Us
-
-1. Selecting send message with empty inputs will display "Please fill in this field." below Name.
-1. Selecting send message with Name filled only will display "Please fill in this field." below Email.
-1. Selecting send message with an email filled without an @ will display "Please include and '@' in the email address."
-1. Selecting send message with an email filled with a@ will display "Please enter a part following '@'. 'a@' is incomplete."
-1. Selecting send message with an empty Your Message will display "Please fill in this field."
-1. Selecting send message with all inputs filled will display a message below the send message button saying "Message Sent." The input fields will empty, their background colours will change and they will be disabled. The user must reload the page
-to send a new message.
-
-### About Responsive Design
-
-1. At a width of 900px the contact form will hide, the FAQ will take up most the window width and a new button will display above the FAQ called "View Contact."
-1. Selecting view contact will hide the FAQ and display the contact form with a button above it displaying "View FAQ."
-1. Selecting view FAQ will hide the contact form and display the FAQ with the view contact button.
-
-### References 
-
-1. Clicking a hyperlink icon will display a new browser window with the appropriate source.
-
-### Validation
-
-- All CSS was validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- All HTML was validated using [W3C Markup Validation Service](https://validator.w3.org/)
-- All JavaScript was validated using [JSHint](https://jshint.com/)
-
-All code was validated near the end of the project. All errors that were displayed were subsequently fixed; this is displayed in my commits.
-The code was run again through these validators and now pass.
-
-### Additional Testing 
-
-[https://search.google.com/test/mobile-friendly](Google Mobile-Friendly Test) - Passed as mobile friendly.
+I decided to use consistent colours for highlighting elements that are hovered over or focused on. The Category and Object lists are displayed next to or below the displayed object image. The bottom container contains the information that
+a user will navigate to to find and display information on the object. Each explanantion contains a link to the specific reference that a data point was collected from and a link to references.html where the full list of references is
+available to view. A link to the full references is also contained within the footer on index.html. I use images of nebula as background images for each page so that they are visually appealing.
 
 ## Features
 
@@ -231,16 +149,17 @@ All data used is referenced and the full list of references can be viewed on ref
 
 - For now the social media links don't link to any particular page. I may create social media pages for the website to update users on when the project will next be updated.
 - I intend on expanding on this websites content. Since the list of moons is very large, I may create some extra lists to split them up and appropriately name them so that the moon lists are not too large. I would like also to remove some
-items from "other" and add them to new categories, such as asteroids, comets, minor planets, and so on.
+  items from "other" and add them to new categories, such as asteroids, comets, minor planets, and so on.
 - The UX could always be improved with new ideas for easier and intuitive navigation. I will likely get more feedback on how to improve this as new users visit the deployed website.
 - Update the project so that it functions better on older browsers such as Internet Explorer.
 - Since the project has many shades of blue, it would be good to add settings that will allow a colour blind user to change the colours to suit them better.
 - Book reccomendations for further learning.
 - Get access to a screen larger than 1242px and improve the responsive design.
 - Include explanantions not just on what a property describes about an object but also how that property is measured. e.g. We usually measure our own mass with bathroom scales but how do we measure the mass of a planet? Or the distance without a ruler?
-- Occasionally prompt the user to ponder interesting questions about the data they are viewing. e.g. After viewing the density of Saturn and Earth, generate a popup with a question such as "Saturn is more massive than Earth, but why is Earth 
-more dense than Saturn?" Then give the user a link to a source that may explain this question, or allow it to encourage them to think deeper about the data they are viewing.
+- Occasionally prompt the user to ponder interesting questions about the data they are viewing. e.g. After viewing the density of Saturn and Earth, generate a popup with a question such as "Saturn is more massive than Earth, but why is Earth
+  more dense than Saturn?" Then give the user a link to a source that may explain this question, or allow it to encourage them to think deeper about the data they are viewing.
 - Include explanations of what definitions an object must meet in order to be categorised as a particular type of object. Why is one object a dwarf planet but another a minor planet? Could these objects be separated further?
+- Like how references.html can allow the user to view the full list of references from where I collected data, I may create a glossary page containing the full list of explanations for terms used throughout the website.
 
 ## Technologies Used
 
@@ -253,6 +172,129 @@ more dense than Saturn?" Then give the user a link to a source that may explain 
 - [Git](https://git-scm.com/) - Used to track website changes.
 - [GitHub](https://github.com/) - This hosted my repository and changes made with Git.
 
+## Testing
+
+> **Note on pixelated object images:**
+> Most object images are high quality, but some such as Sedna or Puck are pixelated, as these are the best images available of those objects, and not because I made an error in obtaining small image sizes that are stretched too large.
+
+### User Stories
+
+- As I user I want to be able to find the data I want on any object with an easy navigation structure to understand.
+
+  - The user is provided with a list from which tey can select what type of object they want to view. Selecting "Planet" will display a new list of planets and hide the category list as this is no longer needed. If they wish to choose some
+    other object category such as "Moons" they can select a button that will return the category list and hide the object list, then select moons and a new list of moons will appear.
+    They can then select a oon such as Phobos which will display a new list they can select. If they want to know the mass of Phobos, they can click on "Physical Characteristics" to have a table appear wherein the mass of Phobos is displayed.
+
+- As a user I want a visually appealing design with high quality images that load quickly.
+
+  - I had to balance high quality images with loading time, so I carefully choose high quality images for the user and compressed the files so that they could load quickly.
+
+- As a user with visual impairment, I want a website that I can navigate by keyboard and screen reader.
+
+  - Each image has an alt attribute for screenreaders. Using google developer tools I checked every element that contains text to ensure that the font contrasted well with the background. Every interactive element has a role, and name, and can
+    be focused on and selected by clicking, or pressing the enter or space key.
+
+- As a user, I want to be able to leave feedback to the developer.
+
+  - The About page contains a conform form that a user may use to contact the developer.
+
+- As a user I want good feedback from the page so I do not get lost while navigating.
+
+  - Elements that have been interacted with will usually hide and some other elements will display.
+
+- As a user I want to learn more about the solar system and the lexicon that astrophysicists use.
+  - Each table can be selected by a user to display more information to the user on the lexicon used.
+
+### noscript
+
+Each page contains a noscript element that will display the message "Please enable JavaScript to use this website. This can be done in your browser settings" if JavaScript is disabled. Once JavaScipt is enabled and a user reloads the page
+the website will function as intended.
+
+### Home / Menu
+
+1. Selecting a #category-list item will hide this list and display #object-list in the menu with a return button.
+1. Selecting the return button will hide the #object-list and display the #cateogry-list.
+1. Selecting an #object-list item will display an image of the object, and the #bottom-container will display containing #info-selection, which will contain a heading with the object name and list.
+
+### Home / Image
+
+1. Selecting the icon at the bottom right of the image will display a modal with an enlarged image and article containing the object name and a description of the image.
+1. Selecting the icon at the top right of the modal, or clicking outside the modal will hide the modal.
+
+### Home / #bottom-container
+
+1. Selecting "About" will hide #info-selection and display #display-info with trivia on the selected object.
+1. Selecting the return icon will hide #display-info and display #info-selection again.
+1. Selecting an item in #object-list while #display-info is displayed will display #info-selection and hide #display-info.
+1. Selecting "Physical Characteristics," or "orbital Characteristics" will display #display-info with a table on the Orbital or Physical Characteristics of the object.
+1. Selecting a row in #display-info will hide #display-info and display #row-info with the selected row and more information on the row property, value, and unit.
+1. Selecting the return icon will hide #row-info and display #display-info again.
+1. Selecting the hyperlink icon next to the data reference will display a new browser window with the data reference source.
+1. Selecting "Click for full references" will load references.html.
+1. Selecting an item in #object-list while #row-info is displayed will display #info-selection and hide #row-info.
+
+### Home Responsive Design
+
+1. At a width of 810px the image will move above the menu with a new border around it. It will take up the full screen width. The menu will take up the full screen width, and the #bottom-container will take up the full screen width.
+1. At a width of 750px the navbar will hide and a navbar toggle icon will display that a user can select.
+1. Selecting the navbar toggle icon will push the body out of the window to make space for the navbar which will move in from the left side of the window. The navbar toggle icon will change from a burger icon into a cross icon.
+1. Selecting the navbar toggle icon again, or clicking outside of the navbar will hide the navbar, move the body back to its original position and change the navbar toggle icon back into a burger icon.
+1. At 400px the footer will display as a column.
+
+### About / FAQ
+
+1. Selecting a queston will cause the answer to display below the selected question.
+1. Selecting the question again will cause the answer to hide.
+
+### About / Contact Us
+
+1. Selecting send message with empty inputs will display "Please fill in this field." below Name.
+1. Selecting send message with Name filled only will display "Please fill in this field." below Email.
+1. Selecting send message with an email filled without an @ will display "Please include and '@' in the email address."
+1. Selecting send message with an email filled with a@ will display "Please enter a part following '@'. 'a@' is incomplete."
+1. Selecting send message with an empty Your Message will display "Please fill in this field."
+1. Selecting send message with all inputs filled will display a message below the send message button saying "Message Sent." The input fields will empty, their background colours will change and they will be disabled. The user must reload the page
+   to send a new message.
+
+### About Responsive Design
+
+1. At a width of 900px the contact form will hide, the FAQ will take up most the window width and a new button will display above the FAQ called "View Contact."
+1. Selecting view contact will hide the FAQ and display the contact form with a button above it displaying "View FAQ."
+1. Selecting view FAQ will hide the contact form and display the FAQ with the view contact button.
+
+### References
+
+1. Clicking a hyperlink icon will display a new browser window with the appropriate source.
+
+### Validation
+
+- All CSS was validated using [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- All HTML was validated using [W3C Markup Validation Service](https://validator.w3.org/)
+- All JavaScript was validated using [JSHint](https://jshint.com/)
+
+All code was validated near the end of the project. All errors that were displayed were subsequently fixed; this is displayed in my commits.
+The code was run again through these validators and now pass.
+
+### Accessibilty
+
+I used Google Chrome developer tools to check that all text on the website contrasted well with its background. All interactive elements are keyboard-focusable and can be selected using the enter or space key on the keyboard. Only anchor elements
+cannot be selected using the space key. All interactive elements have a role and name attributed to them.
+
+### Additional Testing
+
+[https://search.google.com/test/mobile-friendly](Google Mobile-Friendly Test) - Passed as mobile friendly.
+
+### Automated testing
+
+I initially thought that automated testing wasn't needed when I began development, largely due to my inexperience with JavaScript. In hindsight I now recognise that test driven development would have sped up production.
+In the future I aim to implement automated testing in all my JavaScript code. Especially since I intend to add more content to this website, automated testing will be required as the project will become too large to manually test.
+During manual testing I found errors that occurred due to misspellings I made when creating my json files. Automated testing would quicken this process.
+
+### Bugs
+
+Sometimes when a table row is selected and #row-info is displayed, the data reference will display before the explanations. This isn't a huge issue but I would rather the data reference to always display after the explanantions. 
+Returning to display-info and clicking the same table row will usually fix this bug. I think this occurs as the data reference json file loads quicker than explanation, and thus is appended quicker to #row-info.
+
 ## Deployment
 
 ### Live Deployment
@@ -264,13 +306,19 @@ The following link will bring you to the deployed project: [Noumenal Sky](https:
 ### Local Deployment
 
 1. Open your favourite IDE with Git installed.
-![Code Button](assets/images/readme-images/code.jpg)
+   ![Code Button](assets/images/readme-images/code.jpg)
+
 1. Click on the Code button at the top of this repository.
-![Clone HTTPS](assets/images/readme-images/clone.jpg)
+   ![Clone HTTPS](assets/images/readme-images/clone.jpg)
+
 1. Copy the HTTPS URL.
+
 1. Open a new terminal in your IDE and use the command "git clone" followed by the copied url:
-    -   `git clone https://github.com/paulloy/Noumenal-Sky.git`
+
+   - `git clone https://github.com/paulloy/Noumenal-Sky.git`
+
 1. Click enter and wait for your local clone to download.
+
 1. You should now have access to a clone of this project.
 
 To learn more about cloning a respository, [click this link](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
@@ -312,6 +360,9 @@ Google font styles used:
 
 ### Acknowledgements
 
+- Noumenal is the adjective form of Noumenon, a word first used by the philosopher Immanuel Kant. Though strictly, the properties displayed on this website can never be described as noumenon, I decided to make a more lax use of the word. It also has a double meaning
+  where I heard a journalist whose name I've forgotten, use noumenal in a Saganist way of describing those things that invoke a religious or spiritual sense of awe in a subject. So I imagine the night sky with its phenomenal points of star light as being
+  grasped more fully with science and technology, allowing us to better understand the universe and view the sky as it is, as a Noumenal Sky.
 - Thanks to the [Code Institute](https://codeinstitute.net/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=a%2526c_BR_IRL_Code_Institute&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=kwd-319867646331&hsa_ad=417883010337&hsa_acc=8983321581&hsa_grp=62188641240&hsa_mt=e&hsa_cam=1578649861&hsa_kw=code%20institute&hsa_ver=3&hsa_src=g&gclid=CjwKCAjwwab7BRBAEiwAapqpTEswcNcDEOmOyi4fCT-PcSheBvn53AA4ovSOWQuIihlEAascEMo_nRoC5s4QAvD_BwE&gclsrc=aw.ds) for my coding lessons.
 - I learned some extra JavaScript techniques using [JavaScipt & JQuery: Interactive front-end web development](https://www.amazon.co.uk/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1_sspa?dchild=1&keywords=JavaScipt+%26+JQuery%3A+Interactive+front-end+web+development&qid=1602095139&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQlJOUTU3R0lFUTBVJmVuY3J5cHRlZElkPUExMDMzMzg0MjhLRFgyUk1ORFEwUiZlbmNyeXB0ZWRBZElkPUEwNjY1MDU0TlU2WEtDNkpCOThSJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==) by Jon Duckett.
 - I got additional help from [Stack Overflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/).
