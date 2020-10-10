@@ -17,6 +17,45 @@ with an FAQ to aid them, and a contact form that may allow a user to contact the
 
 ## Table of Contents
 
+- [UX](https://github.com/paulloy/Noumenal-Sky#ux)
+    - [Project Goals](https://github.com/paulloy/Noumenal-Sky#project-goals)
+    - [User Goals](https://github.com/paulloy/Noumenal-Sky#user-goals)
+    - [Project Wireframe](https://github.com/paulloy/Noumenal-Sky#project-wireframe)
+    - [User Stories](https://github.com/paulloy/Noumenal-Sky#user-stories)
+    - [UX Design Process](https://github.com/paulloy/Noumenal-Sky#ux-design-process)
+        - [Strategy](https://github.com/paulloy/Noumenal-Sky#Strategy)
+        - [Scope](https://github.com/paulloy/Noumenal-Sky#scope)
+        - [Structure](https://github.com/paulloy/Noumenal-Sky#structure)
+        - [Skeleton](https://github.com/paulloy/Noumenal-Sky#skeleton)
+        - [Surface](https://github.com/paulloy/Noumenal-Sky#surface)
+- [Features](https://github.com/paulloy/Noumenal-Sky#features)
+    - [Home](https://github.com/paulloy/Noumenal-Sky#home)
+    - [About](https://github.com/paulloy/Noumenal-Sky#about)
+    - [References](https://github.com/paulloy/Noumenal-Sky#references)
+    - [Future Features](https://github.com/paulloy/Noumenal-Sky#future-features)
+- [Technologies Used](https://github.com/paulloy/Noumenal-Sky#technologies-used)
+- [Testing](https://github.com/paulloy/Noumenal-Sky#testing)
+    - [User Stories](https://github.com/paulloy/Noumenal-Sky#user-stories-1)
+    - [noscript](https://github.com/paulloy/Noumenal-Sky#noscript)
+    - [Home/Menu](https://github.com/paulloy/Noumenal-Sky#home--menu)
+    - [Home/Image](https://github.com/paulloy/Noumenal-Sky#home--image)
+    - [Home/#bottom-container](https://github.com/paulloy/Noumenal-Sky#home--bottom-container)
+    - [Home Responsive Design](https://github.com/paulloy/Noumenal-Sky#home-responsive-design)
+    - [About/FAQ](https://github.com/paulloy/Noumenal-Sky#about--faq)
+    - [About/Contact Us](https://github.com/paulloy/Noumenal-Sky#about--contact-us)
+    - [About Responsive Design](https://github.com/paulloy/Noumenal-Sky#about-responsive-design)
+    - [References](https://github.com/paulloy/Noumenal-Sky#references-1)
+    - [Validation](https://github.com/paulloy/Noumenal-Sky#validation)
+    - [Accessibility](https://github.com/paulloy/Noumenal-Sky#accessibilty)
+    - [Additional Testing](https://github.com/paulloy/Noumenal-Sky#additional-testing)
+    - [Automated Testing](https://github.com/paulloy/Noumenal-Sky#automated-testing)
+    - [Bugs](https://github.com/paulloy/Noumenal-Sky#bugs)
+- [Deployment](https://github.com/paulloy/Noumenal-Sky#deployment)
+    - [Live Deployment](https://github.com/paulloy/Noumenal-Sky#live-deployment)
+    - [Local Deployment](https://github.com/paulloy/Noumenal-Sky#local-deployment)
+- [Credits](https://github.com/paulloy/Noumenal-Sky#credits)
+    - [Acknowledgements](https://github.com/paulloy/Noumenal-Sky#awknowledgements)
+
 ## UX
 
 ### Project Goals
@@ -62,25 +101,25 @@ the physical and orbital characteristics of these objects as this is a topic I h
 
 #### Scope
 
-- Content Requirements:
+- **Content Requirements:**
   The content I wanted to present to the user was an image of the object they were viewing with a description about the image, such as when it was taken and with what equipment. I wanted to include some interesting trivia on the objects
   such as when they were discovered, or the origin of their names. Then I wanted to include information on the physical and orbital characteristics of the objects with references to where the data was sourced, and explanantions on what
   the presented lexicon meant for a user who didn't understand it. e.g. I hope to educate users on what lexicon such as periapsis, bond albedo, astronomical units, etc are.
   I wanted to provide the user with an FAQ to answer any common questions they may have about the project. If the FAQ didn't answer their question, I wanted to provide them with a contact page with which they may contact the developer with
   any questions or feedback they have. I wanted to provide the user with a full list of references from where I collected my data so they can be assured that it is accurate.
 
-- Functional Requirements:
+- **Functional Requirements:**
   I planned to create a set of lists that a user can click through to find an object they want to view and select what information they would like to learn more about.
   ![functional requirements](assets/images/readme-images/functional-requirements.jpg)
 
 #### Structure
 
-- Interaction Design:
+- **Interaction Design:**
   I felt it would be best to include all lists on one page so a user is not having to constantly load separate pages and get lost. I wanted to create a simple navigation structure that was intuitive to use. The user clicks through different
   lists to get the information they want. The lists should display only those elements they are able to interact with and hide elements that have already been interacted with, with the ability to return to a previous list at anytime.
   The FAQ and contact form would be placed in a separate page.
 
-- Information Architecture:
+- **Information Architecture:**
   I thought it was best to have all information displayed within five divs. It would be too confusing to navigate if one object opened more or less divs than another. After interacting with a few elements, the user should feel confident that they
   can navigate the project with ease. I aim to effectively organise the information so that a user may acomplish their goals.
 
@@ -105,21 +144,21 @@ The header contains the website logo, and a navigation bar (navbar) with links t
 
 The home page consists of interactive lists. The main div id's are:
 
-- #category-list
+- **#category-list**
   - This will display a list of categories a user can select. These currently are "Planets," "Dwarf Planets," "Moons," and "Other." Clicking one of these will bring up a unique list in "object-list" that a user can click.
     Planets will display 8 listitems. Dwarf Planets will display 5 listitems. Moons will display 23 listitems. Other will display 6 listitems. Moons is not exhaustive as there are so far 219 moons discovered. Other contains
     miscellaneous objects such as a comet, asteroid, minor planets, etc.
     After selecting a category, "category-list" will hide and "object-list" will display.
-- #object-list
+- **#object-list**
   - This will display a list of objects that a user can select. On clicking on one of these, a photo of the object will be displayed to the left of the list or above it depending on what screen size a user is viewing the website on.
     A new list will also be displayed in "info-selection." A button will appear at the top of the list to allow a user to return to the "category-list."
-- #info-selection
+- **#info-selection**
   - Displayed here will be a list of mostly 3 listitems; some objects will display only 2 listitems. These items will be "about," "physicial characteristics," and "orbital characteristics." "about" will display trivia on the object
     in "display-info," and the other two lists will display tables will data in "display-info." "info-selection" will hide and "display-info" will display.
-- #display-info
+- **#display-info**
   - If a table is displayed, a user may click a table row to bring up information in "row-info." This will hide "display-info," and display "row-info." A return button will be displayed at the top left of "display-info" so a user can
     return to "info-selection."
-- #row-info
+- **#row-info**
   -this will display the table row the user clicked on. Below that will be a heading of the property name with a brief explanation of that property. Beneath that will be a heading of the unit with an explanation of that unit.
   Beneath this will be a final heading titled "Data Reference," which will give the user a link to the source of the value in the row with an author name and title. Beneath this will be a link to references.html for a full list
   of references from where data was gathered for this website. A return button will appear at the top left of "row-info" that will allow a user to return to "display-info."
@@ -282,7 +321,7 @@ cannot be selected using the space key. All interactive elements have a role and
 
 ### Additional Testing
 
-[https://search.google.com/test/mobile-friendly](Google Mobile-Friendly Test) - Passed as mobile friendly.
+[Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) - Passed as mobile friendly.
 
 ### Automated testing
 
@@ -323,7 +362,7 @@ The following link will bring you to the deployed project: [Noumenal Sky](https:
 
 To learn more about cloning a respository, [click this link](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-## credits
+## Credits
 
 Any values referenced with "[a] - Calculated based upon known parameters" was calculated by me.
 The .json files were written by me using this data.
@@ -360,9 +399,6 @@ Google font styles used:
 
 ### Acknowledgements
 
-- Noumenal is the adjective form of Noumenon, a word first used by the philosopher Immanuel Kant. Though strictly, the properties displayed on this website can never be described as noumenon, I decided to make a more lax use of the word. It also has a double meaning
-  where I heard a journalist whose name I've forgotten, use noumenal in a Saganist way of describing those things that invoke a religious or spiritual sense of awe in a subject. So I imagine the night sky with its phenomenal points of star light as being
-  grasped more fully with science and technology, allowing us to better understand the universe and view the sky as it is, as a Noumenal Sky.
 - Thanks to the [Code Institute](https://codeinstitute.net/5-day-coding-challenge/?utm_term=code%20institute&utm_campaign=a%2526c_BR_IRL_Code_Institute&utm_source=adwords&utm_medium=ppc&hsa_net=adwords&hsa_tgt=kwd-319867646331&hsa_ad=417883010337&hsa_acc=8983321581&hsa_grp=62188641240&hsa_mt=e&hsa_cam=1578649861&hsa_kw=code%20institute&hsa_ver=3&hsa_src=g&gclid=CjwKCAjwwab7BRBAEiwAapqpTEswcNcDEOmOyi4fCT-PcSheBvn53AA4ovSOWQuIihlEAascEMo_nRoC5s4QAvD_BwE&gclsrc=aw.ds) for my coding lessons.
 - I learned some extra JavaScript techniques using [JavaScipt & JQuery: Interactive front-end web development](https://www.amazon.co.uk/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1_sspa?dchild=1&keywords=JavaScipt+%26+JQuery%3A+Interactive+front-end+web+development&qid=1602095139&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyQlJOUTU3R0lFUTBVJmVuY3J5cHRlZElkPUExMDMzMzg0MjhLRFgyUk1ORFEwUiZlbmNyeXB0ZWRBZElkPUEwNjY1MDU0TlU2WEtDNkpCOThSJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==) by Jon Duckett.
 - I got additional help from [Stack Overflow](https://stackoverflow.com/) and [W3 Schools](https://www.w3schools.com/).
