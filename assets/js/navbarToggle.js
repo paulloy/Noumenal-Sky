@@ -3,21 +3,14 @@
 
 /*If a user is using Safari then isSafari will return true, otherwise it will return false.*/
 /*This var was copied from:
-https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
+https://stackoverflow.com/questions/7944460/detect-safari-browser
 */
-var isSafari =
-  /constructor/i.test(window.HTMLElement) ||
-  (function (p) {
-    return p.toString() === "[object SafariRemoteNotification]";
-  })(
-    !window["safari"] ||
-      (typeof safari !== "undefined" && safari.pushNotification)
-  );
+var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 /*When the navbar is hidden, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsOpen() {
   // If the user is not using Safari
-  if (isSafari != true) {
+  if (isSafari == false) {
     $("body").css("position", "fixed");
     /*Toggle between navbar styles.*/
     $("#navbar").toggleClass("navbar-mobile");
@@ -35,7 +28,7 @@ and a cross.*/
     $("#bottom-bar").addClass("bottom-bar-open");
     /*#navbar is animated to move from the left onto the screen when opening*/
     $("#navbar").animate({ left: "0px" }, 200);
-  } else {
+  } else if (isSafari == true) {
     // If the user is using Safari
     //#navbarToggle is set to relative so it can be animated
     $("#navbarToggle").css("position", "relative");
@@ -56,7 +49,7 @@ and a cross.*/
 /*When the navbar is displayed, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsClosed() {
   // If the user is not using Safari
-  if (isSafari != true) {
+  if (isSafari == false) {
     $("#navbar-cover").fadeOut(200); //Fade out dark background.
     /*Animate html, body, and #navbar*/
     $("html, body").children().animate({ left: "0" }, 200);
@@ -82,7 +75,7 @@ and a cross.*/
     setTimeout(function () {
       $("html, body").removeAttr("style");
     }, 200);
-  } else {
+  } else if (isSafari == true) {
     // If the user is using Safari
     $("#navbarToggle").animate({ left: "0px" }, 200);
     $("#navbar-cover").fadeOut(200);
