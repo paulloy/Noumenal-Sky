@@ -104,26 +104,26 @@ the physical and orbital characteristics of these objects as this is a topic I h
 
 #### Scope
 
-- **Content Requirements:**
-  The content I wanted to present to the user was an image of the object they were viewing with a description about the image, such as when it was taken and with what equipment. I wanted to include some interesting trivia on the objects
+**Content Requirements:**
+  - The content I wanted to present to the user was an image of the object they were viewing with a description about the image, such as when it was taken and with what equipment. I wanted to include some interesting trivia on the objects
   such as when they were discovered, or the origin of their names. Then I wanted to include information on the physical and orbital characteristics of the objects with references to where the data was sourced, and explanations on what
   the presented lexicon meant for a user who didn't understand it. e.g. I hope to educate users on what lexicon such as periapsis, bond albedo, astronomical units, etc are.
   I wanted to provide the user with an FAQ to answer any common questions they may have about the project. If the FAQ didn't answer their question, I wanted to provide them with a contact page with which they may contact the developer with
   any questions or feedback they have. I wanted to provide the user with a full list of references from where I collected my data so they can be assured that it is accurate.
 
-- **Functional Requirements:**
-  I planned to create a set of lists that a user can click through to find an object they want to view and select what information they would like to learn more about.
+**Functional Requirements:**
+  - I planned to create a set of lists that a user can click through to find an object they want to view and select what information they would like to learn more about.
   ![functional requirements](assets/images/readme-images/functional-requirements.jpg)
 
 #### Structure
 
-- **Interaction Design:**
-  I felt it would be best to include all lists on one page so a user is not having to constantly load separate pages and get lost. I wanted to create a simple navigation structure that was intuitive to use. The user clicks through different
+**Interaction Design:**
+  - I felt it would be best to include all lists on one page so a user is not having to constantly load separate pages and get lost. I wanted to create a simple navigation structure that was intuitive to use. The user clicks through different
   lists to get the information they want. The lists should display only those elements they are able to interact with and hide elements that have already been interacted with, with the ability to return to a previous list at anytime.
   The FAQ and contact form would be placed in a separate page.
 
-- **Information Architecture:**
-  I thought it was best to have all information displayed within five divs. It would be too confusing to navigate if one object opened more or less divs than another. After interacting with a few elements, the user should feel confident that they
+**Information Architecture:**
+  - I thought it was best to have all information displayed within five divs. It would be too confusing to navigate if one object opened more or less divs than another. After interacting with a few elements, the user should feel confident that they
   can navigate the project with ease. I aim to effectively organize the information so that a user may accomplish their goals.
 
 #### Skeleton
@@ -147,22 +147,26 @@ The header contains the website logo, and a navigation bar (navbar) with links t
 
 The home page consists of interactive lists. The main div id's are:
 
-- **#category-list**
+**#category-list**
   - This will display a list of categories a user can select. These currently are "Planets," "Dwarf Planets," "Moons," and "Other." Clicking one of these will bring up a unique list in "object-list" that a user can click.
     Planets will display 8 listitems. Dwarf Planets will display 5 listitems. Moons will display 23 listitems. Other will display 6 listitems. Moons is not exhaustive as there are so far 219 moons discovered. Other contains
     miscellaneous objects such as a comet, asteroid, minor planets, etc.
     After selecting a category, "category-list" will hide and "object-list" will display.
-- **#object-list**
+    
+**#object-list**
   - This will display a list of objects that a user can select. On clicking on one of these, a photo of the object will be displayed to the left of the list or above it depend on what screen size a user is viewing the website on.
     A new list will also be displayed in "info-selection." A button will appear at the top of the list to allow a user to return to the "category-list."
-- **#info-selection**
+
+**#info-selection**
   - Displayed here will be a list of mostly 3 listitems; some objects will display only 2 listitems. These items will be "about," "physical characteristics," and "orbital characteristics." "about" will display trivia on the object
     in "display-info," and the other two lists will display tables will data in "display-info." "info-selection" will hide and "display-info" will display.
-- **#display-info**
+
+**#display-info**
   - If a table is displayed, a user may click a table row to bring up information in "row-info." This will hide "display-info," and display "row-info." A return button will be displayed at the top left of "display-info" so a user can
     return to "info-selection."
-- **#row-info**
-  -this will display the table row the user clicked on. Below that will be a heading of the property name with a brief explanation of that property. Below that will be a heading of the unit with an explanation of that unit.
+
+**#row-info**
+  - this will display the table row the user clicked on. Below that will be a heading of the property name with a brief explanation of that property. Below that will be a heading of the unit with an explanation of that unit.
   Below this will be a final heading titled "Data Reference," which will give the user a link to the source of the value in the row with an author name and title. Below this will be a link to references.html for a full list
   of references from where data was gathered for this website. A return button will appear at the top left of "row-info" that will allow a user to return to "display-info."
 
@@ -170,18 +174,17 @@ Selecting the icon at the bottom right of an object image will display a modal w
 
 ### About
 
-- Frequently Asked Questions.
+**Frequently Asked Questions**
 
-The FAQ features an accordion. A user clicks on a question and the answer will slide down below the question. This is to prevent a page from becoming too long
+- The FAQ features an accordion. A user clicks on a question and the answer will slide down below the question. This is to prevent a page from becoming too long
 and frustrating the user with too much scrolling.
 
-- Contact form
+**Contact form**
 
-There is a contact form that a user may fill out to provide Noumenal Sky with feedback.
+- There is a contact form that a user may fill out to provide Noumenal Sky with feedback.
+- Email.js is used so that a user may send messages to the developer. They receive an email with the message they sent, and the developer receives a bcc.
 
 ![Contact Form](assets/images/readme-images/contact.jpg)
-
-Email.js is used so that a user may send messages to the Website author. They receive an email with the message they sent, and the author receives a bcc.
 
 ### References
 
@@ -221,31 +224,26 @@ All data used is referenced and the full list of references can be viewed on ref
 
 ### User Stories
 
-- As I user I want to be able to find the data I want on any object with an easy navigation structure to understand.
-
+As I user I want to be able to find the data I want on any object with an easy navigation structure to understand.
   - The user is provided with a list from which they can select what type of object they want to view. Selecting "Planet" will display a new list of planets and hide the category list as this is no longer needed. If they wish to choose some
     other category such as "Moons" they can select a button that will display the category list and hide the object list. Then the user may select moons and a new list of moons will appear in #object-list.
     They can then select a moon such as Phobos, which will display a new list they can select. If they want to know the mass of Phobos, they can click on "Physical Characteristics" to have a table appear wherein the mass of Phobos is displayed.
     When something new is displayed in a window and the previously interacted item is hidden, a button will always appear to allow the user to return to the previous display they were interacting with.
 
-- As a user I want a visually appealing design with high quality images that load quickly.
-
+As a user I want a visually appealing design with high quality images that load quickly.
   - I had to balance high quality images with loading time, so I carefully choose high quality images for the user and compressed the files so that they could load quickly.
 
-- As a user with visual impairment, I want a website that I can navigate by keyboard and screen reader.
-
+As a user with visual impairment, I want a website that I can navigate by keyboard and screen reader.
   - Each image has an alt attribute for screenreaders. Using Google Chrome developer tools I checked every element that contains text to ensure that the font contrasted well with the background. Every interactive element has a role, a name, and can
     be focused on and selected by clicking, or pressing the enter or space key.
 
-- As a user, I want to be able to leave feedback to the developer.
-
+As a user, I want to be able to leave feedback to the developer.
   - The About page contains a contact form that a user may use to contact the developer.
 
-- As a user I want good feedback from the page so I do not get lost while navigating.
-
+As a user I want good feedback from the page so I do not get lost while navigating.
   - Elements that have been interacted with will usually hide and some other elements will display, so that it is obvious an element has been successfully selected.
 
-- As a user I want to learn more about the solar system and the lexicon that astrophysicists use.
+As a user I want to learn more about the solar system and the lexicon that astrophysicists use.
   - Each table can be selected by a user to display more information to the user on the lexicon used.
 
 ### noscript
@@ -355,12 +353,12 @@ The following link will bring you to the deployed project: [Noumenal Sky](https:
 ### Local Deployment
 
 1. Open your favourite IDE with Git installed.
-   ![Code Button](assets/images/readme-images/code.jpg)
 
 1. Click on the Code button at the top of this repository.
-   ![Clone HTTPS](assets/images/readme-images/clone.jpg)
+   ![Code Button](assets/images/readme-images/code.jpg)
 
 1. Copy the HTTPS URL.
+   ![Clone HTTPS](assets/images/readme-images/clone.jpg)
 
 1. Open a new terminal in your IDE and use the command "git clone" followed by the copied url:
 
@@ -376,7 +374,7 @@ To learn more about cloning a respository, [click this link](https://docs.github
 
 ### Content
 
-The following code snippet was copied from [Detect Safari browser](https://stackoverflow.com/questions/7944460/detect-safari-browser)
+The following code snippet was copied from [Detect Safari browser](https://stackoverflow.com/questions/7944460/detect-safari-browser), and used in [navbarToggle.js](assets/js/navbarToggle.js)
 
 `var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);`
 
@@ -386,9 +384,10 @@ Any values referenced with "[a] - Calculated based upon known parameters" was ca
 The .json files were written by me using this data.
 
 All data on this website is sourced from:
-[Data Reference List](assets/credits/references.txt)
+- [Data Reference List](assets/credits/references.txt)
+
 All "About" information was sourced from:
-[About Object](assets/credits/objects-about-info.txt)
+- [About Object](assets/credits/objects-about-info.txt)
 
 ### Media
 
@@ -396,9 +395,9 @@ Images and their descriptions:
 [Object Images](assets/credits/space-images.txt)
 
 The background images were sourced from:
-[(Pleiades) index-background-image.jpg](https://earthsky.org/favorite-star-patterns/pleiades-star-cluster-enjoys-worldwide-renown)
-[(Eagle-Nebula) references-background-image.jpg](https://eu.telescope.com/Image-Gallery/New-Images/M16-The-Eagle-Nebula-7-3-13/c/644/sc/723/p/105008.uts?refineByCategoryId=723)
-[[Orion-Nebula) about-background-image.jpg](https://twitter.com/StarTalkRadio/status/891482108010561538)
+- [(Pleiades) index-background-image.jpg](https://earthsky.org/favorite-star-patterns/pleiades-star-cluster-enjoys-worldwide-renown)
+- [(Eagle-Nebula) references-background-image.jpg](https://eu.telescope.com/Image-Gallery/New-Images/M16-The-Eagle-Nebula-7-3-13/c/644/sc/723/p/105008.uts?refineByCategoryId=723)
+- [Orion-Nebula) about-background-image.jpg](https://twitter.com/StarTalkRadio/status/891482108010561538)
 
 [Testing Laptop image](https://brain-images-ssl.cdn.dixons.com/5/5/10208155/u_10208155.jpg)
 
