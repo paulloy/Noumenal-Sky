@@ -32,6 +32,7 @@ with an FAQ to aid them, and a contact form that may allow a user to contact the
   - [Home](https://github.com/paulloy/Noumenal-Sky#home)
   - [About](https://github.com/paulloy/Noumenal-Sky#about)
   - [References](https://github.com/paulloy/Noumenal-Sky#references)
+  - [JavaScript](https://github.com/paulloy/Noumenal-Sky#javascript)
   - [Future Features](https://github.com/paulloy/Noumenal-Sky#future-features)
 - [Technologies Used](https://github.com/paulloy/Noumenal-Sky#technologies-used)
 - [Testing](https://github.com/paulloy/Noumenal-Sky#testing)
@@ -182,13 +183,30 @@ and frustrating the user with too much scrolling.
 **Contact form**
 
 - There is a contact form that a user may fill out to provide Noumenal Sky with feedback.
-- Email.js is used so that a user may send messages to the developer. They receive an email with the message they sent, and the developer receives a bcc.
+- [Email.js](https://www.emailjs.com/) is used so that a user may send messages to the developer. They receive an email with the message they sent, and the developer receives a bcc.
 
 ![Contact Form](assets/images/readme-images/contact.jpg)
 
 ### References
 
 All data used is referenced and the full list of references can be viewed on references.html. Particular references are provided on index.html.
+
+### JavaScript
+
+**index.js**
+- This file is the largest and is responsible for accessing JSON files and displaying information with an interactive experience to the user on the Home page.
+
+**about.js**
+- This file is responsible for toggling the FAQ questions to display answers. 
+
+**navbarToggle.js**
+- This file is responsible for toggling the class of the #navbar and #navbarToggle. It will display the navbar on mobile when a user selects the navbarToggle icon on the top left of the header.
+
+**references.js**
+- This file is responsible for accessing [references.json](assets/js/json/references.json) and displaying the list of references onto [references.html](references.html).
+
+**sendEmail.js**
+- This file is responsible for allowing the user to send an email to the developer using the contact form.
 
 ### Future Features
 
@@ -355,9 +373,11 @@ The following link will bring you to the deployed project: [Noumenal Sky](https:
 1. Open your favourite IDE with Git installed.
 
 1. Click on the Code button at the top of this repository.
+
    ![Code Button](assets/images/readme-images/code.jpg)
 
 1. Copy the HTTPS URL.
+
    ![Clone HTTPS](assets/images/readme-images/clone.jpg)
 
 1. Open a new terminal in your IDE and use the command "git clone" followed by the copied url:
@@ -391,15 +411,16 @@ All "About" information was sourced from:
 
 ### Media
 
-Images and their descriptions:
-[Object Images](assets/credits/space-images.txt)
+Images and their descriptions were sourced from:
+- [Object Images](assets/credits/space-images.txt)
 
 The background images were sourced from:
 - [(Pleiades) index-background-image.jpg](https://earthsky.org/favorite-star-patterns/pleiades-star-cluster-enjoys-worldwide-renown)
 - [(Eagle-Nebula) references-background-image.jpg](https://eu.telescope.com/Image-Gallery/New-Images/M16-The-Eagle-Nebula-7-3-13/c/644/sc/723/p/105008.uts?refineByCategoryId=723)
 - [Orion-Nebula) about-background-image.jpg](https://twitter.com/StarTalkRadio/status/891482108010561538)
 
-[Testing Laptop image](https://brain-images-ssl.cdn.dixons.com/5/5/10208155/u_10208155.jpg)
+Image of laptop used in README.md:
+- [Testing Laptop image](https://brain-images-ssl.cdn.dixons.com/5/5/10208155/u_10208155.jpg)
 
 The following icons were sourced from [Font Awesome](https://fontawesome.com/)
 
