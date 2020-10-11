@@ -5,19 +5,18 @@
 /*This var was copied from:
 https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser
 */
-var safari;
 var isSafari =
   /constructor/i.test(window.HTMLElement) ||
   (function (p) {
     return p.toString() === "[object SafariRemoteNotification]";
   })(
-    !window.safari ||
+    !window["safari"] ||
       (typeof safari !== "undefined" && safari.pushNotification)
   );
 
 /*When the navbar is hidden, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsOpen() {
-    // If the user is not using Safari
+  // If the user is not using Safari
   if (isSafari != true) {
     $("body").css("position", "fixed");
     /*Toggle between navbar styles.*/
@@ -36,13 +35,14 @@ and a cross.*/
     $("#bottom-bar").addClass("bottom-bar-open");
     /*#navbar is animated to move from the left onto the screen when opening*/
     $("#navbar").animate({ left: "0px" }, 200);
-  } else { // If the user is using Safari
+  } else {
+    // If the user is using Safari
     //#navbarToggle is set to relative so it can be animated
     $("#navbarToggle").css("position", "relative");
     $("#navbar-cover").fadeIn(200);
     $("#navbar").toggleClass("navbar-mobile");
     $("#navbar").toggleClass("navbar-browser");
-    $("body").prepend($("nav")); 
+    $("body").prepend($("nav"));
     $("#navbarToggle").animate({ left: "250px" }, 200);
     $("#top-bar").removeClass("top-bar-close");
     $("#middle-bar").removeClass("middle-bar-close");
@@ -55,7 +55,7 @@ and a cross.*/
 }
 /*When the navbar is displayed, this function will be called when a user clicks #navbarToggle.*/
 function navbarIsClosed() {
-    // If the user is not using Safari
+  // If the user is not using Safari
   if (isSafari != true) {
     $("#navbar-cover").fadeOut(200); //Fade out dark background.
     /*Animate html, body, and #navbar*/
@@ -82,9 +82,10 @@ and a cross.*/
     setTimeout(function () {
       $("html, body").removeAttr("style");
     }, 200);
-  } else { // If the user is using Safari
+  } else {
+    // If the user is using Safari
     $("#navbarToggle").animate({ left: "0px" }, 200);
-    $("#navbar-cover").fadeOut(200); 
+    $("#navbar-cover").fadeOut(200);
     $("#navbar").animate({ left: "-250px" }, 200);
     setTimeout(function () {
       $("header").append($("nav"));
